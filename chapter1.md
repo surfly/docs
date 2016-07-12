@@ -7,7 +7,7 @@
 Our example application features a bespoke cake shop, specialising in personalized cakes. The shop prides themselves on their customer service, meaning that the co-browsing feature Surfly provides is an ideal addition to their website, as it can dramatically improve online communication. 
 Here is a screenshot of the home page before we integrate Surfly:
 
-![website](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s1.png)
+![website](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s1.png)
 
 As you can see, it is a standard website with different pages and possible actions. 
 We are now going to integrate Surfly into our website, selecting the aspects of Surfly's functionality that best suit our needs.
@@ -33,11 +33,11 @@ You should also specify the domain name of your website in the integrations pane
 
 As you can see below, after adding the widget code to our website, we see a red "get live help" button.  This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
-![Surfly widget](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s2.png)
+![Surfly widget](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s2.png)
 
 When a client clicks on the red "get live help" button, the client is queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
 
-![user queue'd](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s3.png)
+![user queue'd](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s3.png)
 
 
 <a name="widget"></a>
@@ -53,7 +53,7 @@ videochat: false // remove videochat feature (not needed)
 ```
 In the images below, you can see that the button and the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. Finally, we decided to make the drawings permanent to facilitate communication.
 
-![widget options 1](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s4.png) ![widget options 2](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s5.png)
+![widget options 1](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s4.png) ![widget options 2](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s5.png)
 
 The API has an [extensive list of widget options](https://www.surfly.com/cobrowsing-api/).
 
@@ -73,7 +73,7 @@ Then, we add the #surflystart anchor to our custom button (get_help_button in ou
 ```
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
 
-![custom button](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s6-zoom.png)
+![custom button](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s6-zoom.png)
 
 
 <a name="landing"></a>
@@ -126,7 +126,7 @@ Finally, we want to display the queue ID on the landing page when a session star
 	request.send();
 </script>
 ```
-![landing page](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/landing_page_flow.gif)
+![landing page](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/landing_page_flow.gif)
 
 We now have our own personalised landing page to greet our customers.
 
@@ -173,4 +173,4 @@ end_of_session_popup_url: "https://example.com/survey",
 
 Please note: you might need to set the 'hidden' option to 'false' for this option to work correctly
 
-![survey](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s9.png)
+![survey](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s9.png)
