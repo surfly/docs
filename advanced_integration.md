@@ -33,7 +33,7 @@ var info = cookie.split(",");
 ```
 In the gif below, you can see that the order details are available even if the session ends before the client get their receipt:
 
-![receipt](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/receipt.gif)
+![receipt](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/receipt.gif)
 
 
 <a name="blacklist"></a>
@@ -55,7 +55,7 @@ We also decided to specify an optional redirect link so that we can design our o
 ```
 In our example, we decided to redirect the user to our custom restricted page which informs them that this page is restricted:
 
-![blacklist](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/blacklist.gif)
+![blacklist](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/blacklist.gif)
 
 
 <a name="metadata"></a>
@@ -71,7 +71,7 @@ To know more about the syntax used for this option, see our [API](https://www.su
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
-![metadata](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/metadata.gif)
+![metadata](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/metadata.gif)
 
 
 ### Remove the UI
@@ -150,7 +150,7 @@ Once we've stored the session ID, we can use a second request which will use thi
   </script>
 ```
 
-![exit button](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s10.png)
+![exit button](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s10.png)
 
 Please note: considering how our website is built, there's a unique "get help" button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, stealth mode is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing Ctrl + Enter. Stealth mode can also be disabled, if you prefer.
 
@@ -180,7 +180,7 @@ We added a condition in the beginning of the script to make sure that a second Z
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller icon to the footer of our webpage. If necessary, the agent can direct the user to start a session by clicking on the small cake icon. 
 
-![cake icon](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/cake_icon.png)
+![cake icon](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/cake_icon.png)
 
 As you can see from the code below, by adding the #surflystart anchor, we ensure that a Surfly session starts when this icon is clicked:
 
@@ -217,4 +217,4 @@ We then retrieve the queue ID and display it to the user:
 
 The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim. 
 
-![Retrieved session id](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/session_id_number.png)
+![Retrieved session id](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/session_id_number.png)
