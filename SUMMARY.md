@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Basic Integration](chapter1.md)
-* Advanced Integration
+* [Advanced Integration](advanced_integration.md)
 
