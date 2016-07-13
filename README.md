@@ -1,4 +1,4 @@
-![logo](logosmall.png)
+![logo](images/logosmall.png)
 
 <h1 class="title">The Surfly Tutorial</h1> 
 
@@ -6,6 +6,8 @@
 
 ### Welcome to Surfly 
 Surfly's co-browsing technology enables you to share your browser with others. You can start a Surfly session by entering the url of the website you want to browse into the 'start session' panel on your admin page and then invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and doesn't require any configuration. 
+
+![simply_browse](images/simplybrowse.png)
 
 However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. Simply adding this button already allows you to start co-browsing, and Surfly works without any alterations. If required, small additions to the code allow you to fully customise your session and to use as much, or as little, of Surfly's functionality within your own product. 
 
