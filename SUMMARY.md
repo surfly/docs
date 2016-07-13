@@ -7,5 +7,6 @@
    * functionality.md
    * technology.md
    * security.md
+   * pricing.md
 * [Widget options](widget_options.md)
 
