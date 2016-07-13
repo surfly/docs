@@ -1,6 +1,6 @@
 ![logo](../images/logosmall.png)
 
-# button_appearance_options
+# Button_appearance_options
 
 ### Support button appearance
 
