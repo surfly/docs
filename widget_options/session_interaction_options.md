@@ -67,3 +67,91 @@ Allow access only to the `example.com`. When the user tries to access any other 
     "redirect": "https://example.com/restricted"
 }
 ```
+
+## Session Continuation
+
+The high performance of Surfly can be attributed to our proxy approach. If a
+user wants to continue the web-session as-is, it is necessary to transfer
+all information to our proxy.
+
+This feature is called 'session continuation', and works as follows:
+
+ - A Surfly session is started on the current website from the same url in a
+   hidden iframe
+ - The widget makes sure that Surfly knows about session variables (cookies)
+ - After the session has been started we synchronize the current state with the
+   fresh state loaded through the iframe
+ - When Surfly finish is about to end, we transfer session data to the original
+   page
+
+Session continuation is currently supported only for sessions started with
+Surfly widget.
+There are several ways to set up session continuation.
+
+### Full session continuation
+
+This approach allows the transfer of all session data, including cookies with a `httpOnly`
+flag. However, it requires some collaboration from the integrating website.
+To make it work, the website needs to forward all HTTP requests for the path `/surfly_cookie_transfer/`
+to the Surfly server. This is usually a small adjustment in load balancer configuration.
+For example, if you use nginx, just add these lines in your config file:
+
+```
+location /surfly_cookie_transfer/ {
+    proxy_pass https://surfly.com;
+    proxy_set_header X-Continuation-Origin https://example.com;
+    proxy_set_header X-Widget-Key 24d1414c71a94cbf9f205ed4fc4999b5;
+}
+```
+
+In case of haproxy, see the example configuration below:
+
+```
+frontend example-com-https
+  acl surfly_session_continuation hdr(host) -i example.com path_beg /surfly_cookie_transfer/
+  use_backend surfly_continuation_point_https if surfly_session_continuation
+  ...your custom configuration here...
+backend surfly_continuation_point_https
+    http-request set-header X-Continuation-Origin https://example.com
+    http-request set-header X-Widget-Key 24d1414c71a94cbf9f205ed4fc4999b5
+    http-request set-header Host surfly.com
+    server surfly surfly.com:443 ssl
+```
+
+Please note that you also need to set additional request headers:
+`X-Widget-Key` should contain your widget key (the same that is used in javscript snippet).
+`X-Continuation-Origin` should contain the origin of the page where Surfly widget is integrated.
+That is, a protocol scheme followed by domain name and a port in case it is non-standard.
+
+After setting up the continuation point, add the following widget options:
+
+```javascript
+  cookie_transfer_enabled: true,
+  cookie_transfer_proxying: true,
+  cookie_transfer_urls: ["https://example.com/surfly_cookie_transfer/"]
+```
+
+
+### Soft session continuation
+
+It is also possible to integrate session continuation without changing load
+balancer configuration. All you need to do is to make sure that the Surfly widget
+is present on all the pages you want to transfer cookies from (this is not necessarily
+the same page where you start Surfly session from). However, soft session continuation
+has some limitations:
+
+- we will only transfer cookies from the current page
+- for security reasons, a session will be transferred back only if the last page
+  opened inside the session is on the same domain *and* has a Surfly widget on it
+- since, in this case, Surfly doesn't have access to the HTTP requests, we *won't transfer
+httpOnly cookies*
+
+Make sure that you set the following options in your widget:
+```javascript
+  cookie_transfer_enabled: true,
+  cookie_transfer_proxying: false
+```
+
+If you need more help with this, please contact us at support@surfly.com. We can
+consult you on the implementation, or build the integration for you.
+
