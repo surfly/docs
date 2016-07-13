@@ -5,5 +5,6 @@
 * [Advanced Integration](advanced_integration.md)
 * [FAQ's](faqs.md)
    * functionality.md
+   * technology.md
 * [Widget options](widget_options.md)
 
