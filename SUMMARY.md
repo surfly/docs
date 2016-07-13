@@ -9,4 +9,5 @@
    * [security.md](faq/security.md)
    * [pricing.md](faq/pricing.md)
 * [Widget options](widget_options.md)
+   * widget_options/session_interaction_options.md
 
