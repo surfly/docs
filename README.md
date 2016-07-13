@@ -1,6 +1,6 @@
 ![logo](images/logosmall.png)
 
-<h1 class="title">The Surfly Tutorial</h1> 
+#The Surfly Tutorial 
 
 
 
@@ -15,7 +15,7 @@ Alternatively, if you wish to use Surfly as a feature on your own website, you c
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to [our repository](https://github.com/MathildeJ/Cake_shop_example), where you'll find a corresponding commit.  
 
-In this tutorial, we will highlight the main features on offer, and how to add them to your own website. We will also show you how you can make Surfly as visible, or as invisible, as you wish, depending on your needs and preferences.
+In this tutorial, we will highlight the main features on offer, and show you how you can make Surfly as visible, or as invisible, as you wish, depending on your needs and preferences.
 
 
 **please note** if you wish to integrate Surfly, you need to give Surfly access to the server. This is especially important when you are developing locally. 
