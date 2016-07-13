@@ -1,5 +1,5 @@
 ![logo](../images/logosmall.png)
-# session_appearance_options
+# Session_appearance_options
 
 
 ### Session appearance options
