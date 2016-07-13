@@ -5,7 +5,7 @@
 
 
 ### Welcome to Surfly 
-Surfly's co-browsing technology enables you to share your browser with others. You can start a Surfly session by entering the url of the website you want to browse into the 'start session' panel on your admin page and then invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and doesn't require any configuration. 
+Surfly's co-browsing technology enables you to share your browser with others. To start a Surfly session, enter the url of your chosen webpage into the 'start session' panel on your admin page. You can invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and doesn't require any configuration. 
 
 ![simply_browse](images/simplybrowse.jpg)
 
