@@ -144,7 +144,7 @@ To enable field masking (the follower will not see the leader's input), add the 
 ```
 In our example, we will use field masking on the last three fields of our order form as they contain information about the client's card. As can be seen in the image, the agent only see crosses instead of the leader's input:
 
-![field masking](https://github.com/MathildeJ/Fantasy_Bakes/blob/master/static/s8.png)
+![field masking](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s8.png)
 
 As for the 'Order' button, we can easily add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then, we check whether or not the leader is in control and disable the order button if they are not.
 ``` javascript
