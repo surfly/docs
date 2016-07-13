@@ -9,15 +9,14 @@ Surfly's co-browsing technology enables you to share your browser with others. T
 
 ![simply_browse](images/simplybrowse.jpg)
 
-However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. Simply adding this button already allows you to start co-browsing, and Surfly works without any alterations. If required, small additions to the code allow you to fully customise your session and to use as much, or as little, of Surfly's functionality within your own product. 
+Alternatively, if you wish to use Surfly as a feature on your own website, you can add the Surfly widget code to your website. Adding this code already allows you to start co-browsing, and Surfly works without any alterations. Small additions to the code allow you to fully customize the appearance and behavior of the Surfly session.  You can choose to use as much, or as little, of Surfly's functionality within your own product. 
 
 ### The Tutorial
 
-If you are thinking about using Surfly, or are a new user, follow our step by step guide as we integrate Surfly into our example application. The major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our repository, where you'll find a corresponding commit.  
+If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to [our repository](https://github.com/MathildeJ/Cake_shop_example), where you'll find a corresponding commit.  
 
-In this tutorial, we decided to highlight the main features on offer. We will also show you how you can make Surfly as visible, or as invisible, as you wish, depending on your needs and preferences.
+In this tutorial, we will highlight the main features on offer. We will also show you how you can make Surfly as visible, or as invisible, as you wish, depending on your needs and preferences.
 
-For further reference, please see [our repository](https://github.com/MathildeJ/Cake_shop_example).  It contains the code for our example website, and the commits made during integration. 
 
 **please note** if you wish to integrate Surfly, you need to give Surfly access to the server. This is especially important when you are developing locally. 
 .
