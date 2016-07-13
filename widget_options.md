@@ -1,3 +1,5 @@
+![logo](images/logosmall.png)
+
 # Widget options
 
 ####Session Interaction Options
