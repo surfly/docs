@@ -10,5 +10,5 @@
    * [pricing.md](faq/pricing.md)
 * [Widget options](widget_options.md)
    * [session_interaction_options.md](widget_options/session_interaction_options.md)
-   * session_appearance_options
+   * [session_appearance_options](widget_options/session_appearance_options.md)
 
