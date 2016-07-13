@@ -1,3 +1,5 @@
+![logo](logosmall.png)
+
 <h1 class="title">The Surfly Tutorial</h1> 
 
 
