@@ -4,5 +4,6 @@
 * [Basic Integration](chapter1.md)
 * [Advanced Integration](advanced_integration.md)
 * [FAQ's](faqs.md)
+   * functionality.md
 * [Widget options](widget_options.md)
 
