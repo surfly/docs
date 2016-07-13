@@ -4,7 +4,7 @@
 * [Basic Integration](chapter1.md)
 * [Advanced Integration](advanced_integration.md)
 * [FAQ's](faqs.md)
-   * functionality.md
+   * [functionality.md](faq/functionality.md)
    * technology.md
    * security.md
    * pricing.md
