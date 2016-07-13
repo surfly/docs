@@ -1,4 +1,4 @@
-# Advanced Integration
+ <h1>Advanced Integration</h1>
 
 
 <a name="receipt"></a>
