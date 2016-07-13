@@ -1,3 +1,5 @@
+![logo](../images/logosmall.png)
+
 #Pricing
 
 ###Is the FREE version really free?
