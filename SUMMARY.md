@@ -6,5 +6,6 @@
 * [FAQ's](faqs.md)
    * functionality.md
    * technology.md
+   * security.md
 * [Widget options](widget_options.md)
 
