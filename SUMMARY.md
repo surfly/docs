@@ -7,6 +7,6 @@
    * [functionality.md](faq/functionality.md)
    * [technology.md](faq/technology.md)
    * [security.md](faq/security.md)
-   * pricing.md
+   * [pricing.md](faq/pricing.md)
 * [Widget options](widget_options.md)
 
