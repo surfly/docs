@@ -1,3 +1,3 @@
 # FAQ's
 
-[functionality](functionality.md)
+[functionality](faqs/functionality.md)
