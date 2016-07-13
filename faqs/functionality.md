@@ -1,3 +1,5 @@
+![logo](images/logosmall.png)
+
 #Functionality
 
 ###Is videochat included?
