@@ -1,6 +1,6 @@
-[logo](images/logosmall.png)
+![logo](images/logosmall.png)
 
-<h1>Advanced Integration</h1>
+#Advanced Integration
  
 
 <a name="receipt"></a>
