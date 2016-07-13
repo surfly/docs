@@ -1,3 +1,5 @@
+![logo](../images/logosmall.png)
+
 #Security
 
 ###Does Surfly use secure connections?
