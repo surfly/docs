@@ -4,5 +4,5 @@
 * [Basic Integration](chapter1.md)
 * [Advanced Integration](advanced_integration.md)
 * [FAQ's](faqs.md)
-   * Functionality
+   * [Functionality](functionality.md)
 
