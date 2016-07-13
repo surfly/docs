@@ -1,3 +1,5 @@
+![logo](../images/logosmall.png)
+
 #Technology
 
 ###Which browsers are supported?
