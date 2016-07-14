@@ -4,7 +4,9 @@
         "anchor-navigation",
         "anchors",
         "quiz",
-        "theme-faq"
+        "theme-faq",
+        "-fontsettngs",
+        "-sharing"
     ],
     "pluginsConfig": {}
 }
