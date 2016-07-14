@@ -13,4 +13,5 @@
    * [session_appearance_options](widget_options/session_appearance_options.md)
    * [button_appearance_options](widget_options/buttonappearance_options.md)
 * [The Surfly Tutorial](the_surfly_tutorial.md)
+   * Introduction
 
