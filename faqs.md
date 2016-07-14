@@ -12,11 +12,11 @@ If you do not find the answer to your question in one of the links below, please
 
 <a href="faq/pricing.md">Pricing</a>
 
-## Functionality
+### Functionality
 
 <!--sec data-title="Is videochat included" data-id="section0" data-show=false ces-->
 
-###Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
+Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
 
 <!--endsec-->
 
@@ -25,6 +25,6 @@ If you do not find the answer to your question in one of the links below, please
 
 <!--sec data-title="How many sections can I create?" data-id="section1" data-show=true ces-->
 
-Only the free plan has a monthly limit on the amount of sessions you can create, all paid plans come with an unlimited number of sessions.
+<p>Only the free plan has a monthly limit on the amount of sessions you can create, all paid plans come with an unlimited number of sessions.</p>
 
 <!--endsec-->
