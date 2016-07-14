@@ -14,8 +14,7 @@ Alternatively, if you wish to use Surfly as a feature on your own website, you c
 
 ### The Documentation
 
-The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it and adapt it into your own application. The
-documentation is divided into several parts:                     
+The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it into your own application. The documentation is divided into several parts:                     
 
 ##### The Introduction
 
@@ -24,21 +23,20 @@ The introduction explains what a co-browsing Surfly session is, and how it works
 ##### The Tutorial
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
-Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our repository, where you'll find a corresponding commit.
+Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our repository, where you'll find the corresponding commit.
 
 
 ##### The Widget options
 
-For quick reference, the widget options gives a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the 
-code snippet have conflicting settings, the setting in the code snippet has priority.
+Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
 
 ##### The Javascript and REST API
 
-For a deeper integration of Surfly, and a list of the functions we have on offer, please see the Javascript and REST API.
+For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API.
 
 ##### FAQ's
 
-Here we answer questions on functionality, technology, pricing and security.
+Here we answer questions on functionality, technology, pricing, security and initial setup.
 If you do not find what you were looking for, please don't hesitate to contact us.
 
 | Please note: |
