@@ -18,6 +18,7 @@
    * [session_interaction_options](widget_options/session_interaction_options.md)
    * [session_appearance_options](widget_options/session_appearance_options.md)
    * [button_appearance_options](widget_options/buttonappearance_options.md)
+   * draft
 * [Javascript API](javascript_api.md)
    * [initialization](javascript-api/initialization.md)
    * [Surfly object API](javascript-api/surfly_object_api.md)
