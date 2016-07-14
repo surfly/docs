@@ -5,7 +5,7 @@
 * [Advanced Integration](advanced_integration.md)
 * [FAQ's](faqs.md)
    * [Functionality](faq/functionality.md)
-   * [technology.md](faq/technology.md)
+   * [Technology](faq/technology.md)
    * [security.md](faq/security.md)
    * [pricing.md](faq/pricing.md)
 * [Widget options](widget_options.md)
