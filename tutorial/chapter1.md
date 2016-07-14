@@ -1,4 +1,4 @@
-![logo](images/logosmall.png)
+![logo](../images/logosmall.png)
 
 # Basic Integration
 <a name="chrome-extension"></a>
