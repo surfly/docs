@@ -20,4 +20,5 @@
    * [button_appearance_options](widget_options/buttonappearance_options.md)
 * [Javascript API](javascript_api.md)
    * [initialization](javascript-api/initialization.md)
+   * Surfly object API
 
