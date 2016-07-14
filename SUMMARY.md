@@ -1,7 +1,7 @@
 # Summary
 
-* [Overview](README.md)
 * [Cover page](cover_page.md)
+* [Overview](README.md)
 * [Introduction](introduction.md)
 * [The Surfly Tutorial](the_surfly_tutorial.md)
    * [Introduction](tutorial/introduction.md)
