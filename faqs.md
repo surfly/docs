@@ -55,7 +55,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <button class="section" target="section4" show="Can I control which parts of my website are visible?" hide="Can I control which parts of my website are visible?"></button>
 
-<!--sec data-title="Do you offer a full whitelabel solution?" data-id="section5" data-show=true ces-->
+<!--sec data-title="Do you offer a full whitelabel solution?" data-id="section5" data-show=false ces-->
 
 <p>With our enterprise offering we offer the option to remove all visible Surfly branding from the Surfly session.</p>
 
