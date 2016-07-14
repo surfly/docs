@@ -1,4 +1,4 @@
-# widget options
+# Setting advanced Widget options
 
 Here, you can find more detailed examples of the Widget options that require specific syntax. 
 
@@ -115,7 +115,7 @@ Session continuation is currently supported only for sessions started with
 Surfly widget.
 There are several ways to set up session continuation.
 
-### Full session continuation
+#### Full session continuation
 
 This approach allows the transfer of all session data, including cookies with a `httpOnly`
 flag. However, it requires some collaboration from the integrating website.
@@ -159,7 +159,7 @@ After setting up the continuation point, add the following widget options:
   cookie_transfer_urls: ["https://example.com/surfly_cookie_transfer/"]
 ```
 
-### Soft session continuation
+#### Soft session continuation
 
 It is also possible to integrate session continuation without changing load
 balancer configuration. All you need to do is to make sure that the Surfly widget
