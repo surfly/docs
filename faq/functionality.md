@@ -4,7 +4,7 @@
 
 ###Is videochat included?
 
-> Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
+Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
 
 ###How many sessions can I create?
 
