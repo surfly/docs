@@ -17,6 +17,8 @@ If you would like to learn more about Surfly, follow our step by step guide as w
 
 In this tutorial, we will highlight the main features on offer, and show you how you can make Surfly as visible, or as invisible, as you wish, depending on your needs and preferences.
 
+| Please note: | 
+| ------------- |
+| If you wish to integrate Surfly, you need to give Surfly access to the server. This is especially important when you are developing locally.   | 
 
-**please note** if you wish to integrate Surfly, you need to give Surfly access to the server. This is especially important when you are developing locally. 
-.
+
