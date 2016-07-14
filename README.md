@@ -11,6 +11,19 @@ Surfly's co-browsing technology enables you to share your browser with others. T
 
 Alternatively, if you wish to use Surfly as a feature on your own website, you can add the Surfly widget code to your website. Adding this code already allows you to start co-browsing, and Surfly works without any alterations. Small additions to the code allow you to fully customize the appearance and behavior of the Surfly session. You can choose to use as much, or as little, of Surfly's functionality within your own product.
 
+<a name="chrome-extension"></a>
+####The chrome extension
+
+If you do not want to immediately add the code to your website, but still want to take a look at how Surfly's integration can work for you, use our Chrome extension. This extension will add our Javascript snippet code to any website you are currently browsing, it will also give you all the options to easily configure the snippet and try out various settings. 
+
+In order to install the extension do the following: 
+ - Download the Chrome Extension
+ - Open ChromeGo to Tools / Preferences / Settings (depends on your OS)
+ - Go to ‘Extensions’
+ - Click on ‘Load unpacked extension’
+ - Point it to the downloaded file
+
+
 
 ### The Documentation
 
