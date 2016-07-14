@@ -13,12 +13,3 @@ If you do not find the answer to your question in one of the links below, please
 <a href="faq/pricing.md">Pricing</a>
 
 
-<quiz name="FAQ">
-    <question>
-        <p>Is video chat included?</p>
-        <answer>
-            <option correct>Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.</option>
-            <option>Second</option>
-        </answer>
-    </question>
-</quiz>
