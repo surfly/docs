@@ -25,5 +25,5 @@
        * [SurflySession API](javascript-api/surflysession_api.md)
        * [Session Events](javascript-api/session_events.md)
    * [Styling](javascript-api/styling.md)
-   * Examples
+   * [Examples](javascript-api/examples.md)
 
