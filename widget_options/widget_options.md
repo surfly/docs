@@ -42,62 +42,6 @@ Allow access only to the `example.com`. When the user tries to access any other 
 ```
 
 
-<a name="drawing_section"></a>
-##### Drawing
-
-There are multiple ways to communicate within a Surfly session. One of them is
-the drawing feature. This is enabled by default and allows users who are not
-in control to highlight features on the page in the style of a "magic marker".
-As can be seen from the session appearance options table above, there are
-four options used to change the drawing behavior: `drawing_mode`, `drawing_color`,
-`drawing_width`, and `drawing_timeout`. They can be set both as session options and via postMessage API
-(see the [postMessage commands](#postMessage_commands) section).
-
-As the `drawing_color` is set to the `"default"` value, this means that each user will
-draw with their own color. You can set it to any color you like (specify a valid CSS
-color string, e.g. `"blue"` or `"#0000ff"`). In this case all users will draw
-with the same color.
-
-The `drawing_mode` option can be set to one of the following values:
-- "temporary" - drawings will fadeout automatically
-- "permanent" - drawings will stay there until the next drawing_mode change
-- "disabled" - drawing functionality disabled
-
-The `drawing_width` option controls the width in pixels of the "magic marker".
-
-When the `drawing_mode` is set to "temporary" the `drawing_timeout` option
-controls the time in seconds after which each drawn line starts to fade out.
-
-<a name="support_button"></a>
-## Support Button Appearance
-
-
-## Field Masking
-
-The business plan comes with the option to enable field-masking. This allows you to set a
-special attribute on a FORM element called `surfly_private`. This will then prevent Surfly
-from actually synchronizing the content of the field to followers. This can be useful for
-sensitive fields such as creditcard numbers or social security numbers.
-
-----
-
-# Customizing the User Flow
-
-The flexibility of Surfly allows it to be used with different types of usecases.
-This allows you not only to customize how a Surfly session looks, but also how a
-session can be integrated in your work flow.  Details on how to start a session can be
-found below.
-
-
-## Automatically starting a session
-
-
-#### Using auto_start
-
-If you want to allow your clients to start a session from a branded page you can
-simply include our javascript snippet and set the 'auto_start' flag to true.
-
-
 #### Using a special anchor link
 
 Another way to start a session is to add the anchor '#surflystart' to any page
@@ -131,7 +75,6 @@ if (window.__surfly) {
 }
 
 ```
-
 
 #### At the backend
 
