@@ -1,8 +1,6 @@
 {
     "plugins": [
-        "youtube",
-        "anchor-navigation",
-        "anchors",
+        "hide-element"
     ],
     "pluginsConfig": {}
 }
