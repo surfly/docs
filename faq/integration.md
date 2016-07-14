@@ -8,3 +8,4 @@ You will also have to add your websites domain name (e.g *example.com*) to  the 
 ### Do I have to put the code snippet on every page?
 
 Unless you want to use session continuation, you only need to put the code snippet on the pages you wish to start a session from. If you would like to use session continuation, the code snippet should be on every page you want to transfer cookies from. 
+[link to section in documentation]
