@@ -22,4 +22,5 @@
    * [initialization](javascript-api/initialization.md)
    * [Surfly object API](javascript-api/surfly_object_api.md)
    * [Surfly sessions](javascript-api/surfly_sessions.md)
+       * SurflySession API
 
