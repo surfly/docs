@@ -76,13 +76,17 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 ## Technology
 
+<button class="section" target="section6" show="Which browsers are supported?" hide="Which browsers are supported?"></button>
+<br>
+
 <!--sec data-title="Which browsers are supported?" data-id="section6" data-show=false ces-->
 
 <p>Cobrowsing with Surfly will work on all modern browsers: Chrome, Firefox, Safari, Internet Explorer 10+, Opera. It will also work on mobile Android devices using the Chrome browser and on Apple iOS devices Surfly supports Safari. Surfly’s videochat uses WebRTC and will run on Chrome, Firefox and Opera without the need to install any software. On other browsers a plugin can be installed the first time videochat is started.</p>
 
 <!--endsec-->
 
-<button class="section" target="section6" show="Which browsers are supported?" hide="Which browsers are supported?"></button>
+
+<button class="section" target="section7" show="Why is Surfly so fast?" hide="Why is Surfly so fast?"></button>
 <br>
 
 <!--sec data-title="Why is Surfly so fast?" data-id="section7" data-show=false ces-->
@@ -91,7 +95,8 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--endsec-->
 
-<button class="section" target="section7" show="Why is Surfly so fast?" hide="Why is Surfly so fast?"></button>
+
+<button class="section" target="section8" show="How does Surfly differ from screensharing?" hide="How does Surfly differ from screensharing?"></button>
 <br>
 
 <!--sec data-title="How does Surfly differ from screensharing?" data-id="section8" data-show=false ces-->
@@ -103,8 +108,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--endsec-->
 
-<button class="section" target="section8" show="How does Surfly differ from screensharing?" hide="How does Surfly differ from screensharing?"></button>
-<br>
+
 
 
 
