@@ -6,6 +6,7 @@
 * [The Surfly Tutorial](the_surfly_tutorial.md)
    * [Advanced Integration](advanced_integration.md)
    * [Basic Integration](chapter1.md)
+   * Introduction
 * [FAQ's](faqs.md)
    * [Functionality](faq/functionality.md)
    * [Technology](faq/technology.md)
