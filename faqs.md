@@ -21,7 +21,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 <button class="section" target="section0" show="Is videochat included?" hide="Is videochat included?"></button>
-
+<br>
 
 <!--sec data-title="How many sessions can I create?" data-id="section1" data-show=false ces-->
 
@@ -30,7 +30,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 <button class="section" target="section1" show="How many sessions can I create?" hide="How many sessions can I create?"></button>
-
+<br>
 <!--sec data-title="Can I invite any team members?" data-id="section2" data-show=false ces-->
 
 <p>All our paid plans allow you to invite multiple team members and manage them from a single account.</p>
@@ -47,7 +47,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <button class="section" target="section3" show="Can I integrate Surfly on my website?" hide="Can I integrate Surfly on my website?"></button>
 
-<!--sec data-title="Can I control which parts of my website are visible?" data-id="section4" data-show=true ces-->
+<!--sec data-title="Can I control which parts of my website are visible?" data-id="section4" data-show=false ces-->
 
 <p>With our business plan we offer the possibility to tweak which elements should be synchronized, this gives you fine-grained control over which HTML elements should be considered confidential.</p>
 
