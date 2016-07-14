@@ -24,4 +24,5 @@
    * [Surfly sessions](javascript-api/surfly_sessions.md)
        * [SurflySession API](javascript-api/surflysession_api.md)
        * [Session Events](javascript-api/session_events.md)
+   * Styling
 
