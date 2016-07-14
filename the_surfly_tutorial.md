@@ -1,4 +1,4 @@
-![logo](../images/logosmall.png)
+![logo](images/logosmall.png)
 # The Surfly Tutorial
 
 
