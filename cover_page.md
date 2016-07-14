@@ -1,3 +1,3 @@
 
 
-![logo](cover.jpg.png)
+![logo](images/cover.jpg.png)
