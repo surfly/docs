@@ -28,3 +28,10 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <p>Only the free plan has a monthly limit on the amount of sessions you can create, all paid plans come with an unlimited number of sessions.</p>
 
 <!--endsec-->
+
+<!--sec data-title="Can I invite any team members?" data-id="section1" data-show=false ces-->
+
+<p>All our paid plans allow you to invite multiple team members and manage them from a single account.</p>
+
+<!--endsec-->
+
