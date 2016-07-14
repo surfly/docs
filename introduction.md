@@ -32,3 +32,16 @@ The buttons on the admin panel are:
  - The 'settings' button lets you change your profile settings, and also includes your account details. Here, you can review your account plan, billing and personal information. The settings button also contains your integration information, the Surfly code snippet and the REST API key. 
  - The 'log out' button lets you exit the admin panel.
 
+
+<a name="chrome-extension"></a>
+###### The chrome extension
+
+If you do not want to immediately add the code to your website, but still want to take a look at how Surfly's integration can work for you, use our Chrome extension. This extension will add our Javascript snippet code to any website you are currently browsing, it will also give you all the options to easily configure the snippet and try out various settings. 
+
+In order to install the extension do the following: 
+ - Download the Chrome Extension
+ - Open ChromeGo to Tools / Preferences / Settings (depends on your OS)
+ - Go to ‘Extensions’
+ - Click on ‘Load unpacked extension’
+ - Point it to the downloaded file
+
