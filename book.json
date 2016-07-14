@@ -1,7 +1,5 @@
 {
     "plugins": [
-        "hide-element",
-        "sectionx-collapse",
         "heading-anchors",
         "sectionx"
     ],
