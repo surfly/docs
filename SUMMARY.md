@@ -1,8 +1,8 @@
 # Summary
 
 * [Cover page](cover_page.md)
+* [Introduction](README.md)
 * [The Surfly Tutorial](the_surfly_tutorial.md)
-   * [Introduction](README.md)
    * [Advanced Integration](advanced_integration.md)
    * [Basic Integration](chapter1.md)
 * [FAQ's](faqs.md)
