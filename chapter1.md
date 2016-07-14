@@ -183,7 +183,10 @@ We use the 'end_of_session_popup_url' option to point to the url of our survey p
 ``` javascript
 end_of_session_popup_url: "https://example.com/survey",
 ```
+| Please note: | 
+| ------------- |
+| You might need to set the 'hidden' option to 'false' for this option to work correctly.| 
 
-Please note: you might need to set the 'hidden' option to 'false' for this option to work correctly
+
 
 ![survey](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s9.png)
