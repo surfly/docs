@@ -4,7 +4,7 @@
 * [Overview](README.md)
 * [Introduction](introduction.md)
    * [A Surfly session](introduction/a_surfly_session.md)
-   * Integration
+   * [Integration](introduction/integration.md)
    * Integration Options
 * [The Surfly Tutorial](the_surfly_tutorial.md)
    * [Introduction](tutorial/introduction.md)
