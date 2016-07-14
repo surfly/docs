@@ -3,7 +3,8 @@
         "youtube",
         "anchor-navigation",
         "anchors",
-        "quiz"
+        "quiz",
+        "theme-faq"
     ],
     "pluginsConfig": {}
 }
