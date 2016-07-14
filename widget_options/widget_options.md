@@ -1,5 +1,7 @@
 # widget options
 
+Here, you can find more detailed examples of the Widget options that require specific syntax. 
+
 <a name="restrictions"></a>
 #### Blacklist and Whitelist format
 A string representation of the JSON array is expected. Every element of the array is an object with the following properties:
