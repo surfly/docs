@@ -29,7 +29,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--endsec-->
 
-<!--sec data-title="Can I invite any team members?" data-id="section1" data-show=false ces-->
+<!--sec data-title="Can I invite any team members?" data-id="section2" data-show=false ces-->
 
 <p>All our paid plans allow you to invite multiple team members and manage them from a single account.</p>
 
