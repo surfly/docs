@@ -31,6 +31,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <button class="section" target="section1" show="How many sessions can I create?" hide="How many sessions can I create?"></button>
 <br>
+
 <!--sec data-title="Can I invite any team members?" data-id="section2" data-show=false ces-->
 
 <p>All our paid plans allow you to invite multiple team members and manage them from a single account.</p>
@@ -38,6 +39,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 <button class="section" target="section2" show="Can I invite any team members?" hide="Can I invite any team members?"></button>
+<br>
 
 <!--sec data-title="Can I integrate Surfly on my website?" data-id="section3" data-show=false ces-->
 
@@ -46,6 +48,8 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 <button class="section" target="section3" show="Can I integrate Surfly on my website?" hide="Can I integrate Surfly on my website?"></button>
+<br>
+<br>
 
 <!--sec data-title="Can I control which parts of my website are visible?" data-id="section4" data-show=false ces-->
 
@@ -54,6 +58,8 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 <button class="section" target="section4" show="Can I control which parts of my website are visible?" hide="Can I control which parts of my website are visible?"></button>
+<br>
+<br>
 
 <!--sec data-title="Do you offer a full whitelabel solution?" data-id="section5" data-show=false ces-->
 
@@ -62,6 +68,6 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 <button class="section" target="section5" show="Do you offer a full whitelabel solution?" hide="Do you offer a full whitelabel solution?"></button>
-
+<br>
 
 
