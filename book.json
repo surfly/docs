@@ -2,7 +2,8 @@
     "plugins": [
         "youtube",
         "anchor-navigation",
-        "anchors"
+        "anchors",
+        "quiz"
     ],
     "pluginsConfig": {}
 }
