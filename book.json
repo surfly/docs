@@ -1,8 +1,7 @@
 {
     "plugins": [
         "hide-element",
-        "sectionx-collapse",
-        "swiftype"
+        "sectionx-collapse"
     ],
     "pluginsConfig": {}
 }
