@@ -20,7 +20,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--endsec-->
 
-<button class="section" target="section0"></button>
+<button class="section" target="section0" show="Is videochat included?" hide="Is videochat included?"></button>
 
 
 <!--sec data-title="How many sessions can I create?" data-id="section1" data-show=true ces-->
