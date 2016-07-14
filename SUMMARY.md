@@ -5,7 +5,7 @@
 * [Introduction](introduction.md)
 * [The Surfly Tutorial](the_surfly_tutorial.md)
    * [Introduction](tutorial/README.md)
-   * [Advanced Integration](advanced_integration.md)
+   * [Advanced Integration](tutorial/advanced_integration.md)
    * [Basic Integration](chapter1.md)
 * [FAQ's](faqs.md)
    * [Functionality](faq/functionality.md)
