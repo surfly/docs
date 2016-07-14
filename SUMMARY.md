@@ -14,7 +14,7 @@
    * [Technology](faq/technology.md)
    * [Security](faq/security.md)
    * [Pricing](faq/pricing.md)
-   * Integration
+   * [Integration](faq/integration.md)
 * [Widget options](widget_options.md)
    * [session_interaction_options](widget_options/session_interaction_options.md)
    * [session_appearance_options](widget_options/session_appearance_options.md)
