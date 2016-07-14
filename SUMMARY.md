@@ -6,7 +6,7 @@
 * [FAQ's](faqs.md)
    * [Functionality](faq/functionality.md)
    * [Technology](faq/technology.md)
-   * [security.md](faq/security.md)
+   * [Security](faq/security.md)
    * [pricing.md](faq/pricing.md)
 * [Widget options](widget_options.md)
    * [session_interaction_options](widget_options/session_interaction_options.md)
