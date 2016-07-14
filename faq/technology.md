@@ -1,6 +1,6 @@
 ![logo](../images/logosmall.png)
 
-#Pricing
+#Technology
 
 ###Which browsers are supported?
 Cobrowsing with Surfly will work on all modern browsers: Chrome, Firefox, Safari, Internet Explorer 10+, Opera. It will also work on mobile Android devices using the Chrome browser and on Apple iOS devices Surfly supports Safari.
