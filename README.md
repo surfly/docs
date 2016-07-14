@@ -24,7 +24,6 @@ In order to install the extension do the following:
  - Point it to the downloaded file
 
 
-
 ### The Documentation
 
 The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it and adapt it into your own application. The
