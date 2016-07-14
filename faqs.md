@@ -54,6 +54,8 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 
+<button class="section" target="section4" show="Can I control which parts of my website are visible?" hide="Can I control which parts of my website are visible?"></button>
+<br>
 
 <!--sec data-title="Can I control which parts of my website are visible?" data-id="section4" data-show=false ces-->
 
@@ -61,7 +63,8 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--endsec-->
 
-<button class="section" target="section4" show="Can I control which parts of my website are visible?" hide="Can I control which parts of my website are visible?"></button>
+
+<button class="section" target="section5" show="Do you offer a full whitelabel solution?" hide="Do you offer a full whitelabel solution?"></button>
 <br>
 
 <!--sec data-title="Do you offer a full whitelabel solution?" data-id="section5" data-show=false ces-->
@@ -70,8 +73,6 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--endsec-->
 
-<button class="section" target="section5" show="Do you offer a full whitelabel solution?" hide="Do you offer a full whitelabel solution?"></button>
-<br>
 
 ## Technology
 
