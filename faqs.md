@@ -14,7 +14,7 @@ If you do not find the answer to your question in one of the links below, please
 
 ## Functionality
 
-<!--sec data-title="Is videochat included?" data-id="section0" data-show=true ces-->
+<!--sec data-title="Is videochat included" data-id="section0" data-show=false ces-->
 
 Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
 
@@ -22,7 +22,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <button class="section" target="section0"></button>
 
-<!--sec data-title="How many sections can I create?" data-id="section1" data-show=true ces-->
+<!--sec data-title="How many sections can I create" data-id="section1" data-show=true ces-->
 
 Only the free plan has a monthly limit on the amount of sessions you can create, all paid plans come with an unlimited number of sessions.
 
