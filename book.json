@@ -2,8 +2,7 @@
     "plugins": [
         "hide-element",
         "sectionx-collapse",
-        "heading-anchors",
-        "mdsections"
+        "heading-anchors"
     ],
     "pluginsConfig": {}
 }
