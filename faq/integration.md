@@ -1,4 +1,4 @@
-# Integration
+# Initial Setup
 
 ### Where can I find the code snippet?
 
@@ -12,4 +12,5 @@ Unless you want to use session continuation, you only need to put the code snipp
 
 ### How do I take a call?
 
+Login to your Surfly account and navigate to the "Queue panel". Click on the "take call" button next to the session request. You will enter a Surfly session with the user who initiated the request. 
 
