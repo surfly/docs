@@ -4,7 +4,7 @@
 * [Cover page](cover_page.md)
 * [Introduction](introduction.md)
 * [The Surfly Tutorial](the_surfly_tutorial.md)
-   * Introduction
+   * [Introduction](tutorial/README.md)
    * [Advanced Integration](advanced_integration.md)
    * [Basic Integration](chapter1.md)
 * [FAQ's](faqs.md)
