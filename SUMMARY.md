@@ -3,6 +3,7 @@
 * [Cover page](cover_page.md)
 * [Overview](README.md)
 * [Introduction](introduction.md)
+   * A Surfly session
 * [The Surfly Tutorial](the_surfly_tutorial.md)
    * [Introduction](tutorial/introduction.md)
    * [Basic Integration](tutorial/chapter1.md)
