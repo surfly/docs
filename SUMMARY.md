@@ -13,5 +13,4 @@
    * [button_appearance_options](widget_options/buttonappearance_options.md)
 * [The Surfly Tutorial](the_surfly_tutorial.md)
    * [Basic Integration](chapter1.md)
-   * [Introduction](tutorial/README.md)
 
