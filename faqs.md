@@ -248,7 +248,17 @@ Login to your Surfly account and navigate to the "Queue panel". Click on the "ta
 <!--endsec-->
 
 
+<button class="section" target="section23" show="How can I customise Surfly's widget?" hide="How can I customise Surfly's widget?"></button>
+<br>
 
+<!--sec data-title="How can I customise Surfly's widget?" data-id="section23" data-show=false ces-->
+
+You can either specify your preferences directly in the code snippet (see the [widget options](../widget_options/draft) for more details), or from the 'options' panel in your Surfly account. 
+
+![options panel](images/options-panel.jpg)
+
+Changes to the widget code have priority over changes to the code snippet. 
+<!--endsec-->
 
 
 
