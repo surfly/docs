@@ -3,12 +3,11 @@
 #The Surfly Tutorial
 
 
-###Welcome to Surfly
+### Welcome to Surfly
 
-Surfly's co-browsing technology enables you to share your browser with others. To start a Surfly session, enter the url of your chosen webpage into the 'start session' panel on your admin page. You can invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and doesn't require any configuration.
+Surfly's co-browsing technology enables you to share your browser with others. The person who initiates the Surfly session is the leader, and the people who join this session are the followers. The followers screen will be synchronized with the leader, who is in control, and can navigate during the session. Control can be switched between the leader and the follower. During the session, you may choose to communicate via video or text chat, or disable this completely. 
 
-
-Alternatively, if you wish to use Surfly as a feature on your own website, you can add the Surfly widget code to your website. Adding this code already allows you to start co-browsing, and Surfly works without any alterations. Small additions to the code allow you to fully customize the appearance and behavior of the Surfly session. You can choose to use as much, or as little, of Surfly's functionality within your own product.
+Complete customisation of the co-browsing session is possible, and, if you choose, Surfly can sit as a transparent layer within your website.  The documentation gives a comprehensive overview of Surfly's functionality, and the ways in which you can adapt Surfly to suit your needs. 
 
 ### The Documentation
 
