@@ -17,10 +17,10 @@
 ##### Drawing options
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| drawing_color | "default" | "Magic marker" color [see Drawing section below](#drawing_section) |
-| drawing_mode | "temporary" | "Magic marker" mode [see Drawing section below](#drawing_section) |
-| drawing_width | 15 | "Magic marker" width [see Drawing section below](#drawing_section) |
-| drawing_timeout | 3| "Magic marker" timeout [see Drawing section below](#drawing_section) |
+| drawing_color | "default" | "Magic marker" color |
+| drawing_mode | "temporary" | "Magic marker" mode  |
+| drawing_width | 15 | "Magic marker" width |
+| drawing_timeout | 3| "Magic marker" timeout |
 
 ##### Video 
 |  Option | Default | Description |
@@ -83,7 +83,7 @@
 | ---------------| ------------|------------|
 | white_label | false | Do not show a Surfly logo (enterprise only) |
 | blacklist | "[]" | (enterprise only) Restrict access to the specific resources.|
-| whitelist | "[]" | (enterprise only) Allow access only to the specific resources.|
+| whitelist | "[]" | (enterprise only) Allow access only to the specific resources. |
 
 ### Session Interaction
 
