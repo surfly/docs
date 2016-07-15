@@ -14,11 +14,11 @@ The introduction gives an overview of what Surfly is, and outlines the various w
 
 ###### During the session
 
-During the session, the mouse arrows from all users will be visible. The leader will navigate the site, and the follower can help guide them through it. There can only be one leader, but you can have multiple followers, and switch control between the different users during the session. Only the leader can select or click items on the page, and if the leader decides to navigate to another url, the followers' screens will be synchronised so that they can also see this new page. The followers can take advantage of the drawing tool provided in order to highlight areas on the screen. During the session, users can communicate via text or video chat, share documents and invite others to join them.
+During the session, the mouse arrows from all users will be visible. The leader will navigate the site, and the follower can help guide them through it. There can only be one leader, but you can have multiple followers, and switch control between the different users during the session. Only the leader can select or click items on the page, and if the leader decides to navigate to another url, the followers screens will be synchronised so that they can also see this new page. The followers can take advantage of the drawing tool provided in order to highlight areas on the screen. During the session, users can communicate via text or video chat, share documents and invite others to join them.
 
 ###### Responding to incoming requests
 
-To accept an incoming request, log in to your Surfly account, and navigate to the 'Queue' panel. Here, agents can see how many users they have queue'd up, their location, and the time they have been waiting. To answer, the agent simply has to press the 'take call' button. If your visitors are logged in on your website already, you can also display metadata, such as the visitor's name in the queue, so that the agent greeting them knows who they are.
+To accept an incoming request, log in to your Surfly account, and navigate to the 'Queue' panel. Here, agents can see how many users they have queued up, their location, and the time they have been waiting. To answer, the agent simply has to press the 'take call' button. If your visitors are logged in on your website already, you can also display meta-data, such as the visitor's name in the queue, so that the agent greeting them knows who they are.
 
 ![The Queue panel](https://raw.github.com/surfly/tutorial/master/screens/queue_panel.png)
 
@@ -28,8 +28,8 @@ Surfly's admin panel allows you to track your users and your agents, and can be 
 
 The buttons on the admin panel are:
 
- - The 'start' button, this allows you to immediatly start co-browsing.  When you click on this link you are asked to invite someone to join your session, by either sending them the session url directly, or via email.
- - The 'queue' button, which gives you a list of queue'd users.  You can add metadata to this panel so that the agent knows more information about the user.
+ - The 'start' button, this allows you to immediately start co-browsing.  When you click on this link you are asked to invite someone to join your session, by either sending them the session url directly, or via email.
+ - The 'queue' button, which gives you a list of queued users.  You can add meta-data to this panel so that the agent knows more information about the user.
  - The 'history' button gives a brief overview of your session. You can also choose to record the chat logs which will then be accessible from the history panel.
  - The 'agent' button allows you to add agents to your account, and also gives you access to some information about agents such as their ID and the amount of sessions they have joined.
  - The 'settings' button lets you change your profile settings, and also includes your account details. Here, you can review your account plan, billing and personal information. The settings button also contains your integration information, the Surfly code snippet and the REST API key. 
