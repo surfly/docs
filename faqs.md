@@ -145,10 +145,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--sec data-title="Can I host Surfly on-premise?" data-id="section12" data-show=false ces-->
 
-<p>
-For larger deployment we do offer this kind of functionality, contact us if this is in your interest.
-
-</p>
+<p>For larger deployment we do offer this kind of functionality, contact us if this is in your interest.</p>
 
 <!--endsec-->
 
