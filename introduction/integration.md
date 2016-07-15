@@ -1,3 +1,4 @@
+![logo](../images/logosmall.png)
 # Integration
 
 <a name="add_surfly"></a>
