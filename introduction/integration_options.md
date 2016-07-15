@@ -7,7 +7,7 @@ This section covers:
 
  - [Surfly and third party cookies](../introduction/integration_options.md/#third_party_cookies)
  - [Session continuation](#<Session continuation>)
- - [Security Features](#security_features)
+ - [Security Features](https://izzysmith1.gitbooks.io/the-surfly-tutorial/content/introduction/integration_options.html#security_features)
  - [Add information to a session log](#session_log_info)
  - [Customising the website appearance depending on who is in control](#customise_appearance_for_user)
 
