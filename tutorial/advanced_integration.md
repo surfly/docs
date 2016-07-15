@@ -6,7 +6,7 @@
 <a name="receipt"></a>
 #### Session continuation
 
-Finally, we want to show the customer their receipt. Therefore, we have to make sure that their order information will be passed on, even if the client ends the session before getting their receipt. In order to do so, we can use soft session continuation.
+Finally, we want to show the customer their receipt. Therefore, we have to make sure that their order information will be passed on, even if the client ends the session before getting their receipt. In order to do so, we can use soft [session continuation](../widget_options/widget_options.md/#session_continuation).
 
 We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure session continuation (including on the landing page): 
 ``` javascript
