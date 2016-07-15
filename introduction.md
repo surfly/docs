@@ -1,3 +1,4 @@
+![logo](images/logosmall.png)
 # Introducing Surfly
 
 ### Welcome to Surfly
