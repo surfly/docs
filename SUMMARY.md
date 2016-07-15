@@ -16,7 +16,6 @@
    * [Pricing](faq/pricing.md)
    * [Initial setup](faq/integration.md)
 * [Widget options](widget_options.md)
-   * [session_interaction_options](widget_options/session_interaction_options.md)
    * [session_appearance_options](widget_options/session_appearance_options.md)
    * [button_appearance_options](widget_options/buttonappearance_options.md)
    * [examples](widget_options/widget_options.md)
