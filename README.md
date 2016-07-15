@@ -11,30 +11,29 @@ Surfly's co-browsing technology enables you to share your browser with others. T
 
 Alternatively, if you wish to use Surfly as a feature on your own website, you can add the Surfly widget code to your website. Adding this code already allows you to start co-browsing, and Surfly works without any alterations. Small additions to the code allow you to fully customize the appearance and behavior of the Surfly session. You can choose to use as much, or as little, of Surfly's functionality within your own product.
 
-
 ### The Documentation
 
 The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it into your own application. The documentation is divided into several parts:                     
 
-##### The Introduction
+<a name="introduction"><h5>The Introduction</h5></a>
 
 The introduction explains what a co-browsing Surfly session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
-##### The Tutorial
+<a name="tutorial"><h5>The Tutorial</h5></a>
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
 Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our repository, where you'll find the corresponding commit.
 
 
-##### The Widget options
+<a name="widget_options"><h5>The Widget options</h5></a>
 
 Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
 
-##### The Javascript and REST API
+<h5><a name="js_api">The Javascript API</a> and the <a name="rest_api">REST API</a></h5>
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API.
 
-##### FAQ's
+<h5><a name="faqs">FAQ's</a></h5>
 
 Here we answer questions on functionality, technology, pricing, security and initial setup.
 If you do not find what you were looking for, please don't hesitate to contact us.
