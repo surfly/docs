@@ -102,6 +102,9 @@
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | only_embedded_sessions | false | By default, if 3rd-party cookies are disabled, we start the session in a new browser tab. If this option is set to true, Surfly will not start session when 3rd-party cookies are disabled. |
+| cookie_transfer_enabled | true | |
+|  cookie_transfer_proxying | true | |
+|  cookie_transfer_urls | | |
 
 ##### Session end
 |  Option | Default | Description |
