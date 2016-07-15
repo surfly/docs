@@ -1,7 +1,8 @@
 {
     "plugins": [
         "heading-anchors",
-        "sectionx"
+        "sectionx",
+        "anchor-navigation"
     ],
     "pluginsConfig": {}
 }
