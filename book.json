@@ -2,7 +2,8 @@
     "plugins": [
         "sectionx",
         "anchor-navigation",
-        "youtube"
+        "youtube",
+        "heading-anchors"
     ],
     "pluginsConfig": {}
 }
