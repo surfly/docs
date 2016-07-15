@@ -19,20 +19,20 @@ The documentation aims to give you a good understanding of the co-browsing funct
 
 The introduction explains what a co-browsing Surfly session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
-##### [The Tutorial](#tutorial)
+##### [The Tutorial](./the_surfly_tutorial.md)
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
 Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our repository, where you'll find the corresponding commit.
 
-##### [The Widget options](widget_options)
+##### [The Widget options](./widget_options.md)
 
 Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
 
-##### [The Javascript API](#javascript_api) and [the REST API](rest_api)
+##### [The Javascript API](./javascript_api.md) and [the REST API](./rest_api.md)
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API.
 
-##### [FAQ's](#faqs)
+##### [FAQ's](./faqs.md)
 
 Here we answer questions on functionality, technology, pricing, security and initial setup.
 If you do not find what you were looking for, please don't hesitate to contact us.
