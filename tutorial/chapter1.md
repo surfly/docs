@@ -29,14 +29,14 @@ add your custom options here
 var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src="https://surfly.com/static/js/widget.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n); })();</script>
 ```
 
-You should also specify the domain name of your website in the integrations panel so that you can accept requests made from it.
+You should also specify the domain name of your website in the integration panel so that you can accept requests made from it.
 
 
 As you can see below, after adding the widget code to our website, we see a red "get live help" button.  This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
-![Surfly widget](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s2.png)
+![Surfly widget](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/sfbutton.png)
 
-When a client clicks on the red "get live help" button, the client is queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
+When a client clicks on the red "get live help" button, they are queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
 
 ![user queue'd](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s3.png)
 
@@ -54,9 +54,9 @@ videochat: false // remove videochat feature (not needed)
 ```
 In the images below, you can see that the button and the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. Finally, we decided to make the drawings permanent to facilitate communication.
 
-![widget options 1](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s4.png) ![widget options 2](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s5.png)
+![widget options 1](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/blue-button.png) ![widget options 2](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s5.png)
 
-The API has an [extensive list of widget options](https://www.surfly.com/cobrowsing-api/).
+The API has an [extensive list of widget options](../widget-options/widget-options.md/#widget-options).
 
 
 <a name="start_button"></a>
@@ -91,6 +91,7 @@ Next, we move the snippet code to our landing page (since it will be the page fr
 auto_start: true, // session will start automatically
 ```
 We now want our button to redirect the user to the landing page. We simply replace the #surflystart anchor with an onclick function that does just that:
+
 ``` javascript
 <button class="button" id="get_help_button" onclick="landing()"></button>
 
@@ -103,7 +104,7 @@ We now want our button to redirect the user to the landing page. We simply repla
     }
 </script>
 ```
-Finally, we want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session. To do this, we use the REST API to get information about the session, keeping only the data we are interested in (more information on how to use the REST API can be found in our [API](https://www.surfly.com/cobrowsing-api/) ):
+Finally, we want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session. To do this, we use the REST API to get information about the session, keeping only the data we're interested in (more information on how to use the REST API can be found in our [API](../widget_options/widget_options.md)) ):
 ``` javascript
 <script>
  	// using the REST API to get information about the session
@@ -171,10 +172,9 @@ We use the 'end_of_session_popup_url' option to point to the url of our survey p
 ``` javascript
 end_of_session_popup_url: "https://example.com/survey",
 ```
+
+![survey](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s9.png)
+
 | Please note: | 
 | ------------- |
 | You might need to set the 'hidden' option to 'false' for this option to work correctly.| 
-
-
-
-![survey](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s9.png)
