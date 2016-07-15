@@ -41,7 +41,7 @@
 | enable_sounds | true | Enable sound notifications |
 
 
-##### button appearance
+##### Button appearance
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | theme_font_background | surfly-red | The support button background color |
@@ -50,7 +50,7 @@
 | hidden | false | Do not show the button |
 | position | 'bottomleft' | Positions the Surfly Support Button. The options are: 'bottomleft', 'bottomright', 'middleright' |
 
-##### agent roles
+##### Agent roles
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | agent_can_request_control | false | The agent can request control, after which it can be granted by the controller |
@@ -98,13 +98,13 @@
 | block_until_agent_joins | true | In case of Surfly button, block the screen until a follower joins |
 
 
-##### cookies
+##### Cookies
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | only_embedded_sessions | false | By default, if 3rd-party cookies are disabled, we start the session in a new browser tab. If this option is set to true, Surfly will not start session when 3rd-party cookies are disabled. |
 | cookie_transfer_enabled | true | |
 |  cookie_transfer_proxying | true | |
-|  cookie_transfer_urls | | |
+|  cookie_transfer_urls | | | |
 
 ##### Session end
 |  Option | Default | Description |
