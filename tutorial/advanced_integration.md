@@ -65,11 +65,10 @@ In our example, we decided to redirect the user to our custom restricted page wh
 
 We'd like to be able to give our repeat customers a more personal experience. More specifically, we want to retrieve their login details and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
-Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass this data by using the 'QUEUE_METADATA_CALLBACK' option:
+Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass this data by using the ['QUEUE_METADATA_CALLBACK' option](../widget_options/widget_options.md/#metadata):
 ``` javascript
 QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem('metaName')+',"email": '+sessionStorage.getItem('metaEmail')+'}'),
 ```
-To know more about the syntax used for this option, see our [API](https://www.surfly.com/cobrowsing-api/).
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
