@@ -1,4 +1,4 @@
-![logo](image/logosmall.jpg)
+![logo](images/logosmall.jpg)
 
 # Javascript API
 
