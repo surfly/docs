@@ -17,7 +17,7 @@ The main points covered in this section are:
  - [Adding metadata to the queue](#metadata)
  - [Ending the session display or redirect to another page](#popupurl)
 
-[](#invite-user)
+<a name="invite-user"></a>
 #### Inviting users to join your session
 
 You can invite a user to join your session from your Surfly admin panel or from within a Surfly session: 
@@ -30,7 +30,7 @@ Both of these methods will load the following screen:
 
 You can then decide to either share the url of the session, or send an email to the users you wish to invite. During a session, there is always one leader at any given time, but there can be multiple followers.
 
-[](#new-url)
+<a name="new-url"></a>
 #### Navigating to a new website 
 
 At any given time during a Surfly session, the leader can decide to surf to another website within the co-browsing session. In order to do so, you can use the "navigate to new url" button in the chat box. You will then see the following screen asking you to enter the new url:
