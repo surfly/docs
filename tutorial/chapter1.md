@@ -92,15 +92,15 @@ auto_start: true, // session will start automatically
 ```
 We now want our button to redirect the user to the landing page. We simply replace the #surflystart anchor with an onclick function that does just that:
 
-``` javascript
+``` html
 <button class="button" id="get_help_button" onclick="landing()"></button>
 
 <script>
     // the get help button redirects the user to the landing page (if they're not already in a session)
     function landing(){
-	if(!window.__surfly){
-		window.location.href = '/landing_page';
-	}
+      if(!window.__surfly){
+          window.location.href = '/landing_page';
+      }
     }
 </script>
 ```
