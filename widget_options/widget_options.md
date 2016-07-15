@@ -94,7 +94,7 @@ be used to, for example, add an "Authorization" header to allow to user to be lo
 in on your own backend or a custom header which can be used as an identifier. We
 will send these headers with each request made during the session.
 
-
+<a name="session_continuation"></a>
 ## Session Continuation
 
 The high performance of Surfly can be attributed to our proxy approach. If a
