@@ -56,7 +56,7 @@ In the images below, you can see that the button and the chat box are now in our
 
 ![widget options 1](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/blue-button.png) ![widget options 2](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s5.png)
 
-The API has an [extensive list of widget options](../widget_options/widget_options.md).
+The API has an [extensive list of widget options](../widget_options/session_interaction_options.md).
 
 
 <a name="start_button"></a>
