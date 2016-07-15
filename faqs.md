@@ -110,22 +110,32 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 ##Security
 
-<button class="section" target="section6" show="Which browsers are supported?" hide="Which browsers are supported?"></button>
+<button class="section" target="section9" show="Does Surfly use secure connections?" hide="Does Surfly use secure connections?"></button>
 <br>
 
-<!--sec data-title="Which browsers are supported?" data-id="section6" data-show=false ces-->
+<!--sec data-title="Does Surfly use secure connections?" data-id="section9" data-show=false ces-->
 
-<p>Cobrowsing with Surfly will work on all modern browsers: Chrome, Firefox, Safari, Internet Explorer 10+, Opera. It will also work on mobile Android devices using the Chrome browser and on Apple iOS devices Surfly supports Safari. Surfly’s videochat uses WebRTC and will run on Chrome, Firefox and Opera without the need to install any software. On other browsers a plugin can be installed the first time videochat is started.</p>
+<p>Yes, all connections to Surfly are secured using HTTPS.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section7" show="Why is Surfly so fast?" hide="Why is Surfly so fast?"></button>
+<button class="section" target="section10" show="Do you store any session data?" hide="Do you store any session data?"></button>
 <br>
 
-<!--sec data-title="Why is Surfly so fast?" data-id="section7" data-show=false ces-->
+<!--sec data-title="Do you store any session data?" data-id="section10" data-show=false ces-->
 
-<p>We make use of an advanced content-rewriting proxy which allows us to send over the real HTML content from our high performance network. This is in contrast with for example a pure Javascript approach which relies on the upstream of all participants to send over the data.</p>
+<p>No. All session data only lives within memory during the time of the session. We do not store any session data on disk.</p>
+
+<!--endsec-->
+
+
+<button class="section" target="section11" show="Are you PCI compliant?" hide="Are you PCI compliant?"></button>
+<br>
+
+<!--sec data-title="Are you PCI compliant?" data-id="section11" data-show=false ces-->
+
+<p>Yes, not only do we use HTTPS connections everywhere, but we also never store your creditcard as this is all handled by Stripe.</p>
 
 <!--endsec-->
 
@@ -141,17 +151,14 @@ For larger deployment we do offer this kind of functionality, contact us if this
 </p>
 
 <!--endsec-->
-Does Surfly use secure connections?
 
-Yes, all connections to Surfly are secured using HTTPS.
 
-Do you store any session data?
 
-No. All session data only lives within memory during the time of the session. We do not store any session data on disk.
 
-Are you PCI compliant?
 
-Yes, not only do we use HTTPS connections everywhere, but we also never store your creditcard as this is all handled by Stripe.
+
+
+
 
 
 
