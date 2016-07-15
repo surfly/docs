@@ -108,6 +108,51 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 <!--endsec-->
 
+##Security
+
+<button class="section" target="section6" show="Which browsers are supported?" hide="Which browsers are supported?"></button>
+<br>
+
+<!--sec data-title="Which browsers are supported?" data-id="section6" data-show=false ces-->
+
+<p>Cobrowsing with Surfly will work on all modern browsers: Chrome, Firefox, Safari, Internet Explorer 10+, Opera. It will also work on mobile Android devices using the Chrome browser and on Apple iOS devices Surfly supports Safari. Surfly’s videochat uses WebRTC and will run on Chrome, Firefox and Opera without the need to install any software. On other browsers a plugin can be installed the first time videochat is started.</p>
+
+<!--endsec-->
+
+
+<button class="section" target="section7" show="Why is Surfly so fast?" hide="Why is Surfly so fast?"></button>
+<br>
+
+<!--sec data-title="Why is Surfly so fast?" data-id="section7" data-show=false ces-->
+
+<p>We make use of an advanced content-rewriting proxy which allows us to send over the real HTML content from our high performance network. This is in contrast with for example a pure Javascript approach which relies on the upstream of all participants to send over the data.</p>
+
+<!--endsec-->
+
+
+<button class="section" target="section12" show="Can I host Surfly on-premise?" hide="Can I host Surfly on-premise?"></button>
+<br>
+
+<!--sec data-title="Can I host Surfly on-premise?" data-id="section12" data-show=false ces-->
+
+<p>
+For larger deployment we do offer this kind of functionality, contact us if this is in your interest.
+
+</p>
+
+<!--endsec-->
+Does Surfly use secure connections?
+
+Yes, all connections to Surfly are secured using HTTPS.
+
+Do you store any session data?
+
+No. All session data only lives within memory during the time of the session. We do not store any session data on disk.
+
+Are you PCI compliant?
+
+Yes, not only do we use HTTPS connections everywhere, but we also never store your creditcard as this is all handled by Stripe.
+
 
 
 
