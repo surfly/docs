@@ -5,7 +5,7 @@
 
 This section covers:
 
- - [Surfly and third party cookies](#third_party_cookies)
+ - [Surfly and third party cookies](./#third_party_cookies)
  - [Session continuation](#session_continuation)
  - [Security Features](#security_features)
  - [Add information to a session log](#session_log_info)
