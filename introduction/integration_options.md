@@ -50,8 +50,11 @@ Whilst the leader can mask their data, and hide it from the followers, the follo
 
 Blacklisting is used to ban users from a select few webpages, whereas whitelisting is more restrictive, and allows access only to the pages specified in the code snippet.
 
-###### Please note: 
-This option is only available to enterprise clients.
+| Please note: |
+| ------------- | 
+| This option is only available to enterprise clients.  | 
+
+
 
 <a name="session_log_info"></a>
 #### Add information to the session log
