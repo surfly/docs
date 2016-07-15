@@ -15,7 +15,7 @@ Alternatively, if you wish to use Surfly as a feature on your own website, you c
 
 The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it into your own application. The documentation is divided into several parts:                     
 
-##### [The Introduction](#introduction)
+##### [The Introduction](./introduction.md)
 
 The introduction explains what a co-browsing Surfly session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
