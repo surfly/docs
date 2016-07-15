@@ -43,16 +43,16 @@ In the gif below, you can see that the order details are available even if the s
 
 We quickly realised that visitors shouldn't be allowed to access our baking shop page while they're in a Surfly session as it's a separate activity, and the agents working for our cake shop aren't necessarily qualified to guide our customers through our baking shop.
 
-In order to restrict access to this page (in our case, its path is '/about'), we can use the blacklist option:
+In order to restrict access to this page (in our case, its path is '/about'), we can use the [blacklist](../widget_options/widget_options.md/#blacklist) option:
 ``` javascript
 blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
 ```
 We also decided to specify an optional redirect link so that we can design our own restricted page. More specifically, we chose to redirect the client to the home page with a #restricted hash. We can then add a script to implement the desired behaviour: 
 ``` javascript
 <script>
-    if (window.location.hash == "#restricted"){
-    	window.location.href = '/restricted';
-    }
+if (window.location.hash == "#restricted"){
+  window.location.href = '/restricted';
+}
 </script>
 ```
 In our example, we decided to redirect the user to our custom restricted page which informs them that this page is restricted:
