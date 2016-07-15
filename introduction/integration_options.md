@@ -19,14 +19,17 @@ When integrating Surfly into your website, it is important to know that top leve
 <a name="session_continuation"></a>
 #### Session continuation
 
-Please note: This is only supported for sessions started with the Surfly widget.
-
 Cookies can be carried over from your website, and into the Surfly session. For example, if a user is logged into your website, they will remain logged in for the duration of the session. Once the session has finished, the information is sent back to the website. This allows a smooth transition into, and out of, the session.
 
 There are two main ways to set up session continuation:
 
  - Full session continuation allows the transfer of all data, including (unlike soft session continuation), cookies with a HttpOnly tag.
  - Soft session continuation is more limited, and excludes cookies with a HttpOnly tag.
+
+
+| Please note: |
+| ------------- | 
+| This is only supported for sessions started with the Surfly widget.|  
 
 <a name="security_features"></a>
 #### Security Features
@@ -41,9 +44,11 @@ Surfly's security features allow you the option to protect users' data during th
 
 Field masking allows you to protect the leader's data during the Surfly session. If the user is required to enter sensitive information (such as payment details), into your website, you can hide that input from the session followers. The leader is still able to read what they are typing into the form, but the followers (including the agent) will only see a series of x's.
 
-###### Please note: 
+| Please note: |
+| ------------- | 
+| Whilst the leader can mask their data, and hide it from the followers, the followers cannot hide their data from the leader.|  
 
-Whilst the leader can mask their data, and hide it from the followers, the followers cannot hide their data from the leader.
+
 
 <a name="blacklist_whitelist"></a>
 ##### Blacklisting and Whitelisting
