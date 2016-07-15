@@ -48,7 +48,7 @@ In order to restrict access to this page (in our case, its path is '/about'), we
 blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
 ```
 We also decided to specify an optional redirect link so that we can design our own restricted page. More specifically, we chose to redirect the client to the home page with a #restricted hash. We can then add a script to implement the desired behaviour: 
-``` javascript
+``` html
 <script>
 if (window.location.hash == "#restricted"){
   window.location.href = '/restricted';
@@ -63,9 +63,9 @@ In our example, we decided to redirect the user to our custom restricted page wh
 <a name="metadata"></a>
 ##### Queue metadata
 
-We'd like to be able to give our repeat customers a more personal experience. More specifically, we want to retrieve their login details and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
+We'd like to be able to give our repeat customers a more personal experience. More specifically, we want to retrieve their login details and pass them on as [metadata](../widget_options/widget_options.md/#metadata) in the queue so that, for instance, our agents can greet them by name.
 
-Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass this data by using the ['QUEUE_METADATA_CALLBACK' option](../widget_options/widget_options.md/#metadata):
+Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass this data by using the ['QUEUE_METADATA_CALLBACK' option](../widget_options/widget_options.md/#queue_metadata_callback):
 ``` javascript
 QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem('metaName')+',"email": '+sessionStorage.getItem('metaEmail')+'}'),
 ```
@@ -92,11 +92,11 @@ We already have our own start button and landing page, but now that we have remo
 
 In our example, we chose to create our own exit session button and add it to all the necessary pages. 
 First, we have to make sure that the page we are adding the button to contains the Surfly widget and then we can add our custom button:
-``` javascript
+``` html
 <button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
 ```
 Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session (in a similar manner, we can also control the behaviour of the "get help" button on the home page):
-``` javascript
+``` html
 <script>
    if(window.__surfly){
 	document.getElementById('exit_button').style.visibility="visible";
@@ -108,7 +108,7 @@ Considering that it's an exit button, we don't want it to be shown when the cust
 </script>
 ```
 Finally, we define the action triggered by the button, in this case, ending a Surfly session. To do so, we can once again use the REST API. The first request allows us to retrieve the session ID (which we store so that it's accessible from all the pages):
-``` javascript
+``` html
 <script>
 // get session ID
 var request = new XMLHttpRequest();
@@ -128,8 +128,8 @@ request.send();
 </script>
 ```
 Once we've stored the session ID, we can use a second request which will use this information to end the current session:
-``` javascript
-   <script>
+``` html
+<script>
     // end session
     function exitSession(){
 	var request_end = new XMLHttpRequest();
@@ -153,14 +153,16 @@ Once we've stored the session ID, we can use a second request which will use thi
 
 ![exit button](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s10.png)
 
-Please note: considering how our website is built, there's a unique "get help" button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, stealth mode is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing Ctrl + Enter. Stealth mode can also be disabled, if you prefer.
+| Please note: |
+| ------------- | 
+| Considering how our website is built, there's a unique "get help" button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode]() is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing Ctrl + Enter. Stealth mode can also be disabled, if you prefer.  | 
 
 
 <a name="chat"></a>
 ##### Integrate an already existing chat solution
 
 Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. We can simply add the Zopim snippet code to all the pages of our website and we will be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
-``` javascript
+``` html
 <!-- Adding Zopim Live Chat -->
 <script>
 	if(!window.__surfly){
@@ -198,21 +200,21 @@ We then retrieve the queue ID and display it to the user:
         if(window.__surfly){
         // first check if a session has started (meaning that the icon has been clicked on)
             var request = new XMLHttpRequest();
-	    request.open('GET', 'https://api.surfly.com/v2/sessions/?api_key=**your api key**&active_session=true');
+            request.open('GET', 'https://api.surfly.com/v2/sessions/?api_key=**your api key**&active_session=true');
             request.onreadystatechange = function () {
-	        if (this.readyState === 4) {
-		    var body = this.responseText; 
-		    // we extract the queue_id from the string we get from the request
-		    var index = body.indexOf("queue_id");
-		    var id = body.substring(index+10, index+14);
-                    // we hide the cake icon
-                    document.getElementById("showId").style.visibility='hidden';  
-                    var textId = document.createTextNode(id);
-                    // replace the cake icon with the session id number
-                    document.getElementById("idP").appendChild(textId);
-	        } 
-       	    }
-	 request.send();
+              if (this.readyState === 4) {
+              var body = this.responseText; 
+              // we extract the queue_id from the string we get from the request
+              var index = body.indexOf("queue_id");
+              var id = body.substring(index+10, index+14);
+                      // we hide the cake icon
+                      document.getElementById("showId").style.visibility='hidden';  
+                      var textId = document.createTextNode(id);
+                      // replace the cake icon with the session id number
+                      document.getElementById("idP").appendChild(textId);
+              } 
+       	 }
+            request.send();
         };
 ```
 
