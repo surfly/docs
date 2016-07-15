@@ -1,4 +1,4 @@
-# Integration{#add_surfly}
+# Integration
 
 <a name="add_surfly"></a>
 
