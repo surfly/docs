@@ -15,25 +15,24 @@ Alternatively, if you wish to use Surfly as a feature on your own website, you c
 
 The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it into your own application. The documentation is divided into several parts:                     
 
-<a name="introduction"><h5>The Introduction</h5></a>
+##### [The Introduction](#introduction)
 
 The introduction explains what a co-browsing Surfly session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
-<a name="tutorial"><h5>The Tutorial</h5></a>
+##### [The Tutorial](#tutorial)
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
 Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our repository, where you'll find the corresponding commit.
 
-
-<a name="widget_options"><h5>The Widget options</h5></a>
+##### [The Widget options](widget_options)
 
 Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
 
-<h5><a name="js_api">The Javascript API</a> and the <a name="rest_api">REST API</a></h5>
+##### [The Javascript API](#javascript_api) and [the REST API](rest_api)
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API.
 
-<h5><a name="faqs">FAQ's</a></h5>
+##### [FAQ's](#faqs)
 
 Here we answer questions on functionality, technology, pricing, security and initial setup.
 If you do not find what you were looking for, please don't hesitate to contact us.
