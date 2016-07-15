@@ -139,7 +139,7 @@ We now have our own personalised landing page to greet our customers.
 We have integrated Surfly to our satisfaction, but there are other use cases that we still haven't covered. In particular, when a client places an order during a session, we don't want the agent to be able to see their payment details or to click the 'Order' button for them. 
 You can do this by using some of the built-in options provided with Surfly.
 
-To enable [field masking](../introduction/integration_options.md) (the follower will not see the leader's input), add the 'surfly_private' attribute to fields containing sensitive information:
+To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the 'surfly_private' attribute to fields containing sensitive information:
 ``` javascript
 <span>Card Number</span>
 <input type="text" size="20" data-stripe="number" surfly_private>
