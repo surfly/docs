@@ -17,7 +17,7 @@ The main points covered in this section are:
  - [Adding metadata to the queue](#metadata)
  - [Ending the session display or redirect to another page](#popupurl)
 
-<a name="invite_user"></a>
+[](#invite-user)
 #### Inviting users to join your session
 
 You can invite a user to join your session from your Surfly admin panel or from within a Surfly session: 
