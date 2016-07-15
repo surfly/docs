@@ -1,6 +1,5 @@
 # A Surfly session
 
-<a name="session_modification"></a>
 
 Surfly comes with several different options for communicating with other users. You may decide to video or text chat, share documents and highlight areas with the tool. 
 If Surfly is integrated into your website, you can adapt the way a session starts, looks and behaves by changing the default settings. 
