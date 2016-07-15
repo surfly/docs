@@ -1,4 +1,4 @@
-# Integration {#add_surfly}
+# Integration{#add_surfly}
 
 <a name="add_surfly"></a>
 
@@ -38,7 +38,7 @@ When you open your webpage, you should see a 'get live help' button at the botto
  - [Integrate with existing chat solutions](#<integrate_chat>)
 
 <a name="button_appearance"></a>
-#### Button appearance {#button_appearance}
+#### Button appearance{#button_appearance}
 
 If you prefer, you can adapt the 'get live help' button that Surfly provides. The button's default appearance is red, with white text and sits to the bottom left of the screen. 
 
@@ -49,19 +49,19 @@ You can adapt the button appearance by changing its position, colors and size.
 The button, by default, will only be shown if an agent is logged into the Surfly admin page. This can also be disabled, if you wish.
 
 <a name="stealth_mode"></a>
-#### Start a session in stealth mode {#stealth_mode}
+#### Start a session in stealth mode{#stealth_mode}
 
 If you do not wish to have a visual button or link on your webpage, then you can use stealth mode. This allows visitors to initiate a Surfly session simply by pressing CTRL+ENTER.  The visitor will then be queue'd, and the Surfly session will start as usual.
 
 <a name="surflystart_anchor"></a>
-#### Customise your own button {#surflystart_anchor}
+#### Customise your own button{#surflystart_anchor}
 
 If you want to create your own button, you can use the #surflystart anchor, which can be integrated into your website's source code. You can choose the text you wish to write onto the button, and it can be fully styled with css so that it compliments your website design.  As you can see in the image below, we chose to use the image of a cake as a button. If a visitor to the website clicks on it, it will lead them to a Surfly session.
 
 ![The end result](https://raw.github.com/surfly/tutorial/master/screens/cake-button.png)
 
 <a name="session_id"></a>
-#### The session ID approach {#session_id}
+#### The session ID approach{#session_id}
 
 The session ID approach is especially useful if you are already in contact with a customer via the phone. If the customer needs help navigating a website, the agent can direct them to start a co-browsing session. 
 You can use the REST API to access the session ID and display it. The user can then communicate this ID to the agent so that they will be able to join the session and help them.
@@ -71,7 +71,7 @@ Once the agent has the session ID, they can simply enter it into the start sessi
 ![Start Surfly](https://raw.github.com/surfly/tutorial/master/screens/enter_session_id.png)
 
 <a name="auto_start"></a>
-#### Create an invite page {#auto_start}
+#### Create an invite page{#auto_start}
 
 Enabling auto_start in the code snippet means that the webpage will immediatly start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. 
 The red banner may also be removed through a simple change to the code snippet. Just set the "block_until_agent_joins" parameter to "false".
@@ -84,7 +84,7 @@ As can be seen below, we were then able to set up our own invite page:
 
 
 <a name="integrate_chat"></a>
-#### Integrate with existing chat solutions {#integrate_chat}
+#### Integrate with existing chat solutions{#integrate_chat}
 
 It is also possible to integrate Surfly with existing chat solutions. For example, if you have already established your own video or text chat, you may want to add Surfly's co-browsing functionality to this. In this case, Surfly can be integrated in such a way so that it acts as a transparent addition to your product and allows you to entirely customise the appearance of the session.
 
