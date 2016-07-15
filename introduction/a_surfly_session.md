@@ -6,7 +6,7 @@ If Surfly is integrated into your website, you can adapt the way a session start
 
 The main points covered in this section are: 
 
- - [Inviting users to join your session](#invite-user)
+ - [Inviting users to join your session](<#invite-user>)
  - [Navigating to a new website](#new-url)
  - [Chat box](#chat_box)
  - [Video chat](#video_chat)
