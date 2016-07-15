@@ -140,7 +140,7 @@ We have integrated Surfly to our satisfaction, but there are other use cases tha
 You can do this by using some of the built-in options provided with Surfly.
 
 To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the 'surfly_private' attribute to fields containing sensitive information:
-``` javascript
+``` html
 <span>Card Number</span>
 <input type="text" size="20" data-stripe="number" surfly_private>
 ```
