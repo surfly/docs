@@ -1,3 +1,5 @@
+![logo](../images/logosmall.png)
+
 # Initial Setup
 
 ### Where can I find the code snippet?
