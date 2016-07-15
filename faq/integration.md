@@ -14,3 +14,6 @@ Unless you want to use session continuation, you only need to put the code snipp
 
 Login to your Surfly account and navigate to the "Queue panel". Click on the "take call" button next to the session request. You will enter a Surfly session with the user who initiated the request. 
 
+### What has priority, changes to the code snippet, or changes in the options panel?
+
+If you change a setting in the options panel, and then in change it again in the code snippet, the setting in the code snippet has priority.
