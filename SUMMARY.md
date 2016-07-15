@@ -19,7 +19,6 @@
    * [session_interaction_options](widget_options/session_interaction_options.md)
    * [session_appearance_options](widget_options/session_appearance_options.md)
    * [button_appearance_options](widget_options/buttonappearance_options.md)
-   * [draft1](widget_options/draft.md)
    * [examples](widget_options/widget_options.md)
    * [Reference](widget-options/reference.md)
 * [Javascript API](javascript_api.md)
