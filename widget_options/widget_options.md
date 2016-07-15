@@ -182,7 +182,7 @@ Make sure that you set the following options in your widget:
 If you need more help with this, please contact us at support@surfly.com. We can
 consult you on the implementation, or build the integration for you.
 
-
+<a name="metadata"></a>
 ## Queue Behaviour Customization
 
 It is possible to integrate Surfly into your website with a support
@@ -260,7 +260,7 @@ will be given two arguments:
   queue join. You must pass a session metadata object as a first argument (see *JSON
   Response Format* for `QUEUE_ENDPOINT` above)
 
-
+<a name="queue_metadata_callback"></a>
 #### Enriching a Queue request with Metadata
 
 Prior to making the call to `QUEUE_HANDLER`, we will call `QUEUE_METADATA_CALLBACK`, which can enrich
