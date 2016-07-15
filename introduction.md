@@ -8,10 +8,9 @@ Surfly's co-browsing technology enables you to share your browser with others, s
 
 ![simply_browse](images/simplybrowse.jpg)
 
-However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. By doing this, you will be able to fully customise your session and use as much, or as little, of Surfly's functionality within your own product.
+However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. By doing this, you will be able to fully customize your session and use as much, or as little, of Surfly's functionality within your own product.
 
-The introduction gives an overview of what Surfly is, and outlines the various ways in which it can be integrated and adapted for your own needs. More information on how to make these changes can be found in the Surfly tutorial and in the API documentation.
-
+The introduction gives an overview of what Surfly is, and outlines the various ways in which it can be integrated and adapted for your own needs. More information on how to make these changes can be found in the [Surfly tutorial](./the_surfly_tutorial.md), in the [Javascript API](./javascript_api.md) and [REST API](https://www.surfly.com/cobrowsing-api/) documentation.
 
 ###### During the session
 
