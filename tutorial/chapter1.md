@@ -10,7 +10,7 @@ Here is a screenshot of the home page before we integrate Surfly:
 
 ![website](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s1.png)
 
-As you can see, it is a standard website with different pages and possible actions. 
+As you can see, it's a standard website with different pages and possible actions. 
 We are now going to integrate Surfly into our website, selecting the aspects of Surfly's functionality that best suit our needs.
 
 
