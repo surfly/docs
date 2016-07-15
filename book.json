@@ -1,6 +1,5 @@
 {
     "plugins": [
-        "heading-anchors",
         "sectionx",
         "anchor-navigation",
         "youtube"
