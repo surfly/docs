@@ -5,19 +5,19 @@
 
 This section covers:
 
- - [Surfly and third party cookies](<#test>)
+ - [Surfly and third party cookies](<#third_party_cookies>)
  - [Session continuation](#<session_continuation>)
- - [Security Features](https://izzysmith1.gitbooks.io/the-surfly-tutorial/content/introduction/integration_options.html#security_features)
- - [Add information to a session log](#session_log_info)
- - [Customising the website appearance depending on who is in control](#customise_appearance_for_user)
+ - [Security Features](#<security_features>)
+ - [Add information to a session log](#<session_log_info>)
+ - [Customising the website appearance depending on who is in control](#<customise_appearance_for_user>)
 
 <a name="third_party_cookies"></a>
-#### Surfly and third party cookies {#test}
+#### Surfly and third party cookies {#third_party_cookies}
 
 When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.
 
 <a name="session_continuation"></a>
-#### Session continuation
+#### Session continuation {#session_continuation}
 
 Cookies can be carried over from your website, and into the Surfly session. For example, if a user is logged into your website, they will remain logged in for the duration of the session. Once the session has finished, the information is sent back to the website. This allows a smooth transition into, and out of, the session.
 
