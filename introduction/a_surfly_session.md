@@ -1,3 +1,4 @@
+![logo](../images/logosmall.png)
 # A Surfly session
 
 
