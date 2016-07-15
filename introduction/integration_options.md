@@ -1,3 +1,4 @@
+![logo](../images/logosmall.png)
 # Integration Options
 
 <a name="integration_options"></a>
