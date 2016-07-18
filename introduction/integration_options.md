@@ -15,7 +15,7 @@ This section covers:
 <a name="session_continuation"></a>
 #### Session continuation{#session_continuation}
 
-Session continuation is useful for when you want to be able to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This allows for a smooth transition into, and out of, the session.
+Session continuation is used to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This allows for a smooth transition into, and out of, the session.
 
 More information on session continuation can be found [here](./widget_options/widget_options.md#session_continuation)
 
@@ -46,7 +46,7 @@ This option is only available to enterprise clients.  {% endem %}
 <a name="session_log_info"></a>
 #### Add information to the session log{#session_log_info}
 
-You can choose to add a custom message to the Surfly logs in order to register an event. For example, you may want to track the amount of times an agent has made a sale. 
+You can choose to add a custom message to the Surfly logs in order to register an event. For example, you may want to track the amount of times an individual agent has made a sale. 
 
 <a name="customise_appearance_for_user"></a>
 #### Customise website appearance depending on who is in control{#customise_appearance_for_user}
