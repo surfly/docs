@@ -176,6 +176,6 @@ end_of_session_popup_url: "https://example.com/survey",
 
 ![survey](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s9.png)
 
-| Please note: | 
-| ------------- |
-| You might need to set the 'hidden' option to 'false' for this option to work correctly.| 
+{% em color="#ffffe0" %}Please note: 
+You might need to set the 'hidden' option to 'false' for this option to work correctly.  {% endem %}
+
