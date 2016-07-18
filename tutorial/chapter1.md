@@ -36,7 +36,7 @@ As you can see below, after adding the widget code to our website, we see a red 
 
 ![Surfly widget](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/sfbutton.png)
 
-When a client clicks on the red "get live help" button, they are queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
+When a client clicks on the red 'get live help' button, they are queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
 
 ![user queue'd](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s3.png)
 
