@@ -6,7 +6,7 @@
 ## Reference Tables
 
 
-### Control Panel Options
+<h3 class="table_class">Control Panel Options</h3>
 
 <a name="chatbox-options"></a>
 ##### Chat box options
@@ -20,7 +20,7 @@
 | store_chat_logs | false | If enabled, chat logs will be available for download in Surfly dashboard |
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
 
-##### Drawing options
+#####Drawing options
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | drawing_color | "default" | "Magic marker" color |
@@ -63,7 +63,7 @@
 | agent_can_take_control | false | The agent can take control without the requirement that the controller needs to grant it |
 | agent_can_end_session | true | Show End Session button on follower's end |
 
-### Session configuration
+<h3 class="table_class">Session configuration</h3>
 
 ##### Queue management
 |  Option | Default | Description |
@@ -91,7 +91,7 @@
 | blacklist | "[]" | (enterprise only) Restrict access to the specific resources.|
 | whitelist | "[]" | (enterprise only) Allow access only to the specific resources. |
 
-### Session Interaction
+<h3 class="table_class">Session Interaction</h3>
 
 ##### Session start
 |  Option | Default | Description |
