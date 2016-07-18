@@ -9,8 +9,6 @@ To integrate Surfly, you need to add the Surfly code snippet into your website's
 
 ![options panel](../images/options-panel.jpg)
 
-Please see the [tutorial](../n.md) for a detailed step by step guide on how to integrate Surfly into your website. 
-
 #### The Surfly Code Snippet{#code-snippet} 
 
 This can be found by clicking on the 'integration' panel in your account settings.
@@ -26,7 +24,7 @@ Finally, copy the code snippet and add it to the source code of your website.
 
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
 
-**Please see the tutorial for a detailed step by step guide on how to integrate Surfly into your website.**
+**Please see the [tutorial](../the_surfly_tutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
 
 <a name="start_session"></a>
 ### Starting a session{#start-session} 
@@ -74,10 +72,9 @@ Once the agent has the session ID, they can simply enter it into the start sessi
 <a name="auto_start"></a>
 #### Create an invite page{#auto_start}
 
-Enabling auto_start in the code snippet means that the webpage will immediatly start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. 
-The red banner may also be removed through a simple change to the code snippet. Just set the "block_until_agent_joins" parameter to "false".
+Enabling auto_start in the code snippet means that the webpage will immediatly start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. The red banner may also be removed through a simple change to the code snippet.
 
-Further customisation is also possible through the use of the REST API. For example, you can use it to detect whether a Surfly session has started or not, and alter your websites' appearance based on this. For instance, if we're in a Surfly session, we can get the unique queue code which identifies the user who initiated the session and display it.
+Further customisation is also possible through the use of the REST API. For example, you can use it to detect whether a Surfly session has started or not, and alter your website's appearance based on this information. For instance, if we're in a Surfly session, we can get the unique queue code which identifies the user who initiated the session and display it.
 
 As can be seen below, we were then able to set up our own invite page:
 
@@ -89,4 +86,4 @@ As can be seen below, we were then able to set up our own invite page:
 
 It is also possible to integrate Surfly with existing chat solutions. For example, if you have already established your own video or text chat, you may want to add Surfly's co-browsing functionality to this. In this case, Surfly can be integrated in such a way so that it acts as a transparent addition to your product and allows you to entirely customise the appearance of the session.
 
-Simply add the code snippet to the page including your chat solution, and alter it to either remove the user interface entirely, or to display a dock with session control options (more information on the docked_only option can be found here). You will then be able to use Surfly's co-browsing functionality in addition to your own chat solution.
+Simply add the code snippet to the page including your chat solution, and alter it to either remove the user interface entirely, or to display a dock with session control options (click the following link for more information on the [docked_only option]()). You will then be able to use Surfly's co-browsing functionality in addition to your own chat solution.
