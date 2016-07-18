@@ -3,7 +3,7 @@
 # Surfly options
 
 
-Here, you can find the reference tables for each of the Surfly session options. *You can select which aspects of Surfly's functionality you wish to integrate into your own webpage, and adapt the way you want the session to start, look, and behave.*(REVISE) These parameters can either be set in the Surfly widget code, or in the options panel from the integration page. Please note that changes to the code will take priority over changes to the options panel.
+Here, you can find the reference tables for each of the Surfly options that can be specified in the code snippet, set from the 'Options' panel or used with the REST API.
 
 
 ## Reference Tables
