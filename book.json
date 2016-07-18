@@ -4,8 +4,7 @@
         "anchor-navigation",
         "youtube",
         "heading-anchors",
-        "emphasize",
-        "reveal"
+        "emphasize"
     ],
     "pluginsConfig": {}
 }
