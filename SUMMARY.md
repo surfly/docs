@@ -13,7 +13,6 @@
    * [Technology](faq/technology.md)
    * [Security](faq/security.md)
    * [Pricing](faq/pricing.md)
-   * [Initial setup](faq/integration.md)
 * [Widget options](widget_options.md)
    * [Options details](widget_options/widget_options.md)
    * [Reference](widget_options/reference.md)
