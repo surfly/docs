@@ -35,8 +35,5 @@ For a deeper integration of Surfly, and a list of the functions available, pleas
 Here we answer questions on functionality, technology, pricing, security and initial setup.
 If you do not find what you were looking for, please don't hesitate to contact us.
 
-| Please note: |
-| ------------- | 
-| If you wish to integrate Surfly, you need to give Surfly access to the server. This is especially important when you are developing locally.  | 
 
 
