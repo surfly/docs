@@ -96,6 +96,8 @@ More information on [queue management](./widget_options/widget_options.md#metada
 | blacklist | "[]" | (enterprise only) Restrict access to the specific resources.|
 | whitelist | "[]" | (enterprise only) Allow access only to the specific resources. |
 
+More information on [restrictions](./widget_options/widget_options.md/#restrictions)
+
 <h3 class="table_class">Session Interaction</h3>
 
 ##### Session start
