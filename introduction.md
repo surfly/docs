@@ -43,7 +43,7 @@ The buttons on the admin panel are:
 If you do not want to immediately add the code to your website, but still want to take a look at how Surfly's integration can work for you, use our Chrome extension. This extension will add our Javascript snippet code to any website you are currently browsing, it will also give you all the options to easily configure the snippet and try out various settings. 
 
 In order to install the extension do the following: 
- - Download the Chrome Extension
+ - Download the [Chrome Extension](https://www.surfly.com/wp-content/uploads/2015/08/chrome-extension.zip)
  - Open ChromeGo to Tools / Preferences / Settings (depends on your OS)
  - Go to ‘Extensions’
  - Click on ‘Load unpacked extension’
