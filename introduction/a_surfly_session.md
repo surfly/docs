@@ -29,7 +29,7 @@ Both of these methods will load the following screen:
 
 ![invite_user](https://raw.github.com/surfly/tutorial/master/screens/invite_user.png)
 
-You can then decide to either share the url of the session, or send an email to the users you wish to invite. During a session, there is always one leader at any given time, but there can be multiple followers.
+You can then decide to either share the url of the session, or send an email to the users you wish to invite. 
 
 <a name="new-url"></a>
 #### Navigating to a new website{#new-url} 
