@@ -115,7 +115,7 @@ Here, you can find the reference tables for each of the Surfly session options. 
 |  cookie_transfer_proxying | true | |
 |  cookie_transfer_urls | | | |
 
-More information on [session continuation](./widget_options#session_continuation)
+More information on [session continuation](./widget_options/widget_options#session_continuation)
 
 ##### Session end
 |  Option | Default | Description |
