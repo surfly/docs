@@ -5,7 +5,8 @@
         "youtube",
         "heading-anchors",
         "emphasize",
-        "sectionx-collapse"
+        "sectionx-collapse",
+        "algolia"
     ],
     "pluginsConfig": {}
 }
