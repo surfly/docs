@@ -7,6 +7,7 @@ If you integrate Surfly with your website, visitors will be able to click the 'g
 
 To integrate Surfly, you need to add the Surfly code snippet into your website's source code. The default parameters within the code snippet can be modified to allow for a seamless integration into your website.  The code snippet will allow you to customise the way the session looks and behaves. You can specify your options in either the code snippet itself, or in the 'options' panel from the admin page. The options panel allows you to save your preferred options without adapting the widget code. If you do decide to change the widget code, this takes priority over the settings in the options panel.
 
+
 ![options panel](../images/options-panel.jpg)
 
 #### The Surfly Code Snippet
@@ -24,20 +25,20 @@ Finally, copy the code snippet and add it to the source code of your website.
 
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
 
-**Please see the tutorial for a detailed step by step guide on how to integrate Surfly into your website.**
+**Please see the [integration guide](../the_surfly_tutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
 
 <a name="start_session"></a>
 ### Starting a session
 
- - [Button appearance](#button_appearance)
- - [Stealth mode](#stealth_mode)
+ - [Button appearance](<#button_appearance>)
+ - [Stealth mode](<#stealth_mode>)
  - [Customise your own button](#surflystart_anchor)
  - [Session ID](#session_id)
  - [Create an invite page](#auto_start)
  - [Integrate with existing chat solutions](#integrate_chat)
 
 <a name="button_appearance"></a>
-#### Button appearance
+#### Button appearance{#button_appearance}
 
 If you prefer, you can adapt the 'get live help' button that Surfly provides. The button's default appearance is red, with white text and sits to the bottom left of the screen. 
 
@@ -48,7 +49,7 @@ You can adapt the button appearance by changing its position, colors and size.
 The button, by default, will only be shown if an agent is logged into the Surfly admin page. This can also be disabled, if you wish.
 
 <a name="stealth_mode"></a>
-#### Start a session in stealth mode
+#### Start a session in stealth mode{#stealth_mode}
 
 If you do not wish to have a visual button or link on your webpage, then you can use stealth mode. This allows visitors to initiate a Surfly session simply by pressing CTRL+ENTER.  The visitor will then be queue'd, and the Surfly session will start as usual.
 
