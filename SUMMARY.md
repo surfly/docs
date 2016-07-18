@@ -9,7 +9,7 @@
    * [Basic Integration](tutorial/chapter1.md)
    * [Advanced Integration](tutorial/advanced_integration.md)
 * [FAQ](faqs.md)
-* [Widget options](widget_options.md)
+* [Surfly options](widget_options.md)
    * [Options details](widget_options/widget_options.md)
    * [Reference](widget_options/reference.md)
 * [Javascript API](javascript_api.md)
