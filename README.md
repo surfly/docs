@@ -5,9 +5,9 @@
 
 ### Welcome to Surfly
 
-Surfly's co-browsing technology enables you to share your browser with others. The person who initiates the Surfly session is the leader, and the people who join this session are the followers. The followers screen will be synchronized with the leader, who is in control, and can navigate during the session. Control can be switched between the leader and the follower. During the session, you may choose to communicate via video or text chat, or disable this completely. 
+Surfly's co-browsing technology enables you to share your browser with others. The person who initiates the Surfly session is the leader, and the people who join this session are the followers. The follower's screen will be synchronized with the leader's, who is in control, and can navigate during the session. At any moment, control can be switched between the leader and the follower. During the session, you may choose to communicate via video or text chat, or by using the drawing tool provided. 
 
-Complete customisation of the co-browsing session is possible, and, if you choose, Surfly can sit as a transparent layer within your website.  The documentation gives a comprehensive overview of Surfly's functionality, and the ways in which you can adapt Surfly to suit your needs. 
+Complete customisation of the co-browsing session is possible, and Surfly can even sit as a transparent layer within your website.  This documentation gives a comprehensive overview of Surfly's functionality, and the ways in which you can adapt Surfly to suit your needs. 
 
 ### The Documentation
 
@@ -15,7 +15,7 @@ The documentation aims to give you a good understanding of the co-browsing funct
 
 ##### [The Introduction](./introduction.md)
 
-The introduction explains what a co-browsing Surfly session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
+The introduction explains what a Surfly co-browsing session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
 ##### [The Tutorial](./the_surfly_tutorial.md)
 
