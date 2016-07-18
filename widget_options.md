@@ -31,7 +31,7 @@ Here, you can find the reference tables for each of the Surfly session options. 
 | drawing_width | 15 | "Magic marker" width |
 | drawing_timeout | 3| "Magic marker" timeout |
 
-More [drawing details](./
+More information on [drawing details](./widget_options.md#drawing) 
 
 ##### Video 
 |  Option | Default | Description |
