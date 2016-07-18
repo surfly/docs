@@ -54,7 +54,7 @@ If you want to monitor the conversations between the agents and the users, you c
 
 ![chatlogs](https://raw.github.com/surfly/tutorial/master/screens/logged_icon.png)
 
-If you do not want to have the chat functionality, you can either have just the dock, displaying the control panel, or remove it completely.
+If you do not want to have the chat functionality, you can either use dock mode to only display the control panel, or remove it completely.
 
 <a name="video_chat"></a>
 #### Video chat{#video_chat}
