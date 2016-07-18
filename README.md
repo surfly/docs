@@ -20,7 +20,6 @@ The introduction explains what a Surfly co-browsing session is, and how it works
 ##### [The Tutorial](./the_surfly_tutorial.md)
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
-Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our repository, where you'll find the corresponding commit.
 
 ##### [The Widget options](./widget_options.md)
 
