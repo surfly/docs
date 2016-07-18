@@ -143,7 +143,7 @@ Surfly.button({
 ```
 
 ### Communication with the cobrowsing window
-While Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need Surfly widget to be loaded on both pages. `targetOrigin` and `srcOrigin` parameters allow to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
+While the Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need the Surfly widget to be loaded on both pages. `targetOrigin` and `srcOrigin` parameters allow to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
 ```javascript
 Surfly.session()
   .on('session_started', function(session) {
@@ -181,7 +181,7 @@ Surfly.button().show();
 
 ### Service code button
 
-Should you choose the "service code" flow, you can use `hide_until_agent_joins` setting to delay session window opening
+Should you choose the "service code" flow, you can use the `hide_until_agent_joins` setting to delay a session window from opening.
 
 ```html
 <button id="mybutton">Get service code</button>
