@@ -145,7 +145,7 @@ To enable [field masking](../introduction/integration_options.md/#field_masking)
 <span>Card Number</span>
 <input type="text" size="20" data-stripe="number" surfly_private>
 ```
-In our example, we will use field masking on the last three fields of our order form as they contain information about the client's card. As can be seen in the image, the agent only see crosses instead of the leader's input:
+In our example, we will use field masking on the last three fields of our order form as they contain information about the client's card. As can be seen in the image, the agent only see crosses (x's) instead of the leader's input:
 
 ![field masking](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s8.png)
 
