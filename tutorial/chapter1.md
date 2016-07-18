@@ -149,6 +149,10 @@ In our example, we will use field masking on the last three fields of our order 
 
 ![field masking](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s8.png)
 
+
+{% em color="#ffffe0" %}Please note: 
+Whilst the leader can mask their data, and hide it from the followers, the followers cannot hide their data from the leader. {% endem %}
+
 As for the 'Order' button, we can easily add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then, we check whether or not the leader is in control and disable the order button if they are not.
 ``` javascript
 <script>
