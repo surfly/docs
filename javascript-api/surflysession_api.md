@@ -81,7 +81,7 @@ send a `message` (plain JSON-serializable object) to the session window. On the 
 
 > SurflySession.giveControl( clientIndex )
 
-provided that current user has control, give it away to the user with specified `clientIndex`. `clientIndex` is always 0 for the leader and 1 or more for followers
+Provided that current user has control, give it away to the user with specified `clientIndex`. `clientIndex` is always 0 for the leader and 1 or more for followers
 
 <hr />
 
@@ -137,7 +137,7 @@ contains a 4-digit PIN code that can be used to join the session. This becomes a
 
 _(not available inside a session)_
 
-if session is opened in an iframe, contains a reference to its DOM node
+if a session is opened in an iframe, it contains a reference to its DOM node
 
 <hr />
 
