@@ -9,6 +9,7 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
 
 
 {% em color="#ff0000" %}Please note: {% endem %}
+
 If you wish to integrate Surfly, you need to give Surfly access to the server. This is especially important when you are developing locally.  
 
 | Please note: |
