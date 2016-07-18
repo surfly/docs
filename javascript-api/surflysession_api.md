@@ -10,9 +10,9 @@ _(not available inside a session)_
 
 Initialize a cobrowsing session, open a new iframe/browser tab if necessary, and put the session in support queue.
 
-`iframeSelector` - (optional) CSS selector string to an iframe element on the current page. If specified, Surfly will open a session in this iframe instead of creating a new one. Note that Surfly cannot open a session in iframe when 3rd-party cookies are disabled. Also, this is not compatible with `open_in_new_window` option.
+`iframeSelector` - (optional) CSS selector string to an iframe element on the current page. If specified, Surfly will open a session in this iframe instead of creating a new one. Note that Surfly cannot open a session in an iframe when 3rd-party cookies are disabled. Also, this is not compatible with the `open_in_new_window` option.
 
-`userData` - (optional) plain object with additional data to be attached to the joining user. This will be visible in subsequent user-related events (`viewer_joined`, for example), and can be used to track users when they join or leave the session. There are some special fields that have additional effects:
+`userData` - (optional) a plain object with additional data to be attached to the joining user. This will be visible in subsequent user-related events (`viewer_joined`, for example), and can be used to track users when they join or leave the session. There are some special fields that have additional effects:
 - `name`: this will be displayed as a user name in chatbox inside a session
 - `email`: this will be used for Gravatar lookup
 - `agent_id`: will pin the (unpinned) session to a specific Agent. Agent must belong to the company owning the widget key that was used for creating the session.
@@ -52,7 +52,7 @@ gracefully ends the current session (as long as the current user has permissions
 
 _(read only, not available inside a session)_
 
-returns session settings with which the session was created
+returns the session settings by which the session was created
 
 <hr />
 
@@ -75,7 +75,7 @@ log message to the Audit log (available in Surfly Dashboard after session ends).
 
 > SurflySession.sendMessage( message, targetOrigin )
 
-send a `message` (plain JSON-serializable object) to the session window. On the other side it can be received with `"message"` event handler. `targetOrigin`should be set to [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) of the expected recipient. If set to `"*"`, message will be delivered regardless of the recipient's origin.
+send a `message` (plain JSON-serializable object) to the session window. On the other side it can be received with `"message"` event handler. `targetOrigin`should be set to the [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) of the expected recipient. If set to `"*"`, message will be delivered regardless of the recipient's origin.
 
 <hr />
 
