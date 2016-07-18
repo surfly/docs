@@ -27,6 +27,8 @@ There are two main ways to set up session continuation:
  - Full session continuation allows the transfer of all data, including (unlike soft session continuation), cookies with a HttpOnly tag.
  - Soft session continuation is more limited, and excludes cookies with a HttpOnly tag.
 
+More information on session continuation can be found [here](./widget_options/widget_options.md#session_continuation)
+
 {% em color="#ffffe0" %}Please note: 
 This is only supported for sessions started with the Surfly widget. {% endem %}
  
