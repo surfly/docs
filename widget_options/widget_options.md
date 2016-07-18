@@ -297,7 +297,7 @@ It will be called with two arguments:
    - false  (after cancel, close)
  - session - a *JSON Response object* describing the session (this is received from `QUEUE_HANDLER` or `QUEUE_ENDPOINT`)
 
-
+<a name="surfly_logs"></a>
 ## Creating custom log messages
 It is possible to create custom log message during the Surfly session using log function:
 ```
