@@ -25,7 +25,7 @@ If you would like to learn more about Surfly, follow our step by step guide as w
 
 Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
 
-##### [Javascript API](./javascript_api.md) and [the REST API](./rest_api.md)
+##### [Javascript API](./javascript_api.md) and [the REST API](https://www.surfly.com/cobrowsing-api/)
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API.
 
