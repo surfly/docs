@@ -1,6 +1,6 @@
 ![logo](images/logosmall.png)
 <a name="faq"></a>
-# FAQ's
+# FAQ
 
 If you do not find the answer to your question in one of the sections below, please do not hesitate to contact us.
 
