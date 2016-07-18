@@ -1,6 +1,5 @@
 # Summary
 
-* [Cover page](cover_page.md)
 * [Overview](README.md)
 * [Introduction](introduction.md)
    * [A Surfly session](introduction/a_surfly_session.md)
