@@ -5,7 +5,7 @@
    * [A Surfly session](introduction/a_surfly_session.md)
    * [Integration](introduction/integration.md)
    * [Integration Options](introduction/integration_options.md)
-* [Introduction guide](the_surfly_tutorial.md)
+* [Integration guide](the_surfly_tutorial.md)
    * [Basic Integration](tutorial/chapter1.md)
    * [Advanced Integration](tutorial/advanced_integration.md)
 * [FAQ's](faqs.md)
