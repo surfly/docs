@@ -77,6 +77,8 @@ Here, you can find the reference tables for each of the Surfly session options. 
 | QUEUE_CALLBACK | false | JS callback for queue monitoring (see queue customization section below) 
 |
 
+More information on [queue management](./widget_options/widget_options.md#metadata)
+
 ##### Screen options/ viewport
 |  Option | Default | Description |
 | ---------------| ------------|------------|
