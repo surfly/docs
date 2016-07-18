@@ -73,10 +73,9 @@ Once the agent has the session ID, they can simply enter it into the start sessi
 <a name="auto_start"></a>
 #### Create an invite page{#auto_start}
 
-Enabling auto_start in the code snippet means that the webpage will immediatly start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. 
-The red banner may also be removed through a simple change to the code snippet. Just set the "block_until_agent_joins" parameter to "false".
+Enabling auto_start in the code snippet means that the webpage will immediatly start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. This red banner may also be removed through a simple change to the code snippet. 
 
-Further customisation is also possible through the use of the REST API. For example, you can use it to detect whether a Surfly session has started or not, and alter your websites' appearance based on this. For instance, if we're in a Surfly session, we can get the unique queue code which identifies the user who initiated the session and display it.
+Further customisation is also possible through the use of the [REST API](https://www.surfly.com/cobrowsing-api/). For example, you can use it to detect whether a Surfly session has started or not, and alter your websites' appearance based on this. For instance, if we're in a Surfly session, we can get the unique queue code which identifies the user who initiated the session and display it.
 
 As can be seen below, we were then able to set up our own invite page:
 
