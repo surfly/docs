@@ -3,7 +3,9 @@
 # Surfly options
 
 
-Here, you can find the reference tables for each of the Surfly session options. By using these options, you'll be able to choose which aspects of Surfly's functionality you wish to integrate into your website and, moreover, personalise your co-browsing sessions. *You can select which aspects of Surfly's functionality you wish to integrate into your own webpage, and adapt the way you want the session to start, look, and behave.*(REVISE) These parameters can either be set in the Surfly widget code, or in the options panel from the integration page. 
+Here, you can find the reference tables for each of the Surfly session options. By using these options, you'll be able to choose which aspects of Surfly's functionality you wish to integrate into your website and, moreover, personalise your co-browsing sessions. These parameters can either be set in the Surfly widget code, or in the options panel from the integration page. 
+
+*You can select which aspects of Surfly's functionality you wish to integrate into your own webpage, and adapt the way you want the session to start, look, and behave.*(REVISE)
 
 {% em color="#ffffe0" %}Please note:
 Changes to the code will take priority over changes to the options panel.{% endem %}
