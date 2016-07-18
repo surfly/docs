@@ -52,6 +52,8 @@ chat_box_color: "#87cefa", // change color of chat box so that it suits our webs
 theme_font_background: "#87cefa", // change color of button 
 videochat: false // remove videochat feature (not needed)
 ```
+The full list of widget options can be found [here](./widget_options)
+
 In the images below, you can see that the button and the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. Finally, we decided to make the drawings permanent to facilitate communication.
 
 ![widget options 1](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/blue-button.png) ![widget options 2](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s5.png)
