@@ -1,7 +1,7 @@
 # Examples
 Here you can find some examples for common integration scenarios.
 
-All code snippets below assume that Surfly widget script is loaded, and API is already initialized with `Surfly.init()` function. For example:
+All the code snippets below assume that Surfly widget script is loaded, and the API is already initialized with the `Surfly.init()` function. For example:
 
 ```html
 <head>
@@ -37,7 +37,7 @@ Surfly.session().startLeader();
 ```
 
 ### Custom button
-We provide a convenience `Surfly.button()` function for rendering a nice default button. But it really doesn't do much, and it is very easy to make a custom button:
+We provide a convenient `Surfly.button()` function for rendering a nice default button. But it really doesn't do much, and it is very easy to make a custom button:
 
 ```html
 <button class="my-custom-button">Start cobrowsing!</button>
@@ -68,7 +68,7 @@ We provide a convenience `Surfly.button()` function for rendering a nice default
 ```
 
 ### Custom session window
-If you need a full control over the session window (e.g. if you want to build a custom UI on top of cobrowsing frame), you can use `iframeSelector` argument of `SurflySession.startLeader()` / `SurflySession.startFollower()` functions to pass your own window container:
+If you need full control over the session window (e.g. if you want to build a custom UI on top of cobrowsing frame), you can use the `iframeSelector` argument of `SurflySession.startLeader()` / `SurflySession.startFollower()` functions to pass your own window container:
 ```html
 <iframe class="my-custom-cobrowsing-window"></iframe>
 <script>
@@ -77,7 +77,7 @@ Surfly.session().startLeader('.my-custom-cobrowsing-window');
 ```
 
 ### Custom queue management
-Surfly comes with a basic Support queue functionality in web dashboard. However, you could easily make your own implementation based on session events.
+Surfly comes with a basic Support queue functionality in the web dashboard. However, you could easily make your own implementation based on session events.
 
 ```javascript
 Surfly.session({hide_until_agent_joins: true})
