@@ -104,7 +104,7 @@ Surfly.session({hide_until_agent_joins: true})
 
 ### Joining a session from an existing link
 
-It is possible to create a session beforehand (with `.SurflySession.create()` or REST API), and open a session later using JS API. Note that you must open a leader link within 30 seconds from its creation, or it will get expired.
+It is possible to create a session beforehand (with `.SurflySession.create()` or the REST API), and open a session later using the JS API. Note that you must open a leader link within 30 seconds after its creation, or it will expire.
 
 On the leader side:
 ```html
