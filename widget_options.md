@@ -75,10 +75,9 @@ Changes to the code will take priority over changes to the options panel.{% ende
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | QUEUE_METADATA_CALLBACK | false |  A JS callback that can provide optional metadata (see queue customization section below) |
-| QUEUE_ENDPOINT | false | Custom queue endpoint (see queue customization section below) |
-| QUEUE_HANDLER | false | Custom JS queue handler (see queue customization section below) |
-| QUEUE_CALLBACK | false | JS callback for queue monitoring (see queue customization section below) 
-|
+| QUEUE_ENDPOINT | false | Custom queue endpoint |
+| QUEUE_HANDLER | false | Custom JS queue handler|
+| QUEUE_CALLBACK | false | JS callback for queue monitoring|
 
 More information on [queue management](./widget_options/widget_options.md#metadata)
 
@@ -89,7 +88,7 @@ More information on [queue management](./widget_options/widget_options.md#metada
 | max_width | 0 | Restrict max width of the viewport |
 | min_height | 0 | Restrict min height of the viewport |
 | min_width | 0 | Restrict min width of the viewport |
-| set_to_smallest | true | By default we resize the active viewport to viewport size of the participant with the smallest screen. This can be disabled |
+| set_to_smallest | true | By default we resize the active viewport to the viewport size of the participant with the smallest screen. This can be disabled |
 
 
 ##### Enterprise options
