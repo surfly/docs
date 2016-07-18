@@ -63,7 +63,7 @@ In our example, we decided to redirect the user to our custom restricted page wh
 <a name="metadata"></a>
 ##### Queue metadata
 
-We'd like to be able to give our repeat customers a more personal experience. More specifically, we want to retrieve their login details and pass them on as [metadata](../widget_options/widget_options.md/#metadata) in the queue so that, for instance, our agents can greet them by name.
+We'd like to be able to give our repeat customers a more personal experience. More specifically, we want to retrieve their login details and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
 Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass this data by using the ['QUEUE_METADATA_CALLBACK' option](../widget_options/widget_options.md/#queue_metadata_callback):
 ``` javascript
