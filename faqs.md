@@ -172,40 +172,30 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 ##Initial Setup
 
-<button class="section" target="section20" show="Where can I find the code snippet?" hide="Where can I find the code snippet?"></button>
-<br>
-
-<!--sec data-title="Where can I find the code snippet?" data-id="section20" data-show=false ces-->
+<!--sec data-title="Where can I find the code snippet?" data-id="section20" data-collapse=true ces-->
 
 <p>The javascript snippet can be found when you login to your Surfly account. Click on the "settings" link on the menu bar to the left of the screen, and then select "Integration". You may have to click on "generate API keys", before the javascript snippet is shown. You will also have to add your websites domain name (e.g example.com) to the "specify domain names" section just below the code snippet, then click on "setup widget".</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section21" show="Do I have to put the code snippet on every page?" hide="Do I have to put the code snippet on every page?"></button>
-<br>
 
-<!--sec data-title="Do I have to put the code snippet on every page?" data-id="section21" data-show=false ces-->
+<!--sec data-title="Do I have to put the code snippet on every page?" data-id="section21" data-collapse=true ces-->
 
 Unless you want to use session continuation, you only need to put the code snippet on the pages you wish to start a session from. If you would like to use [session continuation](introduction/integration_options.md/#session_continuation), the code snippet should be on every page you want to transfer cookies from.
 
 <!--endsec-->
 
 
-<button class="section" target="section22" show="How do I take a call?" hide="How do I take a call?"></button>
-<br>
 
-<!--sec data-title="How do I take a call?" data-id="section22" data-show=false ces-->
+<!--sec data-title="How do I take a call?" data-id="section22" data-collapse=true ces-->
 
 Login to your Surfly account and navigate to the "Queue panel". Click on the "take call" button next to the session request. You will enter a Surfly session with the user who initiated the request.
 
 <!--endsec-->
 
 
-<button class="section" target="section23" show="How can I customise Surfly's widget?" hide="How can I customise Surfly's widget?"></button>
-<br>
-
-<!--sec data-title="How can I customise Surfly's widget?" data-id="section23" data-show=false ces-->
+<!--sec data-title="How can I customise Surfly's widget?" data-id="section23" data-collapse=true ces-->
 
 You can either specify your preferences directly in the code snippet (see the [widget options](widget_options/reference.md) for more details), or from the 'options' panel in your Surfly account. 
 
