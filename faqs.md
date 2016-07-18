@@ -11,7 +11,7 @@ If you do not find the answer to your question in one of the sections below, ple
 <button class="section" target="section0" show="Is videochat included?" hide="Is videochat included?"></button>
 <br>
 
-<!--sec data-title="Is videochat included?" data-id="section0" data-show=false ces-->
+<!--sec data-title="" data-id="section0" data-show=false ces-->
 
 Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
 
