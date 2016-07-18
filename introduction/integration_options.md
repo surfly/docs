@@ -7,10 +7,10 @@
 This section covers:
 
  - [Surfly and third party cookies](<#third_party_cookies>)
- - [Session continuation](#<session_continuation>)
- - [Security Features](#<security_features>)
- - [Add information to a session log](#<session_log_info>)
- - [Customising the website appearance depending on who is in control](#<customise_appearance_for_user>)
+ - [Session continuation](<#session_continuation>)
+ - [Security Features](<#security_features>)
+ - [Add information to a session log](<#session_log_info>)
+ - [Customising the website appearance depending on who is in control](<#customise_appearance_for_user>)
 
 <a name="third_party_cookies"></a>
 #### Surfly and third party cookies{#third_party_cookies}
