@@ -11,15 +11,15 @@ If you do not find the answer to your question in one of the sections below, ple
 <button class="section" target="section0" show="Is videochat included?" hide="Is videochat included?"></button>
 <br>
 
-<!--sec data-title="" data-id="section0" data-show=false ces-->
+<!--sec data-title="vi" data-id="section0" data-show=false ces-->
 
 Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
 
 <!--endsec-->
 
 
-<!--<button class="section" target="section1" show="How many sessions can I create?" hide="How many sessions can I create?"></button>
-<br>-->
+<button class="section" target="section1" show="How many sessions can I create?" hide="How many sessions can I create?"></button>
+<br>
 
 <!--sec data-title="How many sessions can I create?" data-id="section1" data-show=false data-collapse=true ces-->
 
