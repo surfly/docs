@@ -3,8 +3,7 @@
         "sectionx",
         "youtube",
         "emphasize",
-        "sectionx-collapse",
-        "algolia"
+        "sectionx-collapse"
     ],
     "pluginsConfig": {}
 }
