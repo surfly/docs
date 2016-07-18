@@ -31,12 +31,12 @@ When you open your webpage, you should see a 'get live help' button at the botto
 <a name="start_session"></a>
 ### Starting a session{#start-session} 
 
- - [Button appearance](#<button_appearance>)
- - [Stealth mode](#<stealth_mode>)
- - [Customise your own button](#<surflystart_anchor>)
- - [Session ID](#<session_id>)
- - [Create an invite page](#<auto_start>)
- - [Integrate with existing chat solutions](#<integrate_chat>)
+ - [Button appearance](<#button_appearance>)
+ - [Stealth mode](<#stealth_mode>)
+ - [Customise your own button](<#surflystart_anchor>)
+ - [Session ID](<#session_id>)
+ - [Create an invite page](<#auto_start>)
+ - [Integrate with existing chat solutions](<#integrate_chat>)
 
 <a name="button_appearance"></a>
 #### Button appearance{#button_appearance}
