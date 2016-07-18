@@ -11,7 +11,6 @@
 * [FAQ's](faqs.md)
    * [Functionality](faq/functionality.md)
    * [Technology](faq/technology.md)
-   * [Security](faq/security.md)
 * [Widget options](widget_options.md)
    * [Options details](widget_options/widget_options.md)
    * [Reference](widget_options/reference.md)
