@@ -53,7 +53,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | start_muted | false | All participants start with muted microphone |
 | enable_sounds | true | Enable sound notifications |
 
-
+<a name="button_table"></a>
 ##### Button appearance
 |  Option | Default | Description |
 | ---------------| ------------|------------|
