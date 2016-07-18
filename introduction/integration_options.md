@@ -65,9 +65,9 @@ Blacklisting is used to ban users from a select few webpages, whereas whitelisti
 <a name="session_log_info"></a>
 #### Add information to the session log{#session_log_info}
 
-The surfly.log() function can be used to log custom messages during the Surfly session. You can then use the REST API to track occurences of that message.
+The surfly.log() function can be used to log custom messages during the Surfly session. You can then use [the REST API](./rest_api.md) to track occurrences of that message.
 
-In our example website, we wanted to track the amount of times an agent had made a sale. Everytime the "buy" button is clicked, we create a Surfly log message indicating that the sale has been completed.  We matched the "Sale completed" message to the agent's id and counted the amount of times that this message had been logged using the REST API. A page could then be created showing the number of sales the agent has made.
+In our example website, we wanted to track the amount of times an agent had made a sale. Everytime the "buy" button is clicked, we create a "Sale completed" Surfly log message indicating that the sale has been completed.  We matched the "Sale completed" message to the agent's id and counted the amount of times that this message had been logged using the REST API. A page can then be created showing the number of sales the agent has made.
 
 
 <a name="customise_appearance_for_user"></a>
