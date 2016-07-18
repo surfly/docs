@@ -110,13 +110,13 @@ More information on [restrictions](./widget_options/widget_options.md/#restricti
 | stealth_mode | true | When enabled, users can use CTRL + ENTER to start a Surfly session |
 | format_session_id | true | Change the session id to something easy to communicate over the phone (eg, 123-123-123) |
 | splash | true | Do we need to show the splash screen on session start? |
-| block_until_agent_joins | true | In case of Surfly button, block the screen until a follower joins |
+| block_until_agent_joins | true | If using the Surfly button, block the screen until a follower joins |
 
 
 ##### Cookies
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| only_embedded_sessions | false | By default, if 3rd-party cookies are disabled, we start the session in a new browser tab. If this option is set to true, Surfly will not start session when 3rd-party cookies are disabled. |
+| only_embedded_sessions | false | By default, if 3rd-party cookies are disabled, we will start the session in a new browser tab. If this option is set to true, Surfly will not start session when 3rd-party cookies are disabled. |
 | cookie_transfer_enabled | true | |
 |  cookie_transfer_proxying | true | |
 |  cookie_transfer_urls | | | |
