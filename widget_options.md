@@ -118,7 +118,7 @@ Here, you can find the reference tables for each of the Surfly options that can 
 ##### Session end
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| follower_redirect_url | "" | After session end redirect the follower to a custom URL |
+| follower_redirect_url | "" | After the session ends, redirect the follower to a custom URL |
 | leader_redirect_url | "" | After the session ends, redirect the leader to a custom URL |
 | on_end_redirect_follower_to_queue | false | After session end return the follower to the Surfly Queue page |
 | end_of_session_popup_url | false | if this parameter is set, after session end the user will see a popup window with contents from the specified URL |
