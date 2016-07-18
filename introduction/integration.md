@@ -9,7 +9,7 @@ To integrate Surfly, you need to add the Surfly code snippet into your website's
 
 ![options panel](../images/options-panel.jpg)
 
-#### The Surfly Code Snippet{#code-snippet} 
+#### The Surfly Code Snippet 
 
 This can be found by clicking on the 'integration' panel in your account settings.
 If you get a message telling you that you do not have the API key set up yet, click on 'Generate API'.
@@ -24,7 +24,7 @@ Finally, copy the code snippet and add it to the source code of your website.
 
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
 
-**Please see the [tutorial](../the_surfly_tutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
+**Please see the [integration guide](../the_surfly_tutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
 
 <a name="start_session"></a>
 ### Starting a session{#start-session} 
