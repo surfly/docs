@@ -1,6 +1,6 @@
 # Session Events
 
-SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with `SurflySession.on()` method. Callback functions should accept two arguments:
+SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method. Callback functions should accept two arguments:
     - `SurflySession` instance that triggered the event
     - JSON object with event attributes
 
@@ -80,7 +80,7 @@ _(not available inside a session)_
 triggered on common errors. Parameters:
 - `reason` error description. Currently may be one of the following:
   -  `"other_connection"` the leader_link was opened elsewhere. The new window/browser becomes the leader and the old leader is kicked out. It also happens if viewer_link was open twice in the same browser
-  -  `"connect_failed"` WebSocket connection to Surfly cannot be established
+  -  `"connect_failed"` The WebSocket connection to Surfly cannot be established
 
 <hr />
 
