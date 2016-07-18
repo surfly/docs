@@ -32,7 +32,7 @@ var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src
 You should also specify the domain name of your website in the integration panel so that you can accept requests made from it.
 
 
-As you can see below, after adding the widget code to our website, we see a red "get live help" button.  This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
+As you can see below, after adding the widget code to our website, we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
 ![Surfly widget](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/sfbutton.png)
 
