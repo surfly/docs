@@ -207,10 +207,13 @@ Changes to the widget code have priority over changes to the code snippet.
 
 
 
+<input type="button" onclick=testMe() value="testme"/>
 
-
-
-
+<script type="text/javascript>
+   function testMe {
+       console.log("hello");
+       };
+</script>
 
 
 
