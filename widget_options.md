@@ -3,7 +3,7 @@
 # Surfly options
 
 
-Here, you can find the reference tables for each of the Surfly session options. You can select which aspects of Surfly's functionality you wish to integrate into your own webpage, and adapt the way you want the session to start, look, and behave. These parameters can either be set in the Surfly widget code, or in the options panel from the integration page. Please note that changes to the code will take priority over changes to the options panel.
+Here, you can find the reference tables for each of the Surfly session options. *You can select which aspects of Surfly's functionality you wish to integrate into your own webpage, and adapt the way you want the session to start, look, and behave.*(REVISE) These parameters can either be set in the Surfly widget code, or in the options panel from the integration page. Please note that changes to the code will take priority over changes to the options panel.
 
 
 ## Reference Tables
@@ -118,7 +118,7 @@ Here, you can find the reference tables for each of the Surfly session options. 
 ##### Session end
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| follower_redirect_url | "" | After session end redirect the follower to a custom URL |
+| follower_redirect_url | "" | After the session ends, redirect the follower to a custom URL |
 | leader_redirect_url | "" | After the session ends, redirect the leader to a custom URL |
 | on_end_redirect_follower_to_queue | false | After session end return the follower to the Surfly Queue page |
 | end_of_session_popup_url | false | if this parameter is set, after session end the user will see a popup window with contents from the specified URL |
