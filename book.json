@@ -6,6 +6,5 @@
         "sectionx-collapse",
         "markrundown",
     ],
-    "pluginsConfig": {
-    }
+    "pluginsConfig": {}
 }
