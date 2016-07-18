@@ -6,6 +6,6 @@ Initialize a cobrowsing session, open a new iframe/browser tab if necessary, and
 
 [Session Events](session_events.md)
 
-SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method. Callback functions should accept two arguments:
+Once initialized, SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method. Callback functions should accept two arguments:
     - `SurflySession` instance that triggered the event
     - JSON object with event attributes
