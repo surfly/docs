@@ -10,7 +10,6 @@
    * [Advanced Integration](tutorial/advanced_integration.md)
 * [FAQ's](faqs.md)
    * [Functionality](faq/functionality.md)
-   * [Technology](faq/technology.md)
 * [Widget options](widget_options.md)
    * [Options details](widget_options/widget_options.md)
    * [Reference](widget_options/reference.md)
