@@ -18,6 +18,4 @@
        * [Session Events](javascript-api/session_events.md)
    * [Styling](javascript-api/styling.md)
    * [Examples](javascript-api/examples.md)
-* [REST API](https:/www.surfly.com/cobrowsing-api)
-* [https://www.surfly.com/cobrowsing-api/](https:/www.surfly.com/cobrowsing-api)
 
