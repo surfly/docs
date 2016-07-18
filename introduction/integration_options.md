@@ -27,7 +27,7 @@ There are two main ways to set up session continuation:
  - Full session continuation allows the transfer of all data, including (unlike soft session continuation), cookies with a HttpOnly tag.
  - Soft session continuation is more limited, and excludes cookies with a HttpOnly tag.
 
-{% em color="yellow" %}Please note: 
+{% em color="#ffffe0" %}Please note: 
 This is only supported for sessions started with the Surfly widget. {% endem %}
  
 
@@ -44,7 +44,7 @@ Surfly's security features allow you the option to protect users' data during th
 
 Field masking allows you to protect the leader's data during the Surfly session. If the user is required to enter sensitive information (such as payment details), into your website, you can hide that input from the session followers. The leader is still able to read what they are typing into the form, but the followers (including the agent) will only see a series of x's.
 
-{% em color="yellow" %}Please note: 
+{% em color="#ffffe0" %}Please note: 
 Whilst the leader can mask their data, and hide it from the followers, the followers cannot hide their data from the leader. {% endem %}
 
 
@@ -53,7 +53,7 @@ Whilst the leader can mask their data, and hide it from the followers, the follo
 
 Blacklisting is used to ban users from a select few webpages, whereas whitelisting is more restrictive, and allows access only to the pages specified in the code snippet.
 
-{% em color="yellow" %}Please note: 
+{% em color="#ffffe0" %}Please note: 
 This option is only available to enterprise clients.  {% endem %}
 
 
