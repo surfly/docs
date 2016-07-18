@@ -105,7 +105,7 @@ We now want our button to redirect the user to the landing page. We simply repla
 </script>
 ```
 Finally, we want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
-To do this, we use the [REST API](./rest_api.md) to get information about the session, keeping only the data we're interested in:
+To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get information about the session, keeping only the data we're interested in:
 ``` javascript
 <script>
  	// using the REST API to get information about the session
