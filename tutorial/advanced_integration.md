@@ -95,7 +95,7 @@ First, we have to make sure that the page we are adding the button to contains t
 ``` html
 <button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
 ```
-Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session (in a similar manner, we can also control the behaviour of the "get help" button on the home page):
+Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session (in a similar manner, we can also control the behaviour of the 'get help' button on the home page):
 ``` html
 <script>
    if(window.__surfly){
