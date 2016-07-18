@@ -3,7 +3,7 @@
 # Surfly options
 
 
-Here, you can find the reference tables for each of the Surfly options that can be specified in the code snippet.
+Here, you can find the reference tables for each of the Surfly session options. These parameters can either be set in the Surfly Widget code, or in the options panel from the integration page. Please note that changes to the code will take priority over changes to the options panel.
 
 
 ## Reference Tables
