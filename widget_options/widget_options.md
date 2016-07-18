@@ -97,23 +97,19 @@ will send these headers with each request made during the session.
 <a name="session_continuation"></a>
 ## Session Continuation
 
-The high performance of Surfly can be attributed to our proxy approach. If a
-user wants to continue the web-session as-is, it is necessary to transfer
-all information to our proxy.
+The high performance of Surfly can be attributed to our proxy approach. If a user wants to continue the web-session as-is, it is necessary to transfer all information to our proxy.
 
 This feature is called 'session continuation', and works as follows:
 
- - A Surfly session is started on the current website from the same url in a
-   hidden iframe
+ - A Surfly session is started on the current website from the same url in a hidden iframe
  - The widget makes sure that Surfly knows about session variables (cookies)
- - After the session has been started we synchronize the current state with the
-   fresh state loaded through the iframe
- - When Surfly finish is about to end, we transfer session data to the original
-   page
+ - After the session has been started we synchronize the current state with the fresh state loaded through the iframe
+ - When Surfly finish is about to end, we transfer session data to the original page
 
-Session continuation is currently supported only for sessions started with
-Surfly widget.
+Session continuation is currently supported only for sessions started with the Surfly widget.
 There are several ways to set up session continuation.
+
+Please note: When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.
 
 #### Full session continuation
 
