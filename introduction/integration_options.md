@@ -52,6 +52,7 @@ Whilst the leader can mask their data, and hide it from the followers, the follo
 ##### Blacklisting and Whitelisting{#blacklist_whitelist}
 
 Blacklisting is used to ban users from a select few webpages, whereas whitelisting is more restrictive, and allows access only to the pages specified in the code snippet.
+More information can be found [here](./widget_options/widget_options.md#restrictions).
 
 {% em color="#ffffe0" %}Please note: 
 This option is only available to enterprise clients.  {% endem %}
