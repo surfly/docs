@@ -3,7 +3,9 @@
         "sectionx",
         "youtube",
         "emphasize",
-        "sectionx-collapse"
+        "sectionx-collapse",
+        "markrundown",
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+    }
 }
