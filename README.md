@@ -21,7 +21,7 @@ The introduction explains what a Surfly co-browsing session is, and how it works
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
 
-##### [Widget options](./widget_options.md)
+##### [Surfly options](./widget_options.md)
 
 Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
 
