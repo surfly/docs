@@ -18,7 +18,6 @@
    * [Options details](widget_options/widget_options.md)
    * [Reference](widget_options/reference.md)
 * [Javascript API](javascript_api.md)
-   * [initialization](javascript-api/initialization.md)
    * [Surfly object API](javascript-api/surfly_object_api.md)
    * [Surfly sessions](javascript-api/surfly_sessions.md)
        * [SurflySession API](javascript-api/surflysession_api.md)
