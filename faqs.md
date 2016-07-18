@@ -253,7 +253,7 @@ Login to your Surfly account and navigate to the "Queue panel". Click on the "ta
 
 <!--sec data-title="How can I customise Surfly's widget?" data-id="section23" data-show=false ces-->
 
-You can either specify your preferences directly in the code snippet (see the [widget options](widget_options/draft.md) for more details), or from the 'options' panel in your Surfly account. 
+You can either specify your preferences directly in the code snippet (see the [widget options](widget_options/reference.md) for more details), or from the 'options' panel in your Surfly account. 
 
 ![options panel](images/options-panel.jpg)
 
