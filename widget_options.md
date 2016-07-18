@@ -26,6 +26,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | store_chat_logs | false | If enabled, chat logs will be available for download in Surfly dashboard |
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
 
+<a name="drawing_options"></a>
 #####Drawing options
 |  Option | Default | Description |
 | ---------------| ------------|------------|
