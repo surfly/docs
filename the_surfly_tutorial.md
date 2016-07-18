@@ -1,5 +1,5 @@
 ![logo](images/logosmall.png)
-# The Surfly Tutorial
+# Integration guide
 
 
 Our tutorial guides you through the steps we take as we integrate Surfly into our example application. We start by adding the widget code to our website, and make small adaptations to the code in order to customize the way the session behaves and appears. As we progress through the tutorial, we strip away Surfly's extra functionality, so that in our final application, Surfly acts as a transparent layer on our page. 
