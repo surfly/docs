@@ -18,9 +18,6 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 
-<button class="section" target="section1" show="How many sessions can I create?" hide="How many sessions can I create?"></button>
-<br>
-
 <!--sec data-title="How many sessions can I create?" data-id="section1" data-show=false data-collapse=true ces-->
 
 <p>Only the free plan has a monthly limit on the amount of sessions you can create, all paid plans come with an unlimited number of sessions.</p>
