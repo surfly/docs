@@ -15,9 +15,8 @@ This section covers:
 <a name="session_continuation"></a>
 #### Session continuation{#session_continuation}
 
-Session continuation is useful for when you want to be able to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This allows for a smooth transition into, and out of, the session.
+[Session continuation](./widget_options/widget_options.md#session_continuation) is useful for when you want to be able to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This allows for a smooth transition into, and out of, the session.
 
-More information on session continuation can be found [here](./widget_options/widget_options.md#session_continuation)
 
 <a name="security_features"></a>
 #### Security Features{#security_features}
@@ -36,8 +35,7 @@ Field masking allows you to protect the data during the Surfly session. If the u
 <a name="blacklist_whitelist"></a>
 ##### Blacklisting and Whitelisting{#blacklist_whitelist}
 
-Blacklisting is used to ban users from a select few webpages, whereas whitelisting is more restrictive, and allows access only to the pages specified in the code snippet.
-More information can be found [here](./widget_options/widget_options.md#restrictions).
+[Blacklisting](./widget_options/widget_options.md#restrictions) is used to ban users from a select few webpages, whereas whitelisting is more restrictive, and allows access only to the pages specified in the code snippet.
 
 {% em color="#ffffe0" %}Please note: 
 This option is only available to enterprise clients.  {% endem %}
