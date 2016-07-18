@@ -63,8 +63,7 @@ If you want to create your own button, you can use the #surflystart anchor, whic
 <a name="session_id"></a>
 #### The session ID approach{#session_id}
 
-The session ID approach is especially useful if you are already in contact with a customer via the phone. If the customer needs help navigating a website, the agent can direct them to start a co-browsing session. 
-You can use the REST API to access the session ID and display it. The user can then communicate this ID to the agent so that they will be able to join the session and help them.
+The session ID approach is especially useful if you are already in contact with a customer via the phone. If the customer needs help navigating a website, the agent can direct them to start a co-browsing session. The user can then communicate their ID to the agent so that they will be able to join the session and help them.
 
 Once the agent has the session ID, they can simply enter it into the start session panel on the Surfly admin page, and will immediately join the session.
 
