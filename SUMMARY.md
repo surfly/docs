@@ -16,7 +16,7 @@
    * [Pricing](faq/pricing.md)
    * [Initial setup](faq/integration.md)
 * [Widget options](widget_options.md)
-   * [examples](widget_options/widget_options.md)
+   * [Options details](widget_options/widget_options.md)
    * [Reference](widget_options/reference.md)
 * [Javascript API](javascript_api.md)
    * [initialization](javascript-api/initialization.md)
