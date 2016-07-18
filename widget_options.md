@@ -3,7 +3,7 @@
 # Surfly options
 
 
-Here, you can find the reference tables for each of the Surfly session options. These parameters can either be set in the Surfly Widget code, or in the options panel from the integration page. Please note that changes to the code will take priority over changes to the options panel.
+Here, you can find the reference tables for each of the Surfly session options. You can select which aspects of Surfly's functionality you wish to integrate into your own webpage, and adapt the way you want the session to start, look, and behave. These parameters can either be set in the Surfly widget code, or in the options panel from the integration page. Please note that changes to the code will take priority over changes to the options panel.
 
 
 ## Reference Tables
@@ -37,13 +37,13 @@ Here, you can find the reference tables for each of the Surfly session options. 
 | videochat | true | Is videochat allowed? |
 | low_quality_video | false | Video quality is limited to 320x240@15 |
 
-##### file sharing
+##### File sharing
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | filesharing | true | Allow file sharing |
 | allow_original_file_download | false | Allow users to download shared files (when set to false, users can only view them) |
 
-##### sounds
+##### Sounds
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | start_muted | false | All participants start with muted microphone |
