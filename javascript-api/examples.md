@@ -143,7 +143,7 @@ Surfly.button({
 ```
 
 ### Communication with the cobrowsing window
-While the Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need the Surfly widget to be loaded on both pages. `targetOrigin` and `srcOrigin` parameters allow to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
+While the Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need the Surfly widget to be loaded on both pages. The `targetOrigin` and `srcOrigin` parameters allow you to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
 ```javascript
 Surfly.session()
   .on('session_started', function(session) {
