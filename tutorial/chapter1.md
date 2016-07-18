@@ -45,7 +45,7 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 #### Widget options
 
 The default red Surfly button doesn't match our website design, so we'd prefer to use our own theme color. You can do this by setting a few options in the Surfly widget code.
-In our case, we simply used a few custom options:
+In our case, we only used a handful of custom options:
 ``` javascript
 drawing_mode: "permanent", // change drawing mode so that the drawings last
 chat_box_color: "#87cefa", // change color of chat box so that it suits our website's theme
