@@ -11,10 +11,6 @@ This section covers:
  - [Add information to a session log](<#session_log_info>)
  - [Customising the website appearance depending on who is in control](<#customise_appearance_for_user>)
 
-<a name="third_party_cookies"></a>
-#### Surfly and third party cookies{#third_party_cookies}
-
-When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.
 
 <a name="session_continuation"></a>
 #### Session continuation{#session_continuation}
