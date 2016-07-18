@@ -1,9 +1,7 @@
 {
     "plugins": [
         "sectionx",
-        "anchor-navigation",
         "youtube",
-        "heading-anchors",
         "emphasize",
         "sectionx-collapse",
         "algolia"
