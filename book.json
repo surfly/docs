@@ -4,7 +4,8 @@
         "anchor-navigation",
         "youtube",
         "emphasize",
-        "sectionx-collapse"
+        "sectionx-collapse",
+        "algolia"
     ],
     "pluginsConfig": {}
 }
