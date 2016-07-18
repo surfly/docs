@@ -9,7 +9,7 @@ To integrate Surfly, you need to add the Surfly code snippet into your website's
 
 ![options panel](../images/options-panel.jpg)
 
-Please see the tutorial for a detailed step by step guide on how to integrate Surfly into your website. 
+Please see the [tutorial](../introduction.md) for a detailed step by step guide on how to integrate Surfly into your website. 
 
 #### The Surfly Code Snippet{#code-snippet} 
 
