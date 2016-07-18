@@ -3,7 +3,7 @@
 
 ### Control Panel Options
 
-##### Chat box options
+##### Chat box options{#chat-box-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | chat_box_color | #eb777f | Color of UI (chatbox) elements inside the session |
