@@ -7,7 +7,7 @@
         "heading-anchors",
         "anchors",
         "collapsible-menu",
-        "responsive-iframes"
+        "-responsive-iframes"
     ],
     "pluginsConfig": {}
 }
