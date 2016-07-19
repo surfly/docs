@@ -85,7 +85,7 @@ Surfly's security features allow you the option to protect users' data during th
 <a name="field_masking"></a>
 ##### Field masking{#field_masking}
 
-Field masking allows you to protect the data during the Surfly session. If the user is required to enter sensitive information (such as payment details), into your website, you can hide that input from the session followers. 
+Field masking allows you to protect data during the Surfly session. If the user is required to enter sensitive information (such as payment details), into your website, you can hide that input from the session followers. 
 
 
 <a name="blacklist_whitelist"></a>
