@@ -79,7 +79,7 @@ Alternatively, you may decide to remove the set to smallest screen functionality
 <a name="drawing_mode"></a>
 #### Drawing mode{#drawing_mode}
 
-The [drawing option](./widget_options.md/#video-options) allows the followers within the Surfly session to highlight the areas on the screen that they wish to bring attention to. It works in a similar way to a highlighter, or a magic marker. By default, the drawings are temporary (they will fade out) and the color of the drawing tool is set to match that of the user's cursor. For example, the highlighter color for the first follower will be yellow, green for the second, and so forth. Of course, if you would prefer to have something different, both of these parameters can be changed, or you can turn the drawing function off entirely. You can also set the pixel size and the timeout length. 
+The [drawing option](./widget_options.md/#drawing_options) allows the followers within the Surfly session to highlight the areas on the screen that they wish to bring attention to. It works in a similar way to a highlighter, or a magic marker. By default, the drawings are temporary (they will fade out) and the color of the drawing tool is set to match that of the user's cursor. For example, the highlighter color for the first follower will be yellow, green for the second, and so forth. Of course, if you would prefer to have something different, both of these parameters can be changed, or you can turn the drawing function off entirely. You can also set the pixel size and the timeout length. 
 
 In our example website we adapted the code so that the drawing mode would be permanent, and that the color of the drawings would be in our blue theme color. 
 
