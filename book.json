@@ -3,7 +3,8 @@
         "sectionx",
         "youtube",
         "emphasize",
-        "sectionx-collapse"
+        "sectionx-collapse",
+        "autosize-iframe"
     ],
     "pluginsConfig": {}
 }
