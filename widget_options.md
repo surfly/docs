@@ -66,7 +66,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | hidden | false | Do not show the button |
 | position | 'bottomleft' | Positions the Surfly Support Button. The options are: 'bottomleft', 'bottomright', 'middleright' |
 
-##### Agent roles
+<a name="agent"></a>
+##### Agent roles{#agent}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | agent_can_request_control | false | The agent can request control, after which it can be granted by the controller |
@@ -85,7 +86,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 
 More information on [queue management](./widget_options/widget_options.md#metadata)
 
-##### Screen options/ viewport
+<a name="screen_options"></a>
+##### Screen options/viewport{#screen_options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | max_height | 0  | Restrict max height of the viewport |
