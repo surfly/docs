@@ -11,7 +11,7 @@
         "addcssjs"
     ],
     "pluginsConfig": {
-  "addcssjs": {
+    "addcssjs": {
     "js": ["js/restapi.js"],
   }
 }
