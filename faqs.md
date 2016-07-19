@@ -32,7 +32,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 
 
-<!--sec data-title="Can I integrate Surfly on my website?" data-id="section3" data-show=false ces-->
+<!--sec data-title="Can I integrate Surfly on my website?" data-id="section3" data-collapse=true ces-->
 
 <p>Yes! Just add a few lines of javascript to your website and you or your clients will be able to directly start Surfly sessions straight on your website. This is great for the support case where you can use our widget to show a support button on your website.</p>
 
