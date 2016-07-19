@@ -4,7 +4,8 @@
         "youtube",
         "emphasize",
         "sectionx-collapse",
-        "heading-anchors"
+        "heading-anchors",
+        "anchor-navigation"
     ],
     "pluginsConfig": {}
 }
