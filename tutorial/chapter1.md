@@ -148,7 +148,7 @@ To enable [field masking](../introduction/integration_options.md/#field_masking)
 ```
 In our example, we will use field masking on the last three fields of our order form as they contain information about the client's card. As can be seen in the image, the agent only see crosses (x's) instead of the leader's input:
 
-![field masking](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s8.png)
+![field masking](http://i.imgur.com/lRIa8hf.jpg)
 
 
 {% em color="#ffffe0" %}Please note: 
@@ -179,7 +179,7 @@ We use the 'end_of_session_popup_url' option to point to the url of our survey p
 end_of_session_popup_url: "https://example.com/survey",
 ```
 
-![survey](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s9.png)
+![survey](http://i.imgur.com/WpWxQMv.jpg)
 
 {% em color="#ffffe0" %}Please note: 
 You might need to set the 'hidden' option to 'false' for this option to work correctly.  {% endem %}
