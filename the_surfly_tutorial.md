@@ -22,7 +22,7 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
    - [Customize Surfly's look and feel](tutorial/advanced_integration.md/#remove-ui)
      - [Create your own exit button](tutorial/advanced_integration.md/#exit_button)
      - [Integrate an already existing chat solution](tutorial/advanced_integration.md/#chat)
-     - [Adding a discrete button](tutorial/advanced_integration.md/#small_button)
+     - [Session ID approach](tutorial/advanced_integration.md/#small_button)
 
 
 {% em color="#ffffe0" %}Please note: 
