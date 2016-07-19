@@ -3,7 +3,7 @@
 # Basic Integration
 
 <a name="website"></a>
-#### Cake shop website{#website}
+#### Cake shop website
 
 Our example application features a bespoke cake shop, specialising in personalized cakes. The shop prides themselves on their customer service, meaning that the co-browsing feature Surfly provides is an ideal addition to their website, as it can dramatically improve online communication. 
 Here is a screenshot of the home page before we integrate Surfly:
