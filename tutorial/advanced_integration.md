@@ -61,7 +61,7 @@ In our example, we decided to redirect the user to our custom restricted page wh
 
 
 <a name="metadata"></a>
-##### Queue metadata
+##### Queue metadata{#metadata}
 
 We'd like to be able to give our repeat customers a more personal experience. More specifically, we want to retrieve their login details and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
@@ -86,7 +86,7 @@ ui_off: true, // make Surfly invisible
 
 
 <a name="exit_button"></a>
-##### Create your own exit button
+##### Create your own exit button{#exit_button}
 
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
 
@@ -157,7 +157,7 @@ Considering how our website is built, there's a unique 'get help' button which m
 
 
 <a name="chat"></a>
-##### Integrate an already existing chat solution
+##### Integrate an already existing chat solution{#chat}
 
 Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. We can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` html
@@ -177,7 +177,7 @@ We added a condition in the beginning of the script to make sure that a second Z
 
 
 <a name="small_button"></a>
-##### Session ID approach
+##### Session ID approach{#small_button}
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage. 
 
@@ -223,4 +223,3 @@ We then retrieve the queue ID and display it to the user:
 
 The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim. 
 
-![Retrieved session id](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/session_id_number.png)
