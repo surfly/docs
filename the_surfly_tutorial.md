@@ -7,9 +7,9 @@ Our tutorial guides you through the steps we take as we integrate Surfly into ou
 Major steps and changes are illustrated by an image/gif and, for each modification, you can refer to our [repository](https://github.com/MathildeJ/Cake_shop_example), where you'll find the corresponding commit. 
 <p>Here is a list of all the steps of this guide:</p>
  - [Basic Integration](/tutorial/chapter1.md)
-   - [Initial website](/tutorial/chapter1.md/#website)
-   - [Adding a Surfly button](/tutorial/chapter1.md/<#integrate>)
-   - [Create your own button](/tutorial/chapter1.md/<#widget>)
+   - [Initial website](./tutorial/chapter1.md/#website)
+   - [Adding a Surfly button](./tutorial/chapter1.md/<#integrate>)
+   - [Create your own button](./tutorial/chapter1.md/<#widget>)
    - [Build your own landing page](/tutorial/chapter1.md/#landing)
    - [Session behaviour](/tutorial/chapter1.md/#session)
    - [End of session popup](/tutorial/chapter1.md/#popup)
