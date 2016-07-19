@@ -4,6 +4,17 @@
  Your browser is not compatible with iframes
     </iframe>
 
+    <script type="text/javascript">
+       var hideMenu = document.getElementsByClassName("fa fa-align-justify");
+       var apiFrame - document.getElementById("restapiFrame");
+
+       hideMenu.addEventListener("click", stretchApi);
+
+       function stretchApi {
+          apiFrame.style.margin="0px0px0px0px";
+       }
+  </script>
+
 </html>
 
 
