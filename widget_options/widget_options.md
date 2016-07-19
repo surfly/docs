@@ -3,7 +3,7 @@
 Here, you can find more detailed examples of the options that require specific syntax. 
 
 <a name="restrictions"></a>
-#### Blacklist and Whitelist format
+#### Blacklist and Whitelist format{#restrictions}
 A string representation of the JSON array is expected. Every element of the array is an object with the following properties:
  - `pattern` - regular expression. The requested url will be matched to this regular expression
  - (optional) `redirect` - an url to redirect the user to. You can also specify the special `{{referer}}` pattern in the beginning of a redirect link, and that will be replaced by the Referer value at the moment of redirect. Basically, the user will be redirected to the page where they clicked the restricted link.
@@ -43,8 +43,8 @@ Allow access only to the `example.com`. When the user tries to access any other 
 }
 ```
 
-
-#### Using a special anchor link
+<a name="anchor_start"></a>
+#### Using a special anchor link{#anchor_start}
 
 Another way to start a session is to add the anchor '#surflystart' to any page
 on which the Javascript snippet has been added. This can be used in various
@@ -95,7 +95,7 @@ in on your own backend or a custom header which can be used as an identifier. We
 will send these headers with each request made during the session.
 
 <a name="session_continuation"></a>
-## Session Continuation
+## Session Continuation{#session_continuation}
 
 The high performance of Surfly can be attributed to our proxy approach. If a user wants to continue the web-session as-is, it is necessary to transfer all information to our proxy.
 
@@ -179,7 +179,7 @@ If you need more help with this, please contact us at support@surfly.com. We can
 consult you on the implementation, or build the integration for you.
 
 <a name="metadata"></a>
-## Queue Behaviour Customization
+## Queue Behaviour Customization{#metadata}
 
 It is possible to integrate Surfly into your website with a support
 button. Once a user clicks this button, their support request will be queue'd
@@ -257,7 +257,7 @@ will be given two arguments:
   Response Format* for `QUEUE_ENDPOINT` above)
 
 <a name="queue_metadata_callback"></a>
-#### Enriching a Queue request with Metadata
+#### Enriching a Queue request with Metadata{#queue_metadata_callback}
 
 Prior to making the call to `QUEUE_HANDLER`, we will call `QUEUE_METADATA_CALLBACK`, which can enrich
 the Queue request with additional METADATA from the client side. For example, if you have the widget
@@ -294,7 +294,7 @@ It will be called with two arguments:
  - session - a *JSON Response object* describing the session (this is received from `QUEUE_HANDLER` or `QUEUE_ENDPOINT`)
 
 <a name="surfly_logs"></a>
-## Creating custom log messages
+## Creating custom log messages{#surfly_logs}
 It is possible to create custom log message during the Surfly session using log function:
 ```
 Surfly.log("Custom message");
