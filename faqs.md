@@ -16,25 +16,21 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 
-<!--sec data-title="How many sessions can I create?" data-id="section1" data-show=false data-collapse=true ces-->
+<!--sec data-title="How many sessions can I create?" data-id="section1" data-collapse=true data-collapse=true ces-->
 
 <p>Only the free plan has a monthly limit on the amount of sessions you can create, all paid plans come with an unlimited number of sessions.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section2" show="Can I invite any team members?" hide="Can I invite any team members?"></button>
-<br>
 
-<!--sec data-title="Can I invite any team members?" data-id="section2" data-show=false ces-->
+<!--sec data-title="Can I invite any team members?" data-id="section2" data-collapse=true ces-->
 
 <p>All our paid plans allow you to invite multiple team members and manage them from a single account.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section3" show="Can I integrate Surfly on my website?" hide="Can I integrate Surfly on my website?"></button>
-<br>
 
 <!--sec data-title="Can I integrate Surfly on my website?" data-id="section3" data-show=false ces-->
 
