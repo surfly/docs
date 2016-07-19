@@ -47,7 +47,8 @@ The standard Ctrl + T shortcut to open a new tab will not open a tab within the 
 <a name="chat_box"></a>
 ####Chat box{#chat_box}
 
-Surfly provides a chat box which can be used to communicate with other users. 
+Surfly provides a chat box which can be used to communicate with other users. We will display your gravatar in the chat box. The name is taken from the name as configured in the admin panel. If you prefer, you can use the REST API to change the name that gets displayed.
+
 The default chatbox color is a soft red, however, this can be altered to match your website's theme. Modifying the chat box can not only change its appearance, but also limit or extend the amount of control that the leader and the followers can have. 
 
 If you want to monitor the conversations between the agents and the users, you can choose to store the chat logs. You can access them by navigating to 'History' in your Surfly admin panel. The chat log section will have two icons inside, allowing you to either view the logs, or download them.
