@@ -1,13 +1,5 @@
 # Setting advanced Widget options
 
-<!--sec data-title="Introduction" data-id="section0" data-show=false ces-->
-
-Insert markdown content here (you should start with h3 if you use heading).
-
-<!--endsec-->
-
-<button class="section" target="section0" show="Show next section" hide="Hide next section"></button>
-
 Here, you can find more detailed examples of the options that require specific syntax. 
 
 <a name="restrictions"></a>
