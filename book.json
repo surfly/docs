@@ -4,7 +4,8 @@
         "youtube",
         "emphasize",
         "sectionx-collapse",
-        "responsive-iframes"
-     ],
+        "responsive-iframes",
+        "autosize-iframe"
+    ],
     "pluginsConfig": {}
 }
