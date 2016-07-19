@@ -8,8 +8,8 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
 <p>Here is a list of all the steps of this guide:</p>
  - [Basic Integration](/tutorial/chapter1.md)
    - [Initial website](/tutorial/chapter1.md/#website)
-   - [Adding a Surfly button](./tutorial/chapter1.md/<#integrate>)
-   - [Create your own button](./tutorial/chapter1.md/#widget)
+   - [Adding a Surfly button](/tutorial/chapter1.md/#integrate)
+   - [Customise the button](./tutorial/chapter1.md/#widget)
    - [Build your own landing page](/tutorial/chapter1.md/#landing)
    - [Session behaviour](/tutorial/chapter1.md/#session)
    - [End of session popup](/tutorial/chapter1.md/#popup)
@@ -17,7 +17,7 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
    
  - [Advanced Integration](/tutorial/advanced_integration.md)
    - [Enabling session continuation](/tutorial/advanced_integration.md/#receipt)
-   - [Configuring the blacklist](/tutorial/advanced_integration.md/<#blacklist>)
+   - [Configuring the blacklist](/tutorial/advanced_integration.md/#blacklist)
    - [Queue metadata](/tutorial/advanced_integration.md/#metadata)
    - [Customize Surfly's look and feel](tutorial/advanced_integration.md/#remove-ui)
      - [Create your own exit button](tutorial/advanced_integration.md/#exit_button)
