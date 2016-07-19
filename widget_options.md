@@ -36,7 +36,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | drawing_timeout | 3| "Magic marker" timeout |
 
 <a name="video-options"></a>
-##### Video
+##### Video{#video-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | videochat | true | Is videochat allowed? |
