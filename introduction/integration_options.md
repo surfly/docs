@@ -35,7 +35,7 @@ If you do not wish to have a visual button or link on your webpage, then you can
 <a name="surflystart_anchor"></a>
 #### Customise your own button{#surflystart_anchor}
 
-If you want to create your own button, you can use the #surflystart anchor, which can be integrated into your website's source code. You can choose the text you wish to write onto the button, and it can be fully styled with css so that it compliments your website design.  As you can see in the image below, we chose to use the image of a cake as a button. If a visitor to the website clicks on it, it will lead them to a Surfly session.
+If you want to create your own button, you can use the [#surflystart anchor](../widget_options/widget_options.md/#anchor_start), which can be integrated into your website's source code. You can choose the text you wish to write onto the button, and it can be fully styled with css so that it compliments your website design.  As you can see in the image below, we chose to use the image of a cake as a button. If a visitor to the website clicks on it, it will lead them to a Surfly session.
 
 ![The end result](https://raw.github.com/surfly/tutorial/master/screens/cake-button.png)
 
