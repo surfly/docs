@@ -3,7 +3,8 @@
         "youtube",
         "emphasize",
         "heading-anchors",
-        "anchors"
+        "anchors",
+        "sectionx-modified"
     ],
     "pluginsConfig": {}
 }
