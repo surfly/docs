@@ -24,7 +24,7 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
      - [Integrate an already existing chat solution](tutorial/advanced_integration.md/#chat)
      - [Session ID approach](tutorial/advanced_integration.md/#small_button)
 
-
+<br>
 {% em color="#ffffe0" %}Please note: 
 If you wish to integrate Surfly, you need to give Surfly access to the server. This is especially important when you are developing locally.  {% endem %}
 
