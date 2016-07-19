@@ -79,7 +79,12 @@ log message to the Audit log (available in Surfly Dashboard after session ends).
 
 > SurflySession.sendMessage( message, targetOrigin )
 
-send a `message` (plain JSON-serializable object) to the session window. On the other side it can be received with `"message"` event handler. `targetOrigin`should be set to the [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) of the expected recipient. If set to `"*"`, message will be delivered regardless of the recipient's origin.
+This function is useful when you need to establish a communication channel between your JS code on the original page, and its proxified version inside the session.
+
+It is available on both sides, and works in symmetric way: it will trigger a `message` event on the other side of the channel (see [Session Events](session_events.md) section).
+
+`message` argument must be a plain JSON-serializable object.
+`targetOrigin`should be set to the [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) of the expected recipient. If set to `"*"`, message will be delivered regardless of the recipient's origin.
 
 <hr />
 
