@@ -38,7 +38,7 @@ At any given time during a Surfly session, the leader can decide to surf to anot
 
 ![new_url](https://raw.github.com/surfly/tutorial/master/screens/new_url.png)
 
-However, if you wish to open a new tab you can simply hold Ctrl and click on the link you want to open. When the last tab has been closed, the normal Surfly session will resume.
+However, if you wish to open a new tab you can simply hold CTRL and click on the link you want to open. When the last tab has been closed, the normal Surfly session will resume.
 
 {% em color="#ffffe0" %}Please note: 
 The standard CTRL + T shortcut to open a new tab will not open a tab within the Surfly session. {% endem %}
