@@ -5,7 +5,6 @@
 If you do not find the answer to your question in one of the sections below, please do not hesitate to contact us.
 
 
-
 ## Functionality
 
 <!--sec data-title="Is videochat included?" data-id="section0" data-collapse=true ces-->
