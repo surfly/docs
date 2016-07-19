@@ -17,7 +17,7 @@ The documentation aims to give you a good understanding of the co-browsing funct
 
 The introduction explains what a Surfly co-browsing session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
-##### [Introduction guide](./the_surfly_tutorial.md)
+##### [Integration guide](./the_surfly_tutorial.md)
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
 
