@@ -1,6 +1,7 @@
 <html>
 
-    <iframe src="https://www.surfly.com/cobrowsing-api/" style="position:absolute; width:100%; height:100%; border:none; bottom:0px; padding:0px; margin:0;"> Your browser is not compatible with iframes
+   <iframe src="https://www.surfly.com/cobrowsing-api/" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; z-index: 500;">
+ Your browser is not compatible with iframes
     </iframe>
 
 </html>
