@@ -7,7 +7,7 @@
   <script type="text/javascript">
        var hideMenu = document.getElementsByClassName("btn pull-left js-toolbar-action");
        console.log("hideMenu:"+ hideMenu);
-       var apiFrame - document.getElementById("restapiFrame");
+       var apiFrame = document.getElementById("restapiFrame");
        
        hideMenu.addEventListener("click", stretchApi);
 
