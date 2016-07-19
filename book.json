@@ -3,8 +3,12 @@
         "sectionx",
         "youtube",
         "emphasize",
+        "sectionx-collapse",
         "heading-anchors",
-        "sectionx-collapse"
+        "anchors",
+        "collapsible-menu",
+        "autosize-iframe",
+        "addcssjs"
     ],
     "pluginsConfig": {}
 }
