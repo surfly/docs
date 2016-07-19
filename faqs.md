@@ -8,12 +8,6 @@ If you do not find the answer to your question in one of the sections below, ple
 
 ## Functionality
 
-<!--sec data-title="Introduction" data-id="section0" data-show=true ces-->
-
-Insert markdown content here (you should start with h3 if you use heading).
-
-<!--endsec-->
-
 <!--sec data-title="Is videochat included?" data-id="section0" data-collapse=true ces-->
 
 Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
