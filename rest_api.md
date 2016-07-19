@@ -4,13 +4,12 @@
     </iframe>
     <script type="text/javascript">
        
-       document.getElementsByClassName("btn pull-left js-toolbar-action").addEventListener("click", stretchApi, false);
+       document.getElementsByClassName("btn pull-left js-toolbar-action").addEventListener("click",        stretchApi(){
+          apiFrame.style.margin="0px0px0px0px";
+       }, false);
        console.log("hideMenu:"+ hideMenu);
        var apiFrame = document.getElementById("restapiFrame");
 
-       function stretchApi() {
-          apiFrame.style.margin="0px0px0px0px";
-       }
        </script>
 </html>
 
