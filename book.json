@@ -8,8 +8,12 @@
         "anchors",
         "collapsible-menu",
         "autosize-iframe",
+        "addcssjs"
     ],
     "pluginsConfig": {
-  }
+        "addcssjs": {
+            "js": "restapi.js",
+            "css": ""
+        }
+    }
 }
-
