@@ -53,6 +53,8 @@ The default chatbox color is a soft red, however, this can be altered to match y
 
 If you want to monitor the conversations between the agents and the users, you can choose to store the chat logs. You can access them by navigating to 'History' in your Surfly admin panel. The chat log section will have two icons inside, allowing you to either view the logs, or download them.
 
+<img src="https://raw.github.com/surfly/tutorial/master/screens/logged_icon.png" align="center">
+
 ![chatlogs](https://raw.github.com/surfly/tutorial/master/screens/logged_icon.png)
 
 If you do not want to have the chat functionality, you can either use dock mode to only display the control panel, or remove it completely.
