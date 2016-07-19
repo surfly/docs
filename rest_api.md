@@ -4,7 +4,7 @@
     </iframe>
     <script type="text/javascript">
        
-       document.getElementsByClassName("btn pull-left js-toolbar-action").addEventListener("click", stretchApi);
+       document.getElementsByClassName("btn pull-left js-toolbar-action").addEventListener("click", stretchApi, false);
        console.log("hideMenu:"+ hideMenu);
        var apiFrame = document.getElementById("restapiFrame");
 
