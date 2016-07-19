@@ -1,10 +1,5 @@
 ![logo](images/logosmall.png)
 
-```javascript run hide
-markdownpdf().from("../introduction.md").to("/Users/mrt/Downloads/test-c1.pdf", function () {
-  console.log("Done")
-})
-```
 # Introducing Surfly
 
 ### Welcome to Surfly
