@@ -29,7 +29,7 @@ Here you can find a list of the different changes you can make to either the cod
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API.
 
-##### [FAQ's](./faqs.md)
+##### [FAQ](./faqs.md)
 
 Here we answer questions on functionality, technology, pricing, security and initial setup.
 If you do not find what you were looking for, please don't hesitate to contact us.
