@@ -4,7 +4,8 @@
         "emphasize",
         "heading-anchors",
         "anchors",
-        "sectionx-modified"
+        "sectionx-modified",
+        "sectionx-collapse"
     ],
     "pluginsConfig": {}
 }
