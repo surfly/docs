@@ -11,7 +11,7 @@
        
        hideMenu.addEventListener("click", stretchApi);
 
-       function stretchApi {
+       function stretchApi() {
           apiFrame.style.margin="0px0px0px0px";
        }
   </script>
