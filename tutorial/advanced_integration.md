@@ -75,7 +75,7 @@ As can be seen below, the agents can directly see this information from the 'Que
 ![metadata](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/metadata.gif)
 
 <a name="remove-ui"></a>
-### Customize Surfly's look and feel{#remove-ui}
+### Customize Surfly's look and feel
 
 Finally, we wanted to completely strip everything down to co-browsing. By default, Surfly provides more tools and features than our example application needs. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
@@ -181,9 +181,7 @@ We added a condition in the beginning of the script to make sure that a second Z
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage. 
 
-The flow of our website has now completely changed. Instead of people initiating a session and waiting for an agent to join them, visitors will first use Zopim when they need help. If, during the conversation, the agent decides a Surfly session is required, they can direct the user to the bottom of the webpage to click on the cake.
-
-When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  There is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
+The flow of our website has now completely changed. Instead of people initiating a session and waiting for an agent to join them, visitors will first use Zopim when they need help. If, during the conversation, the agent decides a Surfly session is required, they can direct the user to the bottom of the webpage to click on the cake.The user will then be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will use the id to join the user in their session.  There is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
 
 ![cake icon](../images/gif-small-button-2.gif)
 ![cake icon](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/cake_icon.png)
