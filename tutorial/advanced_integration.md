@@ -190,8 +190,6 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
   <img src="http://i.giphy.com/3oEjI06AqXAbBKKHw4.gif">
 </div>  
 
-![test](http://i.giphy.com/3oEjI06AqXAbBKKHw4.gif)
-
 As you can see from the code below, by adding the #surflystart anchor, we ensure that a Surfly session starts when this icon is clicked:
 
 ``` javascript
