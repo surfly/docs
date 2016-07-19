@@ -35,7 +35,7 @@ var info = cookie.split(",");
 ```
 In the gif below, you can see that the order details are available even if the session ends before the client get their receipt:
 
-![receipt](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/receipt.gif)
+![receipt](http://i.giphy.com/26BRQx4XLP7ffFlrq.gif)
 
 
 <a name="blacklist"></a>
