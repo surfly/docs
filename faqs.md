@@ -4,6 +4,8 @@
 
 If you do not find the answer to your question in one of the sections below, please do not hesitate to contact us.
 
+
+
 ## Functionality
 
 <!--sec data-title="Is videochat included?" data-id="section0" data-collapse=true ces-->
@@ -201,6 +203,12 @@ You can either specify your preferences directly in the code snippet (see the [w
 
 Changes to the widget code have priority over changes to the code snippet. 
 <!--endsec-->
+
+
+
+
+
+
 
 
 
