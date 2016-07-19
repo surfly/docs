@@ -5,7 +5,8 @@
         "emphasize",
         "sectionx-collapse",
         "heading-anchors",
-        "anchors"
+        "anchors",
+        "collapsible-menu"
     ],
     "pluginsConfig": {}
 }
