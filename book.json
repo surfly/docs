@@ -1,10 +1,10 @@
 {
     "plugins": [
+        "sectionx",
         "youtube",
         "emphasize",
         "heading-anchors",
         "anchors",
-        "sectionx"
     ],
     "pluginsConfig": {}
 }
