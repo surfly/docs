@@ -179,7 +179,8 @@ We added a condition in the beginning of the script to make sure that a second Z
 <a name="small_button"></a>
 ##### Session ID approach
 
-Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller icon to the footer of our webpage. If necessary, the agent can direct the user to start a session by clicking on the small cake icon. 
+Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller icon to the footer of our webpage. If necessary, the agent can direct the user to start a session by clicking on the small cake icon. When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.
+
 
 ![cake icon](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/cake_icon.png)
 
