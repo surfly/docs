@@ -4,7 +4,7 @@
  
 
 <a name="receipt"></a>
-#### Session continuation
+#### Enabling session continuation
 
 Finally, we want to show the customer their receipt. Therefore, we have to make sure that their order information will be passed on, even if the client ends the session before getting their receipt. In order to do so, we can use soft [session continuation](../widget_options/widget_options.md/#session_continuation).
 
@@ -39,7 +39,7 @@ In the gif below, you can see that the order details are available even if the s
 
 
 <a name="blacklist"></a>
-##### Blacklisting
+##### Configuring the blacklist
 
 We quickly realised that visitors shouldn't be allowed to access our baking shop page while they're in a Surfly session as it's a separate activity, and the agents working for our cake shop aren't necessarily qualified to guide our customers through our baking shop.
 
