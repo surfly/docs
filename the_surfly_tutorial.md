@@ -16,9 +16,9 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
    
    
  - [Advanced Integration](/tutorial/advanced_integration.md)
-   - [Enabling session continuation](tutorial/advanced_integration.md/#receipt)
-   - [Configuring the blacklist](./tutorial/advanced_integration.md/<#blacklist>)
-   - [Queue metadata](tutorial/advanced_integration.md/#metadata)
+   - [Enabling session continuation](/tutorial/advanced_integration.md/#receipt)
+   - [Configuring the blacklist](/tutorial/advanced_integration.md/<#blacklist>)
+   - [Queue metadata](/tutorial/advanced_integration.md/#metadata)
    - [Customize Surfly's look and feel](tutorial/advanced_integration.md/#remove-ui)
      - [Create your own exit button](tutorial/advanced_integration.md/#exit_button)
      - [Integrate an already existing chat solution](tutorial/advanced_integration.md/#chat)
