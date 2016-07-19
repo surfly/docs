@@ -6,7 +6,8 @@
         "sectionx-collapse",
         "heading-anchors",
         "anchors",
-        "collapsible-menu"
+        "collapsible-menu",
+        "responsive-iframes"
     ],
     "pluginsConfig": {}
 }
