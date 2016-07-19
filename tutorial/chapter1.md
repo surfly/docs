@@ -171,7 +171,7 @@ window.addEventListener('surflycontrolchange', function (event) {
 
 
 <a name="popup"></a>
-#### End of session popup
+#### End of session popup{#popup}
 
 Since customer service is very important to us, we'd also like to be able to ask for feedback at the end of a session so that we can improve our website and offer the smoothest co-browsing experience to our clients.
 We use the 'end_of_session_popup_url' option to point to the url of our survey page:
