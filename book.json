@@ -3,17 +3,11 @@
         "sectionx",
         "youtube",
         "emphasize",
-        "sectionx-collapse",
+        "heading-anchors",
+        "sectionx-collapse"
         "heading-anchors",
         "anchors",
         "collapsible-menu",
-        "autosize-iframe",
-        "addcssjs"
     ],
-    "pluginsConfig": {
-        "addcssjs": {
-            "js": "restapi.js",
-            "css": ""
-        }
-    }
+    "pluginsConfig": {}
 }
