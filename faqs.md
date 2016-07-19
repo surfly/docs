@@ -119,70 +119,55 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 ## Pricing
 
-<button class="section" target="section13" show="Is the FREE version really free?" hide="Is the FREE version really free?"></button>
-<br>
 
-<!--sec data-title="Is the FREE version really free?" data-id="section13" data-show=false ces-->
+<!--sec data-title="Is the FREE version really free?" data-id="section13" data-collapse=true ces-->
 
 <p>Yes, the free version is really free. But the number of cobrowsing sessions you can start is a limited to 5 per month.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section14" show="Do I need a credit card for the FREE version?" hide="Do I need a credit card for the FREE version?"></button>
-<br>
 
-<!--sec data-title="Do I need a credit card for the FREE version?" data-id="section14" data-show=false ces-->
+<!--sec data-title="Do I need a credit card for the FREE version?" data-id="section14" data-collapse=true ces-->
 
 <p>No, for the Free version you don’t need to have a credit-card. Also, for bigger clients we offer the option to pay by wire transfer through invoice.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section15" show="What happens after the 14 day trial?" hide="What happens after the 14 day trial?"></button>
-<br>
 
-<!--sec data-title="What happens after the 14 day trial?" data-id="section15" data-show=false ces-->
+<!--sec data-title="What happens after the 14 day trial?" data-id="section15" data-collapse=true ces-->
 
 <p>After the 14 day trial of the Pro and Business version your credit card will be charged for the first month, starting at that date. During the 14 day trial period you can cancel your subscription at any moment and your credit card will not be charged after the first 14 days.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section16" show="Can I pay by invoice?" hide="Can I pay by invoice?"></button>
-<br>
 
-<!--sec data-title="Can I pay by invoice?" data-id="section16" data-show=false ces-->
+<!--sec data-title="Can I pay by invoice?" data-id="section16" data-collapse=true ces-->
 
 <p>For enterprise clients or clients with more than 10 business seats we do offer the option to pay by invoice and wire-transfer. Please contact us for more information. Can I upgrade or downgrade my subscription? Yes, you can change your subscription at any moment. An upgrade will be effective immediately. A downgrade will be effective at the end of the current contract period (month or year).</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section17" show="Are the prices subject to VAT or sales tax?" hide="Are the prices subject to VAT or sales tax?"></button>
-<br>
 
-<!--sec data-title="Are the prices subject to VAT or sales tax?" data-id="section17" data-show=false ces-->
+<!--sec data-title="Are the prices subject to VAT or sales tax?" data-id="section17" data-collapse=true ces-->
 
 <p>That depends on your location. Non-EU: For all customers outside the European Union, we do not have to add VAT. EU: For companies in the European Union that have a valid VAT tax ID, we do not have to add VAT. For private individuals or organisations without a valid VAT tax ID within the EU, we have to add your country’s local VAT percentage. The Netherlands: Surfly is based in the Netherlands so we have to add 21% VAT to customers (companies and individuals) based in the Netherlands.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section18" show="Can I cancel my subscription?" hide="Can I cancel my subscription?"></button>
-<br>
 
-<!--sec data-title="Can I cancel my subscription?" data-id="section18" data-show=false ces-->
+<!--sec data-title="Can I cancel my subscription?" data-id="section18" data-collapse=true ces-->
 
 <p>Yes, you can cancel your subscription at any moment. The subscription will remain active until the end of the current contract period (month or year). Alternatively, you can also downgrade to the Free Version.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section19" show="What is a seat?" hide="What is a seat?"></button>
-<br>
-
-<!--sec data-title="Can I cancel my subscription?" data-id="section19" data-show=false ces-->
+<!--sec data-title="Can I cancel my subscription?" data-id="section19" data-collapse=true ces-->
 
 <p>Surfly’s license is user based, this means that while any seat can create an unlimited number of sessions each seat is to be used by a single user. Sharing a single seat over multiple users is not allowed.</p>
 
