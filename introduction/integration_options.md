@@ -71,17 +71,16 @@ Simply add the code snippet to the page including your chat solution, and alter 
 <a name="session_continuation"></a>
 #### Session continuation{#session_continuation}
 
-Session continuation is used to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This allows for a smooth transition into, and out of, the session.
+[Session continuation](../widget_options/widget_options.md#session_continuation) is used to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This allows for a smooth transition into, and out of, the session.
 
-More information on session continuation can be found [here](./widget_options/widget_options.md#session_continuation)
 
 <a name="security_features"></a>
 #### Security Features{#security_features}
 
 Surfly's security features allow you the option to protect users' data during the session, and, if required, restrict access to selected webpages. 
 
- - [Field masking](#field_masking)
- - [Blacklisting and Whitelisting](#blacklist_whitelist)
+ - [Field masking](<#field_masking>)
+ - [Blacklisting and Whitelisting](<#blacklist_whitelist>)
 
 <a name="field_masking"></a>
 ##### Field masking{#field_masking}
