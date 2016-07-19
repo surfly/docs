@@ -39,7 +39,7 @@ In the gif below, you can see that the order details are available even if the s
 
 
 <a name="blacklist"></a>
-##### Configuring the blacklist
+##### Configuring the blacklist{#blacklist}
 
 We quickly realised that visitors shouldn't be allowed to access our baking shop page while they're in a Surfly session as it's a separate activity, and the agents working for our cake shop aren't necessarily qualified to guide our customers through our baking shop.
 
