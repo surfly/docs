@@ -42,7 +42,7 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 
 
 <a name="widget"></a>
-#### Customise the button
+#### Customise the button{#widget}
 
 The default red Surfly button doesn't match our website design, so we'd prefer to use our own theme color. You can do this by setting a few options in the Surfly widget code.
 In our case, we only used a handful of custom options:
