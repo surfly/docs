@@ -3,7 +3,8 @@
         "sectionx",
         "youtube",
         "emphasize",
-        "sectionx-collapse"
-     ],
+        "sectionx-collapse",
+        "heading-anchors"
+    ],
     "pluginsConfig": {}
 }
