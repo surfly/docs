@@ -15,7 +15,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 <h3 class="table_class">Control Panel Options</h3>
 
 <a name="chatbox-options"></a>
-##### Chat box options
+##### Chat box options{#chatbox-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | chat_box_color | #eb777f | Color of UI (chatbox) elements inside the session |
@@ -27,7 +27,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
 
 <a name="drawing_options"></a>
-#####Drawing options
+#####Drawing options{#drawing_options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | drawing_color | "default" | "Magic marker" color |
@@ -43,21 +43,21 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | low_quality_video | false | Video quality is limited to 320x240@15 |
 
 <a name="filesharing-options"></a>
-##### File sharing
+##### File sharing{#filesharing-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | filesharing | true | Allow file sharing |
 | allow_original_file_download | false | Allow users to download shared files (when set to false, users can only view them) |
 
 <a name="sounds"></a>
-##### Sounds
+##### Sounds{#sounds}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | start_muted | false | All participants start with muted microphone |
 | enable_sounds | true | Enable sound notifications |
 
 <a name="button_table"></a>
-##### Button appearance
+##### Button appearance{#button_table}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | theme_font_background | surfly-red | The support button background color |
