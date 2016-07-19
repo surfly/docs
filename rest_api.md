@@ -1,5 +1,5 @@
 <html>
-    <iframe src="https://www.surfly.com/cobrowsing-api/" frameborder="0">
+    <iframe src="https://www.surfly.com/cobrowsing-api/" allowfullscreen>
     </iframe>
 </html>
 
