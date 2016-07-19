@@ -72,7 +72,7 @@ QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem(
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
-![metadata](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/metadata.gif)
+![metadata](http://i.giphy.com/3o6Ztgvgv0IkUAE1VK.gif)
 
 <a name="remove-ui"></a>
 ### Customize Surfly's look and feel{#remove-ui}
