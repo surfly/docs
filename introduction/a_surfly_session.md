@@ -62,12 +62,12 @@ If you do not want to have the chat functionality, you can either use dock mode 
 <a name="video_chat"></a>
 #### Video chat{#video_chat}
 
-Surfly also allows you to communicate in your session with [video chat](../widget_options.md). You can maximise the video to full screen, or restrict the video quality. However, if you do not wish to use this functionality you can easily disable it.
+Surfly also allows you to communicate in your session with [video chat](../widget_options.md/#video-options). You can maximise the video to full screen, or restrict the video quality. However, if you do not wish to use this functionality you can easily disable it.
 
 <a name="document_sharing"></a>
 #### Document sharing{#document_sharing}
 
-If you wish to share documents during the Surfly session, you can click the paper icon to the bottom right of the chat box. Once you have clicked on it, you can upload a document from your desktop. By default, shared documents can only be viewed, and not downloaded. However, you can change the settings so that the files can be downloaded. It is also possible to share documents by dragging them directly to the chat box. 
+If you wish to [share documents](../widget_options.md/#filesharing-options) during the Surfly session, you can click the paper icon to the bottom right of the chat box. Once you have clicked on it, you can upload a document from your desktop. By default, shared documents can only be viewed, and not downloaded. However, you can change the settings so that the files can be downloaded. It is also possible to share documents by dragging them directly to the chat box. 
 If you wish, you may also disable the document sharing tool. 
 
 <a name="window_size"></a>
