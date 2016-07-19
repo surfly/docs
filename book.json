@@ -2,12 +2,9 @@
     "plugins": [
         "sectionx",
         "youtube",
+        "heading-anchors",
         "emphasize",
-        "heading-anchors",
         "sectionx-collapse"
-        "heading-anchors",
-        "anchors",
-        "collapsible-menu",
     ],
     "pluginsConfig": {}
 }
