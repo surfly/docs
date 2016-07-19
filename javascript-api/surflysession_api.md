@@ -42,9 +42,13 @@ If the session is already initialized, `SurflySession.create()` does nothing.
 
 <hr />
 
-> SurflySession SurflySession.end()
+> SurflySession SurflySession.end( [redirectUrl] )
 
 gracefully ends the current session (as long as the current user has permissions to do so).
+
+If specified, `redirectUrl` should be a valid URL string. The user will be redirected there after session ends. The exception is when `end_of_session_popup_url` settings is set. In this case, it will have priority over `redirectUrl`.
+
+Note that by default a user is redirected to the page that was last visited inside the session.
 
 <hr />
 
