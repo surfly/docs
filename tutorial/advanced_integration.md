@@ -57,7 +57,7 @@ if (window.location.hash == "#restricted"){
 ```
 In our example, we decided to redirect the user to our custom restricted page which informs them that this page is restricted:
 
-![blacklist](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/blacklist.gif)
+![blacklist](http://i.giphy.com/l0MYz8lHS9W3RvjnG.gif)
 
 
 <a name="metadata"></a>
@@ -185,10 +185,7 @@ The flow of our website has now completely changed. Instead of people initiating
 
 When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  There is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
 
-![cake icon](../images/gif-small-button-2.gif)
-
 ![test](http://i.giphy.com/3oEjI06AqXAbBKKHw4.gif)
-
 
 As you can see from the code below, by adding the #surflystart anchor, we ensure that a Surfly session starts when this icon is clicked:
 
