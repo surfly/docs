@@ -4,7 +4,7 @@
 
 _(read only)_
 
-If called from inside a session, this returns a [SurflySession](surflysession_objects.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
+If called from inside a session, this returns a [SurflySession](surflysession_api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
 
 ##### Example
 ```javascript
