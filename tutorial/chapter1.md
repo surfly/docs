@@ -61,7 +61,7 @@ The API has an [extensive list of widget options](../widget_options.md).
 
 
 <a name="start_button"></a>
-#### Create your own button
+#### Create your own button{#start_button}
 
 Even though Surfly is now customised to our needs and preferences, we'd like to create our own button to start a co-browsing session so that we can customise it and control its behaviour more easily.
 
@@ -79,7 +79,7 @@ In particular, we have chosen to use the image of a cake as a get help button fo
 
 
 <a name="landing"></a>
-#### Build your own landing page
+#### Build your own landing page{#landing}
 
 When a visitor initiates a session they are queue'd and, by default, have to wait for an agent to take the call before they can navigate within the session. The screen is blocked, and a red banner appears at the top of the screen with their queue pin. In our example application, the page that the user starts a session from is the home page, and consequently, this is the page that gets blocked. We would prefer to have our own custom landing page, where we can tell our customers that they are in the queue, and that an agent will be with them soon. 
 
@@ -136,7 +136,7 @@ We now have our own personalised landing page to greet our customers.
 
 
 <a name="session"></a>
-#### Session behaviour
+#### Session behaviour{#session}
 
 We have integrated Surfly to our satisfaction, but there are other use cases that we still haven't covered. In particular, when a client places an order during a session, we don't want the agent to be able to see their payment details or to click the 'Order' button for them. 
 You can do this by using some of the built-in options provided with Surfly.
