@@ -3,7 +3,7 @@
 # Basic Integration
 
 <a name="website"></a>
-#### Cake shop website
+#### Cake shop website{#website}
 
 Our example application features a bespoke cake shop, specialising in personalized cakes. The shop prides themselves on their customer service, meaning that the co-browsing feature Surfly provides is an ideal addition to their website, as it can dramatically improve online communication. 
 Here is a screenshot of the home page before we integrate Surfly:
@@ -15,7 +15,7 @@ We are now going to integrate Surfly into our website, selecting the aspects of 
 
 
 <a name="integrate"></a>
-#### Integrate Surfly 
+#### Integrate Surfly{#integrate}
 
 First, add the Surfly code snippet to your website's source code. To do this, log into your surfly.com account and navigate to the 'Settings' panel. In the 'Integration' tab, you can find the snippet code that you need to copy and paste into the source code of your website.
 It should look something like the following:
