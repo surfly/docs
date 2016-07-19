@@ -8,7 +8,7 @@
 Our example application features a bespoke cake shop, specialising in personalized cakes. The shop prides themselves on their customer service, meaning that the co-browsing feature Surfly provides is an ideal addition to their website, as it can dramatically improve online communication. 
 Here is a screenshot of the home page before we integrate Surfly:
 
-![website](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s1.png)
+![website](http://i.imgur.com/zD0dd03.jpg)
 
 As you can see, it's a standard website with different pages and possible actions. 
 We are now going to integrate Surfly into our website, selecting the aspects of Surfly's functionality that best suit our needs.
