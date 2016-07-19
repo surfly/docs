@@ -23,7 +23,7 @@ If you prefer, you can adapt the 'get live help' button that Surfly provides. Th
 
 ![default button appearance](https://raw.github.com/surfly/tutorial/master/screens/default-button.png)
 
-You can adapt the button appearance by changing its position, colors and size. Please click for a full list of [button options](./widget_options.md#button_table).
+You can adapt the button appearance by changing its position, colors and size. Please click for a full list of [button options](../widget_options.md/#button_table).
 
 The button, by default, will only be shown if an agent is logged into the Surfly admin page. This can also be disabled, if you wish.
 
