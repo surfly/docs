@@ -39,20 +39,15 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <!--endsec-->
 
 
-<button class="section" target="section4" show="Can I control which parts of my website are visible?" hide="Can I control which parts of my website are visible?"></button>
-<br>
 
-<!--sec data-title="Can I control which parts of my website are visible?" data-id="section4" data-show=false ces-->
+<!--sec data-title="Can I control which parts of my website are visible?" data-id="section4" data-collapse=true ces-->
 
 <p>With our business plan we offer the possibility to tweak which elements should be synchronized, this gives you fine-grained control over which HTML elements should be considered confidential.</p>
 
 <!--endsec-->
 
 
-<button class="section" target="section5" show="Do you offer a full whitelabel solution?" hide="Do you offer a full whitelabel solution?"></button>
-<br>
-
-<!--sec data-title="Do you offer a full whitelabel solution?" data-id="section5" data-show=false ces-->
+<!--sec data-title="Do you offer a full whitelabel solution?" data-id="section5" data-collapse=true ces-->
 
 <p>With our enterprise offering we offer the option to remove all visible Surfly branding from the Surfly session.</p>
 
