@@ -15,7 +15,7 @@ We are now going to integrate Surfly into our website, selecting the aspects of 
 
 
 <a name="integrate"></a>
-#### Integrate Surfly{#integrate}
+#### Adding a Surfly button{#integrate}
 
 First, add the Surfly code snippet to your website's source code. To do this, log into your surfly.com account and navigate to the 'Settings' panel. In the 'Integration' tab, you can find the snippet code that you need to copy and paste into the source code of your website.
 It should look something like the following:
@@ -42,7 +42,7 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 
 
 <a name="widget"></a>
-#### Widget options
+#### Customise the button
 
 The default red Surfly button doesn't match our website design, so we'd prefer to use our own theme color. You can do this by setting a few options in the Surfly widget code.
 In our case, we only used a handful of custom options:
