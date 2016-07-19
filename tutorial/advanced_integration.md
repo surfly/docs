@@ -177,7 +177,7 @@ We added a condition in the beginning of the script to make sure that a second Z
 
 
 <a name="small_button"></a>
-##### Adding a discrete button 
+##### Session ID approach
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller icon to the footer of our webpage. If necessary, the agent can direct the user to start a session by clicking on the small cake icon. 
 
