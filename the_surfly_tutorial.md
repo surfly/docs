@@ -9,7 +9,7 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
  - [Basic Integration](tutorial/chapter1.md)
    - [Initial website](tutorial/chapter1.md/#website)
    - [Adding a Surfly button](tutorial/chapter1.md/<#integrate>)
-   - [Create your own button](tutorial/chapter1.md/#widget)
+   - [Create your own button](tutorial/chapter1.md/<#widget>)
    - [Build your own landing page](tutorial/chapter1.md/#landing)
    - [Session behaviour](tutorial/chapter1.md/#session)
    - [End of session popup](tutorial/chapter1.md/#popup)
