@@ -130,7 +130,7 @@ To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get
 	request.send();
 </script>
 ```
-![landing page](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/landing_page_flow.gif)
+![landing page](http://i.giphy.com/l0HlVOXW4bAmrbarS.gif)
 
 We now have our own personalised landing page to greet our customers.
 
