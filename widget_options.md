@@ -35,18 +35,21 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | drawing_width | 15 | "Magic marker" width |
 | drawing_timeout | 3| "Magic marker" timeout |
 
-##### Video 
+<a name="video-options"></a>
+##### Video
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | videochat | true | Is videochat allowed? |
 | low_quality_video | false | Video quality is limited to 320x240@15 |
 
+<a name="filesharing-options"></a>
 ##### File sharing
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | filesharing | true | Allow file sharing |
 | allow_original_file_download | false | Allow users to download shared files (when set to false, users can only view them) |
 
+<a name="sounds"></a>
 ##### Sounds
 |  Option | Default | Description |
 | ---------------| ------------|------------|
