@@ -4,7 +4,7 @@
  Your browser is not compatible with iframes
     </iframe>
 
-    <script type="text/javascript">
+  <script type="text/javascript">
        var hideMenu = document.getElementsByClassName("fa fa-align-justify");
        console.log("hideMenu:"+ hideMenu);
        var apiFrame - document.getElementById("restapiFrame");
