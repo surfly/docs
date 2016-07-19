@@ -9,14 +9,14 @@ Major steps and changes are illustrated by an image/gif and, for each modificati
  - Basic Integration
    - [Initial website](tutorial/chapter1.md/#website)
    - [Adding a Surfly button](tutorial/chapter1.md/#integrate)
-   - [Create your own button](../chapter1.md/<#surflystart_anchor>)
-   - [Build your own landing page](<#session_id>)
-   - [Session behaviour](<#auto_start>)
-   - [End of session popup](<#integrate_chat>)
+   - [Create your own button](tutorial/chapter1.md/#widget)
+   - [Build your own landing page](tutorial/chapter1.md/#landing)
+   - [Session behaviour](tutorial/chapter1.md/#session)
+   - [End of session popup](tutorial/chapter1.md/#popup)
    
    
  - Advanced Integration
-   - [Enabling session continuation](<#session_continuation>)
+   - [Enabling session continuation](tutorial/advanced_integration.md/#receipt)
    - [Configuring the blacklist](<#security_features>)
    - [Queue metadata](<#session_log_info>)
    - [Customize Surfly's look and feel](<#customise_appearance_for_user>)
