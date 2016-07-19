@@ -66,7 +66,7 @@ Adds a Surfly button to the current page. When a user clicks the Surfly Button, 
 
 Inside a session, `Surfly.button()` calls will be silently ignored.
 
-The Surfly button is just a shortcut for a quick integration, and doesn't allow for much customization. For more fine-grained integration, use [SurflySession API](sessions.md).
+The Surfly button is just a shortcut for a quick integration, and doesn't allow for much customization. For more fine-grained integration, use [SurflySession API](surfly_sessions.md).
 
 #### Example
 ```javascript
