@@ -6,8 +6,9 @@
 
     <script type="text/javascript">
        var hideMenu = document.getElementsByClassName("fa fa-align-justify");
+       console.log("hideMenu:"+ hideMenu);
        var apiFrame - document.getElementById("restapiFrame");
-
+       
        hideMenu.addEventListener("click", stretchApi);
 
        function stretchApi {
