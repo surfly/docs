@@ -151,7 +151,8 @@ Once we've stored the session ID, we can use a second request which will use thi
   </script>
 ```
 
-![exit button](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/s10.png)
+![exit button](http://i.imgur.com/QMMsnb3.jpg)
+
 {% em color="#ffffe0" %}Please note: 
 Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealth_mode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
 
