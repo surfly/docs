@@ -20,7 +20,7 @@ During the session, the mouse arrows from all users will be visible. The leader 
 
 ###### Responding to incoming requests
 
-To accept an incoming request, log in to your Surfly account, and navigate to the 'Queue' panel. Here, agents can see how many users they have queued up, their location, and the time they have been waiting. To answer, the agent simply has to press the 'take call' button. If your visitors are logged in on your website already, you can also display meta-data, such as the visitor's name in the queue, so that the agent greeting them knows who they are.
+To accept an incoming request, log in to your Surfly account, and navigate to the 'Queue' panel. Here, you can see a list of the queue'd users, their location, and the time they have been waiting. To answer, simply press the 'take call' button. If your visitors are logged in on your website already, you can also display meta-data, such as the visitor's name in the queue, so that the agent greeting them knows who they are.
 
 ![The Queue panel](https://raw.github.com/surfly/tutorial/master/screens/queue_panel.png)
 
