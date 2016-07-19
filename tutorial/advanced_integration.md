@@ -183,7 +183,7 @@ Adding Zopim to our website has made text chat the primary method of communicati
 
 The flow of our website has now completely changed. Instead of people initiating a session and waiting for an agent to join them, visitors will first use Zopim when they need help. If, during the conversation, the agent decides a Surfly session is required, they can direct the user to the bottom of the webpage to click on the cake.The user will then be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will use the id to join the user in their session.  There is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
 
-![cake icon](../images/gif-small-button-2.gif)
+
 ![cake icon](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/cake_icon.png)
 
 As you can see from the code below, by adding the #surflystart anchor, we ensure that a Surfly session starts when this icon is clicked:
