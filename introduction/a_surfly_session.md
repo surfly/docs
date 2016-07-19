@@ -47,7 +47,7 @@ The standard CTRL + T shortcut to open a new tab will not open a tab within the 
 <a name="chat_box"></a>
 ####Chat box{#chat_box}
 
-Surfly provides a chat box which can be used to communicate with other users. We will display your gravatar in the chat box. The name is taken from the name as configured in the admin panel. If you prefer, you can use the REST API to change the name that gets displayed.
+Surfly provides a [chat box](./widget_options.md/#video-options) which can be used to communicate with other users. We will display your gravatar in the chat box. The name is taken from the name as configured in the admin panel. If you prefer, you can use the REST API to change the name that gets displayed.
 
 The default chatbox color is a soft red, however, this can be altered to match your website's theme. Modifying the chat box can not only change its appearance, but also limit or extend the amount of control that the leader and the followers can have. 
 
@@ -73,13 +73,13 @@ If you wish, you may also disable the document sharing tool.
 <a name="window_size"></a>
 #### Window size options{#window_size}
 
-The size of the window is normally set to the person with the smallest screen, as this allows for a smooth transition into the Surfly session. If you see blank edges at the side of your screen, it is only because your screen is larger than the person you are co-browsing with. However, you can also decide to set a maximum or minimum size for the window.
+The size of the [window](./widget_options.md/#video-options) is normally set to the person with the smallest screen, as this allows for a smooth transition into the Surfly session. If you see blank edges at the side of your screen, it is only because your screen is larger than the person you are co-browsing with. However, you can also decide to set a maximum or minimum size for the window.
 Alternatively, you may decide to remove the set to smallest screen functionality altogether. In this case, the window will be set to the size of the leader's screen.
 
 <a name="drawing_mode"></a>
 #### Drawing mode{#drawing_mode}
 
-The drawing option allows the followers within the Surfly session to highlight the areas on the screen that they wish to bring attention to. It works in a similar way to a highlighter, or a magic marker. By default, the drawings are temporary (they will fade out) and the color of the drawing tool is set to match that of the user's cursor. For example, the highlighter color for the first follower will be yellow, green for the second, and so forth. Of course, if you would prefer to have something different, both of these parameters can be changed, or you can turn the drawing function off entirely. You can also set the pixel size and the timeout length. 
+The [drawing option](./widget_options.md/#video-options) allows the followers within the Surfly session to highlight the areas on the screen that they wish to bring attention to. It works in a similar way to a highlighter, or a magic marker. By default, the drawings are temporary (they will fade out) and the color of the drawing tool is set to match that of the user's cursor. For example, the highlighter color for the first follower will be yellow, green for the second, and so forth. Of course, if you would prefer to have something different, both of these parameters can be changed, or you can turn the drawing function off entirely. You can also set the pixel size and the timeout length. 
 
 In our example website we adapted the code so that the drawing mode would be permanent, and that the color of the drawings would be in our blue theme color. 
 
@@ -88,8 +88,7 @@ In our example website we adapted the code so that the drawing mode would be per
 <a name="customise_control_switching"></a>
 #### Control switching{#customise_control_switching}
 
-If you want to be able to switch control between the leader and the follower, you can choose between either allowing the agent to take control, or to
-request it from the leader. This could be useful for when users require further guidance through the website.
+If you want to be able to [switch control](./widget_options.md/#video-options) between the leader and the follower, you can choose between either allowing the agent to take control, or to request it from the leader. This could be useful for when users require further guidance through the website.
 
 
 <a name="metadata"></a>
