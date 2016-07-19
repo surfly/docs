@@ -10,5 +10,9 @@
         "autosize-iframe",
         "addcssjs"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+  "addcssjs": {
+    "js": ["js/restapi.js"],
+  }
 }
+
