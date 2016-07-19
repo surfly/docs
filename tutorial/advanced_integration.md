@@ -75,7 +75,7 @@ As can be seen below, the agents can directly see this information from the 'Que
 ![metadata](https://raw.githubusercontent.com/MathildeJ/Fantasy_Bakes/master/static/metadata.gif)
 
 <a name="remove-ui"></a>
-### Remove the UI
+### Customize Surfly's look and feel
 
 Finally, we wanted to completely strip everything down to co-browsing. By default, Surfly provides more tools and features than our example application needs. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
