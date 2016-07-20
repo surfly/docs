@@ -34,7 +34,7 @@ You should also specify the domain name of your website in the integration panel
 
 As you can see below, after adding the widget code to our website, we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
-![Surfly widget](http://i.imgur.com/feHaoI0.jpg)
+![Surfly widget](http://i.imgur.com/AhyWO6b.png)
 
 When a client clicks on the red 'get live help' button, they are queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
 
