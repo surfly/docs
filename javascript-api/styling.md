@@ -1,3 +1,4 @@
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # Styling
 Surfly uses CSS classes to change the appearance of DOM elements it handles. You can easily customize the look-and-feel of those elements by overriding the CSS rules for these classes.
 
