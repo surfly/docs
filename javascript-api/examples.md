@@ -1,3 +1,4 @@
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # Examples
 Here you can find some examples for common integration scenarios.
 
