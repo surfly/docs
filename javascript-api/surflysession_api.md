@@ -1,4 +1,4 @@
-<a href="https://www.surfly.com/">![logo](../../images/logosmall.png)</a>
+[![logo](../../images/logosmall.png)](https://www.surfly.com/)
 # SurflySession API
 
 
