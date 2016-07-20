@@ -34,7 +34,9 @@ You should also specify the domain name of your website in the integration panel
 
 As you can see below, after adding the widget code to our website, we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
-![Surfly widget](http://i.imgur.com/AhyWO6b.png)
+<div align="center">
+  <img src="http://i.imgur.com/AhyWO6b.png">
+</div> 
 
 When a client clicks on the red 'get live help' button, they are queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
 
@@ -55,7 +57,10 @@ videochat: false // remove videochat feature (not needed)
 
 In the images below, you can see that the button and the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. Finally, we decided to make the drawings permanent to facilitate communication.
 
-![widget options 1](http://i.imgur.com/muoPH30.png) ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
+<div align="center">
+  <img src="http://i.imgur.com/muoPH30.png">
+</div> 
+ ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
 The API has an [extensive list of widget options](../widget_options.md).
 
