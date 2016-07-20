@@ -8,5 +8,9 @@
         "hide-published-with",
         "hide-element"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "hide-element": {
+            "elements": [".custom-link"]
+        }
+    }
 }
