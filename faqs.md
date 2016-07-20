@@ -6,7 +6,7 @@ If you do not find the answer to your question in one of the sections below, ple
 
 
 
-## Functionality
+## Functionality{#functionality}
 
 **Is videochat included?**
 
@@ -33,7 +33,7 @@ Yes, all our plans, even the free plan come included with high quality videochat
 <p>With our enterprise offering we offer the option to remove all visible Surfly branding from the Surfly session.</p>
 
 
-## Technology
+## Technology{#technology}
 
 **Which browsers are supported?**
 <p>Cobrowsing with Surfly will work on all modern browsers: Chrome, Firefox, Safari, Internet Explorer 10+, Opera. It will also work on mobile Android devices using the Chrome browser and on Apple iOS devices Surfly supports Safari. Surfly’s videochat uses WebRTC and will run on Chrome, Firefox and Opera without the need to install any software. On other browsers a plugin can be installed the first time videochat is started.</p>
@@ -50,7 +50,7 @@ How does Surfly differ from screensharing?**
 3. We can enable high performance video synchronization</p>
 
 
-##Security
+##Security{#security}
 
 **Does Surfly use secure connections?**
 <p>Yes, all connections to Surfly are secured using HTTPS.</p>
@@ -68,7 +68,7 @@ How does Surfly differ from screensharing?**
 <p>For larger deployment we do offer this kind of functionality, contact us if this is in your interest.</p>
 
 
-## Pricing
+## Pricing{#pricing}
 
 **Is the FREE version really free?**
 <p>Yes, the free version is really free. But the number of cobrowsing sessions you can start is a limited to 5 per month.</p>
@@ -98,7 +98,7 @@ How does Surfly differ from screensharing?**
 <p>Surfly’s license is user based, this means that while any seat can create an unlimited number of sessions each seat is to be used by a single user. Sharing a single seat over multiple users is not allowed.</p>
 
 
-##Initial Setup
+##Initial Setup{#initial_setup}
 
 **Where can I find the code snippet?**
 <p>The javascript snippet can be found when you login to your Surfly account. Click on the "settings" link on the menu bar to the left of the screen, and then select "Integration". You may have to click on "generate API keys", before the javascript snippet is shown. You will also have to add your websites domain name (e.g example.com) to the "specify domain names" section just below the code snippet, then click on "setup widget".</p>
