@@ -6,8 +6,7 @@
         "emphasize",
         "sectionx-collapse",
         "hide-published-with",
-        "hide-element",
-        "algolia"
+        "hide-element"
     ],
     "pluginsConfig": {
         "hide-element": {
