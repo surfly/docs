@@ -4,6 +4,12 @@
 
 If you do not find the answer to your question in one of the sections below, please do not hesitate to contact us.
 
+This FAQ is divided into several sections:
+  - [Functionality](<#functionality>)
+  - [Technology](<#technology>)
+  - [Security](<#security>)
+  - [Pricing](<#pricing>)
+  - [Initial setup](<#initial_setup>)
 
 
 ## Functionality{#functionality}
