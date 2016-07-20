@@ -27,7 +27,8 @@ Here you can find a list of the different changes you can make to either the cod
 
 ##### [Javascript API](./javascript_api.md) and [the REST API](https://www.surfly.com/cobrowsing-api/)
 
-For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API.
+For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API. The REST API documentation includes several code examples illustrating how it can be used.
+
 
 ##### [FAQ](./faqs.md)
 
