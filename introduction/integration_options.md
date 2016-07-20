@@ -1,4 +1,4 @@
-![logo](../images/logosmall.png)
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # Integration Options
 <a name="integration_options"></a>
 
