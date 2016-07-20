@@ -90,3 +90,11 @@ triggered when control over the session has been transferred. Parameters:
 - `to` index of the client that now has the control. Always 0 for the leader, 1 or more for a viewer
 - `userData` user data of the user who received the control
 - `gained` set to true if control was given to the current user
+
+> agent_available
+
+triggered when a support agent becomes available
+
+> no_agent_available
+
+triggered when all support agents become unavailable
