@@ -19,5 +19,5 @@
    * [Styling](javascript-api/styling.md)
    * [Examples](javascript-api/examples.md)
 * [REST API](rest_api.md)
-* [REST API (link test)](https:/www.surfly.com/cobrowsing-api/)
+* [REST API (link test)](https:/www.surfly.com/cobrowsing-api)
 
