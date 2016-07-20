@@ -74,7 +74,7 @@ Surfly.session().on(/*...*/).on(/*...*/).startLeader();
 
 > SurflySession SurflySession.log( entry )
 
-log message to the Audit log (available in Surfly Dashboard after session ends). `entry` must be a plain (JSON-serializable) object.
+log message to the Audit log (available in Surfly Dashboard after session ends). `entry` must be a plain string.
 
 <hr />
 
