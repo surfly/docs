@@ -8,50 +8,29 @@ If you do not find the answer to your question in one of the sections below, ple
 
 ## Functionality
 
-
-<!--sec data-title="Is videochat included?" data-id="section0" data-collapse=true ces-->
+**Is videochat included?**
 
 Yes, all our plans, even the free plan come included with high quality videochat built on top of WebRTC.
 
-<!--endsec-->
 
-
-<!--sec data-title="How many sessions can I create?" data-id="section1" data-collapse=true data-collapse=true ces-->
-
+**How many sessions can I create?**
 <p>Only the free plan has a monthly limit on the amount of sessions you can create, all paid plans come with an unlimited number of sessions.</p>
 
-<!--endsec-->
 
-
-
-<!--sec data-title="Can I invite any team members?" data-id="section2" data-collapse=true ces-->
-
+**Can I invite any team members?**
 <p>All our paid plans allow you to invite multiple team members and manage them from a single account.</p>
 
-<!--endsec-->
 
-
-
-<!--sec data-title="Can I integrate Surfly on my website?" data-id="section3" data-collapse=true ces-->
-
+**Can I integrate Surfly on my website?**
 <p>Yes! Just add a few lines of javascript to your website and you or your clients will be able to directly start Surfly sessions straight on your website. This is great for the support case where you can use our widget to show a support button on your website.</p>
 
-<!--endsec-->
 
-
-
-<!--sec data-title="Can I control which parts of my website are visible?" data-id="section4" data-collapse=true ces-->
-
+**Can I control which parts of my website are visible?**
 <p>With our business plan we offer the possibility to tweak which elements should be synchronized, this gives you fine-grained control over which HTML elements should be considered confidential.</p>
 
-<!--endsec-->
 
-
-<!--sec data-title="Do you offer a full whitelabel solution?" data-id="section5" data-collapse=true ces-->
-
+**Do you offer a full whitelabel solution?**
 <p>With our enterprise offering we offer the option to remove all visible Surfly branding from the Surfly session.</p>
-
-<!--endsec-->
 
 
 ## Technology
