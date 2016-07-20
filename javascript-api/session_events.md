@@ -91,9 +91,13 @@ triggered when control over the session has been transferred. Parameters:
 - `userData` user data of the user who received the control
 - `gained` set to true if control was given to the current user
 
+<hr />
+
 > agent_available
 
 triggered when a support agent becomes available
+
+<hr />
 
 > no_agent_available
 
