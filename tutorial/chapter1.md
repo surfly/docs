@@ -1,11 +1,11 @@
-![logo](../images/logosmall.png)
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 
 # Basic Integration
 
 <a name="website"></a>
 #### Cake shop website
 
-Our example application features a bespoke cake shop, specialising in personalized cakes. The shop prides themselves on their customer service, meaning that the co-browsing feature Surfly provides is an ideal addition to their website, as it can dramatically improve online communication. 
+Our example application features a bespoke cake shop, specialising in personalized cakes. 
 Here is a screenshot of the home page before we integrate Surfly:
 
 ![website](http://i.imgur.com/zD0dd03.jpg)
@@ -17,7 +17,7 @@ We are now going to integrate Surfly into our website, selecting the aspects of 
 <a name="integrate"></a>
 #### Adding a Surfly button{#integrate}
 
-First, add the Surfly code snippet to your website's source code. To do this, log into your surfly.com account and navigate to the 'Settings' panel. In the 'Integration' tab, you can find the snippet code that you need to copy and paste into the source code of your website.
+First, add the Surfly code snippet to your website's source code. To do this, log into your [surfly.com](https://www.surfly.com/) account and navigate to the 'Settings' panel. In the 'Integration' tab, you can find the snippet code that you need to copy and paste into the source code of your website.
 It should look something like the following:
 ``` javascript
 <script type="text/javascript">(function(){window['_surfly_settings']=window['_surfly_settings']||{
@@ -44,7 +44,7 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 <a name="widget"></a>
 #### Customise the button{#widget}
 
-The default red Surfly button doesn't match our website design, so we'd prefer to use our own theme color. You can do this by setting a few options in the Surfly widget code.
+We will now change the support button so we can use our own theme color. You can do this by setting a few options in the Surfly widget code.
 In our case, we only used a handful of custom options:
 ``` javascript
 drawing_mode: "permanent", // change drawing mode so that the drawings last
@@ -63,7 +63,7 @@ The API has an [extensive list of widget options](../widget_options.md).
 <a name="start_button"></a>
 #### Create your own button{#start_button}
 
-Even though Surfly is now customised to our needs and preferences, we'd like to create our own button to start a co-browsing session so that we can customise it and control its behaviour more easily.
+We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
 
 First, we need to hide the default button, as we'll be using our own. To do this, set the 'hidden' option to 'true':
 ``` javascript
@@ -82,6 +82,8 @@ In particular, we have chosen to use the image of a cake as a get help button fo
 #### Build your own landing page{#landing}
 
 When a visitor initiates a session they are queue'd and, by default, have to wait for an agent to take the call before they can navigate within the session. The screen is blocked, and a red banner appears at the top of the screen with their queue pin. In our example application, the page that the user starts a session from is the home page, and consequently, this is the page that gets blocked. We would prefer to have our own custom landing page, where we can tell our customers that they are in the queue, and that an agent will be with them soon. 
+
+The flow will be as follows; the user clicks on the support button and is shown a page with their unique pin code, and information about the session. When an agent joins them, the user is redirected to the home page.
 
 In order to use such a page, we first remove the red banner blocking the session:
 ``` javascript
@@ -138,7 +140,8 @@ We now have our own personalised landing page to greet our customers.
 <a name="session"></a>
 #### Session behaviour{#session}
 
-We have integrated Surfly to our satisfaction, but there are other use cases that we still haven't covered. In particular, when a client places an order during a session, we don't want the agent to be able to see their payment details or to click the 'Order' button for them. 
+When a client places an order during a session, we don't want the agent to be able to see their payment details or to click the 'Order' button for them. Therefore, we will mask some form data from the agent, and also disable the "order" button if they are in control.
+
 You can do this by using some of the built-in options provided with Surfly.
 
 To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the 'surfly_private' attribute to fields containing sensitive information:
@@ -173,7 +176,8 @@ window.addEventListener('surflycontrolchange', function (event) {
 <a name="popup"></a>
 #### End of session popup{#popup}
 
-Since customer service is very important to us, we'd also like to be able to ask for feedback at the end of a session so that we can improve our website and offer the smoothest co-browsing experience to our clients.
+After the session ends, we will display a survey in a pop-up window. This is a useful way of getting feedback from the session. 
+
 We use the 'end_of_session_popup_url' option to point to the url of our survey page:
 ``` javascript
 end_of_session_popup_url: "https://example.com/survey",
