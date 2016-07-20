@@ -4,8 +4,7 @@
         "youtube",
         "heading-anchors",
         "emphasize",
-        "sectionx-collapse",
-        "book-summary-scroll-position-saver"
+        "sectionx-collapse"
     ],
     "pluginsConfig": {}
 }
