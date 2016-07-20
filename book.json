@@ -5,7 +5,8 @@
         "heading-anchors",
         "emphasize",
         "sectionx-collapse",
-        "hide-published-with"
+        "hide-published-with",
+        "hide-element"
     ],
     "pluginsConfig": {}
 }
