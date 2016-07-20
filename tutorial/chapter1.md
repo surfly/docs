@@ -55,7 +55,7 @@ videochat: false // remove videochat feature (not needed)
 
 In the images below, you can see that the button and the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. Finally, we decided to make the drawings permanent to facilitate communication.
 
-![widget options 1](http://i.imgur.com/DQeTxhh.jpg) ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
+![widget options 1](http://i.imgur.com/muoPH30.png) ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
 The API has an [extensive list of widget options](../widget_options.md).
 
