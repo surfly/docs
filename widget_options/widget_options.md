@@ -1,3 +1,5 @@
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
+
 # Setting advanced Widget options
 
 Here, you can find more detailed examples of the options that require specific syntax. 
