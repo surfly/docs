@@ -5,7 +5,7 @@
         "heading-anchors",
         "emphasize",
         "sectionx-collapse",
-        "infinitescroll"
+        "hide-element"
     ],
     "pluginsConfig": {}
 }
