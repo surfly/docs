@@ -1,3 +1,4 @@
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # Integration
 
 <a name="add_surfly"></a>
