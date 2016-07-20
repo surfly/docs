@@ -93,12 +93,7 @@ triggered when control over the session has been transferred. Parameters:
 
 <hr />
 
-> agent_available
+> agent_status
 
-triggered when a support agent becomes available
-
-<hr />
-
-> no_agent_available
-
-triggered when all support agents become unavailable
+triggered when a support agent availability changes:
+- `available` is set to true if a support agent has just become available, and false if all agents have become unavailable.
