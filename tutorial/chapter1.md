@@ -60,7 +60,7 @@ In the images below, you can see that the button and the chat box are now in our
 <div align="center">
   <img src="http://i.imgur.com/muoPH30.png">
 </div> 
-
+<br>
  ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
 The API has an [extensive list of widget options](../widget_options.md).
