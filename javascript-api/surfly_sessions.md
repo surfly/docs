@@ -1,3 +1,4 @@
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # Surfly Sessions
 
 The Javascript API provides a set of functions allowing you to start and control the behaviour of your Surfly sessions through the [SurflySession API](surflysession_api.md).
