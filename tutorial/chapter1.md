@@ -37,7 +37,7 @@ As you can see below, after adding the widget code to our website, we see a red 
 <div align="center">
   <img src="http://i.imgur.com/AhyWO6b.png">
 </div> 
-
+<br>
 When a client clicks on the red 'get live help' button, they are queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
 
 ![user queue'd](http://i.imgur.com/zOJHW1X.jpg)
@@ -60,6 +60,7 @@ In the images below, you can see that the button and the chat box are now in our
 <div align="center">
   <img src="http://i.imgur.com/muoPH30.png">
 </div> 
+
  ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
 The API has an [extensive list of widget options](../widget_options.md).
