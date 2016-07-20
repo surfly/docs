@@ -35,7 +35,7 @@ var info = cookie.split(",");
 ```
 In the gif below, you can see that the order details are available even if the session ends before the client get their receipt:
 
-![receipt](http://i.giphy.com/26BRQx4XLP7ffFlrq.gif)
+
 
 
 <a name="blacklist"></a>
@@ -57,7 +57,7 @@ if (window.location.hash == "#restricted"){
 ```
 In our example, we decided to redirect the user to our custom restricted page which informs them that this page is restricted:
 
-![blacklist](http://i.giphy.com/l0MYz8lHS9W3RvjnG.gif)
+
 
 
 <a name="metadata"></a>
@@ -72,7 +72,7 @@ QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem(
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
-![metadata](http://i.giphy.com/3o6Ztgvgv0IkUAE1VK.gif)
+
 
 <a name="remove-ui"></a>
 ### Customize Surfly's look and feel{#remove-ui}
@@ -186,9 +186,7 @@ The flow of our website has now completely changed. Instead of people initiating
 
 When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  There is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
 
-<div align="center">
-  <img src="http://i.giphy.com/3oEjI06AqXAbBKKHw4.gif">
-</div>  
+
 
 As you can see from the code below, by adding the #surflystart anchor, we ensure that a Surfly session starts when this icon is clicked:
 
