@@ -103,7 +103,7 @@ Navigate current tab to `newUrl`
 
 <hr />
 
-> drawingSettings SurflySession.drawingSettings( [drawingSettings] )
+> drawingSettings SurflySession.setDrawingSettings( [drawingSettings] )
 
 _(not available inside a session)_
 
