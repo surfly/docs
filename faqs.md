@@ -1,4 +1,4 @@
-<a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
+![logo](images/logosmall.png)
 <a name="faq"></a>
 # FAQ
 
@@ -113,7 +113,9 @@ How does Surfly differ from screensharing?**
 
 
 **How can I customise Surfly's widget?**
-<p>You can either specify your preferences directly in the code snippet (see the [widget options](widget_options/reference.md) for more details), or from the 'options' panel in your Surfly account. </p>
+
+
+You can either specify your preferences directly in the code snippet (see the [widget options](widget_options/reference.md) for more details), or from the 'options' panel in your Surfly account. 
 
 ![options panel](images/options-panel.jpg)
 
