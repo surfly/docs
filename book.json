@@ -6,11 +6,14 @@
         "emphasize",
         "sectionx-collapse",
         "hide-published-with",
-        "hide-element"
+        "hide-element",
+        "algolia"
     ],
     "pluginsConfig": {
         "hide-element": {
-            "elements": [".custom-link"]
+            "elements": [
+                ".custom-link"
+            ]
         }
     }
 }
