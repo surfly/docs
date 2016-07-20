@@ -1,4 +1,4 @@
-![logo](images/logosmall.png)
+<a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
 <a name="widget-options"></a>
 # Surfly options
 
