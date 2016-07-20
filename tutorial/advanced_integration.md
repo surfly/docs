@@ -1,4 +1,4 @@
-![logo](../images/logosmall.png)
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 
 #Advanced Integration
  
@@ -6,7 +6,7 @@
 <a name="receipt"></a>
 #### Enabling session continuation
 
-Finally, we want to show the customer their receipt. Therefore, we have to make sure that their order information will be passed on, even if the client ends the session before getting their receipt. In order to do so, we can use soft [session continuation](../widget_options/widget_options.md/#session_continuation).
+We want to be sure that information, such as payment details, can flow into and out of the [Surfly](https://www.surfly.com/) session. This ensures a smooth transition for the user. In order to do so, we can use soft [session continuation](../widget_options/widget_options.md/#session_continuation).
 
 We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure session continuation (including on the landing page): 
 ``` javascript
@@ -41,7 +41,7 @@ In the gif below, you can see that the order details are available even if the s
 <a name="blacklist"></a>
 ##### Configuring the blacklist{#blacklist}
 
-We quickly realised that visitors shouldn't be allowed to access our baking shop page while they're in a Surfly session as it's a separate activity, and the agents working for our cake shop aren't necessarily qualified to guide our customers through our baking shop.
+We want to restrict access from cetain pages during the session.
 
 In order to restrict access to this page (in our case, its path is '/about'), we can use the [blacklist](../widget_options/widget_options.md/#restrictions) option:
 ``` javascript
@@ -63,7 +63,7 @@ In our example, we decided to redirect the user to our custom restricted page wh
 <a name="metadata"></a>
 ##### Queue metadata{#metadata}
 
-We'd like to be able to give our repeat customers a more personal experience. More specifically, we want to retrieve their login details and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
+We want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
 Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass this data by using the ['QUEUE_METADATA_CALLBACK' option](../widget_options/widget_options.md/#queue_metadata_callback):
 ``` javascript
@@ -77,7 +77,7 @@ As can be seen below, the agents can directly see this information from the 'Que
 <a name="remove-ui"></a>
 ### Customize Surfly's look and feel{#remove-ui}
 
-Finally, we wanted to completely strip everything down to co-browsing. By default, Surfly provides more tools and features than our example application needs. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
+Finally, we wanted to completely strip everything down to [co-browsing](https://www.surfly.com/). By default, Surfly provides more tools and features than our example application needs. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
 Fortunately, there's an option which removes the Surfly user interface (UI) and therefore allows us to use our own custom elements to control the appearance and feel of the sessions:
 ``` javascript
