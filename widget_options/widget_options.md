@@ -113,6 +113,7 @@ There are several ways to set up session continuation.
 
 Please note: When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.
 
+<a name="full_session"></a>
 #### Full session continuation
 
 This approach allows the transfer of all session data, including cookies with a `httpOnly`
@@ -156,7 +157,7 @@ After setting up the continuation point, add the following widget options:
   cookie_transfer_proxying: true,
   cookie_transfer_urls: ["https://example.com/surfly_cookie_transfer/"]
 ```
-
+<a name="soft_session"></a>
 #### Soft session continuation
 
 It is also possible to integrate session continuation without changing load
