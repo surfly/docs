@@ -17,13 +17,13 @@ You can view the code in the  [repository](https://github.com/MathildeJ/Cake_sho
    
    
  - [Advanced Integration](/tutorial/advanced_integration.md)
-   - [Customize Surfly's look and feel](./tutorial/advanced_integration.md/#remove-ui)
-     - [Create your own exit button](./tutorial/advanced_integration.md/#exit_button)
-     - [Session ID approach](./tutorial/advanced_integration.md/#small_button)
    - [Enabling session continuation](./tutorial/advanced_integration.md/#receipt)
    - [Configuring the blacklist](./tutorial/advanced_integration.md/#blacklist)
    - [Queue metadata](./tutorial/advanced_integration.md/#metadata)
    - [Change appearance based on who has control](./tutorial/advanced_options.md/#control_appearance)
+   - [Customize Surfly's look and feel](./tutorial/advanced_integration.md/#remove-ui)
+     - [Create your own exit button](./tutorial/advanced_integration.md/#exit_button)
+     - [Session ID approach](./tutorial/advanced_integration.md/#small_button)
 
 
 <br>
