@@ -161,3 +161,22 @@ end_of_session_popup_url: "https://example.com/survey",
 {% em color="#ffffe0" %}Please note: 
 You might need to set the 'hidden' option to 'false' for this option to work correctly.  {% endem %}
 
+
+<a name="chat"></a>
+##### Integrate an already existing chat solution{#chat}
+
+Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. We can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
+``` html
+<!-- Adding Zopim Live Chat -->
+<script>
+	if(!window.__surfly){
+	    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+	    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+	    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+	    $.src="//v2.zopim.com/?40l495kTPWFGA7JFrUDzK03KARqCPsNL";z.t=+new Date;$.
+	    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+	}
+</script>
+<!--End of Zopim Live Chat Script-->
+```
+We added a condition in the beginning of the script to make sure that a second Zopim chat window doesn't open when a Surfly session starts.
