@@ -72,7 +72,22 @@ QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem(
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
+##### Change appearance based on who is in control
+As for the 'Order' button, we can easily add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then, we check whether or not the leader is in control and disable the order button if they are not.
 
+```javascript
+<script>
+// when the leader is in control then the 'Order' button is clickable otherwise, it is disabled
+window.addEventListener('surflycontrolchange', function (event) {
+    var element = document.getElementById("order_button");
+    if (event.leaderHasControl) {
+        element.disabled = false;
+    } else {
+        element.disabled = true;
+    }
+});
+</script>
+```
 
 <a name="remove-ui"></a>
 ### Customize Surfly's look and feel{#remove-ui}
