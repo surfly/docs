@@ -73,7 +73,12 @@ QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem(
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
 ##### Change appearance based on who is in control
-As for the 'Order' button, we can easily add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then, we check whether or not the leader is in control and disable the order button if they are not.
+
+You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
+
+You can add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then you can adapt the appearance depending on who is in control.
+
+In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm the payment.
 
 ```javascript
 <script>
