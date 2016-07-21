@@ -17,21 +17,6 @@ We are now going to integrate Surfly into our website, selecting the aspects of 
 <a name="integrate"></a>
 #### Adding a Surfly button{#integrate}
 
-First, add the Surfly code snippet to your website's source code. To do this, log into your [surfly.com](https://www.surfly.com/) account and navigate to the 'Settings' panel. In the 'Integration' tab, you can find the snippet code that you need to copy and paste into the source code of your website.
-It should look something like the following:
-``` javascript
-<script type="text/javascript">(function(){window['_surfly_settings']=window['_surfly_settings']||{
-widgetkey:"**your api key**",
-/*
-add your custom options here
-*/
-};
-var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src="https://surfly.com/static/js/widget.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n); })();</script>
-```
-
-You should also specify the domain name of your website in the integration panel so that you can accept requests made from it.
-
-
 As you can see below, after adding the widget code to our website, we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
 <div align="center">
