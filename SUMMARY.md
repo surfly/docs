@@ -3,7 +3,7 @@
 * [Overview](README.md)
 * [Introduction](introduction.md)
    * [A Surfly session](introduction/a_surfly_session.md)
-   * [Integration](introduction/integration.md)
+   * [Adding Surfly to Your Website](introduction/integration.md)
    * [Integration Options](introduction/integration_options.md)
 * [Integration guide](the_surfly_tutorial.md)
    * [Basic Integration](tutorial/chapter1.md)
