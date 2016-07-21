@@ -118,6 +118,7 @@ More information on [restrictions](./widget_options/widget_options.md/#restricti
 | format_session_id | true | Change the session id to something easy to communicate over the phone (eg, 123-123-123) |
 | splash | true | Do we need to show the splash screen on session start? |
 | block_until_agent_joins | true | If using the Surfly button, block the screen until a follower joins |
+| start_docked | false | starts the chat box in docked mode, but can be expanded during the session |
 
 
 ##### Cookies
