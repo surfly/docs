@@ -129,7 +129,7 @@ We now have our own personalised landing page to greet our customers.
 
 
 <a name="session"></a>
-#### Session behaviour{#session}
+#### Field masking{#session}
 
 When a client places an order during a session, we don't want the agent to be able to see their payment details. Therefore, we will mask some form data from the agent.
 
