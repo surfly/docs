@@ -165,7 +165,13 @@ You might need to set the 'hidden' option to 'false' for this option to work cor
 <a name="chat"></a>
 ##### Integrate an already existing chat solution{#chat}
 
-Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. We can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
+Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. 
+
+First, we need to remove Surfly's default chat box before using our own:
+``` javascript
+docked_only: true, // display the icons in a dock and disable chat box
+```
+Then, we can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` html
 <!-- Adding Zopim Live Chat -->
 <script>
