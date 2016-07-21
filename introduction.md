@@ -18,12 +18,6 @@ The introduction gives an overview of what Surfly is, and outlines the various w
 
 During the session, the mouse arrows from all users will be visible. The leader will navigate the site, and the follower can help guide them through it. There can only be one leader, but you can have multiple followers, and switch control between the different users during the session. Only the leader can select or click items on the page, and if the leader decides to navigate to another url, the followers' screens will be synchronised so that they can also see this new page. The followers can take advantage of the drawing tool provided in order to highlight areas on the screen. During the session, users can communicate via text or video chat, share documents and invite others to join them.
 
-###### Responding to incoming requests
-
-To accept an incoming request, log in to your Surfly account, and navigate to the 'Queue' panel. Here, you can see a list of the queue'd users, their location, and the time they have been waiting. To answer, simply press the 'take call' button. If your visitors are logged in on your website already, you can also display meta-data, such as the visitor's name in the queue, so that the agent greeting them knows who they are.
-
-![The Queue panel](https://raw.github.com/surfly/tutorial/master/screens/queue_panel.png)
-
 ###### The Admin panel
 
 Surfly's admin panel allows you to track your users and your agents, and can be customised to suit your needs.
