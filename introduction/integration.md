@@ -24,6 +24,19 @@ In the 'domain names' section on the integration page, you need to specify the d
 
 Finally, copy the code snippet and add it to the source code of your website.
 
+It should look something like the following:
+``` javascript
+<script type="text/javascript">(function(){window['_surfly_settings']=window['_surfly_settings']||{
+widgetkey:"**your api key**",
+/*
+add your custom options here
+*/
+};
+var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src="https://surfly.com/static/js/widget.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n); })();</script>
+```
+
+You should also specify the domain name of your website in the integration panel so that you can accept requests made from it.
+
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
 
 **Please see the [integration guide](../the_surfly_tutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
