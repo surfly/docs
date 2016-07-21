@@ -50,10 +50,11 @@ Yes, all our plans, even the free plan come included with high quality videochat
 
 **
 How does Surfly differ from screensharing?**
-<p>A few things differentiate us from screensharing:
-1. We do not require any software to be installed
-2. We send over the real content without any loss of quality
-3. We can enable high performance video synchronization</p>
+
+A few things differentiate us from screensharing:
+  1. We do not require any software to be installed
+  2. We send over the real content without any loss of quality
+  3. We can enable high performance video synchronization
 
 
 ##Security{#security}
