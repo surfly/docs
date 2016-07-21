@@ -8,7 +8,11 @@
 
 If we want to make sure that the transition into a Surfly session is a smooth as possible we can enable  [session continuation](../widget_options/widget_options.md/#session_continuation). This will allow the session state to be synchronized so that session data (for example, a Users cart or login status) will be maintained.
 
-We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure session continuation (including on the landing page): 
+There are two types of session continuations:
+ - [full session continuation](../widget_options/widget_options.md/#full_session): allows the transfer of all cookies, including http-only cookies
+ - [soft session continuation](../widget_options/widget_options.md#soft_session): excludes http only cookies
+
+We will use soft session continuation. First, we need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page): 
 ``` javascript
 <script type="text/javascript">(function(){window['_surfly_settings']=window['_surfly_settings']||{
 widgetkey:"**your api key**",
@@ -18,23 +22,6 @@ cookie_transfer_proxying: false
 };
 var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src="https://surfly.com/static/js/widget.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n); })();</script>
 ```
-After that, we need to set the cookies when we submit the form. In our example, we chose to only store the name, email and address of the client:
-``` javascript
-document.getElementById("order").submit();
-var get_name = document.getElementById("name").value;
-var get_email = document.getElementById("email").value;
-var get_address = document.getElementById("address").value;
-document.cookie = 'order: name='+get_name+',email='+get_email+',address='+get_address;
-```
-Finally, we have to get the cookies and display the retrieved data (parsed according to the syntax previously used when we set the cookies):
-``` javascript
-var cookie = document.cookie;
-var index_order = cookie.indexOf("order");
-cookie = cookie.substring(index_order, cookie.length);
-var info = cookie.split(",");
-```
-In the gif below, you can see that the order details are available even if the session ends before the client get their receipt:
-
 
 
 
