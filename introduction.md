@@ -6,11 +6,11 @@
 
 ###### What is co-browsing?
 
-[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others, synchronising mouse clicks and key events. You can start a Surfly session simply by entering the url of the website you want to browse into the 'start session' panel on your admin page. Then, invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and does not require any configuration. 
+[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others, synchronising mouse clicks and key events. You may decide to video or text chat, share documents and highlight areas with the tool. You can start a Surfly session simply by entering the url of the website you want to browse into the 'start session' panel on your admin page. Then, invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and does not require any configuration. 
 
 ![simply_browse](images/simplybrowse.jpg)
 
-However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. By doing this, you will be able to fully customize your session and use as much, or as little, of Surfly's functionality within your own product.
+However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. By doing this, you will be able to fully customize your session and use as much, or as little, of Surfly's functionality within your own product. 
 
 The introduction gives an overview of what Surfly is, and outlines the various ways in which it can be integrated and adapted for your own needs. More information on how to make these changes can be found in the [Integration guide](./the_surfly_tutorial.md), in the [Javascript API](./javascript_api.md) and [REST API](https://www.surfly.com/cobrowsing-api/) documentation.
 
