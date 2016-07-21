@@ -72,6 +72,7 @@ QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem(
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
+<a name="control_appearance"></a>
 ##### Change appearance based on who is in control
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
