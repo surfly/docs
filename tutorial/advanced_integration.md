@@ -82,53 +82,7 @@ window.addEventListener('surflycontrolchange', function (event) {
 </script>
 ```
 
-<a name="small_button"></a>
-##### Session ID approach{#small_button}
 
-Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage. 
-
-The flow of our website has now completely changed. Instead of people initiating a session and waiting for an agent to join them, visitors will first use Zopim when they need help. If, during the conversation, the agent decides a Surfly session is required, they can direct the user to the bottom of the webpage to click on the cake.
-
-When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  There is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
-
-
-
-As you can see from the code below, by adding the #surflystart anchor, we ensure that a Surfly session starts when this icon is clicked:
-
-``` javascript
-
-<p id="idP"><a href="#surflystart"><img src="../static/cakeicon.png" id="showId"></a></p>
-
-```
-
-We then retrieve the queue ID and display it to the user:
-
-
-``` javascript
-        if(window.__surfly){
-        // first check if a session has started (meaning that the icon has been clicked on)
-            var request = new XMLHttpRequest();
-            request.open('GET', 'https://api.surfly.com/v2/sessions/?api_key=**your api key**&active_session=true');
-            request.onreadystatechange = function () {
-              if (this.readyState === 4) {
-              var body = this.responseText; 
-              // we extract the queue_id from the string we get from the request
-              var index = body.indexOf("queue_id");
-              var id = body.substring(index+10, index+14);
-                      // we hide the cake icon
-                      document.getElementById("showId").style.visibility='hidden';  
-                      var textId = document.createTextNode(id);
-                      // replace the cake icon with the session id number
-                      document.getElementById("idP").appendChild(textId);
-              } 
-       	 }
-            request.send();
-        };
-```
-
-The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim. 
-
- 
 <a name="remove-ui"></a>
 ### Customize Surfly's look and feel{#remove-ui}
 
