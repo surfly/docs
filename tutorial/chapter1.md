@@ -169,7 +169,7 @@ Finally, we'd also like to be able to continue chatting with our clients in a Su
 
 First, we need to remove Surfly's default chat box before using our own:
 ``` javascript
-docked_only: true, // display the icons in a dock and disable chat box
+docked_only: true, //disable chat box (display icons in a dock)
 ```
 Then, we can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` html
