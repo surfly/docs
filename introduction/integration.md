@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# Integration
+# Adding Surfly to your Website 
 
 <a name="add_surfly"></a>
 
