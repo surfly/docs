@@ -18,11 +18,10 @@ The main points covered in this section are:
 <a name="invite-user"></a>
 #### Inviting users to join your session{#invite-user}
 
- - To start a session from the Surfly admin panel, navigate to the "start" button at the top left of your screen. 
- - Within the Surfly session the leader can, by default, invite people by clicking on the "add user" icon in the dock.
+If you start a session from the Surfly admin panel, you'll be able to invite people to join you as soon as the session starts.
+The leader can also add users from within a Surfly session by clicking the "add user" icon in the dock.
 
 Both of these methods will load the following screen:
-
 ![invite_user](https://raw.github.com/surfly/tutorial/master/screens/invite_user.png)
 
 You can then decide to either share the url of the session, or send an email to the users you wish to invite. 
