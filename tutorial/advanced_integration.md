@@ -77,7 +77,7 @@ As can be seen below, the agents can directly see this information from the 'Que
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
 
-You can add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then you can adapt the appearance depending on who is in control.
+To do this, add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then, detect who is in control, and set the elements you wish to enable/ disable. 
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm the payment.
 
