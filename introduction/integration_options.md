@@ -1,8 +1,8 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# Integration Options
+# Customisation Options
 <a name="integration_options"></a>
 
-You can fully customise Surfly to suit your needs. Many of these changes can be achieved with a simple adjustment to the code snippet, or the options panel on your admin page. 
+Surfly can be fully customised to suit your needs. Many of these changes can be achieved by just changing the settings on the admin panel, but they are also available through our APIe. 
 
 This section covers:
  - [Button appearance](<#button_appearance>)
