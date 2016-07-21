@@ -2,7 +2,7 @@
 <a name="faq"></a>
 # FAQ
 
-If you do not find the answer to your question in one of the sections below, please do not hesitate to [contact us](mailto:support@surfly.com).
+If you do not find the answer to your question in one of the sections below, please do not hesitate to <a href="mailto:support@surfly.com">Contact us</a>.
 
 This FAQ is divided into several sections:
   - [Functionality](<#functionality>)
