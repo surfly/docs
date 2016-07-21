@@ -3,7 +3,7 @@
 # Surfly options
 
 
-Here, you can find the reference tables for each of the Surfly session options. You can choose the aspects of Surfly's functionality you want to integrate into your website and personalise your co-browsing sessions. These parameters can either be set in the options panel or used in the Javascript or REST API.
+Here, you can find the reference tables for each of the Surfly session options. You can choose the aspects of Surfly's functionality you want to integrate into your website and personalise your co-browsing sessions. These parameters can be set in the options panel or used in the Javascript or REST API.
 
 
 {% em color="#ffffe0" %}Please note:
