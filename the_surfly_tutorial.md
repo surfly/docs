@@ -11,7 +11,7 @@ You can view the code in the  [repository](https://github.com/MathildeJ/Cake_sho
    - [Adding a Surfly button](./tutorial/chapter1.md/#integrate)
    - [Customise the button](./tutorial/chapter1.md/#widget)
    - [Build your own landing page](./tutorial/chapter1.md/#landing)
-   - [Session behaviour](./tutorial/chapter1.md/#session)
+   - [Field masking](./tutorial/chapter1.md/#session)
    - [End of session popup](./tutorial/chapter1.md/#popup)
    
    
