@@ -19,6 +19,7 @@ You can view the code in the  [repository](https://github.com/MathildeJ/Cake_sho
    - [Enabling session continuation](./tutorial/advanced_integration.md/#receipt)
    - [Configuring the blacklist](./tutorial/advanced_integration.md/#blacklist)
    - [Queue metadata](./tutorial/advanced_integration.md/#metadata)
+   - [Change appearance based on who has control](./tutorial/advanced_options.md/#control_appearance)
    - [Customize Surfly's look and feel](./tutorial/advanced_integration.md/#remove-ui)
      - [Create your own exit button](./tutorial/advanced_integration.md/#exit_button)
      - [Integrate an already existing chat solution](./tutorial/advanced_integration.md/#chat)
