@@ -131,9 +131,7 @@ We now have our own personalised landing page to greet our customers.
 <a name="session"></a>
 #### Session behaviour{#session}
 
-When a client places an order during a session, we don't want the agent to be able to see their payment details or to click the 'Order' button for them. Therefore, we will mask some form data from the agent, and also disable the "order" button if they are in control.
-
-You can do this by using some of the built-in options provided with Surfly.
+When a client places an order during a session, we don't want the agent to be able to see their payment details. Therefore, we will mask some form data from the agent.
 
 To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the 'surfly_private' attribute to fields containing sensitive information:
 ``` html
@@ -147,22 +145,6 @@ In our example, we will use field masking on the last three fields of our order 
 
 {% em color="#ffffe0" %}Please note: 
 Whilst the leader can mask their data, and hide it from the followers, the followers cannot hide their data from the leader. {% endem %}
-
-As for the 'Order' button, we can easily add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then, we check whether or not the leader is in control and disable the order button if they are not.
-``` javascript
-<script>
-// when the leader is in control then the 'Order' button is clickable otherwise, it is disabled
-window.addEventListener('surflycontrolchange', function (event) {
-    var element = document.getElementById("order_button");
-    if (event.leaderHasControl) {
-        element.disabled = false;
-    } else {
-        element.disabled = true;
-    }
-});
-</script>
-```
-
 
 <a name="popup"></a>
 #### End of session popup{#popup}
