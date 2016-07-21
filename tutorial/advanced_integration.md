@@ -6,7 +6,7 @@
 <a name="receipt"></a>
 #### Enabling session continuation
 
-We want to be sure that information, such as payment details, can flow into and out of the [Surfly](https://www.surfly.com/) session. This ensures a smooth transition for the user. In order to do so, we can use soft [session continuation](../widget_options/widget_options.md/#session_continuation).
+If we want to make sure that the transition into a Surfly session is a smooth as possible we can enable  [session continuation](../widget_options/widget_options.md/#session_continuation). This will allow the session state to be synchronized so that session data (for example, a Users cart or login status) will be maintained.
 
 We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure session continuation (including on the landing page): 
 ``` javascript
