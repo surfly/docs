@@ -34,7 +34,6 @@ window.addEventListener('DOMContentLoaded', function() {
 ```
 
 
-
 <a name="blacklist"></a>
 ##### Configuring the blacklist{#blacklist}
 
