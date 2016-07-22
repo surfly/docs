@@ -41,7 +41,7 @@ We want to restrict access from cetain pages during the session.
 
 In order to restrict access to this page (in our case, its path is '/about'), we can use the [blacklist](../widget_options/widget_options.md/#restrictions) option:
 ``` javascript
-blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
 ```
 We also decided to specify an optional redirect link so that we can design our own restricted page. More specifically, we chose to redirect the client to the home page with a #restricted hash. We can then add a script to implement the desired behaviour: 
 ``` html
@@ -61,9 +61,21 @@ In our example, we decided to redirect the user to our custom restricted page wh
 
 We want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
-Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass this data by using the ['QUEUE_METADATA_CALLBACK' option](../widget_options/widget_options.md/#queue_metadata_callback):
+Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass it to Surfly.session().startLeader() function :
 ``` javascript
-QUEUE_METADATA_CALLBACK: new Function('return {"name": '+sessionStorage.getItem('metaName')+',"email": '+sessionStorage.getItem('metaEmail')+'}'),
+<script>
+var metadata = {"name": sessionStorage.getItem('metaName'),"email": sessionStorage.getItem('metaEmail')};
+
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      // use Surfly API here
+      Surfly.session().startLeader(null, metadata);
+	}
+  });
+});
+</script>
 ```
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
