@@ -21,7 +21,16 @@ l.src='https://x.zok.pw/new-widget-s1.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
 </script>
 
-
+<script>
+var settings={widgetkey:'**your api key**', hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false}
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      // use Surfly API here
+	}
+   });
+ });
+</script>
 ```
 
 
