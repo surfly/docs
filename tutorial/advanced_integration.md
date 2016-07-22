@@ -80,6 +80,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
+
 <a name="control_appearance"></a>
 ##### Change appearance based on who is in control{#control_appearance}
 
@@ -120,7 +121,10 @@ Finally, we wanted to completely strip everything down to [co-browsing](https://
 
 Fortunately, there's an option which removes the Surfly user interface (UI) and therefore allows us to use our own custom elements to control the appearance and feel of the sessions:
 ``` javascript
-ui_off: true, // make Surfly invisible
+ui_off: true // make Surfly invisible
+```
+``` javascript
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]), ui_off: true};
 ```
 
 
