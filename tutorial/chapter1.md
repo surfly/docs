@@ -125,25 +125,25 @@ Finally, we want to display the queue ID on the landing page when a session star
 To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get information about the session, keeping only the data we're interested in:
 ``` javascript
 <script>
- 	// using the REST API to get information about the session
-	var request = new XMLHttpRequest();
+// using the REST API to get information about the session
+var request = new XMLHttpRequest();
 
-	request.open('GET', 'https://api.surfly.com/v2/sessions/?api_key=**your api key**&active_session=true');
+request.open('GET', 'https://api.surfly-s1.com/v2/sessions/?api_key=**your api key**&active_session=true');
 
-	request.onreadystatechange = function () {
-	  if (this.readyState === 4) {
-	    if(window.__surfly){
-		    var body = this.responseText; 
-		    // we extract the queue_id from the string we get from the request
-		    var index = body.indexOf("queue_id");
-		    var id = body.substring(index+10, index+14);
-		    // we display this id on the button
-		    document.getElementById("id_button").innerHTML=id;
-	    }
-	  }
-	};
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    if(window.__surfly){
+      var body = this.responseText; 
+      // we extract the queue_id from the string we get from the request
+      var index = body.indexOf("queue_id");
+      var id = body.substring(index+10, index+14);
+      // we display this id on the button
+      document.getElementById("id_button").innerHTML=id;
+    }
+  }
+};
 
-	request.send();
+request.send();
 </script>
 ```
 ![landing page](http://i.giphy.com/l0HlVOXW4bAmrbarS.gif)
