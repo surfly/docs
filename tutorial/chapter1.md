@@ -194,7 +194,7 @@ First, we need to remove Surfly's default chat box by adding the 'docked_only' o
 ``` javascript
 var settings={widgetkey:'**your api key**', docked_only: true};
 ```
-Then, we can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
+Then, we can simply add the Zopim snippet code the page and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` html
 <!-- Adding Zopim Live Chat -->
 <script>
