@@ -22,7 +22,7 @@ l.src='https://x.zok.pw/new-widget-s1.js';y.parentNode.insertBefore(l,y);})
 </script>
 
 <script>
-var settings={widgetkey:'**your api key**', hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false}
+var settings={widgetkey:'**your api key**', cookie_transfer_enabled: true, cookie_transfer_proxying: false}
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
@@ -41,7 +41,7 @@ We want to restrict access from cetain pages during the session.
 
 In order to restrict access to this page (in our case, its path is '/about'), we can use the [blacklist](../widget_options/widget_options.md/#restrictions) option:
 ``` javascript
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
 ```
 We also decided to specify an optional redirect link so that we can design our own restricted page. More specifically, we chose to redirect the client to the home page with a #restricted hash. We can then add a script to implement the desired behaviour: 
 ``` html
@@ -66,7 +66,7 @@ Firstly, we need to store their information when they log in (in 'metaName' and 
 <script>
 var metadata = {"name": sessionStorage.getItem('metaName'),"email": sessionStorage.getItem('metaEmail')};
 
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
@@ -92,7 +92,7 @@ In our example below, we disable the 'Order' button when the agent is in control
 
 ```javascript
 <script>
-var settings={widgetkey:'**your api key**', hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false};
+var settings={widgetkey:'**your api key**', cookie_transfer_enabled: true, cookie_transfer_proxying: false};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
@@ -124,7 +124,7 @@ Fortunately, there's an option which removes the Surfly user interface (UI) and 
 ui_off: true // make Surfly invisible
 ```
 ``` javascript
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]), ui_off: true};
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]), ui_off: true};
 ```
 
 
@@ -134,11 +134,11 @@ var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
 
 In our example, we chose to create our own exit session button and add it to all the necessary pages. 
-First, we have to make sure that the page we are adding the button to contains the Surfly widget and then we can add our custom button:
+First, we have to make sure that the page we are adding the button to contains the snippet code and then we can add our custom button:
 ``` html
 <button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
 ```
-Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session (in a similar manner, we can also control the behaviour of the 'get help' button on the home page):
+Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
 ``` html
 <script>
    if(window.__surfly){
