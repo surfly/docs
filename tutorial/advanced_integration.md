@@ -85,20 +85,29 @@ As can be seen below, the agents can directly see this information from the 'Que
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
 
-To do this, add an eventListener in order to catch the 'surflycontrolchange' event which is fired every time the control is switched within a Surfly session. Then, detect who is in control, and set the elements you wish to enable/ disable. 
+To do this, you can use the .on() function of the SurflySession API to set an event handle. More specifically, we catch the 'control' event which is fired every time the control is switched within a Surfly session. Then, detect who is in control (by checking the 'to' parameter of the event to see who is in control) , and set the elements you wish to enable/ disable. 
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm the payment.
 
 ```javascript
 <script>
-// when the leader is in control then the 'Order' button is clickable otherwise, it is disabled
-window.addEventListener('surflycontrolchange', function (event) {
-    var element = document.getElementById("order_button");
-    if (event.leaderHasControl) {
-        element.disabled = false;
-    } else {
-        element.disabled = true;
-    }
+var settings={widgetkey:'**your api key**', hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false};
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      // use Surfly API here
+      Surfly.session()
+      .on('control', function(session, event) {
+        var element = document.getElementById("order_button");
+        // when the leader is in control then the 'Order' button is clickable otherwise, it is disabled
+    	if (event.to==0) {
+          element.disabled = false;
+    	} else {
+          element.disabled = true;
+    	}
+      })
+	}
+  });
 });
 </script>
 ```
