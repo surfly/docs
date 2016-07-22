@@ -62,9 +62,33 @@ In the images below, you can see that the button and the chat box are now in our
 
 The API has an [extensive list of widget options](../widget_options.md).
 
-<a name="stealth_mode_popup></a>
+<a name="stealth_mode_popup"></a>
 #### Display a popup to confirm session start{#stealth_mode_popup} 
-If you would prefer not to use a button, you can enable stealth mode instead. This can be done by either changing the setting in the "options" panel, or by 
+If you would prefer not to use a button, you can enable stealth mode instead. This can be done by either changing the setting in the "options" panel, or by setting ``` {stealth_mode: true} ``` in the code snippet.
+
+To display a confirmation popup, you can use the javascript API to detect whether a session has started or not. 
+
+```
+<script>
+  var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_off: true};
+    window.addEventListener('DOMContentLoaded', function() {
+      Surfly.init(settings, function(init) {
+       if (init.success) {
+          // check if a session has started
+          if (Surfly.currentSession) {
+            // inform the user that they are in a session
+            if (window.confirm("You started a Surfly session, press ok to continue")) {
+               console.log("you want to start");
+               } else {
+                  Surfly.session().end();
+               }
+            }
+          }
+       });
+    });
+
+</script>
+```
 
 <a name="start_button"></a>
 #### Create your own button{#start_button}
