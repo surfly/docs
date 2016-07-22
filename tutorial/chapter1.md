@@ -76,7 +76,8 @@ var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_of
                  // check if a session has started
                  if (Surfly.currentSession) {
                    // inform the user that they are in a session
-                    if (window.confirm("You started a Surfly session, press ok to continue") === false) {
+                   // if they press "cancel" the session will end 
+                   if (window.confirm("You started a Surfly session, press ok to continue") === false) {
                         Surfly.session().end();
                     }
                  }
