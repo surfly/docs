@@ -176,7 +176,7 @@ After the session ends, we will display a survey in a pop-up window. This is a u
 
 We use the 'end_of_session_popup_url' option to point to the url of our survey page:
 ``` javascript
-end_of_session_popup_url: "https://example.com/survey",
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey"};
 ```
 
 ![survey](http://i.imgur.com/WpWxQMv.jpg)
