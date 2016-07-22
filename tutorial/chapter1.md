@@ -69,13 +69,16 @@ The API has an [extensive list of widget options](../widget_options.md).
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
 
-First, we need to hide the default button, as we'll be using our own. To do this, set the 'hidden' option to 'true'. We also remove Surfly's button since we wish to use our own:
+First, we need to remove Surfly's button and to only show our custom button when we're outside of a Surfly session:
 ``` javascript
-var settings={widgetkey:'**your api key**', hidden: true}; // set session settings
+var settings={widgetkey:'**your api key**', hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, ui_off: true};
+
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
       // use Surfly API here
+      // inside the session, hide the get help button 
+      document.getElementById('get_help').style.visibility="hidden";
 	}
   });
 });
