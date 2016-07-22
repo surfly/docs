@@ -18,7 +18,8 @@ http://mysite.com/restricted?blocked_url=https%3A%2F%2Fexample.com
 
 If a session was started with the Surfly button, and you want to end the session when a user requests a restricted page, redirect them to the page that includes `widget.js` and execute the following code:
 ```
-Surfly.endSession(redirect_url);
+Surfly.session().end(redirect_url);
+
 ```
 
 `endSession` function will trigger the following events:
