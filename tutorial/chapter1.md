@@ -62,6 +62,9 @@ In the images below, you can see that the button and the chat box are now in our
 
 The API has an [extensive list of widget options](../widget_options.md).
 
+<a name="stealth_mode_popup></a>
+#### Display a popup to confirm session start{#stealth_mode_popup} 
+If you would prefer not to use a button, you can enable stealth mode instead. This can be done by either changing the setting in the "options" panel, or by 
 
 <a name="start_button"></a>
 #### Create your own button{#start_button}
