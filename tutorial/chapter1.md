@@ -77,6 +77,8 @@ Then, we add our custom button (get_help_button in our example):
 ``` javascript
 <button class="my-custom-button" id="get_help_button"></button>
 ```
+{% em color="blue" %}mention that we can alternatively use the #surflystart anchor -> link to "session ID approach"{% endem %}
+
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
 
 ![custom button](http://i.imgur.com/vZfILGS.png)
