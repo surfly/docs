@@ -74,7 +74,6 @@ First, we need to remove Surfly's button and to only show our custom button when
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:'**your api key**'}, function(init) {
     if (init.success) {
-      // use Surfly API here
       // inside the session, hide the get help button 
       document.getElementById('get_help').style.visibility="hidden";
 	}
@@ -116,7 +115,6 @@ Next, we add the snippet code to our landing page (since it will be the page fro
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
-      // use Surfly API here
       Surfly.session().startLeader();
 	}
   });
@@ -129,7 +127,6 @@ To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get
 <script>
 // using the REST API to get information about the session
 var request = new XMLHttpRequest();
-
 request.open('GET', 'https://api.surfly-s1.com/v2/sessions/?api_key=**your api key**&active_session=true');
 
 request.onreadystatechange = function () {
