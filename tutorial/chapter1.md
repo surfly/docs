@@ -190,9 +190,9 @@ You might need to set the 'hidden' option to 'false' for this option to work cor
 
 Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. 
 
-First, we need to remove Surfly's default chat box before using our own:
+First, we need to remove Surfly's default chat box by adding the 'docked_only' option to the session settings of the page we wish to add Zopim to:
 ``` javascript
-docked_only: true, //disable chat box (display icons in a dock)
+var settings={widgetkey:'**your api key**', docked_only: true};
 ```
 Then, we can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` html
