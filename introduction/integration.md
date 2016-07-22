@@ -26,13 +26,12 @@ Finally, copy the code snippet and add it to the source code of your website.
 
 It should look something like the following:
 ``` javascript
-<script type="text/javascript">(function(){window['_surfly_settings']=window['_surfly_settings']||{
-widgetkey:"**your api key**",
-/*
-add your custom options here
-*/
-};
-var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src="https://surfly.com/static/js/widget.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n); })();</script>
+<script>
+(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+l.src='https://x.zok.pw/new-widget-s1.js';y.parentNode.insertBefore(l,y);})
+(window,document,'script','Surfly');
+</script>
 ```
 
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
