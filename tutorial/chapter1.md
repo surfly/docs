@@ -69,25 +69,21 @@ If you would prefer not to use a button, you can enable stealth mode instead. Th
 To display a confirmation popup, you can use the Javascript API to detect whether a session has started or not. We then display a confirm box. If the user presses cancel, the session ends, otherwise the user stays in the session.  
 
 ```javascript
-<script>
-  var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_off: true};
-    window.addEventListener('DOMContentLoaded', function() {
-      Surfly.init(settings, function(init) {
-       if (init.success) {
-          // check if a session has started
-          if (Surfly.currentSession) {
-            // inform the user that they are in a session
-            if (window.confirm("You started a Surfly session, press ok to continue")) {
-               console.log("you want to start");
-               } else {
-                  Surfly.session().end();
-               }
-            }
-          }
-       });
-    });
+var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_off: true};
+          window.addEventListener('DOMContentLoaded', function() {
+            Surfly.init(settings, function(init) {
+              if (init.success) {
+                 // check if a session has started
+                 if (Surfly.currentSession) {
+                   // inform the user that they are in a session
+                    if (window.confirm("You started a Surfly session, press ok to continue") === false) {
+                        Surfly.session().end();
+                    }
+                 }
+              }
+            });
+          });
 
-</script>
 ```
 
 <a name="start_button"></a>
