@@ -19,6 +19,19 @@ We are now going to integrate Surfly into our website, selecting the aspects of 
 
 As you can see below, after adding the widget code to our website, we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
+``` javascript
+	<script>
+	  window.addEventListener('DOMContentLoaded', function() {
+	    Surfly.init({widgetkey:'**your api key**'}, function(init) {
+	      console.log(init.success);
+	      if (init.success) {
+            // use Surfly API here
+            Surfly.button();
+	      }
+	    });
+	  });
+	</script>
+```
 <div align="center">
   <img src="http://i.imgur.com/AhyWO6b.png">
 </div> 
