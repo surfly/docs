@@ -66,16 +66,18 @@ The API has an [extensive list of widget options](../widget_options.md).
 
 <a name="start_button"></a>
 #### Create your own button{#start_button}
+{% em color="blue" %}now that we use the JS API, it would probably make more sense to include this part in the next one (we just create a button which redirects to landing page directly and don't use #surflystart){% endem %}
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
 
 First, we need to hide the default button, as we'll be using our own. To do this, set the 'hidden' option to 'true':
 ``` javascript
-settings=hidden: true, // hide Surfly's default button
+var settings={widgetkey:'**your api key**', hidden: true}; // set session settings
 ```
 Then, we add our custom button (get_help_button in our example):
 ``` javascript
 <button class="my-custom-button" id="get_help_button"></button>
+Surfly.session().startLeader();
 ```
 {% em color="blue" %}mention that we can alternatively use the #surflystart anchor -> link to "session ID approach"{% endem %}
 
