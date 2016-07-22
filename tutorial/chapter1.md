@@ -82,9 +82,10 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 ```
 Then, we add our custom button (get_help_button in our example) which will redirect the user to our custom landing page:
-``` javascript
+``` html
 <button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
-
+```
+``` html
 <script>
 function landing(){
   window.location.href = '/landing_page';
