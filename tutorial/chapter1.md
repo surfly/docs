@@ -46,12 +46,12 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 
 We will now change the support button so we can use our own theme color. You can do this by setting a few options in the Surfly widget code.
 In our case, we only used a handful of custom options:
-``` javascript
-drawing_mode: "permanent", // change drawing mode so that the drawings last
+ 
+~~drawing_mode: "permanent", // change drawing mode so that the drawings last
 chat_box_color: "#87cefa", // change color of chat box so that it suits our website's theme
 theme_font_background: "#87cefa", // change color of button 
-videochat: false // remove videochat feature (not needed)
-```
+videochat: false // remove videochat feature (not needed)~~
+
 
 In the images below, you can see that the button and the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. Finally, we decided to make the drawings permanent to facilitate communication.
 
