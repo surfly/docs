@@ -23,7 +23,6 @@ As you can see below, after adding the widget code to our website, we see a red 
 	<script>
 	  window.addEventListener('DOMContentLoaded', function() {
 	    Surfly.init({widgetkey:'**your api key**'}, function(init) {
-	      console.log(init.success);
 	      if (init.success) {
             // use Surfly API here
             Surfly.button();
@@ -70,14 +69,26 @@ The API has an [extensive list of widget options](../widget_options.md).
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
 
-First, we need to hide the default button, as we'll be using our own. To do this, set the 'hidden' option to 'true':
+First, we need to hide the default button, as we'll be using our own. To do this, set the 'hidden' option to 'true'. We also remove Surfly's button since we wish to use our own:
 ``` javascript
 var settings={widgetkey:'**your api key**', hidden: true}; // set session settings
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      // use Surfly API here
+	}
+  });
+});
 ```
-Then, we add our custom button (get_help_button in our example):
+Then, we add our custom button (get_help_button in our example) which will redirect the user to our custom landing page:
 ``` javascript
-<button class="my-custom-button" id="get_help_button"></button>
-Surfly.session().startLeader();
+<button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
+
+<script>
+function landing(){
+  window.location.href = '/landing_page';
+}	  
+</script>
 ```
 {% em color="blue" %}mention that we can alternatively use the #surflystart anchor -> link to "session ID approach"{% endem %}
 
@@ -93,28 +104,23 @@ When a visitor initiates a session they are queue'd and, by default, have to wai
 
 The flow will be as follows; the user clicks on the support button and is shown a page with their unique pin code, and information about the session. When an agent joins them, the user is redirected to the home page.
 
-In order to use such a page, we first remove the red banner blocking the session:
+In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false':
 ``` javascript
-block_until_agent_joins: false, // remove red banner
+var settings={widgetkey:'**your api key**', hidden: true, block_until_agent_joins: false};
 ```
-Next, we move the snippet code to our landing page (since it will be the page from which sessions start) and add the auto start option so that a session will start automatically (as soon as the user is redirected to our landing page):
+Next, we add the snippet code to our landing page (since it will be the page from which sessions start) and call Surfly.session().startLeader() so that a session will start automatically (as soon as the user is redirected to our landing page):
+
 ``` javascript
-auto_start: true, // session will start automatically
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      // use Surfly API here
+      Surfly.session().startLeader();
+	}
+  });
+});
 ```
-We now want our button to redirect the user to the landing page. We simply replace the #surflystart anchor with an onclick function that does just that:
 
-``` html
-<button class="button" id="get_help_button" onclick="landing()"></button>
-
-<script>
-    // the get help button redirects the user to the landing page (if they're not already in a session)
-    function landing(){
-      if(!window.__surfly){
-          window.location.href = '/landing_page';
-      }
-    }
-</script>
-```
 Finally, we want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
 To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get information about the session, keeping only the data we're interested in:
 ``` javascript
