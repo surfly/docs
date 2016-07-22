@@ -26,7 +26,6 @@ var settings={widgetkey:'**your api key**', cookie_transfer_enabled: true, cooki
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
-      // use Surfly API here
 	}
    });
  });
@@ -70,7 +69,6 @@ var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
-      // use Surfly API here
       Surfly.session().startLeader(null, metadata);
 	}
   });
@@ -96,7 +94,6 @@ var settings={widgetkey:'**your api key**', cookie_transfer_enabled: true, cooki
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
-      // use Surfly API here
       Surfly.session()
       .on('control', function(session, event) {
         var element = document.getElementById("order_button");
@@ -123,6 +120,7 @@ Fortunately, there's an option which removes the Surfly user interface (UI) and 
 ``` javascript
 ui_off: true // make Surfly invisible
 ```
+OR
 ``` javascript
 var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]), ui_off: true};
 ```
@@ -143,7 +141,6 @@ Considering that it's an exit button, we don't want it to be shown when the cust
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:'**your api key**'}, function(init) {
     if (init.success) {
-      // use Surfly API here
       // inside the session, hide the get help button 
       document.getElementById('get_help').style.visibility="hidden";
       // inside the session, show exit button
