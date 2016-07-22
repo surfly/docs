@@ -139,60 +139,28 @@ First, we have to make sure that the page we are adding the button to contains t
 <button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
 ```
 Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
-``` html
-<script>
-   if(window.__surfly){
-	document.getElementById('exit_button').style.visibility="visible";
-	document.getElementById('get_help').style.visibility="hidden";
-   } else {
-	document.getElementById('exit_button').style.visibility="hidden";
-	document.getElementById('get_help').style.visibility="visible";
-   }
-</script>
-```
-Finally, we define the action triggered by the button, in this case, ending a Surfly session. To do so, we can once again use the REST API. The first request allows us to retrieve the session ID (which we store so that it's accessible from all the pages):
-``` html
-<script>
-// get session ID
-var request = new XMLHttpRequest();
-request.open('GET', 'https://api.surfly.com/v2/sessions/?api_key=**your api key**&active_session=true');
-request.onreadystatechange = function () {
-	if (this.readyState === 4) {
-		if(window.__surfly){
-			var body = this.responseText;
-			var index = body.indexOf("session_id");
-			var index_end = body.indexOf("agent_id");
-			var id = body.substring(index+13, index_end-3);
-			sessionStorage.setItem("session_id", id);
-		}
+``` javascript
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init({widgetkey:'**your api key**'}, function(init) {
+    if (init.success) {
+      // use Surfly API here
+      // inside the session, hide the get help button 
+      document.getElementById('get_help').style.visibility="hidden";
+      // inside the session, show exit button
+      document.getElementById('exit_button').style.visibility="visible";
 	}
-};
-request.send();	
-</script>
+  });
+});
 ```
-Once we've stored the session ID, we can use a second request which will use this information to end the current session:
+Finally, we define the action triggered by the button, in this case, ending the current Surfly session:
 ``` html
 <script>
-    // end session
-    function exitSession(){
-	var request_end = new XMLHttpRequest();
-	request_end.open('DELETE', 'https://api.surfly.com/v2/sessions/'+sessionStorage.getItem("session_id")+'/?api_key=**your api key**');
-	request_end.onreadystatechange = function () {
-  		if (this.readyState === 4) {
-			var body = this.responseText;
-			var index = body.indexOf("response");
-			// make sure that the session ended
-			var success = body.substring(index+11, body.length-2);
-			if(success==="Session has been ended successfully"){
-				// end the session
-				Surfly.endSession('https://example.com');
-			}
- 		}
-	};
-	request_end.send();
-  }
-  </script>
+function exitSession(){
+  Surfly.currentSession.end('https://example.com');
+}
+</script>
 ```
+
 
 ![exit button](http://i.imgur.com/BhlkW24.png)
 
@@ -219,30 +187,46 @@ As you can see from the code below, by adding the #surflystart anchor, we ensure
 
 ```
 
-We then retrieve the queue ID and display it to the user:
+We then use the REST API to retrieve the queue ID and store it:
 
 
 ``` javascript
-        if(window.__surfly){
-        // first check if a session has started (meaning that the icon has been clicked on)
-            var request = new XMLHttpRequest();
-            request.open('GET', 'https://api.surfly.com/v2/sessions/?api_key=**your api key**&active_session=true');
-            request.onreadystatechange = function () {
-              if (this.readyState === 4) {
-              var body = this.responseText; 
-              // we extract the queue_id from the string we get from the request
-              var index = body.indexOf("queue_id");
-              var id = body.substring(index+10, index+14);
-                      // we hide the cake icon
-                      document.getElementById("showId").style.visibility='hidden';  
-                      var textId = document.createTextNode(id);
-                      // replace the cake icon with the session id number
-                      document.getElementById("idP").appendChild(textId);
-              } 
-       	 }
-            request.send();
-        };
+if(window.__surfly){
+// first check if a session has started (meaning that the icon has been clicked on)
+  var request = new XMLHttpRequest();
+  request.open('GET', 'https://api.surfly-s1.com/v2/sessions/?api_key=**your api key**&active_session=true');
+  
+  request.onreadystatechange = function () {
+    if (this.readyState === 4) {
+      var body = this.responseText; 
+      // we extract the queue_id from the string we get from the request
+      var index = body.indexOf("queue_id");
+      var id = body.substring(index+10, index+14);
+      sessionStorage.setItem("queue_id", id);
+    } 
+  }
+  request.send();
+};
 ```
-
+Finally, we control the button's behaviour depending on whether or not we're in a Surfly session:
+``` javascript
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init({widgetkey:'**your api key**'}, function(init) {
+    if (init.success) {
+      // inside the session, hide the get help button 
+      document.getElementById('get_help').style.visibility="hidden";
+      // inside the session, show exit button
+      document.getElementById('exit_button').style.visibility="visible";
+      
+      // behaviour of small button at the bottom of the page
+      document.getElementById("showId").style.visibility='hidden';  
+      var textId = document.createTextNode(sessionStorage.getItem("queue_id"));
+      // replace the cake icon with the session id number
+      document.getElementById("idP").appendChild(textId);
+	}
+  });
+});
+      
+```
 The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim. 
 
