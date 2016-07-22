@@ -71,11 +71,11 @@ We'd like to create our own button to start a [co-browsing session](https://www.
 
 First, we need to hide the default button, as we'll be using our own. To do this, set the 'hidden' option to 'true':
 ``` javascript
-hidden: true, // hide Surfly's default button
+settings=hidden: true, // hide Surfly's default button
 ```
-Then, we add the #surflystart anchor to our custom button (get_help_button in our example):
+Then, we add our custom button (get_help_button in our example):
 ``` javascript
-<a href="#surflystart"> <button class="button" id="get_help_button"></button></a>
+<button class="my-custom-button" id="get_help_button"></button>
 ```
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
 
