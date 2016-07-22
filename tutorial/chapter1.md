@@ -66,9 +66,9 @@ The API has an [extensive list of widget options](../widget_options.md).
 #### Display a popup to confirm session start{#stealth_mode_popup} 
 If you would prefer not to use a button, you can enable stealth mode instead. This can be done by either changing the setting in the "options" panel, or by setting ``` {stealth_mode: true} ``` in the code snippet.
 
-To display a confirmation popup, you can use the javascript API to detect whether a session has started or not. 
+To display a confirmation popup, you can use the Javascript API to detect whether a session has started or not. We then display a confirm box. If the user presses cancel, the session ends, otherwise the user stays in the session.  
 
-```
+```javascript
 <script>
   var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_off: true};
     window.addEventListener('DOMContentLoaded', function() {
