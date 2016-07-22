@@ -71,10 +71,8 @@ We'd like to create our own button to start a [co-browsing session](https://www.
 
 First, we need to remove Surfly's button and to only show our custom button when we're outside of a Surfly session:
 ``` javascript
-var settings={widgetkey:'**your api key**', hidden: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, ui_off: true};
-
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
+  Surfly.init({widgetkey:'**your api key**'}, function(init) {
     if (init.success) {
       // use Surfly API here
       // inside the session, hide the get help button 
