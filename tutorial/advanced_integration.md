@@ -6,7 +6,7 @@
 <a name="receipt"></a>
 #### Enabling session continuation
 
-If we want to make sure that the transition into a Surfly session is a smooth as possible we can enable  [session continuation](../widget_options/widget_options.md/#session_continuation). This will allow the session state to be synchronized so that session data (for example, a Users cart or login status) will be maintained.
+If we want to make sure that the transition into a Surfly session is a smooth as possible we can enable [session continuation](../widget_options/widget_options.md/#session_continuation). This will allow the session state to be synchronized so that session data (for example, a user's cart or login status) will be maintained even when the session ends.
 
 There are two types of session continuations:
  - [full session continuation](../widget_options/widget_options.md/#full_session): allows the transfer of all cookies, including http-only cookies
