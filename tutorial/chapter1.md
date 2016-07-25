@@ -110,8 +110,6 @@ function landing(){
 }	  
 </script>
 ```
-{% em color="blue" %}mention that we can alternatively use the #surflystart anchor -> link to "session ID approach"{% endem %}
-
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
 
 ![custom button](http://i.imgur.com/vZfILGS.png)
