@@ -191,7 +191,7 @@ Whilst the leader can mask their data, and hide it from the followers, the follo
 
 After the session ends, we will display a survey in a pop-up window. This is a useful way of getting feedback from the session. 
 
-We use the 'end_of_session_popup_url' option to point to the url of our survey page:
+We use the 'end_of_session_popup_url' option to point to the url of our survey page. Again, we add this as an option in settings:
 ``` javascript
 var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey"};
 ```
