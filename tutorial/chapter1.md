@@ -46,10 +46,10 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 We will now change the support button so we can use our own theme color. You can do this by setting a few options in the Surfly widget code.
 In our case, we only used a handful of custom options:
  
-
+```
 chat_box_color: "#87cefa", // change color of chat box so that it suits our website's theme
 videochat: false // remove videochat feature (not needed)~~
-
+```
 
 In the images below, you can see that the icons in the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. 
 
