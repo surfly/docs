@@ -54,7 +54,6 @@ In our example, we decided to redirect the user to our custom restricted page wh
 
 
 
-
 <a name="metadata"></a>
 ##### Queue metadata{#metadata}
 
@@ -78,6 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
+![Queue panel](../images/queue_metadata.png)
 
 <a name="control_appearance"></a>
 ##### Change appearance based on who is in control{#control_appearance}
