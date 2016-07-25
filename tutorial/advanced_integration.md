@@ -174,7 +174,16 @@ The flow of our website has now completely changed. Instead of people initiating
 
 When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  There is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
 
+First, we create a button that will start a session when clicked:
 
+```javascript
+    <script type="text/javascript">
+    function sessionStart() {
+       \\ Start a session 
+       Surfly.session().startLeader();
+    }
+    </script>
+```
 
 We then use the REST API to retrieve the queue ID and store it:
 
