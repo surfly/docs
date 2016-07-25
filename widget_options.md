@@ -61,9 +61,6 @@ Changes to the code will take priority over changes to the options panel.{% ende
 ##### Button appearance{#button_table}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| theme_font_background | surfly-red | The support button background color |
-| theme_font_color | white | The support button foreground color|
-| theme_font_size | 14 | The size of the text in the button |
 | hidden | false | Do not show the button |
 | position | 'bottomleft' | Positions the Surfly Support Button. The options are: 'bottomleft', 'bottomright', 'middleright' |
 
@@ -76,16 +73,6 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | agent_can_end_session | true | Show End Session button on follower's end |
 
 <h3 class="table_class">Session configuration</h3>
-
-##### Queue management
-|  Option | Default | Description |
-| ---------------| ------------|------------|
-| QUEUE_METADATA_CALLBACK | false |  A JS callback that can provide optional metadata (see queue customization section below) |
-| QUEUE_ENDPOINT | false | Custom queue endpoint |
-| QUEUE_HANDLER | false | Custom JS queue handler|
-| QUEUE_CALLBACK | false | JS callback for queue monitoring|
-
-More information on [queue management](./widget_options/widget_options.md#metadata)
 
 <a name="screen_options"></a>
 ##### Screen options/viewport{#screen_options}
