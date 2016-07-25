@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', function() {
 <a name="blacklist"></a>
 ##### Configuring the blacklist{#blacklist}
 
-We want to restrict access from cetain pages during the session.
+We want to restrict access from certain pages during the session.
 
 In order to restrict access to this page (in our case, its path is '/about'), we can use the [blacklist](../widget_options/widget_options.md/#restrictions) option:
 ``` javascript
