@@ -59,7 +59,7 @@ As can be seen below, we were then able to set up our own invite page:
 
 It is also possible to integrate Surfly with existing chat solutions. For example, if you have already established your own video or text chat, you may want to add Surfly's co-browsing functionality to this. In this case, Surfly can be integrated in such a way so that it acts as a transparent addition to your product and allows you to entirely customise the appearance of the session.
 
-Simply add the code snippet to the page including your chat solution, and alter it to either remove the user interface entirely, or to display a dock with session control options (more information on the docked_only option can be found [here](../widget_options.md). You will then be able to use Surfly's co-browsing functionality in addition to your own chat solution.
+Simply add the code snippet to the page including your chat solution, and alter it to either remove the user interface entirely, or to display a dock with session control options (more information on the docked_only option can be found [here](../widget_options.md/#chatbox-options). You will then be able to use Surfly's co-browsing functionality in addition to your own chat solution.
 
 
 <a name="session_continuation"></a>
