@@ -84,7 +84,6 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | min_width | 0 | Restrict min width of the viewport |
 | set_to_smallest | true | By default we resize the active viewport to the viewport size of the participant with the smallest screen. This can be disabled |
 
-
 ##### Enterprise options
 |  Option | Default | Description |
 | ---------------| ------------|------------|
