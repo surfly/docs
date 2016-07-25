@@ -117,6 +117,8 @@ window.addEventListener('DOMContentLoaded', function() {
 Finally, we wanted to completely strip everything down to [co-browsing](https://www.surfly.com/). By default, Surfly provides more tools and features than our example application needs. With the 'docked_only' options we've already removed a few features we don't need but we'd like to go even further. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
 Fortunately, there's an option which removes the Surfly user interface (UI) and therefore allows us to use our own custom elements to control the appearance and feel of the sessions:
+
+Add this option to your list of settings:
 ``` javascript
 ui_off: true // make Surfly invisible
 ```
