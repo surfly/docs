@@ -176,14 +176,6 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
 
 
 
-As you can see from the code below, by adding the #surflystart anchor, we ensure that a Surfly session starts when this icon is clicked:
-
-``` javascript
-
-<p id="idP"><a href="#surflystart"><img src="../static/cakeicon.png" id="showId"></a></p>
-
-```
-
 We then use the REST API to retrieve the queue ID and store it:
 
 
