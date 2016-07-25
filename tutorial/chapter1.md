@@ -51,12 +51,8 @@ chat_box_color: "#87cefa", // change color of chat box so that it suits our webs
 videochat: false // remove videochat feature (not needed)~~
 ```
 
-In the images below, you can see that the icons in the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. 
+In the image below, you can see that the icons in the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. 
 
-<div align="center">
-  <img src="http://i.imgur.com/muoPH30.png">
-</div> 
-<br>
  ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
 The API has an [extensive list of widget options](../widget_options.md).
