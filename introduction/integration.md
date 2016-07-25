@@ -34,6 +34,23 @@ l.src='https://x.zok.pw/new-widget-s1.js';y.parentNode.insertBefore(l,y);})
 </script>
 ```
 
+You will also need to initialise the session
+
+```
+var settings = {
+  widget_key: '**your key here**',
+};
+Surfly.init(settings, function(initResult) {
+  if (initResult.success) {
+    // display the default Surfly button
+    Surfly.button();
+  } else {
+    // log an error
+    console.log('Your browser lacks features required by Surfly');
+  }
+});
+```
+
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
 
 **Please see the [integration guide](../the_surfly_tutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
