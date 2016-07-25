@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 We want to restrict access from certain pages during the session.
 
-In order to restrict access to this page (in our case, its path is '/about'), we can use the [blacklist](../widget_options/widget_options.md/#restrictions) option:
+In order to restrict access to this page (in our case, its path is '/about'), we can use add the [blacklist](../widget_options/widget_options.md/#restrictions) option to our settings list:
 ``` javascript
 var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
 ```
