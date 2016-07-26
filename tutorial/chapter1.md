@@ -184,7 +184,7 @@ request.send();
 ```
 
 *Finally, we would like the user to be redirected to the home page when an agent joins them...*
-![landing page](http://i.giphy.com/l0HlVOXW4bAmrbarS.gif)
+![landing page](http://i.imgur.com/QqgL0Wo.jpg)
 
 We now have our own personalised landing page to greet our customers.
 
@@ -248,5 +248,6 @@ Then, we can simply add the Zopim snippet code to all the pages of our website a
 </script>
 <!--End of Zopim Live Chat Script-->
 ```
+
 {% em color="#ffffe0" %}Please note: 
 We added a condition in the beginning of the script to make sure that a second Zopim chat window doesn't open when a Surfly session starts.{% endem %}
