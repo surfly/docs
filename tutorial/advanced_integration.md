@@ -60,9 +60,9 @@ In our example, we decided to redirect the user to our custom restricted page wh
 <a name="metadata"></a>
 ##### Queue metadata{#metadata}
 
-We want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
+We now want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
-Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then we can pass it to Surfly.session().startLeader() function :
+Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then, we can pass it to the Surfly.session().startLeader() function :
 ``` javascript
 <script>
 var metadata = {"name": sessionStorage.getItem('metaName'),"email": sessionStorage.getItem('metaEmail')};
