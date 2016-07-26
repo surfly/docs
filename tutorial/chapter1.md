@@ -17,9 +17,16 @@ We are now going to integrate Surfly into our website, selecting the aspects of 
 <a name="integrate"></a>
 #### Adding a Surfly button{#integrate}
 
-As you can see below, after adding the widget code to our website, we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
+As you can see below, after adding the widget code to our website, initializing a session and adding Surfly's default button , we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
 ``` javascript
+<script>
+(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+l.src='https://surfly.com/widget.js';y.parentNode.insertBefore(l,y);})
+(window,document,'script','Surfly');
+</script>
+
 <script>
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:'**your api key**'}, function(init) {
@@ -43,8 +50,7 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 <a name="widget"></a>
 #### Customise the button{#widget}
 
-We will now change the support button so we can use our own theme color. You can do this by setting a few options in the Surfly widget code.
-In our case, we only used a handful of custom options:
+We'll now change the appearance of the chatbox so we can use our own theme color. You can do this by setting an option in Surfly.button():
 
 ``` javascript
 Surfly.button({chat_box_color: "#87cefa", videochat: false});
@@ -58,12 +64,13 @@ The API has an [extensive list of widget options](../widget_options.md).
 
 <a name="stealth_mode_popup"></a>
 #### Display a popup to confirm session start{#stealth_mode_popup} 
+
 If you would prefer not to use a button, you can enable stealth mode instead. This can be done by either changing the setting in the "options" panel, or by setting ``` {stealth_mode: true} ``` in the code snippet.
 
-To display a confirmation popup, you can use the Javascript API to detect whether a session has started or not. We then display a confirm box. If the user presses cancel, the session ends, otherwise the user stays in the session.  
+To display a confirmation popup when a session starts, you can use the Javascript API to detect whether a session has started or not. We can then display a confirm box. If the user presses cancel, the session ends, otherwise the user stays in the session.  
 
 ```javascript
-var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_off: true};
+var settings={widgetkey:'**your api key**', splash: false, ui_off: true};
           window.addEventListener('DOMContentLoaded', function() {
             Surfly.init(settings, function(init) {
               if (init.success) {
@@ -79,6 +86,24 @@ var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_of
             });
           });
 
+```
+
+```javascript
+var settings={widgetkey:'**your api key**', splash: false, ui_off: true};
+
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      Surfly.session()
+      .on('session_started', function(session, event) {
+       // inform the user that they are in a session, if they press "cancel" the session will end 
+       if (window.confirm("You started a Surfly session, press ok to continue") === false) {
+         Surfly.session().end();
+       }
+       })
+    }
+   });
+});
 ```
 
 <a name="start_button"></a>
@@ -105,13 +130,12 @@ We create our button, and add an onclick event to start a Surfly session:
 <button class="my-custom-button" id="get_help_button" onclick="sessionStart()"></button>
 ```
 
-```javascript
- <script type="text/javascript">
-    function sessionStart() {
-       \\ Start a session 
-       Surfly.session().startLeader();
-    }
- </script>
+``` html
+<script>
+function sessionStart(){
+  Surfly.session().startLeader();
+}
+</script>
 ```
 
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
