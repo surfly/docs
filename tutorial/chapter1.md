@@ -203,7 +203,7 @@ request.send();
 ```
 
 *Finally, we would like the user to be redirected to the home page when an agent joins them...*
-![landing page](http://i.giphy.com/l0HlVOXW4bAmrbarS.gif)
+
 
 We now have our own personalised landing page to greet our customers.
 
