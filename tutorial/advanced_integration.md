@@ -126,11 +126,6 @@ Add this option to your list of settings:
 ``` javascript
 ui_off: true // make Surfly invisible
 ```
-OR
-``` javascript
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]), ui_off: true};
-```
-
 
 <a name="exit_button"></a>
 #### Create your own exit button{#exit_button}
