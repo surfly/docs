@@ -83,7 +83,6 @@ var settings={widgetkey:'b84defc4621441ecae5eb10bdec1cb5a', splash: false, ui_of
 
 <a name="start_button"></a>
 #### Create your own button{#start_button}
-{% em color="blue" %}now that we use the JS API, it would probably make more sense to include this part in the next one (we just create a button which redirects to landing page directly and don't use #surflystart){% endem %}
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
 
@@ -100,17 +99,7 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 ```
-Then, we add our custom button (get_help_button in our example) which will redirect the user to our custom landing page:
-``` html
-<button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
-```
-``` html
-<script>
-function landing(){
-  window.location.href = '/landing_page';
-}	  
-</script>
-```
+
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
 
 ![custom button](http://i.imgur.com/vZfILGS.png)
@@ -137,6 +126,17 @@ window.addEventListener('DOMContentLoaded', function() {
 	}
   });
 });
+```
+Then, we adapt our custom button (get_help_button in our example), which will redirect the user to our custom landing page:
+``` html
+<button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
+```
+``` html
+<script>
+function landing(){
+  window.location.href = '/landing_page';
+}	  
+</script>
 ```
 
 Finally, we want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
