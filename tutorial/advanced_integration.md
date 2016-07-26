@@ -233,5 +233,10 @@ window.addEventListener('DOMContentLoaded', function() {
 ```
 ![smallbutton](../images/session-id-approach.gif)
 
+<div align="center">
+  <img src="http://i.giphy.com/3o7TKq5AiyXl7tTPhu.gif">
+</div> 
+<br>
+
 The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim. 
 
