@@ -191,7 +191,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (init.success) {
       Surfly.session()
       .on('viewer_joined', function(session, event) {
-            // if a viewer join and they are the first then redirect to home pqge
+            // if a viewer join and they are the first then redirect to home page
       	  if(event.count==1){
               session.relocate("https://example.com");
             }	
