@@ -231,6 +231,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
       
 ```
+![smallbutton](../images/session-id-approach.gif)
 
 The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim. 
 
