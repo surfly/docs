@@ -211,14 +211,14 @@ We now have our own personalised landing page to greet our customers.
 <a name="session"></a>
 #### Field masking{#session}
 
-When a client places an order during a session, we don't want the agent to be able to see their payment details. Therefore, we will mask some form data from the agent.
+When a client places an order during a session, we don't want the agent to be able to see their payment details and we would therefore like to mask some form data from the agent.
 
 To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the 'surfly_private' attribute to fields containing sensitive information:
 ``` html
 <span>Card Number</span>
 <input type="text" size="20" data-stripe="number" surfly_private>
 ```
-In our example, we will use field masking on the last three fields of our order form as they contain information about the client's card. As can be seen in the image, the agent only see crosses (x's) instead of the leader's input:
+In our example, we only use field masking on the last three fields of our order form as they contain information about the client's card. As can be seen in the image, the agent only see crosses (x's) instead of the leader's input:
 
 ![field masking](http://i.imgur.com/lRIa8hf.jpg)
 
@@ -231,7 +231,8 @@ Whilst the leader can mask their data, and hide it from the followers, the follo
 
 After the session ends, we will display a survey in a pop-up window. This is a useful way of getting feedback from the session. 
 
-We use the 'end_of_session_popup_url' option to point to the url of our survey page. Again, we add this as an option in settings:
+We use the 'end_of_session_popup_url' option to point to the url of our survey page. Again, we add this as an option in the 'settings' variable:
+
 ``` javascript
 var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey"};
 ```
@@ -243,14 +244,18 @@ You might need to set the 'hidden' option to 'false' for this option to work cor
 
 
 <a name="chat"></a>
-##### Integrate an already existing chat solution{#chat}
+#### Integrate an already existing chat solution{#chat}
 
 Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. 
 
 First, we need to remove Surfly's default chat box by adding the 'docked_only' option to the session settings of the page we wish to add Zopim to:
+
 ``` javascript
 var settings={widgetkey:'**your api key**', docked_only: true};
 ```
+{% em color="#ffffe0" %}Please note: 
+We could also use the 'ui_off' option instead of 'docked_only' considering that in both cases the Surfly's default chatbox is disabled.  {% endem %}
+
 Then, we can simply add the Zopim snippet code the page and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` html
 <!-- Adding Zopim Live Chat -->
