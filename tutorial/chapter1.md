@@ -148,7 +148,7 @@ In particular, we have chosen to use the image of a cake as a get help button fo
 
 When a visitor initiates a session they are queue'd and, by default, have to wait for an agent to take the call before they can navigate within the session. The screen is blocked, and a red banner appears at the top of the screen with their queue pin. In our example application, the page that the user starts a session from is the home page, and consequently, this is the page that gets blocked. We would prefer to have our own custom landing page, where we can tell our customers that they are in the queue, and that an agent will be with them soon. 
 
-The flow will be as follows; the user clicks on the support button and is shown a page with their unique pin code, and information about the session. When an agent joins them, the user is redirected to the home page.
+The flow will be as follows: the user clicks on the support button and is shown a page with their unique pin code, and our own custom text. When an agent joins them, the user is redirected to the home page.
 
 In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false' in the settings options:
 ``` javascript
