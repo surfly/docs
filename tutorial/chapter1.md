@@ -248,6 +248,7 @@ Then, we can simply add the Zopim snippet code to all the pages of our website a
 </script>
 <!--End of Zopim Live Chat Script-->
 ```
-![zopim](http://i.imgur.com/urbhGSh.png)
 {% em color="#ffffe0" %}Please note: 
 We added a condition in the beginning of the script to make sure that a second Zopim chat window doesn't open when a Surfly session starts.{% endem %}
+![zopim](http://i.imgur.com/urbhGSh.png)
+
