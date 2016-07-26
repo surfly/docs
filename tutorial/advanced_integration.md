@@ -144,7 +144,7 @@ First, we have to make sure that the page we are adding the button to contains t
 Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
 ``` javascript
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'**your api key**'}, function(init) {
+  Surfly.init(settings, function(init) {
     if (init.success) {
       // inside the session, hide the get help button 
       document.getElementById('get_help').style.visibility="hidden";
