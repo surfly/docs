@@ -183,7 +183,7 @@ To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get
 <script>
 // using the REST API to get information about the session
 var request = new XMLHttpRequest();
-request.open('GET', 'https://api.surfly-s1.com/v2/sessions/?api_key=**your api key**&active_session=true');
+request.open('GET', 'https://api.surfly-s1.com/v2/sessions/?api_key=**your key**&active_session=true');
 
 request.onreadystatechange = function () {
   if (this.readyState === 4) {
