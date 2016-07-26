@@ -231,7 +231,6 @@ window.addEventListener('DOMContentLoaded', function() {
 });
       
 ```
-![smallbutton](../images/session-id-approach.gif)
 
 <div align="center">
   <img src="http://i.giphy.com/3o7TKq5AiyXl7tTPhu.gif">
