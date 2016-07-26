@@ -183,7 +183,8 @@ request.send();
 </script>
 ```
 
-*Finally, we would like the user to be redirected to the home page when an agent joins them...*
+Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins:
+
 ![landing page](http://i.imgur.com/QqgL0Wo.jpg)
 
 We now have our own personalised landing page to greet our customers.
