@@ -99,6 +99,20 @@ window.addEventListener('DOMContentLoaded', function() {
   });
 });
 ```
+We create our button, and add an onclick event to start a Surfly session: 
+
+``` html
+<button class="my-custom-button" id="get_help_button" onclick="sessionStart()"></button>
+```
+
+```javascript
+ <script type="text/javascript">
+    function sessionStart() {
+       \\ Start a session 
+       Surfly.session().startLeader();
+    }
+ </script>
+```
 
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
 
