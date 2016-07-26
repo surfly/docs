@@ -233,7 +233,7 @@ After the session ends, we will display a survey in a pop-up window. This is a u
 We will use the 'end_of_session_popup_url' option to point to the url of our survey page. Again, we add this as an option in the 'settings' variable:
 
 ``` javascript
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey"};
+end_of_session_popup_url: "https://example.com/survey"
 ```
 
 You can also pass the url as a parameter in ```Surfly.session().end( [redirectUrl] )```. The end_of_session_popup_url has priority over the .end(redirecturl)
