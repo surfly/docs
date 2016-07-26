@@ -177,7 +177,7 @@ function landing(){
 </script>
 ```
 
-Finally, we want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
+We also want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
 To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get information about the session, keeping only the data we're interested in:
 ``` javascript
 <script>
@@ -201,6 +201,8 @@ request.onreadystatechange = function () {
 request.send();
 </script>
 ```
+
+*Finally, we would like the user to be redirected to the home page when an agent joins them...*
 ![landing page](http://i.giphy.com/l0HlVOXW4bAmrbarS.gif)
 
 We now have our own personalised landing page to greet our customers.
