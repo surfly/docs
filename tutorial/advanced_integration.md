@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', function() {
 ```
 Once these options have been set, session continuation is ensured and, for instance, it is possible to use cookies to store information about an order placed from within a Surfly session.
 
+![receipt](http://i.imgur.com/TAjpIOt.jpg)
 
 <a name="blacklist"></a>
 #### Configuring the blacklist{#blacklist}
@@ -80,7 +81,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
-![Queue panel](../images/queue_metadata.png)
+![Queue panel](http://i.imgur.com/OLyMKD5.png)
 
 <a name="control_appearance"></a>
 #### Change appearance based on who is in control{#control_appearance}
