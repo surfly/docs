@@ -71,25 +71,6 @@ To display a confirmation popup when a session starts, you can use the Javascrip
 
 ```javascript
 var settings={widgetkey:'**your api key**', splash: false, ui_off: true};
-          window.addEventListener('DOMContentLoaded', function() {
-            Surfly.init(settings, function(init) {
-              if (init.success) {
-                 // check if a session has started
-                 if (Surfly.currentSession) {
-                   // inform the user that they are in a session
-                   // if they press "cancel" the session will end 
-                   if (window.confirm("You started a Surfly session, press ok to continue") === false) {
-                        Surfly.session().end();
-                    }
-                 }
-              }
-            });
-          });
-
-```
-
-```javascript
-var settings={widgetkey:'**your api key**', splash: false, ui_off: true};
 
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
