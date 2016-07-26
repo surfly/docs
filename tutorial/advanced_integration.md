@@ -179,13 +179,14 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
 
 First, we create a button that will start a session when clicked:
 
-```javascript
-    <script type="text/javascript">
-    function sessionStart() {
-       \\ Start a session 
-       Surfly.session().startLeader();
-    }
-    </script>
+``` html
+<p id="idP"><img id="showId" onclick="sessionStart()"></p>
+
+<script type="text/javascript">
+function sessionStart() {
+  Surfly.session().startLeader();
+}
+</script>
 ```
 
 We then use the REST API to retrieve the queue ID and store it:
