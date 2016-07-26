@@ -36,7 +36,7 @@ Once these options have been set, session continuation is ensured and, for insta
 
 
 <a name="blacklist"></a>
-##### Configuring the blacklist{#blacklist}
+#### Configuring the blacklist{#blacklist}
 
 We want to restrict access from certain pages during the session.
 
@@ -58,7 +58,7 @@ In our example, we decided to redirect the user to our custom restricted page wh
 
 
 <a name="metadata"></a>
-##### Queue metadata{#metadata}
+#### Queue metadata{#metadata}
 
 We now want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
@@ -83,7 +83,7 @@ As can be seen below, the agents can directly see this information from the 'Que
 ![Queue panel](../images/queue_metadata.png)
 
 <a name="control_appearance"></a>
-##### Change appearance based on who is in control{#control_appearance}
+#### Change appearance based on who is in control{#control_appearance}
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
 
@@ -132,7 +132,7 @@ var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_
 
 
 <a name="exit_button"></a>
-##### Create your own exit button{#exit_button}
+#### Create your own exit button{#exit_button}
 
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
 
@@ -171,7 +171,7 @@ Considering how our website is built, there's a unique 'get help' button which m
 
 
 <a name="small_button"></a>
-##### Session ID approach{#small_button}
+#### Session ID approach{#small_button}
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage. 
 
