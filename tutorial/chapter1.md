@@ -152,7 +152,7 @@ The flow will be as follows: the user clicks on the support button and is shown 
 
 In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false' in the settings options:
 ``` javascript
-var settings={widgetkey:'**your api key**', hidden: true, block_until_agent_joins: false};
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false};
 ```
 Next, we add the snippet code to our landing page (since it will be the page from which sessions start) and call Surfly.session().startLeader() so that a session will start automatically (as soon as the user is redirected to our landing page):
 
