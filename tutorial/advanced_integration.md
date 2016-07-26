@@ -13,6 +13,7 @@ There are two types of session continuations:
  - [soft session continuation](../widget_options/widget_options.md#soft_session): excludes http only cookies
 
 In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page): 
+
 ``` javascript
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
@@ -31,6 +32,7 @@ window.addEventListener('DOMContentLoaded', function() {
  });
 </script>
 ```
+Once these options have been set, session continuation is ensured and, for instance, it is possible to use cookies to store information about an order placed from within a Surfly session.
 
 
 <a name="blacklist"></a>
