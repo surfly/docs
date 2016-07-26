@@ -54,6 +54,7 @@ if (window.location.hash == "#restricted"){
 ```
 In our example, we decided to redirect the user to our custom restricted page which informs them that this page is restricted:
 
+![restricted](http://i.imgur.com/FyDZtqK.jpg)
 
 
 <a name="metadata"></a>
