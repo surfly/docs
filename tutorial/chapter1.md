@@ -183,7 +183,24 @@ request.send();
 </script>
 ```
 
-Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins:
+Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function:
+
+``` javascript
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      Surfly.session()
+      .on('viewer_joined', function(session, event) {
+            // if a viewer join and they are the first then redirect to home pqge
+      	  if(event.count==1){
+              session.relocate("https://example.com");
+            }	
+  		})
+        .startLeader();
+	}
+  });
+});
+```
 
 ![landing page](http://i.imgur.com/QqgL0Wo.jpg)
 
