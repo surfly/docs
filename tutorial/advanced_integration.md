@@ -184,7 +184,7 @@ First, we create a button that will start a session when clicked:
 
 <script type="text/javascript">
 function sessionStart() {
-  Surfly.session().startLeader();
+  Surfly.session({block_until_agent_joins: false, ui_off: true}).startLeader();
 }
 </script>
 ```
