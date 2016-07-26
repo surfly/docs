@@ -146,8 +146,6 @@ Considering that it's an exit button, we don't want it to be shown when the cust
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
-      // inside the session, hide the get help button 
-      document.getElementById('get_help').style.visibility="hidden";
       // inside the session, show exit button
       document.getElementById('exit_button').style.visibility="visible";
 	}
