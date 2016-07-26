@@ -239,9 +239,6 @@ var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_
 
 ![survey](http://i.imgur.com/WpWxQMv.jpg)
 
-{% em color="#ffffe0" %}Please note: 
-You might need to set the 'hidden' option to 'false' for this option to work correctly.  {% endem %}
-
 
 <a name="chat"></a>
 #### Integrate an already existing chat solution{#chat}
