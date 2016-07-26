@@ -12,7 +12,7 @@ There are two types of session continuations:
  - [full session continuation](../widget_options/widget_options.md/#full_session): allows the transfer of all cookies, including http-only cookies
  - [soft session continuation](../widget_options/widget_options.md#soft_session): excludes http only cookies
 
-We will use soft session continuation. First, we need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page): 
+In our example, we will use soft session continuation. First, we need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page): 
 ``` javascript
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
