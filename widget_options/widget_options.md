@@ -194,8 +194,8 @@ to a special function that will return an object that provides these values as k
 ```
 
 You can then pass this variable to the SurflySession.startLeader() function:
-```
-
+``` 
+Surfly.session().startLeader(null, userData);
 ```
 
 Of these key,value pairs, `name` and `email` will also be provided to the Surfly session so that the session can display the
