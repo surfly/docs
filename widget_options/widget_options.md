@@ -180,7 +180,7 @@ and integrate it in your own web application.
 For example, if you have the widget
 added to a section of your web application where the user is required to be logged in, you probably
 have some knowledge about the user which might be useful to pass along to the agent. Information such
-as the users' name, email or even their phonenumber.
+as the user's name, email or even their phonenumber.
 
 To make sure that this information becomes available in the dashboard you can set `userData`
 to a special function that will return an object that provides these values as key, value pairs. For example:
