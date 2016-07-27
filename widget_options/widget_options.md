@@ -177,6 +177,35 @@ Surfly comes with a relatively straightforward dashboard. We not only allow you 
 the information presented on this dashboard but you can also completely build your own dashboard
 and integrate it in your own web application.
 
+For example, if you have the widget
+added to a section of your web application where the user is required to be logged in, you probably
+have some knowledge about the user which might be useful to pass along to the agent. Information such
+as the users' name, email or even their phonenumber.
+
+To make sure that this information becomes available in the dashboard you can set `userData`
+to a special function that will return an object that provides these values as key, value pairs. For example:
+
+```
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "phone": "+123123123123"
+}
+```
+
+You can then pass this variable to the SurflySession.startLeader() function:
+```
+
+```
+
+Of these key,value pairs, `name` and `email` will also be provided to the Surfly session so that the session can display the
+name of the user in the chatbox and make sure that the accompanying gravatar matches his email address.
+
+
+
+
+
+
 Our Queue functionality works as follows:
 
   1. The user requests a session, through any of the provided options (button, #surflystart or Javascript call)
@@ -246,25 +275,7 @@ will be given two arguments:
 #### Enriching a Queue request with Metadata{#queue_metadata_callback}
 
 Prior to making the call to `QUEUE_HANDLER`, we will call `QUEUE_METADATA_CALLBACK`, which can enrich
-the Queue request with additional METADATA from the client side. For example, if you have the widget
-added to a section of your web application where the user is required to be logged in, you probably
-have some knowledge about the user which might be useful to pass along to the agent. Information such
-as the users' name, email or even their phonenumber.
-
-To make sure that this information becomes available in the dashboard you can set `QUEUE_METADATA_CALLBACK`
-to a special function that will return an object that provides these values as key, value pairs. For example:
-
-```
-{
-    "name": "John Doe",
-    "email": "john.doe@example.com",
-    "phone": "+123123123123"
-}
-```
-
-Of these key,value pairs, `name` and `email` will also be provided to the Surfly session so that the session can display the
-name of the user in the chatbox and make sure that the accompanying gravatar matches his email address.
-
+the Queue request with additional METADATA from the client side. 
 
 
 #### Tracking queue status
