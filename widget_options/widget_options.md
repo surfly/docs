@@ -46,19 +46,6 @@ Allow access only to the `example.com`. When the user tries to access any other 
 }
 ```
 
-<a name="anchor_start"></a>
-#### Using a special anchor link{#anchor_start}
-
-Another way to start a session is to add the anchor '#surflystart' to any page
-on which the Javascript snippet has been added. This can be used in various
-ways, if you want to create a customized button that starts a session you can
-simply put it within a "A" anchor. For example:
-
-```html
-<a href="#surflystart"> Start a surfly session </a>
-```
-
-
 ## Detecting a Surfly Session
 
 You might want to change the behaviour of the website depending on whether it is a
