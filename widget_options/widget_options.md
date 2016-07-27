@@ -183,7 +183,7 @@ have some knowledge about the user which might be useful to pass along to the ag
 as the user's name, email or even their phonenumber.
 
 To make sure that this information becomes available in the dashboard you can set `userData`
-to a special function that will return an object that provides these values as key, value pairs. For example:
+to an object that provides these values as key, value pairs. For example:
 
 ```
 {
