@@ -172,11 +172,6 @@ consult you on the implementation, or build the integration for you.
 <a name="metadata"></a>
 ## Queue Behaviour Customization{#metadata}
 
-It is possible to integrate Surfly into your website with a support
-button. Once a user clicks this button, their support request will be queue'd
-where one of the available agents can then answer the request. The user will be
-the 'leader' of the session and the agent who joins will be the follower of the
-session.
 
 Surfly comes with a relatively straightforward dashboard. We not only allow you to enrich
 the information presented on this dashboard but you can also completely build your own dashboard
