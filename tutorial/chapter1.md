@@ -62,32 +62,6 @@ In the image below, you can see that the icons in the chat box are now in our we
 
 The API has an [extensive list of widget options](../widget_options.md).
 
-<a name="stealth_mode_popup"></a>
-#### Display a popup to confirm session start{#stealth_mode_popup} 
-
-If you would prefer not to use a button, you can enable stealth mode instead. This can be done by either changing the setting in the "options" panel, or by setting ``` {stealth_mode: true} ``` in the code snippet.
-
-To display a confirmation popup when a session starts, you can use the Javascript API to detect whether a session has started or not. We can then display a confirm box. If the user presses cancel, the session ends, otherwise the user stays in the session.  
-
-```javascript
-var settings={widgetkey:'**your api key**', splash: false, ui_off: true};
-
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-    if (init.success) {
-      Surfly.session()
-      .on('session_started', function(session, event) {
-       // inform the user that they are in a session, if they press "cancel" the session will end 
-       if (window.confirm("You started a Surfly session, press ok to continue") === false) {
-         Surfly.session().end();
-       }
-       })
-    }
-   });
-});
-```
-
-<a name="start_button"></a>
 #### Create your own button{#start_button}
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
