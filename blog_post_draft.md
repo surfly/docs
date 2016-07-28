@@ -10,7 +10,7 @@ The following table of contents provides an overview of the video series:
  - [Welcome to our cake shop](<#welcome>)
  - [Add the snippet code](<#snippet_code>)
  - [Alter the appearance of the chatbox](<#chatbox>)
- - [Stealth mode and popup](<#stealth>)
+ - ~~[Stealth mode and popup](<#stealth>)~~
  - [Create your own landing page](<#landing>)
  - [Field masking](<#field>)
  - [End of session popup url](<#popup>)
@@ -78,14 +78,18 @@ We'll then use the blacklist option to restrict access to a specific webpage whi
 
 Next, we'll provide more information to the agents answering calls so that they can greet our customers by name.
 
+{% youtube %}https://youtu.be/7gqTTgE8HT0{% endyoutube %}
 
 ### Change appearance based on who is in control{#control}
 
 We'll also prevent the agent from ordering without the client's consent by disabling the 'order' button if they are in control of the session.
 
+{% youtube %}https://youtu.be/zsA5YLonLuw{% endyoutube %}
 
 ### Remove the user interface (UI){#ui}
 
 In this video, we'll take customisation a step further and remove Surfly's default user interface. We'll then create our own custom exit button so that our clients are able to end an on-going session. Finally, we decided to make Surfly extremely discrete by using a small button to start a session. This button will also display the queue id when a session is started.
 
 This is useful for cases when you would like to invite a user to start a session, rather then them starting one for themselves. An agent can be in communication with them, for example, over hipchat, and then be directed to the start session button. The user can then give the id to the agent, who will then be able to find the correct session from the admin panel.
+
+{% youtube %}https://youtu.be/cfTEr8n_uZQ{% endyoutube %}
