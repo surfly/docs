@@ -15,7 +15,11 @@ The following table of contents provides an overview of the different videos of 
  - [Field masking](<#field>)
  - [End of session popup url](<#popup>)
  - [Integrate an existing chat solution](<#chat>)
-
+ - [Session continuation](<#continuation>)
+ - [Blacklist option](<#blacklist>)
+ - [Add metadata to the queue](<#metadata>)
+ - [Change appearance based on who is in control](<#control>)
+ - [Remove the UI](<#ui>)
 
 ### Welcome to our cake shop{#welcome}
 
@@ -65,19 +69,19 @@ We demonstrate how to use Surfly alongside existing chat solutions. In this case
 
 After this we'll make sure that, for each order placed from within a Surfly session, the information remains available even if the client has now exited the session.
 
-### Blacklist option
+### Blacklist option{#blacklist}
 
 We'll then use the blacklist option to restrict access to a specific webpage which we don't want our clients to visit while they're in a Surfly session.
 
-### Add metadata to the queue
+### Add metadata to the queue{#metadata}
 
 Next, we'll provide more information to the agents answering calls so that they can greet our customers by name.
 
-### Change appearance based on who is in control
+### Change appearance based on who is in control{#control}
 
 We'll also prevent the agent from ordering without the client's consent by disabling the 'order' button if they are in control of the session
 
-### Removing the user interface (UI)
+### Remove the user interface (UI){#ui}
 
 In this video, we'll take customisation a step further and remove Surfly's default user interface. We'll then create our own custom exit button so that our clients are able to end an on-going session. Finally, we decided to make Surfly extremely discrete by using a small button to start a session. This button will also display the queue id when a session is started.
 
