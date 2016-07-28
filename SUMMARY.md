@@ -19,5 +19,5 @@
    * [Styling](javascript-api/styling.md)
    * [Examples](javascript-api/examples.md)
 * [REST API](https:/www.surfly.com/cobrowsing-api)
-* Blog post draft
+* [Blog post draft](blog_post_draft.md)
 
