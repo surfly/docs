@@ -7,16 +7,17 @@ We're excited to present to you our new video tutorials, in which we will use ou
 Starting with the basic setup, we will explore the various features and options Surfly has on offer. The first video shows you how to access the widget code, and add it to your website. At this point, you will be able to start co-browsing from your website. If you would prefer to customise the look and behaviour of the sessions, the following videos will demonstrate how to adapt the widget code to your needs. Finally, we demonstrate how to tightly integrate Surfly, so that it sits as a transparent layer on your website.
 
 The following table of contents provides an overview of the different videos of this series:
+ - [Welcome to our cake shop](./<#welcome>)
+ - [Add the snippet code](./<#snippet_code>)
 
 
-
-### Welcome to our cake shop
+### Welcome to our cake shop{#welcome}
 
 The example application we have created is a bespoke cake shop, who pride themselves on high quality customer service. Surfly is perfect for them, as co-browsing allows you to share your browser in real time with others, synchronising your mouse clicks and key strokes. This ensures that the cake shop can continue to offer high quality customer service online, as co-browsing can dramatically improve communication between users.
 
 {% youtube %}https://youtu.be/7DjULwbP6h4{% endyoutube %}
 
-### Add the snippet code
+### Add the snippet code{#snippet_code}
 
 For our second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that as been requested by a visitor to your website.
 
