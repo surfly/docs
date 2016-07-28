@@ -10,7 +10,6 @@ The following table of contents provides an overview of the video series:
  - [Welcome to our cake shop](<#welcome>)
  - [Add the snippet code](<#snippet_code>)
  - [Alter the appearance of the chatbox](<#chatbox>)
- - ~~[Stealth mode and popup](<#stealth>)~~
  - [Create your own landing page](<#landing>)
  - [Field masking](<#field>)
  - [End of session popup url](<#popup>)
