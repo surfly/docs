@@ -75,9 +75,12 @@ After this we'll make sure that, for each order placed from within a Surfly sess
 
 We'll then use the blacklist option to restrict access to a specific webpage which we don't want our clients to visit while they're in a Surfly session.
 
+{% youtube %}https://youtu.be/6AWPunigecI{% endyoutube %}
+
 ### Add metadata to the queue{#metadata}
 
 Next, we'll provide more information to the agents answering calls so that they can greet our customers by name.
+
 
 ### Change appearance based on who is in control{#control}
 
