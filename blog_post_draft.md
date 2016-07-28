@@ -14,6 +14,7 @@ The following table of contents provides an overview of the different videos of 
  - [Create your own landing page](<#landing>)
  - [Field masking](<#field>)
  - [End of session popup url](<#popup>)
+ - [Integrate an existing chat solution](<#chat>)
 
 
 ### Welcome to our cake shop{#welcome}
@@ -54,11 +55,13 @@ In this video, we'll ask our clients for feedback at the end of each session by 
 
 {% youtube %}https://youtu.be/-cKNZd9KUhs{% endyoutube %}
 
-### Integrate an existing chat solution
+### Integrate an existing chat solution{#chat}
 
 We demonstrate how to use Surfly alongside existing chat solutions. In this case, we use Zopim.
 
-### Session continuation
+{% youtube %}https://youtu.be/NuwtwP8GMrI{% endyoutube %}
+
+### Session continuation{#continuation}
 
 After this we'll make sure that, for each order placed from within a Surfly session, the information remains available even if the client has now exited the session.
 
