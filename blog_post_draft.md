@@ -85,6 +85,8 @@ We'll also prevent the agent from ordering without the client's consent by disab
 
 {% youtube %}https://youtu.be/zsA5YLonLuw{% endyoutube %}
 
+![chompy](http://i.giphy.com/l0MYB1kYQZqiGaLhm.gif)
+
 ### Remove the user interface (UI){#ui}
 
 In this video, we'll take customisation a step further and remove Surfly's default user interface. We'll then create our own custom exit button so that our clients are able to end an on-going session. Finally, we decided to make Surfly extremely discrete by using a small button to start a session. This button will also display the queue id when a session is started.
