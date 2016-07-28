@@ -16,7 +16,7 @@ The example application we have created is a bespoke cake shop, who pride themse
 
 {% youtube %}https://youtu.be/7DjULwbP6h4{% endyoutube %}
 
-### Adding the snippet code
+### Add the snippet code
 
 For our second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that as been requested by a visitor to your website.
 
@@ -40,31 +40,31 @@ In this next step, we'l show you how to create your own landing page and therefo
 
 We'll then use field masking to protect our customers' privacy during a Surfly session by hiding sensitive information from the agent.
 
-Seventh video end of session popup url
+### End of session popup url
 
 In this video, we'll ask our clients for feedback at the end of each session by displaying a popup.
 
-Eighth video Zopim
+### Integrate an existing chat solution
 
 We demonstrate how to use Surfly alongside existing chat solutions. In this case, we use Zopim.
 
-Ninth video session continuation
+### Session continuation
 
 After this we'll make sure that, for each order placed from within a Surfly session, the information remains available even if the client has now exited the session.
 
-Tenth video blacklisted
+### Blacklist option
 
 We'll then use the blacklist option to restrict access to a specific webpage which we don't want our clients to visit while they're in a Surfly session.
 
-Eleventh video Queue metadata
+### Add metadata to the queue
 
 Next, we'll provide more information to the agents answering calls so that they can greet our customers by name.
 
-Twelfth video changing appearance based on who is in control
+### Change appearance based on who is in control
 
 We'll also prevent the agent from ordering without the client's consent by disabling the 'order' button if they are in control of the session
 
-Thirteenth video
+### Removing the user interface (UI)
 
 In this video, we'll take customisation a step further and remove Surfly's default user interface. We'll then create our own custom exit button so that our clients are able to end an on-going session. Finally, we decided to make Surfly extremely discrete by using a small button to start a session. This button will also display the queue id when a session is started.
 
