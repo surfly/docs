@@ -6,7 +6,7 @@ We're excited to present to you our new video tutorials, in which we will use ou
 
 Starting with the basic setup, we will explore the various features and options Surfly has on offer. The first video shows you how to access the widget code, and add a support button to your website. At this point, you will be able to start co-browsing from your website. If you would prefer to customise the look and behaviour of the sessions, the following videos will demonstrate how to adapt the widget code to your needs. Finally, we demonstrate how to tightly integrate Surfly, so that it sits as a transparent layer on your website.
 
-The following table of contents provides an overview of the different videos of this series:
+The following table of contents provides an overview of the video series:
  - [Welcome to our cake shop](<#welcome>)
  - [Add the snippet code](<#snippet_code>)
  - [Alter the appearance of the chatbox](<#chatbox>)
