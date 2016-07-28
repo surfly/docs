@@ -40,9 +40,13 @@ In this next step, we'l show you how to create your own landing page and therefo
 
 We'll then use field masking to protect our customers' privacy during a Surfly session by hiding sensitive information from the agent.
 
+{% youtube %}https://youtu.be/DkQpFMvMLVI{% endyoutube %}
+
 ### End of session popup url
 
 In this video, we'll ask our clients for feedback at the end of each session by displaying a popup.
+
+{% youtube %}https://youtu.be/-cKNZd9KUhs{% endyoutube %}
 
 ### Integrate an existing chat solution
 
