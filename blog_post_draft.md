@@ -69,6 +69,8 @@ We demonstrate how to use Surfly alongside existing chat solutions. In this case
 
 After this we'll make sure that, for each order placed from within a Surfly session, the information remains available even if the client has now exited the session.
 
+{% youtube %}https://youtu.be/Q3q2UgCV5ho{% endyoutube %}
+
 ### Blacklist option{#blacklist}
 
 We'll then use the blacklist option to restrict access to a specific webpage which we don't want our clients to visit while they're in a Surfly session.
