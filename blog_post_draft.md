@@ -29,7 +29,7 @@ The example application we have created is a bespoke cake shop, who pride themse
 
 ### Add the snippet code{#snippet_code}
 
-For our second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that as been requested by a visitor to your website.
+For the second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that as been requested by a visitor to your website.
 
 ### Alter appearance of chatbox{#chatbox}
 
