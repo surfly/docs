@@ -12,6 +12,8 @@ The following table of contents provides an overview of the different videos of 
  - [Alter the appearance of the chatbox](<#chatbox>)
  - [Stealth mode and popup](<#stealth>)
  - [Create your own landing page](<#landing>)
+ - [Field masking](<#field>)
+ - [End of session popup url](<#popup>)
 
 
 ### Welcome to our cake shop{#welcome}
@@ -40,13 +42,13 @@ In this next step, we'l show you how to create your own landing page and therefo
 
 {% youtube %}https://youtu.be/njPEWicHqWs{% endyoutube %}
 
-### Field masking
+### Field masking{#field}
 
 We'll then use field masking to protect our customers' privacy during a Surfly session by hiding sensitive information from the agent.
 
 {% youtube %}https://youtu.be/DkQpFMvMLVI{% endyoutube %}
 
-### End of session popup url
+### End of session popup url{#popup}
 
 In this video, we'll ask our clients for feedback at the end of each session by displaying a popup.
 
