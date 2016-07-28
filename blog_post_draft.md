@@ -91,4 +91,4 @@ In this video, we'll take customisation a step further and remove Surfly's defau
 
 This is useful for cases when you would like to invite a user to start a session, rather then them starting one for themselves. An agent can be in communication with them, for example, over hipchat, and then be directed to the start session button. The user can then give the id to the agent, who will then be able to find the correct session from the admin panel.
 
-{% youtube %}https://youtu.be/cfTEr8n_uZQ{% endyoutube %}
+{% youtube %}https://youtu.be/9N8KrmDHeEY{% endyoutube %}
