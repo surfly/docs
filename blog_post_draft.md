@@ -37,9 +37,6 @@ In this video, we will show you how to make some basic customisations, by settin
 
 {% youtube %}https://youtu.be/N6Qzk5YVzbw{% endyoutube %}
  
-### Stealth mode and popup{#stealth}
-
-This week, we will show you how to create a confirmation window on the session start.
 
 ### Create your own landing page{#landing}
 
@@ -55,7 +52,7 @@ We'll then use field masking to protect our customers' privacy during a Surfly s
 
 ### End of session popup url{#popup}
 
-In this video, we'll ask our clients for feedback at the end of each session by displaying a popup.
+In this video, we'll ask our clients for feedback at the end of each session by displaying a survey as popup.
 
 {% youtube %}https://youtu.be/-cKNZd9KUhs{% endyoutube %}
 
@@ -84,7 +81,8 @@ Next, we'll provide more information to the agents answering calls so that they 
 
 ### Change appearance based on who is in control{#control}
 
-We'll also prevent the agent from ordering without the client's consent by disabling the 'order' button if they are in control of the session
+We'll also prevent the agent from ordering without the client's consent by disabling the 'order' button if they are in control of the session.
+
 
 ### Remove the user interface (UI){#ui}
 
