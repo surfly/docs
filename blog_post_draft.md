@@ -1,32 +1,40 @@
 # Blog post draft
 
-### Introduction to the video series
+We're excited to present to you our new video tutorials, in which we will use our example application to guide you through the integration of Surfly's co-browsing technology. These videos work alongside the [integration guide](./the_surfly_tutorial.md), and can be used as a reference for further clarification.
 
-We're excited to present to you our new video tutorials, in which we will use our example application to guide you through the integration of Surfly's co-browsing technology. These videos work alongside the [integration guide](/tutorial), and can be used as a reference for further clarification.
-
-The example application we have created is a bespoke cake shop, who pride themselves on high quality customer service. Surfly is perfect for them, as co-browsing allows you to share your browser in real time with others, synchronising your mouse clicks and key strokes. This ensures that the cake shop can continue to offer high quality customer service online, as co-browsing can dramatically improve communication between users.
-
-overview of content
+### Overview of content
 
 Starting with the basic setup, we will explore the various features and options Surfly has on offer. The first video shows you how to access the widget code, and add it to your website. At this point, you will be able to start co-browsing from your website. If you would prefer to customise the look and behaviour of the sessions, the following videos will demonstrate how to adapt the widget code to your needs. Finally, we demonstrate how to tightly integrate Surfly, so that it sits as a transparent layer on your website.
 
-Second video integration
+The following table of contents provides an overview of the different videos of this series:
+
+
+
+### Welcome to our cake shop
+
+The example application we have created is a bespoke cake shop, who pride themselves on high quality customer service. Surfly is perfect for them, as co-browsing allows you to share your browser in real time with others, synchronising your mouse clicks and key strokes. This ensures that the cake shop can continue to offer high quality customer service online, as co-browsing can dramatically improve communication between users.
+
+{% youtube %}https://youtu.be/7DjULwbP6h4{% endyoutube %}
+
+### Adding the snippet code
 
 For our second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that as been requested by a visitor to your website.
 
-Third video basic customisation
+### Alter appearance of chatbox
 
 In this video, we will show you how to make some basic customisations, by setting options in the widget code we previously added to our example website.
 
-Fourth video stealth mode and popup
+{% youtube %}https://youtu.be/N6Qzk5YVzbw{% endyoutube %}
+ 
+### Stealth mode and popup
 
 This week, we will show you how to create a confirmation window on the session start.
 
-Fifth video landing page
+### Create your own landing page
 
 In this next step, we'l show you how to create your own landing page and therefore choose how to greet the customers wishing to start a co-browsing session.
 
-Sixth video field masking
+### Field masking
 
 We'll then use field masking to protect our customers' privacy during a Surfly session by hiding sensitive information from the agent.
 
