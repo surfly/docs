@@ -9,6 +9,9 @@ Starting with the basic setup, we will explore the various features and options 
 The following table of contents provides an overview of the different videos of this series:
  - [Welcome to our cake shop](./<#welcome>)
  - [Add the snippet code](./<#snippet_code>)
+ - [Alter the appearance of the chatbox](./<#chatbox>)
+ - [Stealth mode and popup](./<#stealth>)
+ - [Create your own landing page](./<#landing>)
 
 
 ### Welcome to our cake shop{#welcome}
@@ -21,17 +24,17 @@ The example application we have created is a bespoke cake shop, who pride themse
 
 For our second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that as been requested by a visitor to your website.
 
-### Alter appearance of chatbox
+### Alter appearance of chatbox{#chatbox}
 
 In this video, we will show you how to make some basic customisations, by setting options in the widget code we previously added to our example website.
 
 {% youtube %}https://youtu.be/N6Qzk5YVzbw{% endyoutube %}
  
-### Stealth mode and popup
+### Stealth mode and popup{#stealth}
 
 This week, we will show you how to create a confirmation window on the session start.
 
-### Create your own landing page
+### Create your own landing page{#landing}
 
 In this next step, we'l show you how to create your own landing page and therefore choose how to greet the customers wishing to start a co-browsing session.
 
