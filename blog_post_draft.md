@@ -85,7 +85,6 @@ We'll also prevent the agent from ordering without the client's consent by disab
 
 {% youtube %}https://youtu.be/zsA5YLonLuw{% endyoutube %}
 
-![chompy](http://i.giphy.com/l0MYB1kYQZqiGaLhm.gif)
 
 ### Remove the user interface (UI){#ui}
 
