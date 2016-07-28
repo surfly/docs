@@ -34,6 +34,8 @@ This week, we will show you how to create a confirmation window on the session s
 
 In this next step, we'l show you how to create your own landing page and therefore choose how to greet the customers wishing to start a co-browsing session.
 
+{% youtube %}https://youtu.be/njPEWicHqWs{% endyoutube %}
+
 ### Field masking
 
 We'll then use field masking to protect our customers' privacy during a Surfly session by hiding sensitive information from the agent.
