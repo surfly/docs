@@ -211,16 +211,18 @@ Finally, we control the button's behaviour depending on whether or not we're in 
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:'**your api key**'}, function(init) {
     if (init.success) {
-      // inside the session, hide the get help button 
-      document.getElementById('get_help').style.visibility="hidden";
-      // inside the session, show exit button
-      document.getElementById('exit_button').style.visibility="visible";
-      
-      // behaviour of small button at the bottom of the page
-      document.getElementById("showId").style.visibility='hidden';  
-      var textId = document.createTextNode(sessionStorage.getItem("queue_id"));
-      // replace the cake icon with the session id number
-      document.getElementById("idP").appendChild(textId);
+      if(Surfly.currentSession){
+        // inside the session, hide the get help button 
+        document.getElementById('get_help').style.visibility="hidden";
+        // inside the session, show exit button
+        document.getElementById('exit_button').style.visibility="visible";
+
+        // behaviour of small button at the bottom of the page
+        document.getElementById("showId").style.visibility='hidden';  
+        var textId = document.createTextNode(sessionStorage.getItem("queue_id"));
+        // replace the cake icon with the session id number
+        document.getElementById("idP").appendChild(textId);
+      }
 	}
   });
 });
