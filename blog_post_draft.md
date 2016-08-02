@@ -98,6 +98,7 @@ In this video, we'll take customisation a step further and remove Surfly's defau
 ### The session ID approach{#approach}
 
 Finally, we decided to make Surfly extremely discrete by using a small button to start a session. This button will also display the queue id when a session is started.
+
 This is useful for cases when you would like to invite a user to start a session, rather then them starting one for themselves. An agent can be in communication with them, for example, over Hipchat, and then be directed to the start session button. The user can give the ID to the agent, who will then be able to find the correct session from the admin panel.
 
 {% youtube %}https://youtu.be/bT4GgL1Q-Xc{% endyoutube %}
