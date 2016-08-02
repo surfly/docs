@@ -53,7 +53,7 @@ In this video, we'll ask our clients for feedback at the end of each session by 
 
 ### Create your own button
 
-
+In this next part, we show you how to use your own custom button as a 'start session' button so that you can fully choose its appearance and behaviour.
 
 {% youtube %}https://youtu.be/CxRKvSNC5Qg{% endyoutube %}
 
