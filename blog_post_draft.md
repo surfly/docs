@@ -10,7 +10,6 @@ The following table of contents provides an overview of the video series:
  - [Welcome to our cake shop](<#welcome>)
  - [Add the snippet code](<#snippet_code>)
  - [Alter the appearance of the chatbox](<#chatbox>)
- - [Create your own landing page](<#landing>)
  - [Field masking](<#field>)
  - [End of session popup url](<#popup>)
  - [Integrate an existing chat solution](<#chat>)
@@ -19,6 +18,7 @@ The following table of contents provides an overview of the video series:
  - [Add metadata to the queue](<#metadata>)
  - [Change appearance based on who is in control](<#control>)
  - [Remove the UI](<#ui>)
+ - [The session ID approach](<#approach>)
 
 ### Welcome to our cake shop{#welcome}
 
@@ -90,7 +90,7 @@ In this video, we'll take customisation a step further and remove Surfly's defau
 
 Finally, we decided to make Surfly extremely discrete by using a small button to start a session. This button will also display the queue id when a session is started.
 
-### The session ID approach
+### The session ID approach{#approach}
 
 This is useful for cases when you would like to invite a user to start a session, rather then them starting one for themselves. An agent can be in communication with them, for example, over Hipchat, and then be directed to the start session button. The user can give the ID to the agent, who will then be able to find the correct session from the admin panel.
 
