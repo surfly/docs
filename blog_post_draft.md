@@ -50,7 +50,7 @@ We'll then use field masking to protect our customers' privacy during a Surfly s
 
 In this video, we'll ask our clients for feedback at the end of each session by displaying a survey as popup.
 
-{% youtube %}https://youtu.be/gnBv4Vhh2uA{% endyoutube %}
+{% youtube %}https://youtu.be/fyb-FpAPo4U{% endyoutube %}
 
 ### Create your own button{#button}
 
@@ -101,7 +101,7 @@ Finally, we decided to make Surfly extremely discrete by using a small button to
 
 This is useful for cases when you would like to invite a user to start a session, rather then them starting one for themselves. An agent can be in communication with them, for example, over Hipchat, and then be directed to the start session button. The user can give the ID to the agent, who will then be able to find the correct session from the admin panel.
 
-{% youtube %}{% endyoutube %}
+{% youtube %}https://youtu.be/bT4GgL1Q-Xc{% endyoutube %}
 
 ### Conclusion
 
