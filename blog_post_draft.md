@@ -12,6 +12,7 @@ The following table of contents provides an overview of the video series:
  - [Alter the appearance of the chatbox](<#chatbox>)
  - [Field masking](<#field>)
  - [End of session popup url](<#popup>)
+ - [Create your own button](<#button>)
  - [Integrate an existing chat solution](<#chat>)
  - [Session continuation](<#continuation>)
  - [Blacklist option](<#blacklist>)
@@ -51,7 +52,7 @@ In this video, we'll ask our clients for feedback at the end of each session by 
 
 {% youtube %}https://youtu.be/gnBv4Vhh2uA{% endyoutube %}
 
-### Create your own button
+### Create your own button{#button}
 
 In this next part, we show you how to use your own custom button as a 'start session' button so that you can fully choose its appearance and behaviour.
 
