@@ -37,6 +37,13 @@ You can also start a session right away, without a button:
 Surfly.session().startLeader();
 ```
 
+### Session to another page
+By default, all newly created sessions will point to the current page, to provide the most transparent experience. This behaviour can be overriden with `url` option:
+```javascript
+Surfly.session({url: 'https://example.com'}).startLeader();
+```
+The code above will open a cobrowsing frame to `https://example.com`.
+
 ### Custom button
 We provide a convenient `Surfly.button()` function for rendering a nice default button. But it really doesn't do much, and it is very easy to make a custom button:
 
