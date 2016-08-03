@@ -98,7 +98,7 @@ More information on [restrictions](./widget_options/widget_options.md/#restricti
 ##### Session start
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| auto_start | false | Instead of showing a button, immediately start a session |
+| url | _&lt;current page&gt;_ | Initial URL that will be opened inside the session |
 | autohide_button | true | Hide the Surfly button when no agent is available |
 | stealth_mode | true | When enabled, users can use CTRL + ENTER to start a Surfly session |
 | format_session_id | true | Change the session id to something easy to communicate over the phone (eg, 123-123-123) |
