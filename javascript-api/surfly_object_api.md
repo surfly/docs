@@ -37,6 +37,29 @@ if (!Surfly.agentAvailable) {
 }
 ```
 <hr />
+> testConnection( callback )
+
+`Surfly.init()` only succeeds if the user's browser supports all features required by Surfly (WebSockets, for example). However, cobrowsing may still not work if there is a blocking firewall between the user and the Surfly server. In this case `SurflySession.startLeader()` and `SurflySession.startFollower()` will raise errors. This function allows to check connection without starting an actual cobrowsing session.
+
+`callback`: a callback function that accepts a test result in following format:
+```javascript
+{
+  "success": true|false,
+  "errorMsg": "<error message or null if no error occured>"
+}
+```
+
+##### Example
+```javascript
+Surfly.testConnection(function(result) {
+  if (!result.success) {
+    console.error('Connection to Surfly failed:', result.errorMsg);
+  }
+});
+```
+
+
+<hr />
 > SurflySession Surfly.session( [ sessionSettings ], [ sessionUrl ] )
 
 Creates a session object with provided settings. Some properties of the returned SurflySession may not be initialized. You can bind callbacks using `.on()` method to hook on specific points of session lifetime.
