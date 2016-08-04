@@ -58,7 +58,6 @@ Surfly.testConnection(function(result) {
 });
 ```
 
-
 <hr />
 > SurflySession Surfly.session( [ sessionSettings ], [ sessionUrl ] )
 
