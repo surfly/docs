@@ -10,7 +10,7 @@ If called from inside a session, this returns a [SurflySession](surflysession_ap
 ##### Example
 ```javascript
 if (Surfly.currentSession) {
-  curSession.on('message', function (session, event) {
+  Surfly.currentSession.on('message', function (session, event) {
     if (event.origin === window.location.origin) {
       console.log('outer window says:', event.data);
     } else {
