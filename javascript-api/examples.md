@@ -153,17 +153,26 @@ Surfly.button({
 ### Communication with the cobrowsing window
 While the Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need the Surfly widget to be loaded on both pages. The `targetOrigin` and `srcOrigin` parameters allow you to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
 ```javascript
-Surfly.session()
-  .on('session_started', function(session) {
-    session.sendMessage({foo: 'bar'}, window.location.origin);
-  })
-  .on('message', function(session, event) {
+if (!Surfly.currentSession) {
+  // open a cobrowsing session and set the message handler
+
+  Surfly.session().on('message', function(session, event) {
     if (window.location.origin === event.origin) {
       console.log('page from the session says:', event.data);
-    } else {
-      console.log('got message from', event.origin, event.data);
+      // reply to the message
+      session.sendMessage({bar: 'roger that'}, window.location.origin);
     }
   }).startLeader();
+
+} else {
+  // from inside a cobrowsing window, send a message to the outer scope:
+
+  Surfly.currentSession.sendMessage(
+    {foo: 'fire in the hole!'},
+    window.location.origin
+  );
+
+}
 ```
 
 ### Custom styles
