@@ -221,7 +221,7 @@ You can also pass the url as a parameter in ```Surfly.session().end([redirectUrl
 
 Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. 
 
-First, we need to remove Surfly's default chat box by adding the 'docked_only' option to the session settings of the page we wish to add Zopim to:
+First, we need to remove Surfly's default chat box by adding the 'docked_only' option to the session settings:
 
 ``` javascript
 var settings={widgetkey:'**your api key**', docked_only: true};
