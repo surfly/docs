@@ -71,8 +71,7 @@ block_until_agent_joins: false,
 end_of_session_popup_url: "https://example.com/survey",
 cookie_transfer_enabled: true, 
 cookie_transfer_proxying: false, 
-blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
-};
+blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
 
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
@@ -99,7 +98,10 @@ In our example below, we disable the 'Order' button when the agent is in control
 
 ```javascript
 <script>
-var settings={widgetkey:'**your api key**', cookie_transfer_enabled: true, cookie_transfer_proxying: false};
+var settings = {widgetkey:'**your api key**',
+cookie_transfer_enabled: true,
+cookie_transfer_proxying: false};
+
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
@@ -188,7 +190,14 @@ First, we create a button that will start a session when clicked:
 
 <script type="text/javascript">
 function sessionStart() {
-  var settings = {block_until_agent_joins: false, end_of_session_popup_url: "https://morning-spire-54873.herokuapp.com/survey", docked_only: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://morning-spire-54873.herokuapp.com/#restricted"}]), ui_off: true};
+  var settings = {block_until_agent_joins: false,
+  end_of_session_popup_url: "https://example.com",
+  docked_only: true, 
+  cookie_transfer_enabled: true, 
+  cookie_transfer_proxying: false, 
+  blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
+  ui_off: true};
+  
   Surfly.session(settings).startLeader();
 }
 </script>
