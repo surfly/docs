@@ -6,7 +6,7 @@
 
 If you integrate Surfly with your website, visitors will be able to click the 'get live help' button to request a session. They will then be queue'd until an agent (the person who receives the call) joins them. By default, the person who initiated the session is the leader and the agent who takes the call will be the follower, however you can choose to swap control at any time during the session.
 
-To integrate Surfly, you need to add the Surfly code snippet into your website's source code. You can then use the Javascript API or the 'options' panel from the admin page to customise the way the session looks and behaves. The options panel allows you to save your preferred options. If you do decide to use our JS API to set some options, this will take priority over the settings configured in the 'options' panel.
+To integrate Surfly, you need to add the Surfly code snippet into your website's source code. You can then use the [Javascript API](../javascript_api.md) or the 'options' panel from the admin page to customise the way the session looks and behaves. The options panel allows you to save your preferred options. If you do decide to use our JS API to set some options, this will take priority over the settings configured in the 'options' panel.
 
 
 ![options panel](../images/options-panel.jpg)
