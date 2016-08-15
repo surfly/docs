@@ -42,7 +42,7 @@ The standard CTRL + T shortcut to open a new tab will not open a tab within the 
 <a name="chat_box"></a>
 ####Chat box{#chat_box}
 
-Surfly provides a [chat box](./widget_options.md/#chatbox-options) which can be used to communicate with other users. We will display your gravatar in the chat box. The name is taken from the name as configured in the admin panel. If you prefer, you can use the REST API to change the name that gets displayed.
+Surfly provides a [chat box](./widget_options.md/#chatbox-options) which can be used to communicate with other users. We will display your gravatar in the chat box. The name is taken from the name as configured in the admin panel. If you prefer, you can also use session options to change the name that gets displayed.
 
 The default chatbox color is a soft red, however, this can be altered to match your website's theme. Modifying the chat box can not only change its appearance, but also limit or extend the amount of control that the leader and the followers can have. 
 
