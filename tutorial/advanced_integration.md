@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		sess = Surfly.currentSession;
       }
       sess.on('control', function(session, event) {
-      		var element = document.getElementById("order_button");
+            var element = document.getElementById("order_button");
     		if (event.to==0) {
        			element.disabled = false;
        			element.style.backgroundColor = "#87cefa";
