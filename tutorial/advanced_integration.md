@@ -18,7 +18,7 @@ In our example, we will use soft session continuation. We need to add the snippe
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-l.src='https://x.zok.pw/new-widget-s1.js';y.parentNode.insertBefore(l,y);})
+l.src='https://surfly-s1.com/widget.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
 </script>
 
@@ -183,6 +183,7 @@ First, we create a button that will start a session when clicked:
 
 <script type="text/javascript">
 function sessionStart() {
+  var settings = {block_until_agent_joins: false, end_of_session_popup_url: "https://morning-spire-54873.herokuapp.com/survey", docked_only: true, cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://morning-spire-54873.herokuapp.com/#restricted"}]), ui_off: true};
   Surfly.session(settings).startLeader();
 }
 </script>
