@@ -101,10 +101,11 @@ window.addEventListener('DOMContentLoaded', function() {
       Surfly.session()
       .on('control', function(session, event) {
         var element = document.getElementById("order_button");
-        // when the leader is in control then the 'Order' button is clickable otherwise, it is disabled
     	if (event.to==0) {
+          // when the leader is in control then the 'Order' button is clickable
           element.disabled = false;
     	} else {
+          // otherwise, it is disabled
           element.disabled = true;
     	}
       })
