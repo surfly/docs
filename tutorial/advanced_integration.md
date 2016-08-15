@@ -26,8 +26,6 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 var settings={widgetkey:'**your api key**', cookie_transfer_enabled: true, cookie_transfer_proxying: false}
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
-    if (init.success) {
-	}
    });
  });
 </script>
