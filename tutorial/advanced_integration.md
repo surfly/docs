@@ -41,17 +41,9 @@ We want to restrict access from certain pages during the session.
 
 In order to restrict access to this specific page (in our case, its path is '/about'), we can add the [blacklist](../widget_options/widget_options.md/#restrictions) option to our settings list:
 ``` javascript
-blacklist: JSON.stringify([{"pattern":".*/about.*","redirect":"https://example.com/#restricted"}])};
+blacklist: JSON.stringify([{"pattern":".*/about.*","redirect":"https://example.com/restricted"}])};
 ```
-We also decided to specify an optional redirect link so that we can design our own restricted page. More specifically, we chose to redirect the client to the home page with a #restricted hash. We can then add a script to implement the desired behaviour: 
-``` html
-<script>
-if (window.location.hash == "#restricted"){
-  window.location.href = '/restricted';
-}
-</script>
-```
-In our example, we decided to redirect the user to our custom restricted page which informs them that this page is restricted:
+As can be seen above, we chose to redirect the user to our custom restricted page which informs them that this page is restricted:
 
 ![restricted](http://i.imgur.com/FyDZtqK.jpg)
 
@@ -61,10 +53,10 @@ In our example, we decided to redirect the user to our custom restricted page wh
 
 We now want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
-Firstly, we need to store their information when they log in (in 'metaName' and 'metaEmail') and then, we can pass it to the Surfly.session().startLeader() function :
+In our example, we pass the name and email of the user to the Surfly.session().startLeader() function :
 ``` javascript
 <script>
-var metadata = {"name": sessionStorage.getItem('metaName'),"email": sessionStorage.getItem('metaEmail')};
+var metadata = {"name": "RoseF","email": "rose@example.com"};
 
 var settings = {widgetkey:'**your api key**', 
 block_until_agent_joins: false, 
@@ -82,6 +74,8 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
+{% em color="#ffffe0" %}Please note: 
+If the visitor to your website is logged in, the data passed as metadata could also be retrieved from their account information. {% endem %}
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
 
