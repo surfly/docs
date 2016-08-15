@@ -17,7 +17,7 @@ We are now going to integrate Surfly into our website, selecting the aspects of 
 <a name="integrate"></a>
 #### Adding a Surfly button{#integrate}
 
-As you can see below, after adding the widget code to our website, initializing a session and adding Surfly's default button , we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
+As you can see below, after adding the widget code to our website, allowing requests originating from our website's domain,  initializing a session and adding Surfly's default button , we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
 
 ``` javascript
 <script>
