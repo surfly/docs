@@ -23,7 +23,7 @@ As you can see below, after adding the widget code to our website, initializing 
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-l.src='https://surfly-s1.com/widget.js';y.parentNode.insertBefore(l,y);})
+l.src='https://surfly-s1.com/surfly.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
 </script>
 
