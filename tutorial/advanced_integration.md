@@ -66,7 +66,14 @@ Firstly, we need to store their information when they log in (in 'metaName' and 
 <script>
 var metadata = {"name": sessionStorage.getItem('metaName'),"email": sessionStorage.getItem('metaEmail')};
 
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false, end_of_session_popup_url: "https://example.com/survey", cookie_transfer_enabled: true, cookie_transfer_proxying: false, blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
+var settings = {widgetkey:'**your api key**', 
+block_until_agent_joins: false, 
+end_of_session_popup_url: "https://example.com/survey",
+cookie_transfer_enabled: true, 
+cookie_transfer_proxying: false, 
+blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
+};
+
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
