@@ -157,7 +157,7 @@ request.send();
 </script>
 ```
 
-Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function:
+Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 
 ``` javascript
 window.addEventListener('DOMContentLoaded', function() {
@@ -176,9 +176,10 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 ```
 
+We now have our own personalised landing page to greet our customers:
+
 ![landing page](http://i.imgur.com/QqgL0Wo.jpg)
 
-We now have our own personalised landing page to greet our customers.
 
 
 <a name="session"></a>
@@ -207,10 +208,10 @@ After the session ends, we will display a survey in a pop-up window. This is a u
 We will use the 'end_of_session_popup_url' option to point to the url of our survey page. Again, we add this as an option in the 'settings' variable:
 
 ``` javascript
-end_of_session_popup_url: "https://example.com/survey"
+var settings={widgetkey:'**your api key**', end_of_session_popup_url: "https://example.com/survey"};
 ```
 
-You can also pass the url as a parameter in ```Surfly.session().end( [redirectUrl] )```. The end_of_session_popup_url has priority over the .end(redirecturl)
+You can also pass the url as a parameter in ```Surfly.session().end([redirectUrl] )```. However, the end_of_session_popup_url option has priority over the .end(redirecturl) function.
 
 ![survey](http://i.imgur.com/WpWxQMv.jpg)
 
