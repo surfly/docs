@@ -65,7 +65,7 @@ Simply add the code snippet to the page including your chat solution, and alter 
 <a name="session_continuation"></a>
 #### Session continuation{#session_continuation}
 
-[Session continuation](../widget_options/widget_options.md#session_continuation) is used to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This way, if the user was logged in prior to starting a Surfly session, he will remain logged in inside the co-browsing session. Session continuation therefore allows for a smooth transition into, and out of, the session.
+[Session continuation](../widget_options/widget_options.md#session_continuation) is used to pass data into, and out of, the Surfly session. For example, if a customer needs help whilst they are filling out a form, the information that they have already entered will be carried over into the Surfly session so that they do not have to repeat what they have already done. This way, if the user was logged in prior to starting a Surfly session, they will remain logged in inside the co-browsing session. Session continuation therefore allows for a smooth transition into, and out of, the session.
 
 
 <a name="security_features"></a>
