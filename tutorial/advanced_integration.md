@@ -143,8 +143,10 @@ Considering that it's an exit button, we don't want it to be shown when the cust
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
-      // inside the session, show exit button
-      document.getElementById('exit_button').style.visibility="visible";
+      if (Surfly.currentSession) {
+        // inside the session, show exit button
+        document.getElementById('exit_button').style.visibility="visible";
+      }
 	}
   });
 });
