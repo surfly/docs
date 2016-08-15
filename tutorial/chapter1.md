@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function() {
 We create our button, and add an onclick event to start a Surfly session: 
 
 ``` html
-<button class="my-custom-button" id="get_help_button" onclick="sessionStart()"></button>
+<button class="my-custom-button" id="get_help" onclick="sessionStart()"></button>
 ```
 
 ``` html
