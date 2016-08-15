@@ -12,12 +12,12 @@ A string representation of the JSON array is expected. Every element of the arra
  - (optional) `type` - restriction type. If present, and set to `"all"`, restriction will be applied to all requests (otherwise restrictions affect only requests to top-level pages)
 
 A blocked url is always added as a query parameter to the redirect url:
-```
+``` javascript
 http://mysite.com/restricted?blocked_url=https%3A%2F%2Fexample.com
 ```
 
 If a session was started with the Surfly button, and you want to end the session when a user requests a restricted page, redirect them to the page that includes `widget.js` and execute the following code:
-```
+``` javascript
 Surfly.session().end(redirect_url);
 
 ```
@@ -30,7 +30,7 @@ Surfly.session().end(redirect_url);
 ##### Blacklist example:
 Restrict access to the website `example.com`. When the user tries to access `example.com` they will be redirected to the default page provided by Surfly
 
-```
+``` javascript
 {
     "pattern": ".*example\\.com.*"
 }
@@ -39,7 +39,7 @@ Restrict access to the website `example.com`. When the user tries to access `exa
 ##### Whitelist example:
 Allow access only to the `example.com`. When the user tries to access any other website they will be redirected to the provided redirect url
 
-```
+``` javascript
 {
     "pattern": ".*example\\.com.*",
     "redirect": "https://example.com/restricted"
@@ -110,7 +110,7 @@ To make it work, the website needs to forward all HTTP requests for the path `/s
 to the Surfly server. This is usually a small adjustment in load balancer configuration.
 For example, if you use nginx, just add these lines in your config file:
 
-```
+``` javascript
 location /surfly_cookie_transfer/ {
     proxy_pass https://surfly.com;
     proxy_set_header X-Continuation-Origin https://example.com;
@@ -120,7 +120,7 @@ location /surfly_cookie_transfer/ {
 
 In case of haproxy, see the example configuration below:
 
-```
+``` javascript
 frontend example-com-https
   acl surfly_session_continuation hdr(host) -i example.com path_beg /surfly_cookie_transfer/
   use_backend surfly_continuation_point_https if surfly_session_continuation
@@ -185,7 +185,7 @@ as the user's name, email or even their phonenumber.
 To make sure that this information becomes available in the dashboard you can set `userData`
 to an object that provides these values as key, value pairs. For example:
 
-```
+``` javascript
 {
     "name": "John Doe",
     "email": "john.doe@example.com",
@@ -194,7 +194,7 @@ to an object that provides these values as key, value pairs. For example:
 ```
 
 You can then pass this variable to the SurflySession.startLeader() function:
-``` 
+``` javascript
 Surfly.session().startLeader(null, userData);
 ```
 
