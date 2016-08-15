@@ -15,7 +15,7 @@ However, if you wish to use Surfly as a feature on your own website, you can als
 
 ###### During the session
 
-During the session, the mouse arrows from all users will be visible. The leader will navigate the site, and the follower can help guide them through it. There can only be one leader, but you can have multiple followers. Moreover, control can be passed around between the different users during the session. Only the leader can select or click items on the page, and if the leader decides to navigate to another url, the followers' screens will be synchronised so that they can also see this new page. The followers can take advantage of the drawing tool provided in order to highlight areas on the screen. During the session, users can communicate via text or video chat, share documents and invite others to join them.
+During the session, the mouse arrows from all users will be visible. Initially, the leader (e.g. the person who initiated the session) will be in control. The will be able to navigate the site, and the follower(s) can help guide them through it. In a Surfly session, there can only be one person in control at any given time, but you can have multiple followers. Moreover, control can be passed around between the different users during the session. The user in control can select or click items on the page, and if they decide to navigate to another url, the followers' screens will be synchronised so that they can also see this new page. The followers can take advantage of the drawing tool provided in order to highlight areas on the screen. During the session, users can also communicate via text or video chat, share documents and invite others to join them.
 
 ###### The Admin panel
 
