@@ -183,10 +183,12 @@ First, we create a button that will start a session when clicked:
 
 <script type="text/javascript">
 function sessionStart() {
-  Surfly.session({block_until_agent_joins: false, ui_off: true}).startLeader();
+  Surfly.session(settings).startLeader();
 }
 </script>
 ```
+{% em color="#ffffe0" %}Please note: 
+In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
 
 We then use the REST API to retrieve the queue ID and store it:
 
