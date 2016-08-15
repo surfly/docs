@@ -23,13 +23,13 @@ The following table of contents provides an overview of the video series:
 
 ### Welcome to our cake shop{#welcome}
 
-The example application we have created is a bespoke cake shop, who pride themselves on high quality customer service. Surfly is perfect for them, as co-browsing allows you to share your browser in real time with others, synchronising your mouse clicks and key strokes. This ensures that the cake shop can continue to offer high quality customer service online, as co-browsing can dramatically improve communication between users.
+The example application we have created is a cake shop, who pride themselves on high quality customer service. Surfly is perfect for them, as co-browsing allows you to share your browser in real time with others, synchronising your mouse clicks and key strokes. This ensures that the cake shop can continue to offer high quality customer service online, as co-browsing can dramatically improve communication between users.
 
 {% youtube %}https://youtu.be/VIvDVT4qfzY{% endyoutube %}
 
 ### Add the snippet code{#snippet_code}
 
-For the second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that as been requested by a visitor to your website.
+For the second edition in this video series, we will show you how to integrate Surfly into your website. We'll then demonstrate how a user can start a Surfly session and how agents can take calls to join a session that has been requested by a visitor to your website.
 
 {% youtube %}https://youtu.be/BO0ciMBjx9I{% endyoutube %}
 
@@ -48,7 +48,7 @@ We'll then use field masking to protect our customers' privacy during a Surfly s
 
 ### End of session popup url{#popup}
 
-In this video, we'll ask our clients for feedback at the end of each session by displaying a survey as popup.
+In this video, we'll ask our clients for feedback at the end of each session by displaying a survey as a popup.
 
 {% youtube %}https://youtu.be/fyb-FpAPo4U{% endyoutube %}
 
@@ -60,13 +60,13 @@ In this next part, we show you how to use your own custom button as a 'start ses
 
 ### Integrate an existing chat solution{#chat}
 
-We demonstrate how to use Surfly alongside existing chat solutions. In this case, we use Zopim.
+We now demonstrate how to use Surfly alongside existing chat solutions. In this case, we chose to use Zopim.
 
 {% youtube %}https://youtu.be/C2yhSJEvBKI{% endyoutube %}
 
 ### Session continuation{#continuation}
 
-After this we'll make sure that, for each order placed from within a Surfly session, the information remains available even if the client has now exited the session.
+After this we'll make sure that, for each order placed from within a Surfly session, the information remains available even if the client exits the session.
 
 {% youtube %}https://youtu.be/_VqUdijO2r4{% endyoutube %}
 
@@ -99,7 +99,7 @@ In this video, we'll take customisation a step further and remove Surfly's defau
 
 Finally, we decided to make Surfly extremely discrete by using a small button to start a session. This button will also display the queue id when a session is started.
 
-This is useful for cases when you would like to invite a user to start a session, rather then them starting one for themselves. An agent can be in communication with them, for example, over Hipchat, and then be directed to the start session button. The user can give the ID to the agent, who will then be able to find the correct session from the admin panel.
+This is useful for cases when you would like to invite a user to start a session, rather then them starting one for themselves. An agent can already be in communication with them, for example via Zopim, and then be directed to the start session button. The user can give the ID to the agent, who will then be able to find the correct session from the admin panel.
 
 {% youtube %}https://youtu.be/bT4GgL1Q-Xc{% endyoutube %}
 
