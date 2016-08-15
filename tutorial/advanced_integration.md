@@ -99,16 +99,21 @@ cookie_transfer_proxying: false};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
-      Surfly.session()
-      .on('control', function(session, event) {
-        var element = document.getElementById("order_button");
-    	if (event.to==0) {
-          // when the leader is in control then the 'Order' button is clickable
-          element.disabled = false;
-    	} else {
-          // otherwise, it is disabled
-          element.disabled = true;
-    	}
+      var sess;
+      if(!Surfly.currentSession){
+		sess = Surfly.session();
+      } else {
+		sess = Surfly.currentSession;
+      }
+      sess.on('control', function(session, event) {
+      		var element = document.getElementById("order_button");
+    		if (event.to==0) {
+       			element.disabled = false;
+       			element.style.backgroundColor = "#87cefa";
+            } else {
+       			element.disabled = true;
+       			element.style.backgroundColor = "#e6fff2";
+    		}
       })
 	}
   });
