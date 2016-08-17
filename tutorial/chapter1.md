@@ -122,25 +122,22 @@ function landing(){
 ```
 
 We also want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
-To do this, we use the [REST API](https://www.surfly.com/cobrowsing-api/) to get information about the session, keeping only the data we're interested in:
+To do this, we use the [SurflySession API](../javascript-api/surflysession_api.md) to get the session pin:
+
+
 ``` javascript
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
            Surfly.session()
-             .on('session_started', function(session, event) {       
-                 sessionStorage.setItem('appendThisId', session.pin);
+             .on('session_started', function(session, event) {   
+                 // store the session pin
+                 sessionStorage.setItem('sessionId', session.pin);
              })
-             .on('viewer_joined', function(session, event) {
-                // if a viewer joins and they are the first, then redirect to home page
-                if(event.count==1){
-                  session.relocate("https://morning-spire-54873.herokuapp.com/");
-                }
-             })
-             .startLeader(null, metadata);
+             .startLeader();
              if (Surfly.currentSession) {
-                if (sessionStorage.getItem('appendThisId') != null) {
-                   document.getElementById("id_button").innerHTML=sessionStorage.getItem('appendThisId');
+                if (sessionStorage.getItem('sessionId') != null) {
+                // append the session id onto the id button so that it can be passed to the agent  document.getElementById("id_button").innerHTML=sessionStorage.getItem('sessionId');
                 } 
              }
         }
@@ -150,11 +147,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
 Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 
+
 ``` javascript
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-    if (init.success) {
-      Surfly.session()
       .on('viewer_joined', function(session, event) {
             // if a viewer join and they are the first then redirect to home page
       	  if(event.count==1){
