@@ -204,43 +204,33 @@ function sessionStart() {
 {% em color="#ffffe0" %}Please note: 
 In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
 
-We then use the REST API to retrieve the queue ID and store it:
+We then use the Javascript API to retrieve the queue ID and store it:
 
-
-``` javascript
-if(window.__surfly){
-// first check if a session has started (meaning that the icon has been clicked on)
-  var request = new XMLHttpRequest();
-  request.open('GET', 'https://api.surfly-s1.com/v2/sessions/?api_key=**your api key**&active_session=true');
-  
-  request.onreadystatechange = function () {
-    if (this.readyState === 4) {
-      var body = this.responseText; 
-      // we extract the queue_id from the string we get from the request
-      var index = body.indexOf("queue_id");
-      var id = body.substring(index+10, index+14);
-      sessionStorage.setItem("queue_id", id);
-    } 
-  }
-  request.send();
-};
-```
-Finally, we control the button's behaviour depending on whether or not we're in a Surfly session:
 ``` javascript
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'**your api key**'}, function(init) {
+  Surfly.init({widgetkey: *your key here* , cookie_transfer_enabled: true, cookie_transfer_proxying: false}, function(init) {
     if (init.success) {
-      if(Surfly.currentSession){
-        // behaviour of small button at the bottom of the page
-        document.getElementById("showId").style.visibility='hidden';  
-        var textId = document.createTextNode(sessionStorage.getItem("queue_id"));
-        // replace the cake icon with the session id number
-        document.getElementById("idP").appendChild(textId);
+      Surfly.session()
+       .on('session_started', function(session, event) {     
+            // retrieve the session pin   
+            if (session.pin != null) {
+               localStorage.setItem('sessionPin', session.pin);
+            } 
+       })
+      if (Surfly.currentSession) {
+	// inside the session, show exit button
+      	document.getElementById('exit_button').style.visibility="visible";
+	// inside the session, hide the cake icon and display the pin instead
+        document.getElementById("showId").style.visibility='hidden'; 
+        if (localStorage.getItem('sessionPin') != null) {
+           var textId = document.createTextNode(localStorage.getItem("sessionPin"));
+           // replace the cake icon with the session id number
+           document.getElementById("idP").appendChild(textId);
+        } 
       }
-	}
-  });
-});
-      
+    }
+   });
+ }); 
 ```
 
 <div align="center">
