@@ -230,15 +230,15 @@ window.addEventListener('DOMContentLoaded', function() {
             } 
        })
       if (Surfly.currentSession) {
-	// inside the session, show exit button
+          // inside the session, show exit button
       	document.getElementById('exit_button').style.visibility="visible";
-	// behaviour of small button at the bottom of the page
-        document.getElementById("showId").style.visibility='hidden'; 
-        if (pin) {
-        // replace the image with the session pin 
-           document.getElementById("idP").innerHTML=pin;
-        }
-      }
+          // behaviour of small button at the bottom of the page
+          document.getElementById("showId").style.visibility='hidden'; 
+          if (pin) {
+            // replace the image with the session pin 
+             document.getElementById("idP").innerHTML=pin;
+          }
+       }
     }
    });
  });
