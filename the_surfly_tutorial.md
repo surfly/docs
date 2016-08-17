@@ -28,6 +28,6 @@ You can view the code in the [repository](https://github.com/MathildeJ/integrati
 
 <br>
 {% em color="#ffffe0" %}Please note: 
-It is important to note that Surfly needs to be able to reach the server over the network. You can use tools such as [ngrok.io](https://ngrok.com/) or [burrow.io](https://burrow.io/) to allow Surfly access to your local machine whilst you are developing locally.  However, if you really want to work on an isolated LAN, we can set up a special server for you. {% endem %}
+It is important to note that Surfly needs to be able to reach the server over the network. You can use tools such as [ngrok.io](https://ngrok.com/) or [burrow.io](https://burrow.io/) to allow Surfly access to your local machine whilst you are developing locally.  However, if you really want to work on an isolated LAN, we can set up a special server for you. If you want to have you own local solution, please feel free to contact us. {% endem %}
 
 
