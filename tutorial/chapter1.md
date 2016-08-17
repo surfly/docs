@@ -137,7 +137,8 @@ window.addEventListener('DOMContentLoaded', function() {
              .startLeader();
              if (Surfly.currentSession) {
                 if (sessionStorage.getItem('sessionId') != null) {
-                // append the session id onto the id button so that it can be passed to the agent  document.getElementById("id_button").innerHTML=sessionStorage.getItem('sessionId');
+                // append the session id onto the id button so that it can be passed to the agent   
+                document.getElementById("id_button").innerHTML=sessionStorage.getItem('sessionId');
                 } 
              }
         }
