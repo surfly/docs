@@ -23,7 +23,11 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 </script>
 
 <script>
-var settings={widgetkey:'**your api key**', cookie_transfer_enabled: true, cookie_transfer_proxying: false}
+var settings={
+widgetkey:'**your api key**',
+cookie_transfer_enabled: true,
+cookie_transfer_proxying: false
+}
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
    });
@@ -58,12 +62,14 @@ In our example, we pass the name and email of the user to the Surfly.session().s
 <script>
 var metadata = {"name": "RoseF","email": "rose@example.com"};
 
-var settings = {widgetkey:'**your api key**', 
+var settings = {
+widgetkey:'**your api key**', 
 block_until_agent_joins: false, 
 end_of_session_popup_url: "https://example.com/survey",
 cookie_transfer_enabled: true, 
 cookie_transfer_proxying: false, 
-blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])};
+blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
+};
 
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
@@ -92,9 +98,11 @@ In our example below, we disable the 'Order' button when the agent is in control
 
 ```javascript
 <script>
-var settings = {widgetkey:'**your api key**',
+var settings = {
+widgetkey:'**your api key**',
 cookie_transfer_enabled: true,
-cookie_transfer_proxying: false};
+cookie_transfer_proxying: false
+};
 
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
@@ -142,7 +150,7 @@ We already have our own start button and landing page, but now that we have remo
 In our example, we chose to create our own exit session button and add it to all the necessary pages. 
 First, we have to make sure that the page we are adding the button to contains the snippet code and then we can add our custom button:
 ``` html
-<button type="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
+<button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
 ```
 Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
 ``` javascript
@@ -189,13 +197,15 @@ First, we create a button that will start a session when clicked:
 
 <script type="text/javascript">
 function sessionStart() {
-  var settings = {block_until_agent_joins: false,
+  var settings = {
+  block_until_agent_joins: false,
   end_of_session_popup_url: "https://example.com",
   docked_only: true, 
   cookie_transfer_enabled: true, 
   cookie_transfer_proxying: false, 
   blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
-  ui_off: true};
+  ui_off: true
+  };
   
   Surfly.session(settings).startLeader();
 }
@@ -204,18 +214,19 @@ function sessionStart() {
 {% em color="#ffffe0" %}Please note: 
 In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
 
-We then use ```Surfly.session().pin``` from the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the session pin and display it in place of the cake icon:
+We then use the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
 
 ``` javascript
 <script>
+var pin;
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:**your_api_key_here**, cookie_transfer_enabled: true, cookie_transfer_proxying: false}, function(init) {
     if (init.success) {
       Surfly.session()
         .on('session_started', function(session, event) {     
-            // retrieve the session pin   
+            // retrieve the pin   
             if (session.pin != null) {
-               localStorage.setItem('sessionPin', session.pin);
+               pin = session.pin;
             } 
        })
       if (Surfly.currentSession) {
@@ -223,9 +234,9 @@ window.addEventListener('DOMContentLoaded', function() {
       	document.getElementById('exit_button').style.visibility="visible";
 	// behaviour of small button at the bottom of the page
         document.getElementById("showId").style.visibility='hidden'; 
-        if (localStorage.getItem("sessionPin") != null) {
+        if (pin) {
         // replace the image with the session pin 
-           document.getElementById("idP").innerHTML=localStorage.getItem('sessionPin');
+           document.getElementById("idP").innerHTML=pin;
         }
       }
     }
