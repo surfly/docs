@@ -119,7 +119,7 @@ To do this, we use the [SurflySession API](../javascript-api/surflysession_api.m
 Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 
 ``` javascript
-var session_pin;
+var pin;
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
@@ -127,7 +127,8 @@ window.addEventListener('DOMContentLoaded', function() {
              // get pin
              .on('session_started', function(session, event) {   
                  // store the session pin
-                 session_pin = session.pin;
+                 
+                 pin = session.pin;
              })
              // redirect when viewer joins
              .on('viewer_joined', function(session, event) {
@@ -138,7 +139,7 @@ window.addEventListener('DOMContentLoaded', function() {
               })
              .startLeader();
              if (Surfly.currentSession) {
-                if (session_pin) {
+                if (pin) {
                   // append the session id onto the id button so that it can be passed to the agent   
                   document.getElementById("id_button").innerHTML=session_pin;
                 } 
