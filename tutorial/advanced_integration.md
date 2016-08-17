@@ -204,7 +204,7 @@ function sessionStart() {
 {% em color="#ffffe0" %}Please note: 
 In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
 
-We then use the Javascript API to retrieve the queue ID and store it:
+We then use ```Surfly.session().pin``` from the Javascript API to retrieve the session pin and display it in place of the cake icon:
 
 ``` javascript
 window.addEventListener('DOMContentLoaded', function() {
