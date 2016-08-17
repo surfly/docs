@@ -126,8 +126,7 @@ window.addEventListener('DOMContentLoaded', function() {
            Surfly.session()
              // get pin
              .on('session_started', function(session, event) {   
-                 // store the session pin
-                 
+                 // store the pin
                  pin = session.pin;
              })
              // redirect when viewer joins
@@ -140,7 +139,7 @@ window.addEventListener('DOMContentLoaded', function() {
              .startLeader();
              if (Surfly.currentSession) {
                 if (pin) {
-                  // append the session id onto the id button so that it can be passed to the agent   
+                  // append the pin onto the id button so that it can be passed to the agent   
                   document.getElementById("id_button").innerHTML=session_pin;
                 } 
              }
