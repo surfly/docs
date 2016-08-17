@@ -82,15 +82,7 @@ window.addEventListener('DOMContentLoaded', function() {
 We create our button, and add an onclick event to start a Surfly session: 
 
 ``` html
-<button class="my-custom-button" id="get_help" onclick="sessionStart()"></button>
-```
-
-``` html
-<script>
-function sessionStart(){
-  Surfly.session().startLeader();
-}
-</script>
+<button class="my-custom-button" id="get_help" onclick="Surfly.session().startLeader()"></button>
 ```
 
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
@@ -121,44 +113,38 @@ function landing(){
 </script>
 ```
 
-We also want to display the queue ID on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
-To do this, we use the [SurflySession API](../javascript-api/surflysession_api.md) to get the session pin:
+We also want to display the unique identifier (or pin) on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
+To do this, we use the [SurflySession API](../javascript-api/surflysession_api.md) to get the pin.
 
+Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 
 ``` javascript
+var session_pin;
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
            Surfly.session()
+             // get pin
              .on('session_started', function(session, event) {   
                  // store the session pin
-                 sessionStorage.setItem('sessionId', session.pin);
+                 session_pin = session.pin;
              })
+             // redirect when viewer joins
+             .on('viewer_joined', function(session, event) {
+                // if a viewer joins and they are the first then redirect to home page
+                if(event.count==1){
+                  session.relocate("https://example.com");
+                }	
+              })
              .startLeader();
              if (Surfly.currentSession) {
-                if (sessionStorage.getItem('sessionId') != null) {
-                // append the session id onto the id button so that it can be passed to the agent   
-                document.getElementById("id_button").innerHTML=sessionStorage.getItem('sessionId');
+                if (session_pin) {
+                  // append the session id onto the id button so that it can be passed to the agent   
+                  document.getElementById("id_button").innerHTML=session_pin;
                 } 
              }
         }
    });
-});
-```
-
-Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
-
-
-``` javascript
-      .on('viewer_joined', function(session, event) {
-            // if a viewer join and they are the first then redirect to home page
-      	  if(event.count==1){
-              session.relocate("https://example.com");
-            }	
-  		})
-        .startLeader();
-	}
-  });
 });
 ```
 
@@ -194,7 +180,10 @@ After the session ends, we will display a survey in a pop-up window. This is a u
 We will use the 'end_of_session_popup_url' option to point to the url of our survey page. Again, we add this as an option in the 'settings' variable:
 
 ``` javascript
-var settings={widgetkey:'**your api key**', end_of_session_popup_url: "https://example.com/survey"};
+var settings={
+widgetkey:'**your api key**', 
+end_of_session_popup_url: "https://example.com/survey"
+};
 ```
 
 You can also pass the url as a parameter in ```Surfly.session().end([redirectUrl] )```. However, the end_of_session_popup_url option has priority over the .end(redirecturl) function.
@@ -210,7 +199,10 @@ Finally, we'd also like to be able to continue chatting with our clients in a Su
 First, we need to remove Surfly's default chat box by adding the 'docked_only' option to the session settings:
 
 ``` javascript
-var settings={widgetkey:'**your api key**', docked_only: true};
+var settings={
+widgetkey:'**your api key**',
+docked_only: true
+};
 ```
 {% em color="#ffffe0" %}Please note: 
 We could also use the 'ui_off' option instead of 'docked_only' considering that in both cases the Surfly's default chatbox is disabled.  {% endem %}
