@@ -109,25 +109,16 @@ In order to use such a page, we first remove the red banner blocking the session
 ``` javascript
 var settings={widgetkey:'**your api key**', block_until_agent_joins: false};
 ```
-Next, we add the snippet code to our landing page (since it will be the page from which sessions start) and call Surfly.session().startLeader() so that a session will start automatically (as soon as the user is redirected to our landing page):
+Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will auto start a session on our landing page. 
 
-``` javascript
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-    if (init.success) {
-      Surfly.session().startLeader();
-	}
-  });
-});
-```
-Then, we adapt our custom button (get_help_button in our example), which will redirect the user to our custom landing page:
 ``` html
 <button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
 ```
 ``` html
 <script>
 function landing(){
-  window.location.href = '/landing_page';
+  var settings={widgetkey:'**your api key**', block_until_agent_joins: false, url: './landing_page'};
+  Surfly.session(settings).startLeader();
 }	  
 </script>
 ```
