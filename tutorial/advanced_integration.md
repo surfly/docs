@@ -185,7 +185,7 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
 First, we create a button that will start a session when clicked:
 
 ``` html
-<p id="idP"><img id="showId" onclick="sessionStart()"></p>
+<button id="idP" onclick="sessionStart()"><img id="showId" src= **our_cake_image**></button>
 
 <script type="text/javascript">
 function sessionStart() {
@@ -207,11 +207,12 @@ In order to keep all the options we previously set in the landing page, we need 
 We then use ```Surfly.session().pin``` from the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the session pin and display it in place of the cake icon:
 
 ``` javascript
+<script>
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey: *your key here* , cookie_transfer_enabled: true, cookie_transfer_proxying: false}, function(init) {
+  Surfly.init({widgetkey:**your_api_key_here**, cookie_transfer_enabled: true, cookie_transfer_proxying: false}, function(init) {
     if (init.success) {
       Surfly.session()
-       .on('session_started', function(session, event) {     
+        .on('session_started', function(session, event) {     
             // retrieve the session pin   
             if (session.pin != null) {
                localStorage.setItem('sessionPin', session.pin);
@@ -220,17 +221,18 @@ window.addEventListener('DOMContentLoaded', function() {
       if (Surfly.currentSession) {
 	// inside the session, show exit button
       	document.getElementById('exit_button').style.visibility="visible";
-	// inside the session, hide the cake icon and display the pin instead
+	// behaviour of small button at the bottom of the page
         document.getElementById("showId").style.visibility='hidden'; 
-        if (localStorage.getItem('sessionPin') != null) {
-           var textId = document.createTextNode(localStorage.getItem("sessionPin"));
-           // replace the cake icon with the session id number
-           document.getElementById("idP").appendChild(textId);
-        } 
+        if (localStorage.getItem("sessionPin") != null) {
+        // replace the image with the session pin 
+           document.getElementById("idP").innerHTML=localStorage.getItem('sessionPin');
+        }
       }
     }
    });
- }); 
+ });
+</script>
+
 ```
 
 <div align="center">
