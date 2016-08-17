@@ -101,7 +101,7 @@ In particular, we have chosen to use the image of a cake as a get help button fo
 <a name="landing"></a>
 #### Build your own landing page{#landing}
 
-When a visitor initiates a session they are queue'd and, by default, have to wait for an agent to take the call before they can navigate within the session. The screen is blocked, and a red banner appears at the top of the screen with their queue pin. In our example application, the page that the user starts a session from is the home page, and consequently, this is the page that gets blocked. We would prefer to have our own custom landing page, where we can tell our customers that they are in the queue, and that an agent will be with them soon. 
+When a visitor initiates a session they are queue'd and, by default, have to wait for an agent to take the call before they can navigate within the session. The screen is blocked, and a red banner appears at the top of the screen with their queue pin. In our example application, the page that the user starts a session from is the home page, and consequently, this is the page that gets blocked. We would prefer to have our own custom landing page, where we can tell our customers that they are in the queue, and that an agent will be with them soon. The landing page is a convenient way to give them more information about what to expect from a Surfly session.
 
 The flow will be as follows: the user clicks on the support button and is shown a page with their unique pin code, and our own custom text. When an agent joins them, the user is redirected to the home page.
 
