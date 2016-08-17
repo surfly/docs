@@ -105,10 +105,8 @@ When a visitor initiates a session they are queue'd and, by default, have to wai
 
 The flow will be as follows: the user clicks on the support button and is shown a page with their unique pin code, and our own custom text. When an agent joins them, the user is redirected to the home page.
 
-In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false' in the settings options:
-``` javascript
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false};
-```
+In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false' in the settings options.
+
 Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will auto start a session on our landing page. 
 
 ``` html
