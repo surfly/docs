@@ -114,9 +114,8 @@ Then, we adapt our custom button (get_help_button in our example), adding an onc
 <script>
 function landing(){
   var settings={
-  widgetkey:'**your api key**', 
   block_until_agent_joins: false, 
-  url: './landing_page'
+  url: 'https://example.com/landing_page'
   };
   Surfly.session(settings).startLeader();
 }	  
