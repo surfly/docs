@@ -216,7 +216,7 @@ docked_only: true
 {% em color="#ffffe0" %}Please note: 
 We could also use the 'ui_off' option instead of 'docked_only' considering that in both cases the Surfly's default chatbox is disabled.  {% endem %}
 
-Then, we can simply add the Zopim snippet code to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
+Then, we can simply add the Zopim snippet code provided to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` html
 <!-- Adding Zopim Live Chat -->
 <script>
