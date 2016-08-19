@@ -82,9 +82,15 @@ window.addEventListener('DOMContentLoaded', function() {
 We create our button, and add an onclick event to start a Surfly session: 
 
 ``` html
-<button class="my-custom-button" id="get_help" onclick="Surfly.session().startLeader()"></button>
+<button class="my-custom-button" id="get_help" onclick="sessionStart()"></button>
 ```
-
+``` html
+<script>
+function sessionStart(){
+  Surfly.session({chat_box_color: "#87cefa", videochat: false}).startLeader();
+}      
+</script>
+```
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
 
 ![custom button](http://i.imgur.com/vZfILGS.png)
@@ -99,7 +105,7 @@ The flow will be as follows: the user clicks on the support button and is shown 
 
 In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false' in the settings options.
 
-Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will auto start a session on our landing page. 
+Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will auto start a session on our landing page: 
 
 ``` html
 <button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
@@ -107,7 +113,11 @@ Then, we adapt our custom button (get_help_button in our example), adding an onc
 ``` html
 <script>
 function landing(){
-  var settings={widgetkey:'**your api key**', block_until_agent_joins: false, url: './landing_page'};
+  var settings={
+  widgetkey:'**your api key**', 
+  block_until_agent_joins: false, 
+  url: './landing_page'
+  };
   Surfly.session(settings).startLeader();
 }	  
 </script>
