@@ -31,7 +31,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:'**your api key**'}, function(init) {
     if (init.success) {
-      // use Surfly API here
+      // display the default Surfly button
       Surfly.button();
 	}
    });
