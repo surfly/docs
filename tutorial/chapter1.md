@@ -118,6 +118,7 @@ function landing(){
 </script>
 ```
 
+We then need to add Surfly's snippet code to the landing page so that we can automatically start a session from this page.
 We also want to display the unique identifier (or pin) on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
 To do this, we use the [SurflySession API](../javascript-api/surflysession_api.md) to get the pin.
 
