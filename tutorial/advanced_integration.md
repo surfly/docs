@@ -216,29 +216,24 @@ In order to keep all the options we previously set in the landing page, we need 
 
 We then use the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
 
-``` javascript
+``` html
 <script>
-var pin;
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:**your_api_key_here**, cookie_transfer_enabled: true, cookie_transfer_proxying: false}, function(init) {
+  Surfly.init({widgetkey:'dd402bb4940b4cf3a855aaa371d11419'}, function(init) {
     if (init.success) {
-      Surfly.session()
-        .on('session_started', function(session, event) {     
-            // retrieve the pin   
-            if (session.pin != null) {
-               pin = session.pin;
-            } 
-       })
       if (Surfly.currentSession) {
-          // inside the session, show exit button
-      	document.getElementById('exit_button').style.visibility="visible";
-          // behaviour of small button at the bottom of the page
-          document.getElementById("showId").style.visibility='hidden'; 
-          if (pin) {
-            // replace the image with the session pin 
-             document.getElementById("idP").innerHTML=pin;
-          }
-       }
+        // inside the session, show exit button
+        document.getElementById('exit_button').style.visibility="visible";
+        // behaviour of small button at the bottom of the page
+        document.getElementById("showId").style.visibility='hidden'; 
+
+        Surfly.currentSession
+        .on('message', function(session, event) {
+          var id = JSON.stringify(event.data);
+          id = id.substring(8,12);
+          document.getElementById("idP").innerHTML=id;
+        })
+      } 
     }
    });
  });
