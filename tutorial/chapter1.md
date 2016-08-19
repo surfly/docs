@@ -48,7 +48,7 @@ When a client clicks on the red 'get live help' button, they are queue'd until a
 
 
 <a name="widget"></a>
-#### Customise the button{#widget}
+#### Set Surfly options{#widget}
 
 We'll now change the appearance of the chatbox so we can use our own theme color. You can do this by setting an option in Surfly.button():
 
