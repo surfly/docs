@@ -191,6 +191,7 @@ We will use the 'end_of_session_popup_url' option to point to the url of our sur
 ``` javascript
 var settings={
 widgetkey:'**your api key**', 
+block_until_agent_joins: false,
 end_of_session_popup_url: "https://example.com/survey"
 };
 ```
