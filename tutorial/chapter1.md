@@ -105,7 +105,7 @@ The flow will be as follows: the user clicks on the support button and is shown 
 
 In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false' in the settings options.
 
-Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will auto start a session on our landing page: 
+Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will redirect the user to our landing page: 
 
 ``` html
 <button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
@@ -113,12 +113,8 @@ Then, we adapt our custom button (get_help_button in our example), adding an onc
 ``` html
 <script>
 function landing(){
-  var settings={
-  block_until_agent_joins: false, 
-  url: 'https://example.com/landing_page'
-  };
-  Surfly.session(settings).startLeader();
-}	  
+  window.location.href = '/landing_page';
+}      
 </script>
 ```
 
