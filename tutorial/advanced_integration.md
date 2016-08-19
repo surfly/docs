@@ -14,7 +14,7 @@ There are two types of session continuations:
 
 In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page): 
 
-``` javascript
+``` html
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
@@ -58,7 +58,7 @@ As can be seen above, we chose to redirect the user to our custom restricted pag
 We now want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
 In our example, we pass the name and email of the user to the Surfly.session().startLeader() function :
-``` javascript
+``` html
 <script>
 var metadata = {"name": "RoseF","email": "rose@example.com"};
 
