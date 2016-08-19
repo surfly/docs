@@ -96,7 +96,7 @@ To do this, you can use the .on() function of the [SurflySession API](../javascr
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm payment:
 
-```javascript
+``` html
 <script>
 var settings = {
 widgetkey:'**your api key**',
