@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:'**your api key**'}, function(init) {
     if (init.success) {
       if (Surfly.currentSession) {
-        // inside the session, hide the get help section (of id 'get_help') containing the get help button 
+        // inside the session, hide the get help section (of id 'get_help') 
         document.getElementById('get_help').style.visibility="hidden";
       }
 	}
