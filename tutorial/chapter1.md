@@ -126,29 +126,31 @@ Finally, we would like the user to be redirected to the home page when an agent 
 
 ``` html
 <script>
-var pin;
 var settings={widgetkey:**your api key**, block_until_agent_joins: false};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
-           Surfly.session()
-             .on('session_started', function(session, event) {   
-                 // store the pin
-                 pin = session.pin;
-             })
-             .on('viewer_joined', function(session, event) {
-                // if a viewer joins and they are the first then redirect to home page
-                if(event.count==1){
-                  session.relocate("https://example.com");
-                }	
+          if(!Surfly.currentSession){
+              Surfly.session()
+                .on('session_started', function(session, event) {   
+                   // send the pin to the current session
+                   session.sendMessage({pin: session.pin}, '*');	
+                 })
+                .on('viewer_joined', function(session, event) {
+                    // if a viewer joins and they are the first then redirect to home page
+                    if(event.count==1){
+                      session.relocate("https://example.com");
+                    }	
+                }).startLeader();
+          } else {
+              Surfly.currentSession
+              .on('message', function(session, event) {
+                  var id = JSON.stringify(event.data);
+                  id = id.substring(8,12);
+                  // we display the pin on the button
+                  document.getElementById("id_button").innerHTML=id;
               })
-             .startLeader();
-             if (Surfly.currentSession) {
-                if (pin) {
-                  // append the pin onto the id button so that it can be passed to the agent   
-                  document.getElementById("id_button").innerHTML=pin;
-                } 
-             }
+          }
         }
    });
 });
