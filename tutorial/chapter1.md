@@ -72,7 +72,7 @@ window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widgetkey:'**your api key**'}, function(init) {
     if (init.success) {
       if (Surfly.currentSession) {
-        // inside the session, hide the get help section
+        // inside the session, hide the get help section (of id 'get_help') containing the get help button 
         document.getElementById('get_help').style.visibility="hidden";
       }
 	}
@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function() {
 We create our button, and add an onclick event to start a Surfly session: 
 
 ``` html
-<button class="my-custom-button" id="get_help" onclick="sessionStart()"></button>
+<button class="my-custom-button" id="get_help_button" onclick="sessionStart()"></button>
 ```
 ``` html
 <script>
