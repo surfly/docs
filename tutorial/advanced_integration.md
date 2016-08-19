@@ -207,7 +207,11 @@ function sessionStart() {
   ui_off: true
   };
   
-  Surfly.session(settings).startLeader();
+  Surfly.session(settings)
+  .on('session_started', function(session, event) {   
+      // send the pin to the current session
+      session.sendMessage({pin: session.pin}, '*');	
+   }).startLeader();
 }
 </script>
 ```
