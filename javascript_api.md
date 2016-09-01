@@ -1,8 +1,8 @@
 <a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
 # Javascript API
 
-
-### Load Surfly widget
+## Quickstart
+### 1. Load Surfly widget
 
 To use the Surfly JS API, you will first need to include our snippet on your webpage:
 
@@ -17,11 +17,18 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 
 Once it is there, the `Surfly.init()` function will be immediately available. Note that it is on you to make sure that you don't make any other API calls until `readyCallback` is called.
 
-### init() function
+### 2. Initialize the API
 
 > Surfly.init( [ settings ], [ readyCallback ] )
 
-This function **must** be called (just once per page) before any other API call is made. This initializes the environment for Surfly, settings based on `settings` object, tests required browser features, and passes the result to the `readyCallback` function. `readyCallback` should be a function accepting one argument with the following structure:
+This function **must** be called (just once per page) before any other API call is made. This initializes the environment for Surfly, settings based on `settings` object, tests required browser features, and passes the result to the `readyCallback` function.
+
+We load the Surfly widget code asynchronously, so that it doesn't slow down your page load. This also means that the Surfly API is _**not initialized immediately after the snippet code is executed**_. That's why it is important that you always start by calling `Surfly.init()`, and don't make any other API calls before `readyCallback` is called.
+
+
+### 3. Implement a callback function
+
+`readyCallback` should be a function accepting one argument with the following structure:
 
 ```javascript
 {
@@ -30,7 +37,11 @@ This function **must** be called (just once per page) before any other API call 
 }
 ```
 
-We load the Surfly widget code asynchronously, so that it doesn't slow down your page load. This also means that the Surfly API is _**not initialized immediately after the snippet code is executed**_. That's why it is important that you always start by calling `Surfly.init()`, and don't make any other API calls before `readyCallback` is called.
+In addition to `success` check, you probably want to detect if the page is currently loaded under Surfly session by checking if `Surfly.currentSession` exists.
+
+### Example
+
+The following example initializes Surfly JS API and adds a Surfly button on the page:
 
 ```javascript
 var settings = {
@@ -38,7 +49,7 @@ var settings = {
   only_embedded_sessions: true
 };
 Surfly.init(settings, function(initResult) {
-  if (initResult.success) {
+  if (initResult.success && !Surfly.currentSession) {
     console.log('All good for happy cobrowsing!');
     // it is now safe to use API
     Surfly.button();
@@ -48,3 +59,4 @@ Surfly.init(settings, function(initResult) {
 });
 ```
 
+For more examples of common use cases, see the [Examples](/examples.md) page
