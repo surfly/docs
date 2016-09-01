@@ -59,4 +59,4 @@ Surfly.init(settings, function(initResult) {
 });
 ```
 
-For more examples of common use cases, see the [Examples](examples.md) page
+For more examples of common use cases, see the [Examples](javascript-api/examples.md) page
