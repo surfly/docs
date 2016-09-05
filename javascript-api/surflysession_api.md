@@ -2,7 +2,7 @@
 # SurflySession API
 
 
-
+<a name="startLeader"></a>
 > SurflySession SurflySession.startLeader( [ iframeSelector ], [ userData ] )
 
 > SurflySession SurflySession.startFollower( [ iframeSelector ], [ userData ] )
@@ -31,6 +31,8 @@ Surfly.session({}, followerLink)
 ```
 
 <hr />
+
+<a name="create"></a>
 > SurflySession SurflySession.create()
 
 _(not available inside a session)_
@@ -43,6 +45,7 @@ If the session is already initialized, `SurflySession.create()` does nothing.
 
 <hr />
 
+<a name="end"></a>
 > SurflySession SurflySession.end( [redirectUrl] )
 
 gracefully ends the current session (as long as the current user has permissions to do so).
