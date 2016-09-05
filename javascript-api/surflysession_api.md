@@ -150,12 +150,15 @@ _(not available inside a session)_
 contains a URL that can be used for joining the session. This is a URL that `SurflySession.startFollower()` opens.
 
 <hr />
+
+<a name="pin"></a>
 > Number SurflySession.pin
 
 contains a 4-digit PIN code that can be used to join the session. This becomes available only after the session is started (either manually by `.startLeader()` call, or automatically by Surfly Button).
 
 <hr />
 
+<a name="node"></a>
 > HTMLIFrameElement SurflySession.node
 
 _(not available inside a session)_
@@ -164,6 +167,7 @@ if a session is opened in an iframe, it contains a reference to its DOM node
 
 <hr />
 
+<a name="window"></a>
 > Window SurflySession.window
 
 _(not available inside a session)_
