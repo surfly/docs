@@ -19,7 +19,8 @@ function startCobrowsing () {
 
 #### Available events
 
-> session_created <a name="session_created"></a>
+<a name="session_created"></a>
+> session_created 
 
 triggered when a session is created (usually after `SurflySession.create()` call).
 
