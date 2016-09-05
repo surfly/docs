@@ -6,20 +6,13 @@
         "emphasize",
         "sectionx-collapse",
         "hide-published-with",
-        "hide-element",
-        "anchorjs"
+        "hide-element"
     ],
     "pluginsConfig": {
         "hide-element": {
             "elements": [
                 ".custom-link"
             ]
-        }
-        "anchorjs": {
-          "icon": "#",
-          "placement": "left",
-          "visible": "always",
-          "class": "custom-class another-one"
         }
     }
 }
