@@ -56,6 +56,7 @@ Note that by default a user is redirected to the page that was last visited insi
 
 <hr />
 
+<a name="settings"></a>
 > Object SurflySession.settings
 
 _(read only, not available inside a session)_
@@ -64,6 +65,7 @@ returns the session settings by which the session was created
 
 <hr />
 
+<a name="on"></a>
 > SurflySession SurflySession.on( eventName, callback )
 
 set an event handler. Inside the `callback` function, `this` will be set to the current `SurflySession` instance. See [Session Events](session_events.md) section for more details.
@@ -75,13 +77,15 @@ Surfly.session().on(/*...*/).on(/*...*/).startLeader();
 
 <hr />
 
+<a name="log"></a>
 > SurflySession SurflySession.log( entry )
 
 log message to the Audit log (available in Surfly Dashboard after session ends). `entry` must be a plain string.
 
 <hr />
 
-> SurflySession.sendMessage( message, targetOrigin )
+<a name="sendMessage"></a>
+> SurflySession.sendMessage( message, targetOrigin ) 
 
 This function is useful when you need to establish a communication channel between your JS code on the original page, and its proxified version inside the session.
 
@@ -92,12 +96,14 @@ It is available on both sides, and works in symmetric way: it will trigger a `me
 
 <hr />
 
+<a name="giveControl"></a>
 > SurflySession.giveControl( clientIndex )
 
 Provided that current user has control, give it away to the user with specified `clientIndex`. `clientIndex` is always 0 for the leader and 1 or more for followers
 
 <hr />
 
+<a name="relocate"></a>
 > SurflySession.relocate( newUrl )
 
 _(not available inside a session)_
@@ -106,6 +112,7 @@ Navigate current tab to `newUrl`
 
 <hr />
 
+<a name="setDrawingSettings"></a>
 > drawingSettings SurflySession.setDrawingSettings( [drawingSettings] )
 
 _(not available inside a session)_
@@ -117,6 +124,7 @@ session.drawingSettings({mode: 'permanent', color: '#ff0000'});
 
 <hr />
 
+<a name="started"></a>
 > boolean SurflySession.started
 
 _(not available inside a session)_
@@ -125,6 +133,7 @@ boolean, set to true if the session window is opened
 
 <hr />
 
+<a name="leaderLink"></a>
 > String SurflySession.leaderLink
 
 _(not available inside a session)_
@@ -133,6 +142,7 @@ contains a leader link. This is a URL that `SurflySession.startLeader()` opens. 
 
 <hr />
 
+<a name="followerLink"></a>
 > String SurflySession.followerLink
 
 _(not available inside a session)_
