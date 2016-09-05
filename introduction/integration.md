@@ -39,7 +39,7 @@ You will also need to initialize the session
 
 ``` javascript
 var settings = {
-  widget_key: '**your key here**',
+  widgetkey: '**your key here**',
 };
 Surfly.init(settings, function(initResult) {
   if (initResult.success) {
