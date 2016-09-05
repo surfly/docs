@@ -35,7 +35,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 </script>
 ```
 
-You will also need to initialise the session
+You will also need to initialize the session
 
 ``` javascript
 var settings = {
