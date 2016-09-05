@@ -93,7 +93,7 @@ The Surfly button is just a shortcut for a quick integration, and doesn't allow 
 
 #### Example
 ```javascript
-Surfly.init({widget_key: '24d1414c71a94cbf9f205ed4fc4999b5'}, function(init){
+Surfly.init({widgetkey: '**your key here**'}, function(init){
   if (init.success) {
     Surfly.button({autohide_button: false, position: 'bottomleft'});
   }
