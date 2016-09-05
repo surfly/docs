@@ -45,7 +45,7 @@ The following example initializes Surfly JS API and adds a Surfly button on the 
 
 ```javascript
 var settings = {
-  widgetkey: '24d1414c71a94cbf9f205ed4fc4999b5',
+  widgetkey:'**your api key**',
   only_embedded_sessions: true
 };
 Surfly.init(settings, function(initResult) {
