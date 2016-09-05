@@ -33,6 +33,7 @@ triggered when a session window has been loaded (usually after a call to `Surfly
 
 <hr />
 
+<a name="viewer_joined"></a>
 > viewer_joined
 
 triggered when a follower joins the session. Parameters:
