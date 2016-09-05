@@ -6,7 +6,8 @@
         "emphasize",
         "sectionx-collapse",
         "hide-published-with",
-        "hide-element"
+        "hide-element",
+        "anchorjs"
     ],
     "pluginsConfig": {
         "hide-element": {
