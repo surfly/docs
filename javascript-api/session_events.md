@@ -44,6 +44,7 @@ triggered when a follower joins the session. Parameters:
 
 <hr />
 
+<a name="viewer_left"></a>
 > viewer_left
 
 triggered when a follower leaves the session. Parameters:
@@ -54,12 +55,14 @@ triggered when a follower leaves the session. Parameters:
 
 <hr />
 
+<a name="session_ended"></a>
 > session_ended
 
 triggered when the session has been properly finished (normally by `SurflySession.end()` call)
 
 <hr />
 
+<a name="message"></a>
 > message
 
 triggered when the message is received. Parameters:
@@ -69,6 +72,7 @@ triggered when the message is received. Parameters:
 
 <hr />
 
+<a name="relocated"></a>
 > relocated
 
 _(not available inside a session)_
@@ -78,6 +82,7 @@ triggered when the current tab inside a Surfly session navigates to another page
 
 <hr />
 
+<a name="error"></a>
 >  error
 
 _(not available inside a session)_
@@ -89,6 +94,7 @@ triggered on common errors. Parameters:
 
 <hr />
 
+<a name="control"></a>
 > control
 
 triggered when control over the session has been transferred. Parameters:
@@ -98,6 +104,7 @@ triggered when control over the session has been transferred. Parameters:
 
 <hr />
 
+<a name="agent_status"></a>
 > agent_status
 
 triggered when a support agent availability changes:
