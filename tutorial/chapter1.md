@@ -197,7 +197,7 @@ end_of_session_popup_url: "https://example.com/survey"
 };
 ```
 
-You can also pass the url as a parameter in ```Surfly.session().end([redirectUrl] )```. However, the end_of_session_popup_url option has priority over the .end(redirecturl) function.
+You can also pass the url as a parameter in ```Surfly.session().end( [redirectUrl] )```. However, the end_of_session_popup_url option has priority over the .end(redirecturl) function.
 
 ![survey](http://i.imgur.com/WpWxQMv.jpg)
 
