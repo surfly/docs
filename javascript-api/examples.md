@@ -55,7 +55,7 @@ We provide a convenient `Surfly.button()` function for rendering a nice default 
   
   if (Surfly.currentSession) {
     // inside the session, just hide the button element
-    myBut.style.display = 'block';
+    myBut.style.display = 'none';
   } else {
     // outside the cobrowsing session, button click will start a session
     myBut.addEventListener('click', function() {
