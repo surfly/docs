@@ -71,7 +71,7 @@ Note that you will need to call `.create()` or `.startLeader()` / `.startFollowe
 
 ##### Example
 ```javascript
-Surfly.init({widget_key: '24d1414c71a94cbf9f205ed4fc4999b5'}, function(init) {
+Surfly.init({widgetkey: '**your key here**'}, function(init) {
   if (init.success) {
     Surfly.session({docked_only: true}).startLeader();
   }
