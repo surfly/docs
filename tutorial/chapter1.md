@@ -103,7 +103,7 @@ When a visitor initiates a session they are queue'd and, by default, have to wai
 
 The flow will be as follows: the user clicks on the support button and is shown a page with their unique pin code, and our own custom text. When an agent joins them, the user is redirected to the home page.
 
-In order to use such a page, we first remove the red banner blocking the session by setting the 'block_until_agent_joins' option to 'false' in the settings options.
+In order to use such a page, we first remove the red banner blocking the session by setting the ```block_until_agent_joins``` option to ```false``` in the settings options.
 
 Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will redirect the user to our landing page: 
 
@@ -170,7 +170,7 @@ We now have our own personalised landing page to greet our customers:
 
 When a client places an order during a session, we don't want the agent to be able to see their payment details and we would therefore like to mask some form data from the agent.
 
-To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the 'surfly_private' attribute to fields containing sensitive information:
+To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the ```surfly_private``` attribute to fields containing sensitive information:
 ``` html
 <span>Card Number</span>
 <input type="text" size="20" data-stripe="number" surfly_private>
@@ -188,7 +188,7 @@ Whilst the leader can mask their data, and hide it from the followers, the follo
 
 After the session ends, we will display a survey in a pop-up window. This is a useful way of getting feedback from the session. 
 
-We will use the 'end_of_session_popup_url' option to point to the url of our survey page. Again, we add this as an option in the 'settings' variable:
+We will use the ```end_of_session_popup_url``` option to point to the url of our survey page. Again, we add this as an option in the 'settings' variable:
 
 ``` javascript
 var settings={
