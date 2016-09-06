@@ -210,7 +210,7 @@ function sessionStart() {
   Surfly.session(settings)
   .on('session_started', function(session, event) {   
       // send the pin to the current session
-      session.sendMessage({pin: session.pin}, '*');	
+      session.sendMessage({pin: session.pin}, window.location.origin);	
    }).startLeader();
 }
 </script>
@@ -233,9 +233,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
         Surfly.currentSession
         .on('message', function(session, event) {
-          var id = JSON.stringify(event.data);
-          id = id.substring(8,12);
-          document.getElementById("idP").innerHTML=id;
+          if(event.origin == window.location.origin){
+            var id = JSON.stringify(event.data);
+            id = id.substring(8,12);
+            document.getElementById("idP").innerHTML=id;
+          }
         })
       } 
     }
