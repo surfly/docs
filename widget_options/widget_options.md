@@ -134,9 +134,11 @@ backend surfly_continuation_point_https
     server surfly surfly.com:443 ssl
 ```
 
-In Apache, something like this should do the trick (make sure you have **mod_ssl**, **mod_proxy** and **mod_headers** modules installed, see [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension) for details):
+In Apache, something like this should do the trick (make sure you have **mod_ssl**, **mod_proxy**, **mod_proxy_http**, and **mod_headers** modules installed and loaded, see [this tutorial](https://www.digitalocean.com/community/tutorials/how-to-use-apache-http-server-as-reverse-proxy-using-mod_proxy-extension) for details):
 
 ```xml
+SSLProxyEngine On
+
 <Location "/surfly_cookie_transfer/">
     ProxyPreserveHost On
     RequestHeader set X-Continuation-Origin "https://example.com"
