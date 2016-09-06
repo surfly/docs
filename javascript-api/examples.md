@@ -62,7 +62,7 @@ We provide a convenient `Surfly.button()` function for rendering a nice default 
       Surfly.session().startLeader();
     });
 
-    // you can use Surfly.isAgentAvailable to hide the button
+    // you can use Surfly.agentAvailable to hide the button
     // when there is no support agent available
     setInterval(function(){
       if (Surfly.agentAvailable) {
