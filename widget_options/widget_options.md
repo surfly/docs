@@ -140,7 +140,6 @@ In Apache, something like this should do the trick (make sure you have **mod_ssl
 SSLProxyEngine On
 
 <Location "/surfly_cookie_transfer/">
-    ProxyPreserveHost On
     RequestHeader set X-Continuation-Origin "https://example.com"
     RequestHeader set X-Widget-Key "24d1414c71a94cbf9f205ed4fc4999b5"
     ProxyPass "https://surfly.com/surfly_cookie_transfer/"
