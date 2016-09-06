@@ -37,8 +37,8 @@ You can also start a session right away, without a button:
 Surfly.session().startLeader();
 ```
 
-### Session to another page
-By default, all newly created sessions will point to the current page, to provide the most transparent experience. This behaviour can be overriden with `url` option:
+### Session to another page (not implemented)
+By default, all newly created sessions will point to the current page, to provide the most transparent experience. This behavior can be overridden with `url` option:
 ```javascript
 Surfly.session({url: 'https://example.com'}).startLeader();
 ```
