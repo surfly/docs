@@ -1,6 +1,7 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # Surfly object API
 
+<a name="currentSession"></a>
 > SurflySession Surfly.currentSession
 
 _(read only)_
