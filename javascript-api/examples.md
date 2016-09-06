@@ -160,7 +160,10 @@ if (!Surfly.currentSession) {
     if (window.location.origin === event.origin) {
       console.log('page from the session says:', event.data);
       // reply to the message
-      session.sendMessage({bar: 'roger that'}, window.location.origin);
+      session.sendMessage(
+        {bar: 'roger that'},
+        window.location.origin
+      );
     }
   }).startLeader();
 
