@@ -99,7 +99,8 @@ This feature is called 'session continuation', and works as follows:
 Session continuation is currently supported only for sessions started with the Surfly widget.
 There are several ways to set up session continuation.
 
-Please note: When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.
+{% em color="#ffffe0" %}Please note: When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.  {% endem %}
+
 
 <a name="full_session"></a>
 #### Full session continuation
