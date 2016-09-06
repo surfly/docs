@@ -197,7 +197,7 @@ end_of_session_popup_url: "https://example.com/survey"
 };
 ```
 
-You can also pass the url as a parameter in ```Surfly.session().end( [redirectUrl] )```. However, the end_of_session_popup_url option has priority over the .end(redirecturl) function.
+You can also pass the url as a parameter in ```Surfly.session().end( [redirectUrl] )```. However, the ```end_of_session_popup_url``` option has priority over this function.
 
 ![survey](http://i.imgur.com/WpWxQMv.jpg)
 
@@ -207,7 +207,7 @@ You can also pass the url as a parameter in ```Surfly.session().end( [redirectUr
 
 Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. 
 
-First, we need to remove Surfly's default chat box by adding the 'docked_only' option to the session settings:
+First, we need to remove Surfly's default chat box by adding the ```docked_only``` option to the session settings:
 
 ``` javascript
 var settings={
