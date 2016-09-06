@@ -195,7 +195,7 @@ For many visual customizations, overriding default CSS styles is enough:
 </style>
 
 <script>
-Surfly.button().show();
+Surfly.button();
 </script>
 ```
 
