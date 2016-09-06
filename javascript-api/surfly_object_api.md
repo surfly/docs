@@ -2,7 +2,7 @@
 # Surfly object API
 
 <a name="currentSession"></a>
-> SurflySession Surfly.currentSession
+> SurflySession Surfly.currentSession{#currentSession}
 
 _(read only)_
 
