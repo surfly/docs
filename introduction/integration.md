@@ -19,7 +19,7 @@ If you get a message telling you that you do not have the API key set up yet, cl
 
 You should now be looking at:
 
-![The integration page](https://raw.github.com/surfly/tutorial/master/screens/snippet_initial_screen.png)
+![The integration page](https://raw.github.com/surfly/tutorial/master/screens/snippet_initial_screen_new.png)
 
 In the 'domain names' section on the integration page, you need to specify the domain of your website. For instance, if your website is hosted on "https://example.com", simply add "example.com" to the domain name list. This will allow Surfly to accept the requests coming from your domain.
 
