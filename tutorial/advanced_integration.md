@@ -57,7 +57,7 @@ As can be seen above, we chose to redirect the user to our custom restricted pag
 
 We now want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
-In our example, we pass the name and email of the user to the Surfly.session().startLeader() function :
+In our example, we pass the name and email of the user to the ```Surfly.session().startLeader()``` function :
 ``` html
 <script>
 var metadata = {"name": "RoseF","email": "rose@example.com"};
@@ -92,7 +92,7 @@ As can be seen below, the agents can directly see this information from the 'Que
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
 
-To do this, you can use the .on() function of the [SurflySession API](../javascript-api/surflysession_api.md) to set an event handler. More specifically, we catch the 'control' event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the 'to' parameter of the event), and set the elements we wish to enable/disable. 
+To do this, you can use the .on() function of the [SurflySession API](../javascript-api/surflysession_api.md) to set an event handler. More specifically, we catch the ```control``` event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the ```to``` parameter of the event), and set the elements we wish to enable/disable. 
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm payment:
 
@@ -133,7 +133,7 @@ window.addEventListener('DOMContentLoaded', function() {
 <a name="remove-ui"></a>
 ### Customize Surfly's look and feel{#remove-ui}
 
-Finally, we wanted to completely strip everything down to [co-browsing](https://www.surfly.com/). By default, Surfly provides more tools and features than our example application needs. With the 'docked_only' options we've already removed a few features we don't need but we'd like to go even further. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
+Finally, we wanted to completely strip everything down to [co-browsing](https://www.surfly.com/). By default, Surfly provides more tools and features than our example application needs. With the ```docked_only``` options we've already removed a few features we don't need but we'd like to go even further. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
 Fortunately, there's an option which removes the Surfly user interface (UI) and therefore allows us to use our own custom elements to control the appearance and feel of the sessions:
 
