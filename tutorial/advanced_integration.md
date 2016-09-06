@@ -92,7 +92,7 @@ As can be seen below, the agents can directly see this information from the 'Que
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
 
-To do this, you can use the .on() function of the [SurflySession API](../javascript-api/surflysession_api.md) to set an event handler. More specifically, we catch the ```control``` event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the ```to``` parameter of the event), and set the elements we wish to enable/disable. 
+To do this, you can use the ```.on()``` function of the [SurflySession API](../javascript-api/surflysession_api.md#on) to set an event handler. More specifically, we catch the ```control``` event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the ```to``` parameter of the event), and set the elements we wish to enable/disable. 
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm payment:
 
