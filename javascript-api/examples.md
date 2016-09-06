@@ -15,7 +15,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 </script>
 <script>
   window.addEventListener('DOMContentLoaded', function() {
-    Surfly.init({widgetkey: '24d1414c71a94cbf9f205ed4fc4999b5'}, function(init) {
+    Surfly.init({widgetkey: '**your key here**'}, function(init) {
       if (init.success) {
         // use Surfly API here
       }
