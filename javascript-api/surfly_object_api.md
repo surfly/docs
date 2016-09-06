@@ -80,7 +80,9 @@ Note that you will need to call `.create()` or `.startLeader()` / `.startFollowe
 ```javascript
 Surfly.init({widgetkey: '**your key here**'}, function(init) {
   if (init.success) {
-    Surfly.session({docked_only: true}).startLeader();
+    if(!Surfly.currentSession){
+      Surfly.session({docked_only: true}).startLeader();
+    }
   }
 });
 ```
