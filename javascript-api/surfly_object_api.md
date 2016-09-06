@@ -22,6 +22,8 @@ if (Surfly.currentSession) {
 
 ```
 <hr />
+
+<a name="agentAvailable"></a>
 > boolean Surfly.agentAvailable
 
 contains `true` if there is at least one company agent online
@@ -38,6 +40,8 @@ if (!Surfly.agentAvailable) {
 }
 ```
 <hr />
+
+<a name="testConnection"></a>
 > Surfly.testConnection( callback )
 
 `Surfly.init()` succeeds only if the user's browser supports all features required by Surfly (WebSockets, for example). However, cobrowsing may still not work if there is a blocking firewall between the user and the Surfly server. In this case `SurflySession.startLeader()` and `SurflySession.startFollower()` will raise errors. This function allows to check connection without starting an actual cobrowsing session.
@@ -60,6 +64,8 @@ Surfly.testConnection(function(result) {
 ```
 
 <hr />
+
+<a name="session"></a>
 > SurflySession Surfly.session( [ sessionSettings ], [ sessionUrl ] )
 
 Creates a session object with provided settings. Some properties of the returned SurflySession may not be initialized. You can bind callbacks using `.on()` method to hook on specific points of session lifetime.
@@ -80,6 +86,8 @@ Surfly.init({widgetkey: '**your key here**'}, function(init) {
 ```
 
 <hr />
+
+<a name="button"></a>
 > Surfly.button( [ settingsObject ] )
 
 _(not available inside a Surfly session)_
