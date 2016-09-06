@@ -126,7 +126,7 @@ Finally, we would like the user to be redirected to the home page when an agent 
 
 ``` html
 <script>
-var settings={widgetkey:**your api key**, block_until_agent_joins: false};
+var settings={widgetkey:'**your api key**', block_until_agent_joins: false};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
