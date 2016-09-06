@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', function() {
               Surfly.session()
                 .on('session_started', function(session, event) {   
                    // send the pin to the current session
-                   session.sendMessage({pin: session.pin}, '*');	
+                   session.sendMessage({pin: session.pin}, window.location.origin);	
                  })
                 .on('viewer_joined', function(session, event) {
                     // if a viewer joins and they are the first then redirect to home page
@@ -145,10 +145,12 @@ window.addEventListener('DOMContentLoaded', function() {
           } else {
               Surfly.currentSession
               .on('message', function(session, event) {
-                  var id = JSON.stringify(event.data);
-                  id = id.substring(8,12);
-                  // we display the pin on the button
-                  document.getElementById("id_button").innerHTML=id;
+                  if (window.location.origin === event.origin) {
+                    var id = JSON.stringify(event.data);
+                    id = id.substring(8,12);
+                    // we display the pin on the button
+                    document.getElementById("id_button").innerHTML=id;
+                  }
               })
           }
         }
