@@ -25,7 +25,7 @@ This function **must** be called (just once per page) before any other API call 
 
 We load the Surfly widget code asynchronously, so that it doesn't slow down your page load. This also means that the Surfly API is _**not initialized immediately after the snippet code is executed**_. That's why it is important that you always start by calling `Surfly.init()`, and don't make any other API calls before `readyCallback` is called.
 
-{% em color="#ffffe0" %}Please note: You should initialize the API in the <head> tag of your HTML file. {% endem %}
+{% em color="#ffffe0" %}Please note: You should initialize the API in the `<head>` tag of your HTML file. {% endem %}
 
 ### 3. Implement a callback function
 
