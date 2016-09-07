@@ -14,7 +14,7 @@
             "elements": [
                 ".custom-link"
             ]
-        }
+        },
         "anchorjs": {
           "icon": "#",
           "placement": "right",
