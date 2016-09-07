@@ -18,7 +18,7 @@
         "anchorjs": {
           "icon": "#",
           "placement": "right",
-          "visible": "always",
+          "visible": "hover",
           "class": "custom-class another-one"
         }
     }
