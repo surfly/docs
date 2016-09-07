@@ -15,5 +15,11 @@
                 ".custom-link"
             ]
         }
+        "anchorjs": {
+          "icon": "#",
+          "placement": "right",
+          "visible": "always",
+          "class": "custom-class another-one"
+        }
     }
 }
