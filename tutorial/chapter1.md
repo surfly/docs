@@ -29,7 +29,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 
 <script>
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'**your api key**'}, function(init) {
+  Surfly.init({widgetkey:'**your widget key here**'}, function(init) {
     if (init.success) {
       // display the default Surfly button
       Surfly.button();
@@ -69,7 +69,7 @@ We'd like to create our own button to start a [co-browsing session](https://www.
 First, we need to remove Surfly's button and to only show our custom button when we're outside of a Surfly session:
 ``` javascript
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'**your api key**'}, function(init) {
+  Surfly.init({widgetkey:'**your widget key here**'}, function(init) {
     if (init.success) {
       if (Surfly.currentSession) {
         // inside the session, hide the get help section (of id 'get_help') 
@@ -126,7 +126,7 @@ Finally, we would like the user to be redirected to the home page when an agent 
 
 ``` html
 <script>
-var settings={widgetkey:'**your api key**', block_until_agent_joins: false};
+var settings={widgetkey:'**your widget key here**', block_until_agent_joins: false};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
@@ -192,7 +192,7 @@ We will use the ```end_of_session_popup_url``` option to point to the url of our
 
 ``` javascript
 var settings={
-widgetkey:'**your api key**', 
+widgetkey:'**your widget key here**', 
 end_of_session_popup_url: "https://example.com/survey"
 };
 ```
@@ -211,7 +211,7 @@ First, we need to remove Surfly's default chat box by adding the ```docked_only`
 
 ``` javascript
 var settings={
-widgetkey:'**your api key**',
+widgetkey:'**your widget key here**',
 docked_only: true
 };
 ```
