@@ -24,7 +24,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 
 <script>
 var settings={
-widgetkey:'**your api key**',
+widgetkey:'**your widget key here**',
 cookie_transfer_enabled: true,
 cookie_transfer_proxying: false
 }
@@ -63,7 +63,7 @@ In our example, we pass the name and email of the user to the ```Surfly.session(
 var metadata = {"name": "RoseF","email": "rose@example.com"};
 
 var settings = {
-widgetkey:'**your api key**', 
+widgetkey:'**your widget key here**', 
 block_until_agent_joins: false, 
 end_of_session_popup_url: "https://example.com/survey",
 cookie_transfer_enabled: true, 
@@ -99,7 +99,7 @@ In our example below, we disable the 'Order' button when the agent is in control
 ``` html
 <script>
 var settings = {
-widgetkey:'**your api key**',
+widgetkey:'**your widget key here**',
 cookie_transfer_enabled: true,
 cookie_transfer_proxying: false
 };
@@ -223,7 +223,7 @@ We then use the [SurflySession API](../javascript-api/surflysession_api.md) to r
 ``` html
 <script>
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'dd402bb4940b4cf3a855aaa371d11419'}, function(init) {
+  Surfly.init({widgetkey:'**your widget key here**'}, function(init) {
     if (init.success) {
       if (Surfly.currentSession) {
         // inside the session, show exit button
