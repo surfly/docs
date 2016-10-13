@@ -1,9 +1,9 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# Adding Surfly to your Website 
+# Adding Surfly to your Website
 
 <a name="add_surfly"></a>
 
-If you integrate Surfly into your website, you can use it in several ways. For example, you may want to use Surfly as a support tool or as a social tool. Using Surfly for social co-browsing would allow customers to, for example, browse and shop on your website with a friend. 
+If you integrate Surfly into your website, you can use it in several ways. For example, you may want to use Surfly as a support tool or as a social tool. Using Surfly for social co-browsing would allow customers to, for example, browse and shop on your website with a friend.
 
 If you choose to use Surfly primarily as a support option, visitors will be able to click the 'get live help' button to request a session. They will then be queue'd until an agent (the person who receives the call) joins them. By default, the person who initiated the session is the leader and the agent who takes the call will be the follower, however you can choose to swap control at any time during the session.
 
@@ -39,7 +39,7 @@ You will also need to initialize the session
 
 ``` javascript
 var settings = {
-  widgetkey: '**your widget key here**',
+  widget_key: '**your widget key here**',
 };
 Surfly.init(settings, function(initResult) {
   if (initResult.success) {

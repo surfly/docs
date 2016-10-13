@@ -12,7 +12,7 @@ There are two types of session continuations:
  - [full session continuation](../widget_options/widget_options.md/#full_session): allows the transfer of all cookies, including http-only cookies
  - [soft session continuation](../widget_options/widget_options.md#soft_session): excludes http only cookies
 
-In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page): 
+In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page):
 
 ``` html
 <script>
@@ -24,7 +24,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 
 <script>
 var settings={
-widgetkey:'**your widget key here**',
+widget_key:'**your widget key here**',
 cookie_transfer_enabled: true,
 cookie_transfer_proxying: false
 }
@@ -63,11 +63,11 @@ In our example, we pass the name and email of the user to the ```Surfly.session(
 var metadata = {"name": "RoseF","email": "rose@example.com"};
 
 var settings = {
-widgetkey:'**your widget key here**', 
-block_until_agent_joins: false, 
+widget_key:'**your widget key here**',
+block_until_agent_joins: false,
 end_of_session_popup_url: "https://example.com/survey",
-cookie_transfer_enabled: true, 
-cookie_transfer_proxying: false, 
+cookie_transfer_enabled: true,
+cookie_transfer_proxying: false,
 blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
 };
 
@@ -80,7 +80,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 ```
-{% em color="#ffffe0" %}Please note: 
+{% em color="#ffffe0" %}Please note:
 If the visitor to your website is logged in, the data passed as metadata could also be retrieved from their account information. {% endem %}
 
 As can be seen below, the agents can directly see this information from the 'Queue' panel:
@@ -90,16 +90,16 @@ As can be seen below, the agents can directly see this information from the 'Que
 <a name="control_appearance"></a>
 #### Change appearance based on who is in control{#control_appearance}
 
-You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order. 
+You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order.
 
-To do this, you can use the ```.on()``` function of the [SurflySession API](../javascript-api/surflysession_api.md#on) to set an event handler. More specifically, we catch the ```control``` event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the ```to``` parameter of the event), and set the elements we wish to enable/disable. 
+To do this, you can use the ```.on()``` function of the [SurflySession API](../javascript-api/surflysession_api.md#on) to set an event handler. More specifically, we catch the ```control``` event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the ```to``` parameter of the event), and set the elements we wish to enable/disable.
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm payment:
 
 ``` html
 <script>
 var settings = {
-widgetkey:'**your widget key here**',
+widget_key:'**your widget key here**',
 cookie_transfer_enabled: true,
 cookie_transfer_proxying: false
 };
@@ -147,7 +147,7 @@ ui_off: true // make Surfly invisible
 
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
 
-In our example, we chose to create our own exit session button and add it to all the necessary pages. 
+In our example, we chose to create our own exit session button and add it to all the necessary pages.
 First, we have to make sure that the page we are adding the button to contains the snippet code and then we can add our custom button:
 ``` html
 <button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
@@ -177,18 +177,18 @@ function exitSession(){
 
 ![exit button](http://i.imgur.com/BhlkW24.png)
 
-{% em color="#ffffe0" %}Please note: 
+{% em color="#ffffe0" %}Please note:
 Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealth_mode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
 
 
 <a name="small_button"></a>
 #### Session ID approach{#small_button}
 
-Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage. 
+Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage.
 
 The flow of our website has now completely changed. Instead of people initiating a session and waiting for an agent to join them, visitors will first use Zopim when they need help. If, during the conversation, the agent decides a Surfly session is required, they can direct the user to the bottom of the webpage to click on the cake.
 
-When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  That way, here is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue. 
+When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  That way, here is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue.
 
 First, we create a button that will start a session when clicked:
 
@@ -200,22 +200,22 @@ function sessionStart() {
   var settings = {
   block_until_agent_joins: false,
   end_of_session_popup_url: "https://example.com",
-  docked_only: true, 
-  cookie_transfer_enabled: true, 
-  cookie_transfer_proxying: false, 
+  docked_only: true,
+  cookie_transfer_enabled: true,
+  cookie_transfer_proxying: false,
   blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
   ui_off: true
   };
-  
+
   Surfly.session(settings)
-  .on('session_started', function(session, event) {   
+  .on('session_started', function(session, event) {
       // send the pin to the current session
-      session.sendMessage({pin: session.pin}, window.location.origin);	
+      session.sendMessage({pin: session.pin}, window.location.origin);
    }).startLeader();
 }
 </script>
 ```
-{% em color="#ffffe0" %}Please note: 
+{% em color="#ffffe0" %}Please note:
 In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
 
 We then use the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
@@ -223,13 +223,13 @@ We then use the [SurflySession API](../javascript-api/surflysession_api.md) to r
 ``` html
 <script>
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'**your widget key here**'}, function(init) {
+  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
     if (init.success) {
       if (Surfly.currentSession) {
         // inside the session, show exit button
         document.getElementById('exit_button').style.visibility="visible";
         // behaviour of small button at the bottom of the page
-        document.getElementById("showId").style.visibility='hidden'; 
+        document.getElementById("showId").style.visibility='hidden';
 
         Surfly.currentSession
         .on('message', function(session, event) {
@@ -239,7 +239,7 @@ window.addEventListener('DOMContentLoaded', function() {
             document.getElementById("idP").innerHTML=id;
           }
         })
-      } 
+      }
     }
    });
  });
@@ -249,8 +249,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
 <div align="center">
   <img src="http://i.giphy.com/3o7TKq5AiyXl7tTPhu.gif">
-</div> 
+</div>
 <br>
 
-The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim. 
+The user tells the agent this ID, and the agent can use it to identify the correct customer in the queue. The co-browsing session will start, and they can continue talking via Zopim.
 
