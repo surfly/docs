@@ -15,7 +15,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 </script>
 <script>
   window.addEventListener('DOMContentLoaded', function() {
-    Surfly.init({widgetkey: '**your key here**'}, function(init) {
+    Surfly.init({widget_key: '**your key here**'}, function(init) {
       if (init.success) {
         // use Surfly API here
       }
@@ -52,7 +52,7 @@ We provide a convenient `Surfly.button()` function for rendering a nice default 
 
 <script>
   var myBut = document.querySelector('.my-custom-button');
-  
+
   if (Surfly.currentSession) {
     // inside the session, just hide the button element
     myBut.style.display = 'none';

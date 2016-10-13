@@ -5,19 +5,19 @@
 <a name="website"></a>
 #### Cake shop website
 
-Our example application features a bespoke cake shop, specialising in personalized cakes. 
+Our example application features a bespoke cake shop, specialising in personalized cakes.
 Here is a screenshot of the home page before we integrate Surfly:
 
 ![website](http://i.imgur.com/zD0dd03.jpg)
 
-As you can see, it's a standard website with different pages and possible actions. 
+As you can see, it's a standard website with different pages and possible actions.
 We are now going to integrate Surfly into our website, selecting the aspects of Surfly's functionality that best suit our needs.
 
 
 <a name="integrate"></a>
 #### Adding a Surfly button{#integrate}
 
-As you can see below, after adding the widget code to our website, allowing requests originating from our website's domain, initializing a session and adding Surfly's default button , we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required. 
+As you can see below, after adding the widget code to our website, allowing requests originating from our website's domain, initializing a session and adding Surfly's default button , we see a red 'get live help' button. This button is shown when an agent is logged in, and, when clicked, allows us to start a session. Surfly works straight away: we can instantly start a session and receive calls without any further configuration required.
 
 ``` javascript
 <script>
@@ -29,7 +29,7 @@ l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 
 <script>
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'**your widget key here**'}, function(init) {
+  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
     if (init.success) {
       // display the default Surfly button
       Surfly.button();
@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', function() {
 ```
 <div align="center">
   <img src="http://i.imgur.com/AhyWO6b.png">
-</div> 
+</div>
 <br>
 When a client clicks on the red 'get live help' button, they are queue'd until an agent joins the session. The agent will be able to see the list of queue'd users in the Queue panel on the Surfly admin page.
 
@@ -56,7 +56,7 @@ We'll now change the appearance of the chatbox so we can use our own theme color
 Surfly.button({chat_box_color: "#87cefa", videochat: false});
 ```
 
-In the image below, you can see that the icons in the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required. 
+In the image below, you can see that the icons in the chat box are now in our website's theme color. We also chose to disable the video chat feature that is included by default, as we felt that it was not required.
 
  ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
@@ -69,17 +69,17 @@ We'd like to create our own button to start a [co-browsing session](https://www.
 First, we need to remove Surfly's button and to only show our custom button when we're outside of a Surfly session:
 ``` javascript
 window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widgetkey:'**your widget key here**'}, function(init) {
+  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
     if (init.success) {
       if (Surfly.currentSession) {
-        // inside the session, hide the get help section (of id 'get_help') 
+        // inside the session, hide the get help section (of id 'get_help')
         document.getElementById('get_help').style.visibility="hidden";
       }
 	}
   });
 });
 ```
-We create our button, and add an onclick event to start a Surfly session: 
+We create our button, and add an onclick event to start a Surfly session:
 
 ``` html
 <button class="my-custom-button" id="get_help_button" onclick="sessionStart()"></button>
@@ -105,7 +105,7 @@ The flow will be as follows: the user clicks on the support button and is shown 
 
 In order to use such a page, we first remove the red banner blocking the session by setting the ```block_until_agent_joins``` option to ```false``` in the settings options.
 
-Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will redirect the user to our landing page: 
+Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will redirect the user to our landing page:
 
 ``` html
 <button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
@@ -126,21 +126,21 @@ Finally, we would like the user to be redirected to the home page when an agent 
 
 ``` html
 <script>
-var settings={widgetkey:'**your widget key here**', block_until_agent_joins: false};
+var settings={widget_key:'**your widget key here**', block_until_agent_joins: false};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
         if (init.success) {
           if(!Surfly.currentSession){
               Surfly.session()
-                .on('session_started', function(session, event) {   
+                .on('session_started', function(session, event) {
                    // send the pin to the current session
-                   session.sendMessage({pin: session.pin}, window.location.origin);	
+                   session.sendMessage({pin: session.pin}, window.location.origin);
                  })
                 .on('viewer_joined', function(session, event) {
                     // if a viewer joins and they are the first then redirect to home page
                     if(event.count==1){
                       session.relocate("https://example.com");
-                    }	
+                    }
                 }).startLeader();
           } else {
               Surfly.currentSession
@@ -180,19 +180,19 @@ In our example, we only use field masking on the last three fields of our order 
 ![field masking](http://i.imgur.com/lRIa8hf.jpg)
 
 
-{% em color="#ffffe0" %}Please note: 
+{% em color="#ffffe0" %}Please note:
 Whilst the leader can mask their data, and hide it from the followers, the followers cannot hide their data from the leader. {% endem %}
 
 <a name="popup"></a>
 #### End of session popup{#popup}
 
-After the session ends, we will display a survey in a pop-up window. This is a useful way of getting feedback from the session. 
+After the session ends, we will display a survey in a pop-up window. This is a useful way of getting feedback from the session.
 
 We will use the ```end_of_session_popup_url``` option to point to the url of our survey page. Again, we add this as an option in the 'settings' variable:
 
 ``` javascript
 var settings={
-widgetkey:'**your widget key here**', 
+widget_key:'**your widget key here**',
 end_of_session_popup_url: "https://example.com/survey"
 };
 ```
@@ -205,17 +205,17 @@ You can also pass the url as a parameter in ```Surfly.session().end( [redirectUr
 <a name="chat"></a>
 #### Integrate an already existing chat solution{#chat}
 
-Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly. 
+Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly.
 
 First, we need to remove Surfly's default chat box by adding the ```docked_only``` option to the session settings:
 
 ``` javascript
 var settings={
-widgetkey:'**your widget key here**',
+widget_key:'**your widget key here**',
 docked_only: true
 };
 ```
-{% em color="#ffffe0" %}Please note: 
+{% em color="#ffffe0" %}Please note:
 We could also use the 'ui_off' option instead of 'docked_only' considering that in both cases the Surfly's default chatbox is disabled.  {% endem %}
 
 Then, we can simply add the Zopim snippet code provided to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
@@ -232,7 +232,7 @@ Then, we can simply add the Zopim snippet code provided to all the pages of our 
 </script>
 <!--End of Zopim Live Chat Script-->
 ```
-{% em color="#ffffe0" %}Please note: 
+{% em color="#ffffe0" %}Please note:
 We added a condition in the beginning of the script to make sure that a second Zopim chat window doesn't open when a Surfly session starts.{% endem %}
 ![zopim](http://i.imgur.com/urbhGSh.png)
 

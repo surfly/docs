@@ -78,7 +78,7 @@ Note that you will need to call `.create()` or `.startLeader()` / `.startFollowe
 
 ##### Example
 ```javascript
-Surfly.init({widgetkey: '**your key here**'}, function(init) {
+Surfly.init({widget_key: '**your key here**'}, function(init) {
   if (init.success) {
     if(!Surfly.currentSession){
       Surfly.session({docked_only: true}).startLeader();
@@ -104,7 +104,7 @@ The Surfly button is just a shortcut for a quick integration, and doesn't allow 
 
 #### Example
 ```javascript
-Surfly.init({widgetkey: '**your key here**'}, function(init){
+Surfly.init({widget_key: '**your key here**'}, function(init){
   if (init.success) {
     Surfly.button({autohide_button: false, position: 'bottomleft'});
   }
