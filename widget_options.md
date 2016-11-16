@@ -26,6 +26,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | newurl  | true | Should we show the 'newurl button' in the widget? |
 | store_chat_logs | false | If enabled, chat logs will be available for download in Surfly dashboard |
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
+| allow_control_switching | true | Allow user to give control to another participant |
 
 <a name="drawing-options"></a>
 #####Drawing options{#drawing_options}
