@@ -8,7 +8,7 @@ Here, you can find more detailed examples of the options that require specific s
 #### Blacklist and Whitelist format{#restrictions}
 A string representation of the JSON array is expected. Every element of the array is an object with the following properties:
  - `pattern` - regular expression. The requested url will be matched to this regular expression
- - (optional) `redirect` - an url to redirect the user to. You can also specify the special `{{referer}}` pattern in the beginning of a redirect link, and that will be replaced by the Referer value at the moment of redirect. Basically, the user will be redirected to the page where they clicked the restricted link.
+ - (optional) `redirect` - an url to redirect the user to. You can also specify the special {% raw %}{{referer}}{% endraw %}` pattern in the beginning of a redirect link, and that will be replaced by the Referer value at the moment of redirect. Basically, the user will be redirected to the page where they clicked the restricted link.
  - (optional) `type` - restriction type. If present, and set to `"all"`, restriction will be applied to all requests (otherwise restrictions affect only requests to top-level pages)
 
 A blocked url is always added as a query parameter to the redirect url:
