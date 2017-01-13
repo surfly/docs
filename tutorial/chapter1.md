@@ -25,9 +25,7 @@ As you can see below, after adding the widget code to our website, allowing requ
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
 l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
-</script>
 
-<script>
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widget_key:'**your widget key here**'}, function(init) {
     if (init.success) {

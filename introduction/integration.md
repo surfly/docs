@@ -26,30 +26,24 @@ In the 'domain names' section on the integration page, you need to specify the d
 Finally, copy the code snippet and add it to the source code of your website.
 
 It should look something like the following:
+
 ``` javascript
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
 l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
-</script>
-```
 
-You will also need to initialize the session
-
-``` javascript
-var settings = {
-  widget_key: '**your widget key here**',
-};
-Surfly.init(settings, function(initResult) {
-  if (initResult.success) {
-    // display the default Surfly button
-    Surfly.button();
-  } else {
-    // log an error
-    console.log('Your browser lacks features required by Surfly');
+//You will also need to initialize the session
+window.addEventListener('DOMContentLoaded', function() {
+  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
+    if (init.success) {
+      // display the default Surfly button
+      Surfly.button();
   }
-});
+   });
+ });
+</script>
 ```
 
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
