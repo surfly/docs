@@ -1,8 +1,8 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 
-# Setting advanced Widget options
+# Options details
 
-Here, you can find more detailed examples of the options that require specific syntax. 
+Here, you can find more detailed examples of the widget options that require specific syntax.
 
 <a name="restrictions"></a>
 #### Blacklist and Whitelist format{#restrictions}

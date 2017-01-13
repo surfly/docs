@@ -150,7 +150,7 @@ We already have our own start button and landing page, but now that we have remo
 In our example, we chose to create our own exit session button and add it to all the necessary pages.
 First, we have to make sure that the page we are adding the button to contains the snippet code and then we can add our custom button:
 ``` html
-<button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
+<button class="button" id="exit_button" style="display:none" onclick="exitSession()">Exit session</button>
 ```
 Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
 ``` javascript
@@ -159,7 +159,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (init.success) {
       if (Surfly.currentSession) {
         // inside the session, show exit button
-        document.getElementById('exit_button').style.visibility="visible";
+        document.getElementById('exit_button').style.display="block";
       }
 	}
   });
@@ -227,9 +227,9 @@ window.addEventListener('DOMContentLoaded', function() {
     if (init.success) {
       if (Surfly.currentSession) {
         // inside the session, show exit button
-        document.getElementById('exit_button').style.visibility="visible";
+        document.getElementById('exit_button').style.display="block";
         // behaviour of small button at the bottom of the page
-        document.getElementById("showId").style.visibility='hidden';
+        document.getElementById("showId").style.display='none';
 
         Surfly.currentSession
         .on('message', function(session, event) {

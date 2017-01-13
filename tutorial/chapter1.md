@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (init.success) {
       if (Surfly.currentSession) {
         // inside the session, hide the get help section (of id 'get_help')
-        document.getElementById('get_help').style.visibility="hidden";
+        document.getElementById('get_help').style.display="none";
       }
 	}
   });
