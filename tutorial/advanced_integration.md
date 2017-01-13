@@ -20,9 +20,7 @@ In our example, we will use soft session continuation. We need to add the snippe
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
 l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
 (window,document,'script','Surfly');
-</script>
 
-<script>
 var settings={
 widget_key:'**your widget key here**',
 cookie_transfer_enabled: true,
@@ -190,61 +188,45 @@ The flow of our website has now completely changed. Instead of people initiating
 
 When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  That way, here is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue.
 
-First, we create a button that will start a session when clicked:
+* First, we create a button that will start a session when clicked
+* Then we create a sessionStart() function that we can add to the onclick event of the button
+* We then initialize the session
+* In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.
+* Finally, we use the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
 
 ``` html
 <button id="idP" onclick="sessionStart()"><img id="showId" src= **our_cake_image**></button>
 
 <script type="text/javascript">
-function sessionStart() {
-  var settings = {
-  block_until_agent_joins: false,
-  end_of_session_popup_url: "https://example.com",
-  docked_only: true,
-  cookie_transfer_enabled: true,
-  cookie_transfer_proxying: false,
-  blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
-  ui_off: true
-  };
+  function sessionStart() {
+    var settings = {
+      block_until_agent_joins: false,
+      end_of_session_popup_url: "https://example.com",
+      docked_only: true,
+      cookie_transfer_enabled: true,
+      cookie_transfer_proxying: false,
+      blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
+      ui_off: true
+    };
 
-  Surfly.session(settings)
-  .on('session_started', function(session, event) {
-      // send the pin to the current session
-      session.sendMessage({pin: session.pin}, window.location.origin);
-   }).startLeader();
-}
-</script>
-```
-{% em color="#ffffe0" %}Please note:
-In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
-
-We then use the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
-
-``` html
-<script>
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
-    if (init.success) {
-      if (Surfly.currentSession) {
+    Surfly.init({widget_key:'**your widget key here**'}, function(init) {
+      if (init.success) {
+        if (Surfly.currentSession) {
         // inside the session, show exit button
         document.getElementById('exit_button').style.display="block";
         // behaviour of small button at the bottom of the page
         document.getElementById("showId").style.display='none';
-
-        Surfly.currentSession
-        .on('message', function(session, event) {
-          if(event.origin == window.location.origin){
-            var id = JSON.stringify(event.data);
-            id = id.substring(8,12);
-            document.getElementById("idP").innerHTML=id;
-          }
-        })
       }
     }
-   });
- });
-</script>
+  });
 
+    Surfly.session(settings)
+    .on('session_started', function(session, event) {
+      // send the pin to the current session
+      document.getElementById("idP").innerHTML=session.pin;
+    }).startLeader();
+  }
+</script>
 ```
 
 <div align="center">
