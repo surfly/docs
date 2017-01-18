@@ -21,19 +21,19 @@ As you can see below, after adding the widget code to our website, allowing requ
 
 ``` javascript
 <script>
-(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-(window,document,'script','Surfly');
+  (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+  l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+  l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+  (window,document,'script','Surfly');
 
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
-    if (init.success) {
+  window.addEventListener('DOMContentLoaded', function() {
+    Surfly.init({widget_key:'**your widget key here**'}, function(init) {
+      if (init.success) {
       // display the default Surfly button
-      Surfly.button();
-	}
-   });
- });
+        Surfly.button();
+	    }
+    });
+  });
 </script>
 ```
 <div align="center">
@@ -84,9 +84,9 @@ We create our button, and add an onclick event to start a Surfly session:
 ```
 ``` html
 <script>
-function sessionStart(){
-  Surfly.session({chat_box_color: "#87cefa", videochat: false}).startLeader();
-}      
+  function sessionStart(){
+    Surfly.session({chat_box_color: "#87cefa", videochat: false}).startLeader();
+  }      
 </script>
 ```
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
@@ -110,9 +110,9 @@ Then, we adapt our custom button (get_help_button in our example), adding an onc
 ```
 ``` html
 <script>
-function landing(){
-  window.location.href = '/landing_page';
-}      
+  function landing(){
+    window.location.href = '/landing_page';
+  }      
 </script>
 ```
 
@@ -124,36 +124,37 @@ Finally, we would like the user to be redirected to the home page when an agent 
 
 ``` html
 <script>
-var settings={widget_key:'**your widget key here**', block_until_agent_joins: false};
+var settings = {widget_key:'**your widget key here**', block_until_agent_joins: false};
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
-        if (init.success) {
-          if(!Surfly.currentSession){
-              Surfly.session()
-                .on('session_started', function(session, event) {
-                   // send the pin to the current session
-                   session.sendMessage({pin: session.pin}, window.location.origin);
-                 })
-                .on('viewer_joined', function(session, event) {
-                    // if a viewer joins and they are the first then redirect to home page
-                    if(event.count==1){
-                      session.relocate("https://example.com");
-                    }
-                }).startLeader();
-          } else {
-              Surfly.currentSession
-              .on('message', function(session, event) {
-                  if (window.location.origin === event.origin) {
-                    var id = JSON.stringify(event.data);
-                    id = id.substring(8,12);
-                    // we display the pin on the button
-                    document.getElementById("id_button").innerHTML=id;
-                  }
-              })
+    if (init.success) {
+      if(!Surfly.currentSession){
+        Surfly.session()
+        .on('session_started', function(session, event) {
+          // display the session-id
+          session.sendMessage({pin: session.pin}, window.location.origin);
+        })
+        .on('viewer_joined', function(session, event) {
+          // if a viewer joins and they are the first then redirect to home page
+          if(event.count == 1){
+            session.relocate("https://example.com");
           }
-        }
-   });
-});
+        }).startLeader();
+      }
+      else {
+        Surfly.currentSession
+          .on('message', function(session, event) {
+            if (window.location.origin === event.origin) {
+              var id = JSON.stringify(event.data);
+              id = id.substring(8,12);
+              // we display the pin on the button
+              document.getElementById("id_button").innerHTML = id;
+            }
+          })
+        }
+      }
+    });
+  });
 </script>
 ```
 
@@ -221,11 +222,11 @@ Then, we can simply add the Zopim snippet code provided to all the pages of our 
 <!-- Adding Zopim Live Chat -->
 <script>
 	if(!window.__surfly){
-	    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-	    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-	    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-	    $.src="//v2.zopim.com/?**key**";z.t=+new Date;$.
-	    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+	  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+	  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+	  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+	  $.src="//v2.zopim.com/?**key**";z.t=+new Date;$.
+	  type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	}
 </script>
 <!--End of Zopim Live Chat Script-->

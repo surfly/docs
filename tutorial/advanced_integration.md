@@ -16,20 +16,21 @@ In our example, we will use soft session continuation. We need to add the snippe
 
 ``` html
 <script>
-(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-(window,document,'script','Surfly');
+  (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+  l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+  l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+  (window,document,'script','Surfly');
 
-var settings={
-widget_key:'**your widget key here**',
-cookie_transfer_enabled: true,
-cookie_transfer_proxying: false
-}
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-   });
- });
+  var settings = {
+    widget_key:'**your widget key here**',
+    cookie_transfer_enabled: true,
+    cookie_transfer_proxying: false
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    Surfly.init(settings, function(init) {
+    });
+  });
 </script>
 ```
 Once these options have been set, session continuation is ensured and, for instance, it is possible to use cookies to store information about an order placed from within a Surfly session.
@@ -58,24 +59,24 @@ We now want to retrieve the login details of our customers and pass them on as m
 In our example, we pass the name and email of the user to the ```Surfly.session().startLeader()``` function :
 ``` html
 <script>
-var metadata = {"name": "RoseF","email": "rose@example.com"};
+  var metadata = {"name": "RoseF","email": "rose@example.com"};
 
-var settings = {
-widget_key:'**your widget key here**',
-block_until_agent_joins: false,
-end_of_session_popup_url: "https://example.com/survey",
-cookie_transfer_enabled: true,
-cookie_transfer_proxying: false,
-blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
-};
+  var settings = {
+    widget_key:'**your widget key here**',
+    block_until_agent_joins: false,
+    end_of_session_popup_url: "https://example.com/survey",
+    cookie_transfer_enabled: true,
+    cookie_transfer_proxying: false,
+    blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
+  };
 
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-    if (init.success) {
-      Surfly.session().startLeader(null, metadata);
-	}
+  window.addEventListener('DOMContentLoaded', function() {
+    Surfly.init(settings, function(init) {
+      if (init.success) {
+        Surfly.session().startLeader(null, metadata);
+	    }
+    });
   });
-});
 </script>
 ```
 {% em color="#ffffe0" %}Please note:
@@ -96,34 +97,36 @@ In our example below, we disable the 'Order' button when the agent is in control
 
 ``` html
 <script>
-var settings = {
-widget_key:'**your widget key here**',
-cookie_transfer_enabled: true,
-cookie_transfer_proxying: false
-};
+  var settings = {
+    widget_key:'**your widget key here**',
+    cookie_transfer_enabled: true,
+    cookie_transfer_proxying: false
+  };
 
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-    if (init.success) {
-      var sess;
-      if(!Surfly.currentSession){
-		sess = Surfly.session();
-      } else {
-		sess = Surfly.currentSession;
-      }
-      sess.on('control', function(session, event) {
-            var element = document.getElementById("order_button");
-    		if (event.to==0) {
-       			element.disabled = false;
-       			element.style.backgroundColor = "#87cefa";
-            } else {
-       			element.disabled = true;
-       			element.style.backgroundColor = "#e6fff2";
-    		}
-      })
-	}
+  window.addEventListener('DOMContentLoaded', function() {
+    Surfly.init(settings, function(init) {
+      if (init.success) {
+        var sess;
+        if(!Surfly.currentSession){
+  		    sess = Surfly.session();
+        }
+        else {
+  		    sess = Surfly.currentSession;
+        }
+        sess.on('control', function(session, event) {
+          var element = document.getElementById("order_button");
+      		if (event.to == 0) {
+         		element.disabled = false;
+         		element.style.backgroundColor = "#87cefa";
+          }
+          else {
+         		element.disabled = true;
+         		element.style.backgroundColor = "#e6fff2";
+      		}
+        })
+  	  }
+    });
   });
-});
 </script>
 ```
 
@@ -166,9 +169,9 @@ window.addEventListener('DOMContentLoaded', function() {
 Finally, we define the action triggered by the button, in this case, ending the current Surfly session:
 ``` html
 <script>
-function exitSession(){
-  Surfly.currentSession.end('https://example.com');
-}
+  function exitSession(){
+    Surfly.currentSession.end('https://example.com');
+  }
 </script>
 ```
 
@@ -202,7 +205,7 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
     if (init.success) {
       if (!Surfly.currentSession) {
         // Display start-button
-        document.getElementById("start-button").style.display="block";
+        document.getElementById("start-button").style.display = "block";
       }
     }
   });
@@ -221,14 +224,14 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
 
     Surfly.session(settings)
     .on('session_started', function(session, event) {
-        // inside the session, show exit button
-        document.getElementById('exit_button').style.display="block";
-        // send the pin to the current session
-        document.getElementById("id-cover").style.display="none";
-        var showId = document.getElementById("start-button");
-        showId.style.display = "block";
-        showId.textContent = session.pin;
-      }).startLeader();
+      // inside the session, show exit button
+      document.getElementById('exit_button').style.display = "block";
+      // replace the cake image with the session-id
+      document.getElementById("id-cover").style.display = "none";
+      var showId = document.getElementById("start-button");
+      showId.style.display = "block";
+      showId.textContent = session.pin;
+    }).startLeader();
   }
 </script>
 ```

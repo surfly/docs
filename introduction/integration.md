@@ -29,20 +29,20 @@ It should look something like the following:
 
 ``` javascript
 <script>
-(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-(window,document,'script','Surfly');
+  (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+  l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+  l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+  (window,document,'script','Surfly');
 
-//You will also need to initialize the session
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
-    if (init.success) {
+//You will also need to initialize the Surfly API
+  window.addEventListener('DOMContentLoaded', function() {
+    Surfly.init({widget_key:'**your widget key here**'}, function(init) {
+      if (init.success) {
       // display the default Surfly button
-      Surfly.button();
-  }
-   });
- });
+        Surfly.button();
+      }
+    });
+  });
 </script>
 ```
 
