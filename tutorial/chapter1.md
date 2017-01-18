@@ -124,25 +124,25 @@ Finally, we would like the user to be redirected to the home page when an agent 
 
 ``` html
 <script>
-var settings = {widget_key:'**your widget key here**', block_until_agent_joins: false};
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-    if (init.success) {
-      if(!Surfly.currentSession){
-        Surfly.session()
-        .on('session_started', function(session, event) {
+  var settings = {widget_key:'**your widget key here**', block_until_agent_joins: false};
+  window.addEventListener('DOMContentLoaded', function() {
+    Surfly.init(settings, function(init) {
+      if (init.success) {
+        if(!Surfly.currentSession){
+          Surfly.session()
+          .on('session_started', function(session, event) {
           // display the session-id
-          session.sendMessage({pin: session.pin}, window.location.origin);
-        })
-        .on('viewer_joined', function(session, event) {
+            session.sendMessage({pin: session.pin}, window.location.origin);
+          })
+          .on('viewer_joined', function(session, event) {
           // if a viewer joins and they are the first then redirect to home page
-          if(event.count == 1){
-            session.relocate("https://example.com");
-          }
-        }).startLeader();
-      }
-      else {
-        Surfly.currentSession
+            if(event.count == 1){
+              session.relocate("https://example.com");
+            }
+          }).startLeader();
+        }
+        else {
+          Surfly.currentSession
           .on('message', function(session, event) {
             if (window.location.origin === event.origin) {
               var id = JSON.stringify(event.data);
