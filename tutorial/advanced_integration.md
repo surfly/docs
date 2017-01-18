@@ -74,7 +74,7 @@ In our example, we pass the name and email of the user to the ```Surfly.session(
     Surfly.init(settings, function(init) {
       if (init.success) {
         Surfly.session().startLeader(null, metadata);
-	    }
+      }
     });
   });
 </script>
@@ -108,23 +108,23 @@ In our example below, we disable the 'Order' button when the agent is in control
       if (init.success) {
         var sess;
         if(!Surfly.currentSession){
-  		    sess = Surfly.session();
+          sess = Surfly.session();
         }
         else {
-  		    sess = Surfly.currentSession;
+          sess = Surfly.currentSession;
         }
         sess.on('control', function(session, event) {
           var element = document.getElementById("order_button");
-      		if (event.to == 0) {
-         		element.disabled = false;
-         		element.style.backgroundColor = "#87cefa";
+          if (event.to == 0) {
+            element.disabled = false;
+            element.style.backgroundColor = "#87cefa";
           }
           else {
-         		element.disabled = true;
-         		element.style.backgroundColor = "#e6fff2";
-      		}
+            element.disabled = true;
+            element.style.backgroundColor = "#e6fff2";
+          }
         })
-  	  }
+      }
     });
   });
 </script>
@@ -162,7 +162,7 @@ window.addEventListener('DOMContentLoaded', function() {
         // inside the session, show exit button
         document.getElementById('exit_button').style.display="block";
       }
-	}
+  }
   });
 });
 ```

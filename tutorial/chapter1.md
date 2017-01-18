@@ -31,7 +31,7 @@ As you can see below, after adding the widget code to our website, allowing requ
       if (init.success) {
       // display the default Surfly button
         Surfly.button();
-	    }
+      }
     });
   });
 </script>
@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
         // inside the session, hide the get help section (of id 'get_help')
         document.getElementById('get_help').style.display="none";
       }
-	}
+  }
   });
 });
 ```
@@ -221,13 +221,13 @@ Then, we can simply add the Zopim snippet code provided to all the pages of our 
 ``` html
 <!-- Adding Zopim Live Chat -->
 <script>
-	if(!window.__surfly){
-	  window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-	  d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-	  _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-	  $.src="//v2.zopim.com/?**key**";z.t=+new Date;$.
-	  type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-	}
+  if(!window.__surfly){
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="//v2.zopim.com/?**key**";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+  }
 </script>
 <!--End of Zopim Live Chat Script-->
 ```
