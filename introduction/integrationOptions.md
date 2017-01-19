@@ -87,7 +87,7 @@ Field masking allows you to protect data during the Surfly session. If the user 
 
 [Blacklisting](../widgetOptions/widgetOptions.md#restrictions) is used to ban users from a select few webpages, whereas whitelisting is more restrictive, and allows access only to the pages specified in the code snippet.
 
-{% em color="#ffffe0" %}Please note:
+{% emcolor="#ffffe0" %} Please note:
 This option is only available to enterprise clients.  {% endem %}
 
 

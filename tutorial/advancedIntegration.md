@@ -14,7 +14,7 @@ There are two types of session continuations:
 
 In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page):
 
-``` html
+``` javascript
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
@@ -58,7 +58,7 @@ As can be seen above, we chose to redirect the user to our custom restricted pag
 We now want to retrieve the login details of our customers and pass them on as metadata in the queue so that, for instance, our agents can greet them by name.
 
 In our example, we pass the name and email of the user to the ```Surfly.session().startLeader()``` function :
-``` html
+``` javascript
 <script>
 var metadata = {"name": "RoseF","email": "rose@example.com"};
 
@@ -87,8 +87,8 @@ As can be seen below, the agents can directly see this information from the 'Que
 
 ![Queue panel](http://i.imgur.com/OLyMKD5.png)
 
-<a name="control_appearance"></a>
-#### Change appearance based on who is in control{#control_appearance}
+<a name="controlAppearance"></a>
+#### Change appearance based on who is in control{#controlAppearance}
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order.
 
@@ -96,7 +96,7 @@ To do this, you can use the ```.on()``` function of the [SurflySession API](../j
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm payment:
 
-``` html
+``` javascript
 <script>
 var settings = {
 widget_key:'**your widget key here**',
@@ -130,8 +130,8 @@ window.addEventListener('DOMContentLoaded', function() {
 ```
 
 
-<a name="remove-ui"></a>
-### Customize Surfly's look and feel{#remove-ui}
+<a name="removeUi"></a>
+### Customize Surfly's look and feel{#removeUi}
 
 Finally, we wanted to completely strip everything down to [co-browsing](https://www.surfly.com/). By default, Surfly provides more tools and features than our example application needs. With the ```docked_only``` option we've already removed a few features we don't need but we'd like to go even further. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
@@ -142,8 +142,8 @@ Add this option to your list of settings:
 ui_off: true // make Surfly invisible
 ```
 
-<a name="exit_button"></a>
-#### Create your own exit button{#exit_button}
+<a name="exitButton"></a>
+#### Create your own exit button{#exitButton}
 
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
 
@@ -178,11 +178,11 @@ function exitSession(){
 ![exit button](http://i.imgur.com/BhlkW24.png)
 
 {% em color="#ffffe0" %}Please note:
-Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealth_mode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
+Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealthMode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
 
 
-<a name="small_button"></a>
-#### Session ID approach{#small_button}
+<a name="smallButton"></a>
+#### Session ID approach{#smallButton}
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage.
 
@@ -192,7 +192,7 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
 
 First, we create a button that will start a session when clicked:
 
-``` html
+``` javascript
 <button id="idP" onclick="sessionStart()"><img id="showId" src= **our_cake_image**></button>
 
 <script type="text/javascript">
@@ -218,9 +218,9 @@ function sessionStart() {
 {% em color="#ffffe0" %}Please note:
 In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
 
-We then use the [SurflySession API](../javascript-api/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
+We then use the [SurflySession API](../javascriptApi/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
 
-``` html
+``` javascript
 <script>
 window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widget_key:'**your widget key here**'}, function(init) {

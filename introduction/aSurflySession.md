@@ -78,7 +78,7 @@ The [drawing option](../widgetOptions.md/#drawingOptions) allows the followers w
 
 In our example website we adapted the code so that the drawing mode would be permanent, and that the color of the drawings would be in our blue theme color.
 
-![changed drawing color](https://raw.github.com/surfly/tutorial/master/screens/drawing.png)
+![drawing mode](../assets/surfly-drawing-mode.png)
 
 <a name="customiseControlSwitching"></a>
 #### Control switching{#customiseControlSwitching}
@@ -99,9 +99,4 @@ When a user is being queue'd, you may want to pass some information to the agent
 
 You may want to show a user another page after the session has finished. In this case, you can either show a popup window within the host website, or you can send them to another webpage.
 
-In the example below, we have chosen to show the leader a popup url within their screen after the session has finished.
-The user can exit the popup window by clicking on the cross to the top right of the window.
-
-![Popup url](https://raw.github.com/surfly/tutorial/master/screens/popup-cake.png)
-
-This can be especially useful if you wish to receive feedback by asking your visitors to fill out a survey when the session ends.
+You could for instance, show the leader a popup url within their screen after the session has finished. This can be especially useful if you wish to receive feedback by asking your visitors to fill out a survey when the session ends.

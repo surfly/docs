@@ -122,7 +122,7 @@ To do this, we use the [SurflySession API](../javascript-api/surflysessionApi.md
 
 Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 
-``` html
+``` javascript
 <script>
   var settings = {widget_key:'**your widget key here**', block_until_agent_joins: false};
   window.addEventListener('DOMContentLoaded', function() {
@@ -218,7 +218,7 @@ docked_only: true
 We could also use the 'ui_off' option instead of 'docked_only' considering that in both cases the Surfly's default chatbox is disabled.  {% endem %}
 
 Then, we can simply add the Zopim snippet code provided to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
-``` html
+``` javascript
 <!-- Adding Zopim Live Chat -->
 <script>
   if(!window.__surfly){

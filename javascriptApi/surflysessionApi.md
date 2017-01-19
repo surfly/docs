@@ -1,5 +1,5 @@
 [![logo](../../images/logosmall.png)](https://www.surfly.com/)
-# SurflySession API
+# Detecting a Surfly Session
 
 
 <a name="startLeader"></a>
