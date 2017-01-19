@@ -17,15 +17,15 @@ The documentation aims to give you a good understanding of the co-browsing funct
 
 The introduction explains what a Surfly co-browsing session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
-##### [Integration guide](./the_surfly_tutorial.md)
+##### [Integration guide](./theSurflyTutorial.md)
 
 If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application.
 
-##### [Surfly options](./widget_options.md)
+##### [Surfly options](./widgetOptions.md)
 
 Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
 
-##### [Javascript API](./javascript_api.md) and [the REST API](http://docs.surfly.apiary.io/)
+##### [Javascript API](./javascriptApi.md) and [the REST API](http://docs.surfly.apiary.io/)
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API. The [REST API](http://docs.surfly.apiary.io/) documentation includes several code examples illustrating how it can be used.
 

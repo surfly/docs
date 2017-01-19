@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
-<a name="widget-options"></a>
+<a name="widgetOptions"></a>
 # Surfly options
 
 
@@ -15,8 +15,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 
 <h3 class="table_class">Control Panel Options</h3>
 
-<a name="chatbox-options"></a>
-##### Chat box options{#chatbox-options}
+<a name="chatboxOptions"></a>
+##### Chat box options{#chatboxOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | chat_box_color | #eb777f | Color of UI (chatbox) elements inside the session |
@@ -28,8 +28,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
 | allow_control_switching | true | Allow user to give control to another participant |
 
-<a name="drawing-options"></a>
-#####Drawing options{#drawing_options}
+<a name="drawingOptions"></a>
+#####Drawing options{#drawingOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | drawing_color | "default" | "Magic marker" color |
@@ -37,15 +37,15 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | drawing_width | 15 | "Magic marker" width |
 | drawing_timeout | 3| "Magic marker" timeout |
 
-<a name="video-options"></a>
+<a name="videoOptions"></a>
 ##### Video{#video-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | videochat | true | Is videochat allowed? |
 | low_quality_video | false | Video quality is limited to 320x240@15 |
 
-<a name="filesharing-options"></a>
-##### File sharing{#filesharing-options}
+<a name="filesharingOptions"></a>
+##### File sharing{#filesharingOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | filesharing | true | Allow file sharing |
@@ -59,7 +59,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | enable_sounds | true | Enable sound notifications |
 
 <a name="button_table"></a>
-##### Button appearance{#button_table}
+##### Button appearance{#buttonTable}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | hidden | false | Do not show the button |
@@ -75,8 +75,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 
 <h3 class="table_class">Session configuration</h3>
 
-<a name="screen_options"></a>
-##### Screen options/viewport{#screen_options}
+<a name="screenOptions"></a>
+##### Screen options/viewport{#screenOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | max_height | 0  | Restrict max height of the viewport |

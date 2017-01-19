@@ -60,7 +60,7 @@ In the image below, you can see that the icons in the chat box are now in our we
 
 The API has an [extensive list of widget options](../widget_options.md).
 
-#### Create your own button{#start_button}
+#### Create your own button{#startButton}
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
 
@@ -118,7 +118,7 @@ Then, we adapt our custom button (get_help_button in our example), adding an onc
 
 We then need to add Surfly's snippet code to the landing page so that we can automatically start a session from this page.
 We also want to display the unique identifier (or pin) on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
-To do this, we use the [SurflySession API](../javascript-api/surflysession_api.md) to get the pin.
+To do this, we use the [SurflySession API](../javascript-api/surflysessionApi.md) to get the pin.
 
 Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 

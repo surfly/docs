@@ -6,7 +6,7 @@
 
 To use the Surfly JS API, you will first need to include our snippet on your webpage:
 
-```html
+```javascript
 <script>
 (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
 l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
@@ -60,4 +60,4 @@ Surfly.init(settings, function(initResult) {
 });
 ```
 
-For more examples of common use cases, see the [Examples](javascript-api/examples.md) page
+For more examples of common use cases, see the [Examples](javascriptApi/examples.md) page

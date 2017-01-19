@@ -4,7 +4,7 @@ Here you can find some examples for common integration scenarios.
 
 All the code snippets below assume that Surfly widget script is loaded, and the API is already initialized with the `Surfly.init()` function. For example:
 
-```html
+```javascript
 <head>
 ...
 <script>
@@ -46,7 +46,7 @@ The code above will open a cobrowsing frame to `https://example.com`.
 ### Custom button
 We provide a convenient `Surfly.button()` function for rendering a nice default button. But it really doesn't do much, and it is very easy to make a custom button:
 
-```html
+```javascript
 <button class="my-custom-button">Start cobrowsing!</button>
 
 <script>
@@ -114,7 +114,7 @@ Surfly.session({hide_until_agent_joins: true})
 It is possible to create a session beforehand (with `.SurflySession.create()` or [the REST API](http://docs.surfly.apiary.io/), and open a session later using the JS API. Note that you must open a leader link within 30 seconds after its creation, or it will expire.
 
 On the leader side:
-```html
+```javascript
 <iframe id="my-custom-iframe"></iframe>
 <script>
 Surfly.session()
@@ -126,7 +126,7 @@ Surfly.session()
 ```
 
 On the follower side:
-```html
+```javascript
 <iframe id="my-custom-iframe"></iframe>
 <script>
 // followerLink is received from the session creator
@@ -202,7 +202,7 @@ Surfly.button();
 
 Should you choose the "service code" flow, you can use the `hide_until_agent_joins` setting to delay a session window from opening.
 
-```html
+```javascript
 <button id="mybutton">Get service code</button>
 <script>
 var myBut = document.getElementById('mybutton');

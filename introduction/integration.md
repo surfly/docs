@@ -1,7 +1,7 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # Adding Surfly to your Website
 
-<a name="add_surfly"></a>
+<a name="addSurfly"></a>
 
 If you integrate Surfly into your website, you can use it in several ways. For example, you may want to use Surfly as a support tool or as a social tool. Using Surfly for social co-browsing would allow customers to, for example, browse and shop on your website with a friend.
 
@@ -48,7 +48,7 @@ It should look something like the following:
 
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
 
-**Please see the [integration guide](../the_surfly_tutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
+**Please see the [integration guide](../theSurflyTutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
 
 ###### Responding to incoming requests
 

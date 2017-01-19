@@ -86,8 +86,8 @@ As can be seen below, the agents can directly see this information from the 'Que
 
 ![Queue panel](http://i.imgur.com/OLyMKD5.png)
 
-<a name="control_appearance"></a>
-#### Change appearance based on who is in control{#control_appearance}
+<a name="controlAppearance"></a>
+#### Change appearance based on who is in control{#controlAppearance}
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order.
 
@@ -131,8 +131,8 @@ In our example below, we disable the 'Order' button when the agent is in control
 ```
 
 
-<a name="remove-ui"></a>
-### Customize Surfly's look and feel{#remove-ui}
+<a name="removeUi"></a>
+### Customize Surfly's look and feel{#removeUi}
 
 Finally, we wanted to completely strip everything down to [co-browsing](https://www.surfly.com/). By default, Surfly provides more tools and features than our example application needs. With the ```docked_only``` option we've already removed a few features we don't need but we'd like to go even further. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
@@ -143,8 +143,8 @@ Add this option to your list of settings:
 ui_off: true // make Surfly invisible
 ```
 
-<a name="exit_button"></a>
-#### Create your own exit button{#exit_button}
+<a name="exitButton"></a>
+#### Create your own exit button{#exitButton}
 
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
 
@@ -182,8 +182,8 @@ Finally, we define the action triggered by the button, in this case, ending the 
 Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealth_mode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
 
 
-<a name="small_button"></a>
-#### Session ID approach{#small_button}
+<a name="smallButton"></a>
+#### Session ID approach{#smallButton}
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage.
 
