@@ -2,17 +2,17 @@
 # Customisation Options
 <a name="integrationOptions"></a>
 
-Surfly can be fully customised to suit your needs. Many of these changes can be achieved by just changing the settings on the admin panel, but they are also available through our API. 
+Surfly can be fully customised to suit your needs. Many of these changes can be achieved by just changing the settings on the admin panel, but they are also available through our API.
 
 This section covers:
- - [Button appearance](<#button_appearance>)
- - [Stealth mode](<#stealth_mode>)
- - [Customise your own button](<#surflystart_anchor>)
- - [Session ID](<#session_id>)
- - [Create an invite page](<#auto_start>)
- - [Integrate with existing chat solutions](<#integrate_chat>)
- - [Session continuation](<#session_continuation>)
- - [Security Features](<#security_features>)
+ - [Button appearance](<#buttonAppearance>)
+ - [Stealth mode](<#stealthMode>)
+ - [Customise your own button](<#surflystartAnchor>)
+ - [Session ID](<#sessionId>)
+ - [Create an invite page](<#autoStart>)
+ - [Integrate with existing chat solutions](<#integrateChat>)
+ - [Session continuation](<#sessionContinuation>)
+ - [Security Features](<#securityFeatures>)
  - [Add information to a session log](<#sessionLogInfo>)
  - [Customising the website appearance depending on who is in control](<#customiseAppearanceForUser>)
 
@@ -45,7 +45,7 @@ Once the agent has the session ID, they can simply enter it into the start sessi
 <a name="autoStart"></a>
 #### Create an invite page{#autoStart}
 
-You can set .startLeader() in the code snippet so that a webpage will automatically start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. This red banner may also be removed through a simple change to the code snippet. 
+You can set .startLeader() in the code snippet so that a webpage will automatically start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. This red banner may also be removed through a simple change to the code snippet.
 
 Further customisation is also possible through the use of the [REST API](https://www.surfly.com/cobrowsing-api/). For example, you can use it to detect whether a Surfly session has started or not, and alter your websites' appearance based on this. For instance, if we're in a Surfly session, we can get the unique queue code which identifies the user who initiated the session and display it.
 
@@ -71,7 +71,7 @@ Simply add the code snippet to the page including your chat solution, and alter 
 <a name="securityFeatures"></a>
 #### Security Features{#securityFeatures}
 
-Surfly's security features allow you the option to protect users' data during the session, and, if required, restrict access to selected webpages. 
+Surfly's security features allow you the option to protect users' data during the session, and, if required, restrict access to selected webpages.
 
  - [Field masking](<#fieldMasking>)
  - [Blacklisting and Whitelisting](<#blacklistWhitelist>)
@@ -79,7 +79,7 @@ Surfly's security features allow you the option to protect users' data during th
 <a name="fieldMasking"></a>
 ##### Field masking{#fieldMasking}
 
-Field masking allows you to protect data during the Surfly session. If the user is required to enter sensitive information (such as payment details), into your website, you can hide that input from the session followers. 
+Field masking allows you to protect data during the Surfly session. If the user is required to enter sensitive information (such as payment details), into your website, you can hide that input from the session followers.
 
 
 <a name="blacklistWhitelist"></a>
@@ -87,14 +87,14 @@ Field masking allows you to protect data during the Surfly session. If the user 
 
 [Blacklisting](../widgetOptions/widgetOptions.md#restrictions) is used to ban users from a select few webpages, whereas whitelisting is more restrictive, and allows access only to the pages specified in the code snippet.
 
-{% em color="#ffffe0" %}Please note: 
+{% em color="#ffffe0" %}Please note:
 This option is only available to enterprise clients.  {% endem %}
 
 
 <a name="sessionLogInfo"></a>
 #### Add information to the session log{#sessionLogInfo}
 
-You can choose to add a custom message to the Surfly logs in order to register an event. For example, you may want to track the amount of times an individual agent has made a sale. 
+You can choose to add a custom message to the Surfly logs in order to register an event. For example, you may want to track the amount of times an individual agent has made a sale.
 
 <a name="customiseAppearanceForUser"></a>
 #### Customise website appearance depending on who is in control{#customiseAppearanceForUser}
@@ -102,4 +102,4 @@ You can choose to add a custom message to the Surfly logs in order to register a
 Surfly sessions are always comprised of one leader, and one or more followers. The leader is the only person who can click or type during the session, but you can switch control between the leader and the followers. You can specify the features you want to give to the leader and the followers during the session by enabling or disabling icons in the dock. Moreover, you can adapt the status of the elements of a page depending on who is in control. For example, you may want to make a button clickable only when the leader (the person who initiated the session) is in control.
 
 
- 
+
