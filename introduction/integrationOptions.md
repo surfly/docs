@@ -100,6 +100,3 @@ You can choose to add a custom message to the Surfly logs in order to register a
 #### Customise website appearance depending on who is in control{#customiseAppearanceForUser}
 
 Surfly sessions are always comprised of one leader, and one or more followers. The leader is the only person who can click or type during the session, but you can switch control between the leader and the followers. You can specify the features you want to give to the leader and the followers during the session by enabling or disabling icons in the dock. Moreover, you can adapt the status of the elements of a page depending on who is in control. For example, you may want to make a button clickable only when the leader (the person who initiated the session) is in control.
-
-
-
