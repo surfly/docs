@@ -9,7 +9,7 @@ This FAQ is divided into several sections:
   - [Technology](<#technology>)
   - [Security](<#security>)
   - [Pricing](<#pricing>)
-  - [Initial setup](<#initial_setup>)
+  - [Initial setup](<#initialSetup>)
 
 
 ## Functionality{#functionality}
@@ -112,7 +112,7 @@ A few things differentiate us from screensharing:
 
 
 **Do I have to put the code snippet on every page?**
-<p>Unless you want to use session continuation, you only need to put the code snippet on the pages you wish to start a session from. If you would like to use [session continuation](introduction/integration_options.md/#session_continuation), the code snippet should be on every page you want to transfer cookies from.</p>
+<p>Unless you want to use session continuation, you only need to put the code snippet on the pages you wish to start a session from. If you would like to use [session continuation](introduction/integrationOptions.md/#sessionContinuation), the code snippet should be on every page you want to transfer cookies from.</p>
 
 
 **How do I take a call?**
@@ -122,11 +122,11 @@ A few things differentiate us from screensharing:
 **How can I customise Surfly's widget?**
 
 
-You can either specify your preferences directly in the code snippet (see the [widget options](widget_options/reference.md) for more details), or from the 'options' panel in your Surfly account. 
+You can either specify your preferences directly in the code snippet (see the [widget options](widgetOptions/reference.md) for more details), or from the 'options' panel in your Surfly account.
 
 ![options panel](images/options-panel.jpg)
 
-Changes to the widget code have priority over changes to the code snippet. 
+Changes to the widget code have priority over changes to the code snippet.
 
 
 
