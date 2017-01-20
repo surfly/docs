@@ -78,7 +78,7 @@ The [drawing option](../widgetOptions.md/#drawingOptions) allows the followers w
 
 In our example website we adapted the code so that the drawing mode would be permanent, and that the color of the drawings would be in our blue theme color.
 
-![drawing mode](../assets/surfly-drawing-mode.png)
+![drawing mode](../images/surfly-drawing-mode.png)
 
 <a name="customiseControlSwitching"></a>
 #### Control switching{#customiseControlSwitching}
