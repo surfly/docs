@@ -6,20 +6,20 @@
 <a name="receipt"></a>
 #### Enabling session continuation
 
-If we want to make sure that the transition into a Surfly session is as smooth as possible we can enable [session continuation](../widget_options/widget_options.md/#session_continuation). This will allow the session state to be synchronized so that session data (for example, a user's cart or login status) will be maintained even when the session ends.
+If we want to make sure that the transition into a Surfly session is as smooth as possible we can enable [session continuation](../widgetOptions/widgetOptions.md/#sessionContinuation). This will allow the session state to be synchronized so that session data (for example, a user's cart or login status) will be maintained even when the session ends.
 
 There are two types of session continuations:
- - [full session continuation](../widget_options/widget_options.md/#full_session): allows the transfer of all cookies, including http-only cookies
- - [soft session continuation](../widget_options/widget_options.md#soft_session): excludes http only cookies
+ - [full session continuation](../widgetOptions/widgetOptions.md/#fullSession): allows the transfer of all cookies, including http-only cookies
+ - [soft session continuation](../widgetOptions/widgetOptions.md#softSession): excludes http only cookies
 
 In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page):
 
 ``` javascript
 <script>
-(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-(window,document,'script','Surfly');
+  (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+  l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+  l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+  (window,document,'script','Surfly');
 </script>
 
 <script>
@@ -43,7 +43,7 @@ Once these options have been set, session continuation is ensured and, for insta
 
 We want to restrict access from certain pages during the session.
 
-In order to restrict access to this specific page (in our case, its path is '/about'), we can add the [blacklist](../widget_options/widget_options.md/#restrictions) option to our settings list:
+In order to restrict access to this specific page (in our case, its path is '/about'), we can add the [blacklist](../widgetOptions/widgetOptions.md/#restrictions) option to our settings list:
 ``` javascript
 blacklist: JSON.stringify([{"pattern":".*/about.*","redirect":"https://example.com/restricted"}])};
 ```
@@ -60,24 +60,22 @@ We now want to retrieve the login details of our customers and pass them on as m
 In our example, we pass the name and email of the user to the ```Surfly.session().startLeader()``` function :
 ``` javascript
 <script>
-var metadata = {"name": "RoseF","email": "rose@example.com"};
+  var metadata = {"name": "RoseF","email": "rose@example.com"};
 
-var settings = {
-widget_key:'**your widget key here**',
-block_until_agent_joins: false,
-end_of_session_popup_url: "https://example.com/survey",
-cookie_transfer_enabled: true,
-cookie_transfer_proxying: false,
-blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
-};
+  var settings = {
+    widget_key:'**your widget key here**',
+    block_until_agent_joins: false,
+    end_of_session_popup_url: "https://example.com/survey",
+    cookie_transfer_enabled: true,
+    cookie_transfer_proxying: false,
+    blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}])
+  };
 
-window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
       Surfly.session().startLeader(null, metadata);
-  }
+    }
   });
-});
 </script>
 ```
 {% em color="#ffffe0" %}Please note:
@@ -98,37 +96,36 @@ In our example below, we disable the 'Order' button when the agent is in control
 
 ``` javascript
 <script>
-var settings = {
-widget_key:'**your widget key here**',
-cookie_transfer_enabled: true,
-cookie_transfer_proxying: false
-};
+  var settings = {
+    widget_key:'**your widget key here**',
+    cookie_transfer_enabled: true,
+    cookie_transfer_proxying: false
+  };
 
-window.addEventListener('DOMContentLoaded', function() {
   Surfly.init(settings, function(init) {
     if (init.success) {
       var sess;
       if(!Surfly.currentSession){
-    sess = Surfly.session();
-      } else {
-    sess = Surfly.currentSession;
+        sess = Surfly.session();
+      }
+      else {
+        sess = Surfly.currentSession;
       }
       sess.on('control', function(session, event) {
-            var element = document.getElementById("order_button");
+        var element = document.getElementById("order_button");
         if (event.to==0) {
-            element.disabled = false;
-            element.style.backgroundColor = "#87cefa";
-            } else {
-            element.disabled = true;
-            element.style.backgroundColor = "#e6fff2";
+          element.disabled = false;
+          element.style.backgroundColor = "#87cefa";
+        }
+        else {
+          element.disabled = true;
+          element.style.backgroundColor = "#e6fff2";
         }
       })
-  }
+    }
   });
-});
 </script>
 ```
-
 
 <a name="removeUi"></a>
 ### Customize Surfly's look and feel{#removeUi}
@@ -154,23 +151,21 @@ First, we have to make sure that the page we are adding the button to contains t
 ```
 Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
 ``` javascript
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init(settings, function(init) {
-    if (init.success) {
-      if (Surfly.currentSession) {
-        // inside the session, show exit button
-        document.getElementById('exit_button').style.visibility="visible";
-      }
+Surfly.init(settings, function(init) {
+  if (init.success) {
+    if (Surfly.currentSession) {
+      // inside the session, show exit button
+      document.getElementById('exit_button').style.display="block";
+    }
   }
-  });
 });
 ```
 Finally, we define the action triggered by the button, in this case, ending the current Surfly session:
 ``` html
 <script>
-function exitSession(){
-  Surfly.currentSession.end('https://example.com');
-}
+  function exitSession(){
+    Surfly.currentSession.end('https://example.com');
+  }
 </script>
 ```
 
@@ -188,63 +183,48 @@ Adding Zopim to our website has made text chat the primary method of communicati
 
 The flow of our website has now completely changed. Instead of people initiating a session and waiting for an agent to join them, visitors will first use Zopim when they need help. If, during the conversation, the agent decides a Surfly session is required, they can direct the user to the bottom of the webpage to click on the cake.
 
-When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  That way, here is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue.
+When the cake icon is clicked, the user will be added to the queue, and the session id will be shown in place of the cake. The user can pass that number on to the agent, who will then be able to use the id to join the correct session in the queue.  That way, there is a seamless transition from the text chat into the co-browsing session, reducing the potential waiting time in the queue.
 
-First, we create a button that will start a session when clicked:
+* First, we create a button that will start a session when clicked
+* We then initialize the session
+* In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.
+* Finally, we use the [SurflySession API](../javascriptApi/surflysessionApi.md) to retrieve the pin and display it in place of the cake icon:
 
 ``` javascript
-<button id="idP" onclick="sessionStart()"><img id="showId" src= **our_cake_image**></button>
+<button id="start-button" onclick="sessionStart()"><img id="id-cover" src="**our_cake_image**"></button>
 
 <script type="text/javascript">
-function sessionStart() {
-  var settings = {
-  block_until_agent_joins: false,
-  end_of_session_popup_url: "https://example.com",
-  docked_only: true,
-  cookie_transfer_enabled: true,
-  cookie_transfer_proxying: false,
-  blacklist: JSON.stringify([{"pattern": ".*/about.*", "redirect": "https://example.com/#restricted"}]),
-  ui_off: true
-  };
-
-  Surfly.session(settings)
-  .on('session_started', function(session, event) {
-      // send the pin to the current session
-      session.sendMessage({pin: session.pin}, window.location.origin);
-   }).startLeader();
-}
-</script>
-```
-{% em color="#ffffe0" %}Please note:
-In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.   {% endem %}
-
-We then use the [SurflySession API](../javascriptApi/surflysession_api.md) to retrieve the pin and display it in place of the cake icon:
-
-``` javascript
-<script>
-window.addEventListener('DOMContentLoaded', function() {
   Surfly.init({widget_key:'**your widget key here**'}, function(init) {
     if (init.success) {
-      if (Surfly.currentSession) {
-        // inside the session, show exit button
-        document.getElementById('exit_button').style.visibility="visible";
-        // behaviour of small button at the bottom of the page
-        document.getElementById("showId").style.visibility='hidden';
-
-        Surfly.currentSession
-        .on('message', function(session, event) {
-          if(event.origin == window.location.origin){
-            var id = JSON.stringify(event.data);
-            id = id.substring(8,12);
-            document.getElementById("idP").innerHTML=id;
-          }
-        })
+      if (!Surfly.currentSession) {
+        // Display start-button
+        document.getElementById("start-button").style.display="block";
       }
     }
-   });
- });
-</script>
+  });
 
+  function sessionStart() {
+    var settings = {
+      block_until_agent_joins: false,
+      hide_until_agent_joins: true,
+      end_of_session_popup_url: "https://example.com",
+      docked_only: true,
+      cookie_transfer_enabled: true,
+      ui_off: true
+    };
+
+    Surfly.session(settings)
+    .on('session_started', function(session, event) {
+      // inside the session, show exit button
+      document.getElementById('exit_button').style.display="block";
+      // replace the cake image with the session-id
+      document.getElementById("id-cover").style.display="none";
+      var showId = document.getElementById("start-button");
+      showId.style.display = "block";
+      showId.textContent = session.pin;
+    }).startLeader();
+  }
+</script>
 ```
 
 <div align="center">
