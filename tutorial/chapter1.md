@@ -124,43 +124,45 @@ Finally, we would like the user to be redirected to the home page when an agent 
 
 ``` javascript
 <script>
-  var settings = {widget_key:'**your widget key here**', block_until_agent_joins: false};
-  window.addEventListener('DOMContentLoaded', function() {
-    Surfly.init(settings, function(init) {
-      if (init.success) {
-        if(!Surfly.currentSession){
-          Surfly.session()
-          .on('session_started', function(session, event) {
-          // display the session-id
-            session.sendMessage({pin: session.pin}, window.location.origin);
-          })
-          .on('viewer_joined', function(session, event) {
-          // if a viewer joins and they are the first then redirect to home page
-            if(event.count == 1){
-              session.relocate("https://example.com");
-            }
-          }).startLeader();
-        }
-        else {
-          Surfly.currentSession
-          .on('message', function(session, event) {
-            if (window.location.origin === event.origin) {
-              var id = JSON.stringify(event.data);
-              id = id.substring(8,12);
-              // we display the pin on the button
-              document.getElementById("id_button").innerHTML = id;
-            }
-          })
-        }
-      }
-    });
+  (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+  l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+  l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+  (window,document,'script','Surfly');
+
+  var settings = {
+    block_until_agent_joins: false,
+    hide_until_agent_joins: true,
+    splash: false
+  };
+
+  Surfly.init({widget_key: '0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
+    if (init.success) {
+      if(!Surfly.currentSession){
+        Surfly.session(settings)
+        .on('viewer_joined', function(session, event) {
+        // if a viewer joins and they are the first then redirect to home page
+          if(event.count == 1){
+            session.relocate("https://surfly.com");
+          }
+        })
+        .on('session_started', function(session, event) {
+        // display the session-id
+          var showId = document.getElementById("session-id");
+          showId.style.display = "block";
+          showId.textContent = session.pin;
+        }).startLeader();
+      }
+      else {
+        document.getElementById('cancel-session').style.display = "block";
+      }
+    }
   });
 </script>
 ```
 
 We now have our own personalised landing page to greet our customers:
 
-![landing page](http://i.imgur.com/QqgL0Wo.jpg)
+![landing page](../images/cake-shop-landing.png)
 
 
 

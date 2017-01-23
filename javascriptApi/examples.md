@@ -47,27 +47,24 @@ The code above will open a cobrowsing frame to `https://example.com`.
 We provide a convenient `Surfly.button()` function for rendering a nice default button. But it really doesn't do much, and it is very easy to make a custom button:
 
 ```javascript
-<button class="my-custom-button">Start cobrowsing!</button>
+<button class="my-custom-button" style="display: none">Start cobrowsing!</button>
 
 <script>
-  var myBut = document.querySelector('.my-custom-button');
+  var myBtn = document.getElementById('my-custom-button');
 
-  if (Surfly.currentSession) {
-    // inside the session, just hide the button element
-    myBut.style.display = 'none';
-  } else {
+  if (!Surfly.currentSession) {
     // outside the cobrowsing session, button click will start a session
-    myBut.addEventListener('click', function() {
+    mtBtn.style.display = "block";
+    myBtn.addEventListener('click', function() {
       Surfly.session().startLeader();
     });
-
     // you can use Surfly.agentAvailable to hide the button
     // when there is no support agent available
     setInterval(function(){
       if (Surfly.agentAvailable) {
-        myBut.style.display = 'block';
+        myBtn.style.display = 'block';
       } else {
-        myBut.style.display = 'none';
+        myBtn.style.display = 'none';
       }
     }, 10000);
   }
@@ -79,7 +76,7 @@ If you need full control over the session window (e.g. if you want to build a cu
 ```html
 <iframe class="my-custom-cobrowsing-window"></iframe>
 <script>
-Surfly.session().startLeader('.my-custom-cobrowsing-window');
+  Surfly.session().startLeader('.my-custom-cobrowsing-window');
 </script>
 ```
 
@@ -117,10 +114,10 @@ On the leader side:
 ```javascript
 <iframe id="my-custom-iframe"></iframe>
 <script>
-Surfly.session()
-  .on('session_created', function(session) {
-    console.log(session.followerLink);   // here you could send a join link to the other user
-  })
+  Surfly.session()
+    .on('session_created', function(session) {
+      console.log(session.followerLink);   // here you could send a join link to the other user
+    })
   .startLeader('#my-custom-iframe');
 </script>
 ```
@@ -130,7 +127,7 @@ On the follower side:
 <iframe id="my-custom-iframe"></iframe>
 <script>
 // followerLink is received from the session creator
-Surfly.session(null, followerLink).startFollower('#my-custom-iframe');
+  Surfly.session(null, followerLink).startFollower('#my-custom-iframe');
 </script>
 ```
 
@@ -151,11 +148,13 @@ Surfly.button({
 
 ### Communication with the cobrowsing window
 While the Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need the Surfly widget to be loaded on both pages. The `targetOrigin` and `srcOrigin` parameters allow you to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
+
 ```javascript
 if (!Surfly.currentSession) {
   // open a cobrowsing session and set the message handler
 
-  Surfly.session().on('message', function(session, event) {
+  Surfly.session()
+  .on('message', function(session, event) {
     if (window.location.origin === event.origin) {
       console.log('page from the session says:', event.data);
       // reply to the message
@@ -165,15 +164,13 @@ if (!Surfly.currentSession) {
       );
     }
   }).startLeader();
-
-} else {
-  // from inside a cobrowsing window, send a message to the outer scope:
-
+}
+else {
+// from inside a cobrowsing window, send a message to the outer scope:
   Surfly.currentSession.sendMessage(
     {foo: 'fire in the hole!'},
     window.location.origin
   );
-
 }
 ```
 
@@ -194,7 +191,7 @@ For many visual customizations, overriding default CSS styles is enough:
 </style>
 
 <script>
-Surfly.button();
+  Surfly.button();
 </script>
 ```
 
@@ -205,14 +202,14 @@ Should you choose the "service code" flow, you can use the `hide_until_agent_joi
 ```javascript
 <button id="mybutton">Get service code</button>
 <script>
-var myBut = document.getElementById('mybutton');
-myBut.addEventListener('click', function() {
-  Surfly.session({hide_until_agent_joins: true})
+  var myBtn = document.getElementById('mybutton');
+  myBtn.addEventListener('click', function() {
+    Surfly.session({hide_until_agent_joins: true})
     .on('session_started', function(sess) {
       myBut.value = sess.pin;
       myBut.disabled = true;
-    })
-    .startLeader();
-});
+    }).startLeader();
+  });
 </script>
+
 ```
