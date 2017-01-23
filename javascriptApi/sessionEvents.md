@@ -72,6 +72,13 @@ triggered when the message is received. Parameters:
 
 <hr />
 
+<a name="user_activity"></a>
+> user_activity
+
+triggered when master clicks, moves mouse, or presses any key. Triggered once per second if activity is present.
+
+<hr />
+
 <a name="relocated"></a>
 > relocated
 
