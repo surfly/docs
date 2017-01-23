@@ -38,7 +38,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | drawing_timeout | 3| "Magic marker" timeout |
 
 <a name="videoOptions"></a>
-##### Video{#video-options}
+##### Video{#videoOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | videochat | true | Is videochat allowed? |
@@ -92,7 +92,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | blacklist | "[]" | (enterprise only) Restrict access to the specific resources.|
 | whitelist | "[]" | (enterprise only) Allow access only to the specific resources. |
 
-More information on [restrictions](./widget_options/widget_options.md/#restrictions)
+More information on [restrictions](./widgetOptions/widgetOptions.md/#restrictions)
 
 <h3 class="table_class">Session Interaction</h3>
 
@@ -116,7 +116,7 @@ More information on [restrictions](./widget_options/widget_options.md/#restricti
 |  cookie_transfer_proxying | true | |
 |  cookie_transfer_urls | | | |
 
-More information on [session continuation](./widget_options/widget_options.md/#session_continuation)
+More information on [session continuation](./widgetOptions/widgetOptions.md/#sessionContinuation)
 
 ##### Session end
 |  Option | Default | Description |

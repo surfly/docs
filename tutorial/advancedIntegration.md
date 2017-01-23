@@ -23,15 +23,15 @@ In our example, we will use soft session continuation. We need to add the snippe
 </script>
 
 <script>
-var settings={
-widget_key:'**your widget key here**',
-cookie_transfer_enabled: true,
-cookie_transfer_proxying: false
-}
-window.addEventListener('DOMContentLoaded', function() {
+ var settings={
+    widget_key:'**your widget key here**',
+    cookie_transfer_enabled: true,
+    cookie_transfer_proxying: false
+  }
+
   Surfly.init(settings, function(init) {
-   });
- });
+  });
+
 </script>
 ```
 Once these options have been set, session continuation is ensured and, for instance, it is possible to use cookies to store information about an order placed from within a Surfly session.
@@ -147,7 +147,7 @@ We already have our own start button and landing page, but now that we have remo
 In our example, we chose to create our own exit session button and add it to all the necessary pages.
 First, we have to make sure that the page we are adding the button to contains the snippet code and then we can add our custom button:
 ``` html
-<button class="button" id="exit_button" style="visibility:hidden" onclick="exitSession()">Exit session</button>
+<button class="button" id="exit_button" style="display: none" onclick="exitSession()">Exit session</button>
 ```
 Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
 ``` javascript
