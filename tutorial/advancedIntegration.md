@@ -20,10 +20,8 @@ In our example, we will use soft session continuation. We need to add the snippe
   l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
   l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
   (window,document,'script','Surfly');
-</script>
 
-<script>
- var settings={
+  var settings={
     widget_key:'**your widget key here**',
     cookie_transfer_enabled: true,
     cookie_transfer_proxying: false
@@ -145,36 +143,35 @@ ui_off: true // make Surfly invisible
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
 
 In our example, we chose to create our own exit session button and add it to all the necessary pages.
-First, we have to make sure that the page we are adding the button to contains the snippet code and then we can add our custom button:
-``` html
-<button class="button" id="exit_button" style="display: none" onclick="exitSession()">Exit session</button>
-```
-Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session:
+Make sure that the page you are adding the button to contains the snippet code.
+
+* First we add our custom button
+* Considering that it's an exit button, we don't want it to be shown when the customer isn't in a session.  We can easily make sure that the exit button is visible only when there's an on-going Surfly session
+* Finally, we define the action triggered by the button, in this case, a function that ends the Surfly session and redirects the user to a different page (this is of course optional).
+
 ``` javascript
-Surfly.init(settings, function(init) {
-  if (init.success) {
-    if (Surfly.currentSession) {
-      // inside the session, show exit button
-      document.getElementById('exit_button').style.display="block";
-    }
-  }
-});
-```
-Finally, we define the action triggered by the button, in this case, ending the current Surfly session:
-``` html
+<button class="button" id="exit_button" style="display: none" onclick="exitSession()">Exit session</button>
+
 <script>
+  Surfly.init(settings, function(init) {
+    if (init.success) {
+      if (Surfly.currentSession) {
+        // inside the session, show exit button
+        document.getElementById('exit_button').style.display="block";
+      }
+    }
+  });
+
   function exitSession(){
     Surfly.currentSession.end('https://example.com');
   }
 </script>
 ```
 
-
 ![exit button](http://i.imgur.com/BhlkW24.png)
 
 {% em color="#ffffe0" %}Please note:
 Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealthMode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
-
 
 <a name="smallButton"></a>
 #### Session ID approach{#smallButton}
