@@ -17,18 +17,25 @@ The documentation aims to give you a good understanding of the co-browsing funct
 
 The introduction explains what a Surfly co-browsing session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
-##### [Integration guide](./theSurflyTutorial.md)
+##### [Basic integration with admin panel](./integration.md)
 
-If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application.
+To test out a basic implementation of Surfly, you can follow this guide to quickly get you started.
+
+##### [Javascript API integration guide](./theSurflyTutorial.md)
+
+Follow our step by step guide as we use our JavaScript API to integrate Surfly into our example application.
+
+##### [JavaScript API reference](./javascriptApi.md)
+
+For a deeper integration of Surfly, and a list of the functions available, please see the Javascript API reference.
+
+##### [REST API](http://docs.surfly.apiary.io/)
+
+Our REST documentation includes several code examples illustrating how it can be used.
 
 ##### [Surfly options](./widgetOptions.md)
 
-Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
-
-##### [Javascript API](./javascriptApi.md) and [the REST API](http://docs.surfly.apiary.io/)
-
-For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API. The [REST API](http://docs.surfly.apiary.io/) documentation includes several code examples illustrating how it can be used.
-
+Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly admin account. If the options panel and the code snippet have conflicting settings, the settings in the code snippet have priority.
 
 ##### [FAQ](./faqs.md)
 

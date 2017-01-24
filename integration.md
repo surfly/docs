@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](/images/logosmall.png)</a>
-# Adding Surfly to your Website
+# Basic Integration with Admin Panel
 
 <a name="addSurfly"></a>
 
@@ -34,13 +34,11 @@ It should look something like the following:
   (window,document,'script','Surfly');
 
 //You will also need to initialize the Surfly API
-  window.addEventListener('DOMContentLoaded', function() {
-    Surfly.init({widget_key:'**your widget key here**'}, function(init) {
-      if (init.success) {
-      // display the default Surfly button
-        Surfly.button();
-      }
-    });
+  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
+    if (init.success) {
+    // display the default Surfly button
+      Surfly.button();
+    }
   });
 </script>
 ```

@@ -26,13 +26,11 @@ As you can see below, after adding the widget code to our website, allowing requ
   l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
   (window,document,'script','Surfly');
 
-  window.addEventListener('DOMContentLoaded', function() {
-    Surfly.init({widget_key:'**your widget key here**'}, function(init) {
-      if (init.success) {
-      // display the default Surfly button
-        Surfly.button();
-      }
-    });
+  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
+    if (init.success) {
+    // display the default Surfly button
+      Surfly.button();
+    }
   });
 </script>
 ```
@@ -135,7 +133,7 @@ Finally, we would like the user to be redirected to the home page when an agent 
     splash: false
   };
 
-  Surfly.init({widget_key: '0c17c102b943457a82838fe64a5a0a0d'}, function(init) {
+  Surfly.init({widget_key: '** Your widget key **'}, function(init) {
     if (init.success) {
       if(!Surfly.currentSession){
         Surfly.session(settings)
@@ -193,8 +191,8 @@ We will use the ```end_of_session_popup_url``` option to point to the url of our
 
 ``` javascript
 var settings={
-widget_key:'**your widget key here**',
-end_of_session_popup_url: "https://example.com/survey"
+  widget_key:'**your widget key here**',
+  end_of_session_popup_url: "https://example.com/survey"
 };
 ```
 
@@ -212,8 +210,8 @@ First, we need to remove Surfly's default chat box by adding the ```docked_only`
 
 ``` javascript
 var settings={
-widget_key:'**your widget key here**',
-docked_only: true
+  widget_key:'**your widget key here**',
+  docked_only: true
 };
 ```
 {% em color="#ffffe0" %}Please note:
@@ -221,17 +219,18 @@ We could also use the 'ui_off' option instead of 'docked_only' considering that 
 
 Then, we can simply add the Zopim snippet code provided to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
 ``` javascript
-<!-- Adding Zopim Live Chat -->
+
 <script>
   if(!window.__surfly){
+    // Adding Zopim Live Chat
     window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
     d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
     _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
     $.src="//v2.zopim.com/?**key**";z.t=+new Date;$.
     type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    // End of Zopim Live Chat Script
   }
 </script>
-<!--End of Zopim Live Chat Script-->
 ```
 {% em color="#ffffe0" %}Please note:
 We added a condition in the beginning of the script to make sure that a second Zopim chat window doesn't open when a Surfly session starts.{% endem %}

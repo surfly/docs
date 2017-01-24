@@ -2,9 +2,9 @@
 
 * [Overview](README.md)
 * [Introduction](introduction.md)
-  * [A Surfly session](introduction/aSurflySession.md)
   * [Customisation Options](introduction/integrationOptions.md)
 * [Basic Integration with Admin Panel](integration.md)
+  * [A Surfly session](basicIntegration/aSurflySession.md)
 * [JavaScript API Integration guide](theSurflyTutorial.md)
   * [Basic Integration](tutorial/chapter1.md)
   * [Advanced Integration](tutorial/advancedIntegration.md)

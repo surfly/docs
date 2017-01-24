@@ -13,12 +13,10 @@ All the code snippets below assume that Surfly widget script is loaded, and the 
   l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
   (window,document,'script','Surfly');
 
-  window.addEventListener('DOMContentLoaded', function() {
-    Surfly.init({widget_key: '**your key here**'}, function(init) {
-      if (init.success) {
-        // use Surfly API here
-      }
-    });
+  Surfly.init({widget_key: '**your key here**'}, function(init) {
+    if (init.success) {
+      // use Surfly API here
+    }
   });
 </script>
 ...
@@ -85,25 +83,25 @@ Surfly comes with a basic Support queue functionality in the web dashboard. Howe
 
 ```javascript
 Surfly.session({hide_until_agent_joins: true})
-  .on('session_started', function(session) {
-    // at this moment, cobrowsing window has been opened.
-    // User doesn't see it because `hide_until_agent_joins` is set to true
+.on('session_started', function(session) {
+  // at this moment, cobrowsing window has been opened.
+  // User doesn't see it because `hide_until_agent_joins` is set to true
 
-    // enqueueUser();
-  })
-  .on('viewer_joined', function(session, event) {
-    // support agent has joined the session
-    // session window appears for the user automatically
+  // enqueueUser();
+})
+.on('viewer_joined', function(session, event) {
+  / support agent has joined the session
+  // session window appears for the user automatically
 
-    // dequeueUser();
-    // agentBusy();
-  })
-  .on('session_ended', function(session) {
-    // cobrowsing session has ended
+  // dequeueUser();
+  // agentBusy();
+})
+.on('session_ended', function(session) {
+  // cobrowsing session has ended
 
-    // freeAgent();
-  })
-  .startLeader();
+  // freeAgent();
+})
+.startLeader();
 ```
 
 ### Joining a session from an existing link
