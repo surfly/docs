@@ -45,7 +45,7 @@ It should look something like the following:
 
 When you open your webpage, you should see a 'get live help' button at the bottom left of your screen. If a visitor clicks on this, they will be queue'd for support. You can answer this request via the Surfly admin panel.
 
-**Please see the [integration guide](../theSurflyTutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
+**Please see the [Javascript API integration guide](../theSurflyTutorial.md) for a detailed step by step guide on how to integrate Surfly into your website.**
 
 ###### Responding to incoming requests
 

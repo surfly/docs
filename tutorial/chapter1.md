@@ -56,35 +56,34 @@ In the image below, you can see that the icons in the chat box are now in our we
 
  ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
-The API has an [extensive list of widget options](../widget_options.md).
+The API has an [extensive list of widget options](../widgetOptions.md).
 
 #### Create your own button{#startButton}
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
 
-First, we need to remove Surfly's button and to only show our custom button when we're outside of a Surfly session:
-``` javascript
-window.addEventListener('DOMContentLoaded', function() {
-  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
-    if (init.success) {
-      if (Surfly.currentSession) {
-        // inside the session, hide the get help section (of id 'get_help')
-        document.getElementById('get_help').style.display="none";
-      }
-  }
-  });
-});
-```
-We create our button, and add an onclick event to start a Surfly session:
+First of all, if you have followed the previous steps and added the basic Surfly button to your website, make sure you remove this code and replace it with the following.
 
-``` html
-<button class="my-custom-button" id="get_help_button" onclick="sessionStart()"></button>
-```
-``` html
+* So first We create our own button and add an onclick event to start a Surfly session
+* Second, we initialize the SUrfly API
+* Then we write a function that sets the options we want to add to a Surfly session, as well as starts a session
+
+``` javascript
+<button class="my-custom-button" id="get_help_button" style="display: none" onclick="sessionStart()"></button>
+
 <script>
   function sessionStart(){
     Surfly.session({chat_box_color: "#87cefa", videochat: false}).startLeader();
-  }      
+  }
+
+  Surfly.init({widget_key:'**your widget key here**'}, function(init) {
+    if (init.success) {
+      if (!Surfly.currentSession) {
+        // inside the session, hide the get help section (of id 'get_help')
+        document.getElementById('get_help_button').style.display="block";
+      }
+    }
+  });       
 </script>
 ```
 In particular, we have chosen to use the image of a cake as a get help button for our customers:
@@ -99,33 +98,25 @@ When a visitor initiates a session they are queue'd and, by default, have to wai
 
 The flow will be as follows: the user clicks on the support button and is shown a page with their unique pin code, and our own custom text. When an agent joins them, the user is redirected to the home page.
 
-In order to use such a page, we first remove the red banner blocking the session by setting the ```block_until_agent_joins``` option to ```false``` in the settings options.
-
-Then, we adapt our custom button (get_help_button in our example), adding an onclick event which will redirect the user to our landing page:
-
-``` html
-<button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
-```
-``` html
-<script>
-  function landing(){
-    window.location.href = '/landing_page';
-  }      
-</script>
-```
-
-We then need to add Surfly's snippet code to the landing page so that we can automatically start a session from this page.
-We also want to display the unique identifier (or pin) on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
+* First, we adapt our custom button (get_help_button in our example), replacing the previous sessionStart() function with an onclick event that will redirect the user to our landing page
+* Then we need to add Surfly's snippet code to the landing page so that we can automatically start a session from this page.
+* To be able to use the landing page, we have to remove the red banner blocking the session by setting the ```block_until_agent_joins``` option to ```false``` in the settings options.
+* Also, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
+* Finally, we want to display the unique identifier (or pin) on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
 To do this, we use the [SurflySession API](../javascript-api/surflysessionApi.md) to get the pin.
 
-Finally, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
-
 ``` javascript
+<button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
+
 <script>
   (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
   l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
   l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
   (window,document,'script','Surfly');
+
+  function landing(){
+    window.location.href = '/landing_page';
+  }
 
   var settings = {
     block_until_agent_joins: false,
@@ -161,8 +152,6 @@ Finally, we would like the user to be redirected to the home page when an agent 
 We now have our own personalised landing page to greet our customers:
 
 ![landing page](../images/cake-shop-landing.png)
-
-
 
 <a name="session"></a>
 #### Field masking{#session}
@@ -206,21 +195,24 @@ You can also pass the url as a parameter in ```Surfly.session().end( [redirectUr
 
 Finally, we'd also like to be able to continue chatting with our clients in a Surfly session. In our application, we were using Zopim prior to integrating Surfly.
 
-First, we need to remove Surfly's default chat box by adding the ```docked_only``` option to the session settings:
+* First, we need to remove Surfly's default chat box by adding the ```docked_only``` option to the session settings:
 
-``` javascript
-var settings={
-  widget_key:'**your widget key here**',
-  docked_only: true
-};
-```
 {% em color="#ffffe0" %}Please note:
 We could also use the 'ui_off' option instead of 'docked_only' considering that in both cases the Surfly's default chatbox is disabled.  {% endem %}
 
-Then, we can simply add the Zopim snippet code provided to all the pages of our website and we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter/exit one:
-``` javascript
+* Then, we can simply add the Zopim snippet code provided to all the pages of our website, so that we'll be able to communicate with our clients inside and outside of a Surfly session without any disturbance when we enter or exit one.
 
+{% em color="#ffffe0" %}Please note:
+We added a condition in the beginning of the script to make sure that a second Zopim chat window doesn't open when a Surfly session starts.{% endem %}
+![zopim](http://i.imgur.com/urbhGSh.png)
+
+``` javascript
 <script>
+  var settings={
+    widget_key:'**your widget key here**',
+    docked_only: true
+  };
+
   if(!window.__surfly){
     // Adding Zopim Live Chat
     window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -232,7 +224,4 @@ Then, we can simply add the Zopim snippet code provided to all the pages of our 
   }
 </script>
 ```
-{% em color="#ffffe0" %}Please note:
-We added a condition in the beginning of the script to make sure that a second Zopim chat window doesn't open when a Surfly session starts.{% endem %}
-![zopim](http://i.imgur.com/urbhGSh.png)
 

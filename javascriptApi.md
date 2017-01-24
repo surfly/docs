@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
-# Javascript API
+# Javascript API Reference
 
 ## Quickstart
 ### 1. Load Surfly widget
