@@ -1,4 +1,4 @@
-# Customising Session Behaviour
+# Customizing Session Behaviour
 
 SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method. Callback functions should accept two arguments:
     - `SurflySession` instance that triggered the event
@@ -20,7 +20,7 @@ function startCobrowsing () {
 #### Available events
 
 <a name="sessionCreated"></a>
-> session_created 
+> session_created
 
 triggered when a session is created (usually after `SurflySession.create()` call).
 

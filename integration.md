@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](/images/logosmall.png)</a>
-# Basic Integration with Admin Panel
+# Let's get started
 
 <a name="addSurfly"></a>
 
@@ -7,7 +7,7 @@ If you integrate Surfly into your website, you can use it in several ways. For e
 
 If you choose to use Surfly primarily as a support option, visitors will be able to click the 'get live help' button to request a session. They will then be queue'd until an agent (the person who receives the call) joins them. By default, the person who initiated the session is the leader and the agent who takes the call will be the follower, however you can choose to swap control at any time during the session.
 
-To integrate Surfly, you need to add the Surfly code snippet into your website's source code. You can then use the 'options' panel from the admin page to customise the way the session looks and behaves, or you can further integrate and customise Surfly within you website using the [Javascript API](javascriptApi.md) or [REST API](http://docs.surfly.apiary.io/). The options panel allows you to save your preferred options. If you do decide to use our JavaScript API to set some options, this will take priority over the settings configured in the options panel.
+To integrate Surfly, you need to add the Surfly code snippet into your website's source code. You can then use the 'options' panel from the admin page to customize the way the session looks and behaves, or you can further integrate and customize Surfly within you website using the [Javascript API](javascriptApi.md) or [REST API](http://docs.surfly.apiary.io/). The options panel allows you to save your preferred options. If you do decide to use our JavaScript API to set some options, this will take priority over the settings configured in the options panel.
 
 ![options panel](images/options-panel.jpg)
 

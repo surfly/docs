@@ -140,7 +140,7 @@ ui_off: true // make Surfly invisible
 <a name="exitButton"></a>
 #### Create your own exit button{#exitButton}
 
-We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customise the way it will look.
+We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customize the way it will look.
 
 In our example, we chose to create our own exit session button and add it to all the necessary pages.
 Make sure that the page you are adding the button to contains the snippet code.
@@ -196,31 +196,31 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
       if (!Surfly.currentSession) {
         // Display start-button
         document.getElementById("start-button").style.display="block";
+
+        function sessionStart() {
+          var settings = {
+            block_until_agent_joins: false,
+            hide_until_agent_joins: true,
+            end_of_session_popup_url: "https://example.com",
+            docked_only: true,
+            cookie_transfer_enabled: true,
+            ui_off: true
+          };
+
+          Surfly.session(settings)
+          .on('session_started', function(session, event) {
+            // inside the session, show exit button
+            document.getElementById('exit_button').style.display="block";
+            // replace the cake image with the session-id
+            document.getElementById("id-cover").style.display="none";
+            var showId = document.getElementById("start-button");
+            showId.style.display = "block";
+            showId.textContent = session.pin;
+          }).startLeader();
+        }
       }
     }
   });
-
-  function sessionStart() {
-    var settings = {
-      block_until_agent_joins: false,
-      hide_until_agent_joins: true,
-      end_of_session_popup_url: "https://example.com",
-      docked_only: true,
-      cookie_transfer_enabled: true,
-      ui_off: true
-    };
-
-    Surfly.session(settings)
-    .on('session_started', function(session, event) {
-      // inside the session, show exit button
-      document.getElementById('exit_button').style.display="block";
-      // replace the cake image with the session-id
-      document.getElementById("id-cover").style.display="none";
-      var showId = document.getElementById("start-button");
-      showId.style.display = "block";
-      showId.textContent = session.pin;
-    }).startLeader();
-  }
 </script>
 ```
 

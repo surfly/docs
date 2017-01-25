@@ -8,10 +8,10 @@ To use the Surfly JS API, you will first need to include our snippet on your web
 
 ```javascript
 <script>
-(function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-(window,document,'script','Surfly');
+  (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
+  l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
+  l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
+  (window,document,'script','Surfly');
 </script>
 ```
 
@@ -54,7 +54,8 @@ Surfly.init(settings, function(initResult) {
     console.log('All good for happy cobrowsing!');
     // it is now safe to use API
     Surfly.button();
-  } else {
+  }
+  else {
     console.log('Your browser lacks features required by Surfly');
   }
 });

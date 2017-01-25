@@ -61,7 +61,8 @@ We provide a convenient `Surfly.button()` function for rendering a nice default 
     setInterval(function(){
       if (Surfly.agentAvailable) {
         myBtn.style.display = 'block';
-      } else {
+      }
+      else {
         myBtn.style.display = 'none';
       }
     }, 10000);
@@ -209,5 +210,4 @@ Should you choose the "service code" flow, you can use the `hide_until_agent_joi
     }).startLeader();
   });
 </script>
-
 ```

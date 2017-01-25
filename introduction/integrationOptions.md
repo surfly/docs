@@ -1,20 +1,20 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# Customisation Options
+# Customization Options
 <a name="integrationOptions"></a>
 
-Surfly can be fully customised to suit your needs. Many of these changes can be achieved by just changing the settings on the admin panel, but they are also available through our API.
+Before you get started, it's good to know that Surfly can be fully customized to suit your needs. Many of these changes can be achieved by just changing the settings on the admin panel, but they are also available through our API.
 
 This section covers:
  - [Button appearance](<#buttonAppearance>)
  - [Stealth mode](<#stealthMode>)
- - [Customise your own button](<#surflystartAnchor>)
+ - [Customize your own button](<#surflystartAnchor>)
  - [Session ID](<#sessionId>)
  - [Create an invite page](<#autoStart>)
  - [Integrate with existing chat solutions](<#integrateChat>)
  - [Session continuation](<#sessionContinuation>)
  - [Security Features](<#securityFeatures>)
  - [Add information to a session log](<#sessionLogInfo>)
- - [Customising the website appearance depending on who is in control](<#customiseAppearanceForUser>)
+ - [Customizing the website appearance depending on who is in control](<#customiseAppearanceForUser>)
 
 <a name="buttonAppearance"></a>
 #### Button appearance{#buttonAppearance}
@@ -27,7 +27,7 @@ The Surfly button's default appearance is red, with white text and sits to the b
 If you do not wish to have a visual button or link on your webpage, then you can use stealth mode. This allows visitors to initiate a Surfly session simply by pressing CTRL+ENTER.  The visitor will then be queue'd, and the Surfly session will start as usual.
 
 <a name="surflystartAnchor"></a>
-#### Customise your own button{#surflystartAnchor}
+#### Customize your own button{#surflystartAnchor}
 
 If you prefer, you can use the [Javascript API](../javascriptApi.md) to completely customise your own Surfly button. As you can see in the image below, we chose to use the image of a cake as a button. If a visitor to the website clicks on it, it will lead them to a Surfly session.
 
@@ -45,9 +45,9 @@ Once the agent has the session ID, they can simply enter it into the start sessi
 <a name="autoStart"></a>
 #### Create an invite page{#autoStart}
 
-You can set .startLeader() in the code snippet so that a webpage will automatically start a Surfly session. This option allows you to fully customise your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. This red banner may also be removed through a simple change to the code snippet.
+You can set .startLeader() in the code snippet so that a webpage will automatically start a Surfly session. This option allows you to fully customize your invite page. The page will display the default red Surfly banner, letting the visitor know that they have been queue'd. This red banner may also be removed through a simple change to the code snippet.
 
-Further customisation is also possible through the use of the [REST API](http://docs.surfly.apiary.io/). For example, you can use it to detect whether a Surfly session has started or not, and alter your websites' appearance based on this. For instance, if we're in a Surfly session, we can get the unique queue code which identifies the user who initiated the session and display it.
+Further customization is also possible through the use of the [REST API](http://docs.surfly.apiary.io/). For example, you can use it to detect whether a Surfly session has started or not, and alter your websites' appearance based on this. For instance, if we're in a Surfly session, we can get the unique queue code which identifies the user who initiated the session and display it.
 
 As can be seen below, we were then able to set up our own invite page:
 
@@ -57,7 +57,7 @@ As can be seen below, we were then able to set up our own invite page:
 <a name="integrateChat"></a>
 #### Integrate with existing chat solutions{#integrateChat}
 
-It is also possible to integrate Surfly with existing chat solutions. For example, if you have already established your own video or text chat, you may want to add Surfly's co-browsing functionality to this. In this case, Surfly can be integrated in such a way so that it acts as a transparent addition to your product and allows you to entirely customise the appearance of the session.
+It is also possible to integrate Surfly with existing chat solutions. For example, if you have already established your own video or text chat, you may want to add Surfly's co-browsing functionality to this. In this case, Surfly can be integrated in such a way so that it acts as a transparent addition to your product and allows you to entirely customize the appearance of the session.
 
 Simply add the code snippet to the page including your chat solution, and alter it to either remove the user interface entirely, or to display a dock with session control options (more information on the docked_only option can be found [here](../widget_options.md#chatbox-options). You will then be able to use Surfly's co-browsing functionality in addition to your own chat solution.
 
@@ -97,6 +97,6 @@ This option is only available to enterprise clients.  {% endem %}
 You can choose to add a custom message to the Surfly logs in order to register an event. For example, you may want to track the amount of times an individual agent has made a sale.
 
 <a name="customiseAppearanceForUser"></a>
-#### Customise website appearance depending on who is in control{#customiseAppearanceForUser}
+#### Customize website appearance depending on who is in control{#customiseAppearanceForUser}
 
 Surfly sessions are always comprised of one leader, and one or more followers. The leader is the only person who can click or type during the session, but you can switch control between the leader and the followers. You can specify the features you want to give to the leader and the followers during the session by enabling or disabling icons in the dock. Moreover, you can adapt the status of the elements of a page depending on who is in control. For example, you may want to make a button clickable only when the leader (the person who initiated the session) is in control.

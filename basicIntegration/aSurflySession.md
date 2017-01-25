@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# A Surfly session
+# A Basic Surfly Session
 
 
 The main points covered in this section are:
@@ -57,7 +57,7 @@ If you do not want to have the chat functionality, you can either use dock mode 
 <a name="videoChat"></a>
 #### Video chat{#videoChat}
 
-Surfly also allows you to communicate in your session with [video chat](../widgetOptions.md/#videoOptions). You can maximise the video to full screen, or restrict the video quality. However, if you do not wish to use this functionality you can easily disable it.
+Surfly also allows you to communicate in your session with [video chat](../widgetOptions.md/#videoOptions). You can maximize the video to full screen, or restrict the video quality. However, if you do not wish to use this functionality you can easily disable it.
 
 <a name="documentSharing"></a>
 #### Document sharing{#documentSharing}

@@ -6,11 +6,11 @@
 
 ###### What is co-browsing?
 
-[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others, synchronising mouse clicks and key events. You may decide to video or text chat, share documents and highlight areas with the tool. You can start a Surfly session simply by entering the url of the website you want to browse into the 'start session' panel on your admin page. Then, invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and does not require any configuration. 
+[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others, synchronizing mouse clicks and key events. You may decide to video or text chat, share documents and highlight areas with the tool. You can start a Surfly session simply by entering the url of the website you want to browse into the 'start session' panel on your admin page. Then, invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and does not require any configuration.
 
 ![simply_browse](images/simplybrowse.jpg)
 
-However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. By doing this, you will be able to fully customize your session and use as much, or as little, of Surfly's functionality within your own product. 
+However, if you wish to use Surfly as a feature on your own website, you can also add a Surfly button to your website. By doing this, you will be able to fully customize your session and use as much, or as little, of Surfly's functionality within your own product.
 
 
 ###### During the session
@@ -19,7 +19,7 @@ During the session, the mouse arrows from all users will be visible. Initially, 
 
 ###### The Admin panel
 
-Surfly's admin panel allows you to track your users and your agents, and can be customised to suit your needs.
+Surfly's admin panel allows you to track your users and your agents, and can be customized to suit your needs.
 
 The buttons on the admin panel are:
 
@@ -27,7 +27,7 @@ The buttons on the admin panel are:
  - The 'queue' button, which gives you a list of queued users.  You can add meta-data to this panel so that the agent knows more information about the user.
  - The 'history' button gives a brief overview of your session. You can also choose to record the chat logs which will then be accessible from the history panel.
  - The 'agent' button allows you to add agents to your account, and also gives you access to some information about agents such as their ID and the amount of sessions they have joined.
- - The 'settings' button lets you change your profile settings, and also includes your account details. Here, you can review your account plan, billing and personal information. The settings button also contains your integration information, the Surfly code snippet and the REST API key. 
+ - The 'settings' button lets you change your profile settings, and also includes your account details. Here, you can review your account plan, billing and personal information. The settings button also contains your integration information, the Surfly code snippet and the REST API key.
  - The 'log out' button lets you exit the admin panel.
 
 

@@ -2,10 +2,15 @@
 
 # Basic Integration
 
+<a name="aboutSessions"></a>
+##### How the Session Works{#aboutSession}
+
+To give you a head start, it helps to know more about the basics of how a Surfly session works. First of all, the session is loaded within an iframe that rests as an invisible layer on top of the website you started a session from. So when implementing our Javascript API, it helps to figure out whether you have to place this code inside a session, or apply it to the original page. In the following chapters you will learn more about this when you read more about Surfly.session and Surfly.currentSession. Note that both create a [SurflySession object](../javascriptApi/surflyObjectApi.md). Surfly.session is used on the original page to create a session object and for instance start the session. Surfly.currentSession is used when you want the code to apply to the session that is already loaded within the iframe. You might want to implement this for example, when you want to hide the "Get Help"-button when you're inside a co-browsing session.
+
 <a name="website"></a>
 #### Cake shop website
 
-Our example application features a bespoke cake shop, specialising in personalized cakes.
+Our example application features a bespoke cake shop, specializing in personalized cakes.
 Here is a screenshot of the home page before we integrate Surfly:
 
 ![website](http://i.imgur.com/zD0dd03.jpg)
@@ -60,7 +65,7 @@ The API has an [extensive list of widget options](../widgetOptions.md).
 
 #### Create your own button{#startButton}
 
-We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customise it and control its behaviour more easily.
+We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customize it and control its behaviour more easily.
 
 First of all, if you have followed the previous steps and added the basic Surfly button to your website, make sure you remove this code and replace it with the following.
 

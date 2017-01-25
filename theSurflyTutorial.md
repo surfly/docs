@@ -1,7 +1,6 @@
 <a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
 # Javascript API Integration guide
 
-
 This tutorial guides you through the steps we take as we integrate [Surfly](https://www.surfly.com/) into our example application. We start by adding the widget code to our website, and make small adaptations to the code in order to customize the way the session behaves and appears. As we progress through the tutorial, we strip away Surfly's extra functionality, so that in our final application, Surfly acts as a transparent layer on our page.
 
 You can view the code in the [repository](https://github.com/MathildeJ/integrationGuide_commits/commits/master).
