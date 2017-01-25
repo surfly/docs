@@ -32,7 +32,7 @@ Surfly distinguishes itself by using a unique combination of Javascript and a sm
 * this request is then sent to the original site that the leader wants to co-browse
 * the website sends back the request to the Surfly proxy
 * the Surfly proxy then modifies the data so that it can be loaded into an iframe that rests on top the original page
-* both the leader and the follower now interact with the website as it is loaded within the iframe. From this point, there's only communication between the user's browsers and the proxy, and the requests don't continuously have to be sent through to the original website anymore
+* both the leader and the follower now interact with the website as it is loaded within the iframe. From this point, there's only communication between the user's browsers and the proxy, and the requests don't continuously have to be sent to the original website anymore
 
 ![surfly-scheme](../images/surfly-scheme.png)
 
@@ -40,7 +40,7 @@ This approach enables us to overcome cross-domain policies and have all elements
 
 * Surfly is safe; all connections to Surfly are encrypted and security tokens or passwords will never be sent to the follower. The secure proxy allows ‘logged-in sessions’. This means that secure sessions with session-specific resources just work. Next, we automatically make sure that all content will work correctly with the co-browsing session: even those that are not served from the same domain, such as widgets or plugins.
 * With Surfly there is no need to install any plugin or software; it just works within the browser tab.
-* With Surfly we do not share the state between the two different browsers, but we only send over the visual changes of one to the other. This makes our approach much more secure and robust.
+* We do not share the state between the two different browsers, but we only send over the visual changes of one to the other. This makes our approach much more secure and robust.
 * At Surfly we make sure that what the controller sees on their screen will be matched by all followers. This includes scroll position and the state of responsive websites.
 
 <a name="howToStart"></a>
@@ -49,7 +49,7 @@ This approach enables us to overcome cross-domain policies and have all elements
 Now it's time to start implementing Surfly. This can be done in three ways:
 
 * through a [basic integration with the admin panel](../integration.md)
-* with the Javascript API(../theSurflyTutorial.md)
+* with the [Javascript API](../theSurflyTutorial.md)
 * or with the [REST API](http://docs.surfly.apiary.io/)
 
 How you choose to implement our API depends on how deeply you want to integrate it into your website. If you want to create a demo for your team, or use our API for outbound sessions only (in the case of social shopping for instance), you could simply copy-paste our code snippet into your website and customize the session behaviour through the admin panel on your Surfly account page. For inbound sessions as well as a nice integration and customization of Surfly you could use the Javascript API. If you want to embed Surfly within your backend and for instance, implement the queue meta data within your other helpdesk software, the REST approach will fit your needs better.
