@@ -5,6 +5,7 @@
     }
 
 .book-summary ul.summary a.custom-link {
+    visibility: hidden;
     display: node;
     }
 
