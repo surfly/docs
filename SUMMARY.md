@@ -2,7 +2,7 @@
 
 * [Overview](README.md)
 * [Introduction](introduction.md)
-  *[The Technology](introduction/theTechnology.md)
+  * [The Technology](introduction/theTechnology.md)
   * [Customization Options](introduction/integrationOptions.md)
 * [Let's get started](integration.md)
   * [A Basic Surfly session](basicIntegration/aSurflySession.md)
