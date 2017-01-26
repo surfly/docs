@@ -119,16 +119,6 @@ A few things differentiate us from screensharing:
 <p>Login to your Surfly account and navigate to the "Queue panel". Click on the "take call" button next to the session request. You will enter a Surfly session with the user who initiated the request.</p>
 
 
-**How can I customize Surfly's widget?**
-
-
-You can either specify your preferences directly in the code snippet (see the [widget options](widgetOptions/reference.md) for more details), or from the 'options' panel in your Surfly account.
-
-![options panel](images/options-panel.jpg)
-
-Changes to the widget code have priority over changes to the code snippet.
-
-
 
 
 
