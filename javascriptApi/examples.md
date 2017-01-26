@@ -45,7 +45,7 @@ The code above will open a cobrowsing frame to `https://example.com`.
 We provide a convenient `Surfly.button()` function for rendering a nice default button. But it really doesn't do much, and it is very easy to make a custom button:
 
 ```javascript
-<button class="my-custom-button" style="display: none">Start cobrowsing!</button>
+<button id="my-custom-button" style="display: none">Start cobrowsing!</button>
 
 <script>
   var myBtn = document.getElementById('my-custom-button');
