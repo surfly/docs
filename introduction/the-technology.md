@@ -7,9 +7,9 @@ This chapter is dedicated to explaining how Surfly works compared to other solut
 <a name="co-browsing-screen-sharing"></a>
 ##### Co-browsing vs. Screen-sharing{#co-browsing-screen-sharing}
 
-There are countless co-browsing and screen-sharing solutions on offer. Sometimes not immediately clear what the differences are between them. First of all, let's filter down to the distinction between co-browsing and screen-sharing.
+There are countless co-browsing and screen-sharing solutions on offer. Sometimes it is not immediately clear what the differences are between them. First of all, let's filter down to the distinction between co-browsing and screen-sharing.
 
-Unlike co-browsing, screen-sharing does not limit itself to the web browser. With a screen-sharing solution you are able to share your complete desktop. There are some benefits to this, but from a security perspective it's not the safest solution. There's a bond of trust that needs to exist between users, in order for you to feel comfortable to share the contents of your computer with others.
+Unlike co-browsing, screen-sharing does not limit itself to the web browser. With a screen-sharing solution you are able to share your complete desktop. There are some benefits to this, but from a security perspective it's not the safest solution. Would you feel comfortable giving others access to your computer? So there's a bond of trust that needs to exist between users.
 
 Also, screen-sharing solutions are pixel-based, which means that the controller constantly takes snapshots of the screen and then sends these to the other side in compressed form. The drawback of this approach is that screen updates are slow and of low quality.
 
@@ -18,9 +18,9 @@ What most screen-sharing and co-browsing solutions, other than Surfly, have in c
 <a name="js-co-browsing"></a>
 ##### Javascript Solutions{#js-co-browsing}
 
-With Javascript based solutions, a widget is created in which the Javascript of the original page is being loaded. This is a time consuming process since requests from the user in control continuously need to be sent to the website, then to the co-browsing solution, then back to the controlling user as well as the followers.
+With Javascript based solutions, a widget is created in which the Javascript of the original page is being loaded. This process takes up a lot of bandwith and is therefore  since requests from the user in control continuously need to be sent to the website, then to the co-browsing solution, then back to the controlling user as well as the followers.
 
-Not only is this an exhausting process, there are many limitations to it. For example, since the iframes on the original page come from an external Javascript source, they can't be controlled by the Javascript that the co-browsing solution sends over to the users. Also, it is unsafe to handle logged-in sessions, as they are usually only possible if login credentials are sent to the followers; otherwise the followers do not have access to session-specific data.
+There are also many limitations to this approach. For example, since the iframes on the original page come from an external Javascript source, they can't be controlled by the Javascript that the co-browsing solution sends over to the users. Furthermore, audio and video are usually not synchronized. But more importantly, it is unsafe to handle logged-in sessions, as they are usually only possible if login credentials are sent to the followers; otherwise the followers do not have access to session-specific data.
 
 <a name="surfly-co-browsing"></a>
 ##### Co-browsing with Surfly{#surfly-co-browsing}

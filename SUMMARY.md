@@ -12,7 +12,7 @@
 * [Javascript API Reference](javascript-api.md)
   * [The SurflySession Object](javascript-api/surfly-object-api.md)
   * [About the Sessions](javascript-api/surfly-sessions.md)
-    * [Detecting a Surfly Session](javascript-api/surflysession-api.md)
+    * [Detecting a Surfly Session](javascript-api/surfly-session-api.md)
     * [Customizing Session Behaviour](javascript-api/session-events.md)
   * [Styling](javascript-api/styling.md)
   * [Examples](javascript-api/examples.md)
