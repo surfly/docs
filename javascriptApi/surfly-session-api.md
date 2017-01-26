@@ -1,8 +1,8 @@
 [![logo](../../images/logosmall.png)](https://www.surfly.com/)
-# Detecting a Surfly Session
+# SurflySession Object
 
 
-<a name="startLeader"></a>
+<a name="start-leader"></a>
 > SurflySession SurflySession.startLeader( [ iframeSelector ], [ userData ] )
 
 > SurflySession SurflySession.startFollower( [ iframeSelector ], [ userData ] )
@@ -84,7 +84,7 @@ log message to the Audit log (available in Surfly Dashboard after session ends).
 
 <hr />
 
-<a name="sendMessage"></a>
+<a name="send-message"></a>
 > SurflySession.sendMessage( message, targetOrigin )
 
 This function is useful when you need to establish a communication channel between your JS code on the original page, and its proxified version inside the session.
@@ -96,7 +96,7 @@ It is available on both sides, and works in symmetric way: it will trigger a `me
 
 <hr />
 
-<a name="giveControl"></a>
+<a name="give-control"></a>
 > SurflySession.giveControl( clientIndex )
 
 Provided that current user has control, give it away to the user with specified `clientIndex`. `clientIndex` is always 0 for the leader and 1 or more for followers
@@ -112,7 +112,7 @@ Navigate current tab to `newUrl`
 
 <hr />
 
-<a name="setDrawingSettings"></a>
+<a name="set-drawing-settings"></a>
 > drawingSettings SurflySession.setDrawingSettings( [drawingSettings] )
 
 _(not available inside a session)_
@@ -133,7 +133,7 @@ boolean, set to true if the session window is opened
 
 <hr />
 
-<a name="leaderLink"></a>
+<a name="leader-link"></a>
 > String SurflySession.leaderLink
 
 _(not available inside a session)_
@@ -142,7 +142,7 @@ contains a leader link. This is a URL that `SurflySession.startLeader()` opens. 
 
 <hr />
 
-<a name="followerLink"></a>
+<a name="follower-link"></a>
 > String SurflySession.followerLink
 
 _(not available inside a session)_
