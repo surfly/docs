@@ -5,7 +5,7 @@
   * [The Technology](introduction/the-technology.md)
   * [Customization Options](introduction/integration-options.md)
 * [Let's get started](integration.md)
-  * [A Basic Surfly session](basicIntegration/a-surfly-session.md)
+  * [A Basic Surfly session](basic-integration/a-surfly-session.md)
 * [JavaScript API Integration guide](the-surfly-tutorial.md)
   * [Basic Integration](tutorial/chapter1.md)
   * [Advanced Integration](tutorial/advanced-integration.md)

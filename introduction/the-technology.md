@@ -2,25 +2,25 @@
 
 # The Technology
 
-So let's dive into the technology behind Surfly. This chapter is dedicated to explaining how Surfly works compared to other solutions, as well as creating a better understanding of our co-browsing software. This will make it easier to implement our API and understand the code as you will become more familiar with the greater concepts behind it.
+This chapter is dedicated to explaining how Surfly works compared to other solutions, as well as creating a better understanding of our co-browsing software. This will make it easier to implement our API and understand the code.
 
 <a name="co-browsing-screen-sharing"></a>
 ##### Co-browsing vs. Screen-sharing{#co-browsing-screen-sharing}
 
-Nowadays there are countless co-browsing and screen-sharing solutions on offer. To select one might be a difficult task as it is sometimes not immediately clear what the differences are between them. First of all, let's filter down to the distinction between co-browsing and screen-sharing.
+There are countless co-browsing and screen-sharing solutions on offer. Sometimes not immediately clear what the differences are between them. First of all, let's filter down to the distinction between co-browsing and screen-sharing.
 
-This is an easy one: unlike co-browsing, screen-sharing does not limit itself to the web browser. With a screen-sharing solution you are able to share your complete desktop. There are some benefits to this, but from a security perspective it's not the safest solution. There's a bond of trust that needs to exist between users, in order for you to feel comfortable to share the contents of your computer with others.
+Unlike co-browsing, screen-sharing does not limit itself to the web browser. With a screen-sharing solution you are able to share your complete desktop. There are some benefits to this, but from a security perspective it's not the safest solution. There's a bond of trust that needs to exist between users, in order for you to feel comfortable to share the contents of your computer with others.
 
 Also, screen-sharing solutions are pixel-based, which means that the controller constantly takes snapshots of the screen and then sends these to the other side in compressed form. The drawback of this approach is that screen updates are slow and of low quality.
 
 What most screen-sharing and co-browsing solutions, other than Surfly, have in common, is that both rely on external software that needs to be installed by both users. This makes it unsuitable for most web situations as people are often unwilling to install extra software that circumvents the browser's security measures.
 
 <a name="js-co-browsing"></a>
-##### Javascript Solutions{#jsCoBrowsing}
+##### Javascript Solutions{#js-co-browsing}
 
 With Javascript based solutions, a widget is created in which the Javascript of the original page is being loaded. This is a time consuming process since requests from the user in control continuously need to be sent to the website, then to the co-browsing solution, then back to the controlling user as well as the followers.
 
-Not only is this an exhausting process, there are many limitations to it. For example, since the iframes on the original page come from an external Javascript source, they can't be loaded within the Javascript that the co-browsing solution sends over to the users. Also, it is unsafe to handle logged-in sessions, as they are usually only possible if login credentials are sent to the followers; otherwise the followers do not have access to session-specific data.
+Not only is this an exhausting process, there are many limitations to it. For example, since the iframes on the original page come from an external Javascript source, they can't be controlled by the Javascript that the co-browsing solution sends over to the users. Also, it is unsafe to handle logged-in sessions, as they are usually only possible if login credentials are sent to the followers; otherwise the followers do not have access to session-specific data.
 
 <a name="surfly-co-browsing"></a>
 ##### Co-browsing with Surfly{#surfly-co-browsing}
@@ -44,7 +44,7 @@ This approach enables us to overcome cross-domain policies and have all elements
 * At Surfly we make sure that what the controller sees on their screen will be matched by all followers. This includes scroll position and the state of responsive websites.
 
 <a name="how-to-start"></a>
-##### How the Session Works{#howToStart}
+##### How the Session Works{#how-to-start}
 
 Now it's time to start implementing Surfly. This can be done in three ways:
 
