@@ -6,7 +6,7 @@
 
 ###### What is co-browsing?
 
-[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others, synchronizing mouse clicks and key events. You may decide to video or text chat, share documents and highlight areas with the tool. You can start a Surfly session simply by entering the url of the website you want to browse into the 'start session' panel on your admin page. Then, invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and does not require any configuration.
+[Surfly's co-browsing technology](introduction/the-technology.md) enables you to share your browser with others, synchronizing mouse clicks and key events. You may decide to video or text chat, share documents and highlight areas with the tool. You can start a Surfly session simply by entering the url of the website you want to browse into the 'start session' panel on your admin page. Then, invite people to join you by sharing the session url with them. This is the easiest and quickest way to co-browse and does not require any configuration.
 
 ![simply_browse](images/simplybrowse.jpg)
 

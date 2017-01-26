@@ -6,11 +6,11 @@
 <a name="receipt"></a>
 #### Enabling session continuation
 
-If we want to make sure that the transition into a Surfly session is as smooth as possible we can enable [session continuation](../widgetOptions/widgetOptions.md/#sessionContinuation). This will allow the session state to be synchronized so that session data (for example, a user's cart or login status) will be maintained even when the session ends.
+If we want to make sure that the transition into a Surfly session is as smooth as possible we can enable [session continuation](../widget-options/widget-options.md/#session-continuation). This will allow the session state to be synchronized so that session data (for example, a user's cart or login status) will be maintained even when the session ends.
 
 There are two types of session continuations:
- - [full session continuation](../widgetOptions/widgetOptions.md/#fullSession): allows the transfer of all cookies, including http-only cookies
- - [soft session continuation](../widgetOptions/widgetOptions.md#softSession): excludes http only cookies
+ - [full session continuation](../widget-options/widget-options.md/#full-session): allows the transfer of all cookies, including http-only cookies
+ - [soft session continuation](../widget-options/widget-options.md#soft-session): excludes http only cookies
 
 In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page):
 
@@ -125,8 +125,8 @@ In our example below, we disable the 'Order' button when the agent is in control
 </script>
 ```
 
-<a name="removeUi"></a>
-### Customize Surfly's look and feel{#removeUi}
+<a name="remove-ui"></a>
+### Customize Surfly's look and feel{#remove-ui}
 
 Finally, we wanted to completely strip everything down to [co-browsing](https://www.surfly.com/). By default, Surfly provides more tools and features than our example application needs. With the ```docked_only``` option we've already removed a few features we don't need but we'd like to go even further. In fact, we're only interested in the co-browsing functionality and, ideally, we wish for Surfly to be completly invisible on our website.
 
@@ -138,7 +138,7 @@ ui_off: true // make Surfly invisible
 ```
 
 <a name="exitButton"></a>
-#### Create your own exit button{#exitButton}
+#### Create your own exit button{#exit-button}
 
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customize the way it will look.
 
@@ -173,8 +173,8 @@ Make sure that the page you are adding the button to contains the snippet code.
 {% em color="#ffffe0" %}Please note:
 Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealthMode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
 
-<a name="smallButton"></a>
-#### Session ID approach{#smallButton}
+<a name="small-button"></a>
+#### Session ID approach{#small-button}
 
 Adding Zopim to our website has made text chat the primary method of communication. Therefore, we no longer want our customers to start a Surfly session themselves, but rather that an agent directs them to one.  We decided to remove the landing page, and to add a smaller cake icon to the footer of our webpage.
 

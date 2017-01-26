@@ -2,8 +2,8 @@
 
 # Basic Integration
 
-<a name="aboutSessions"></a>
-##### How the Session Works{#aboutSession}
+<a name="about-sessions"></a>
+##### How the Session Works{#about-sessions}
 
 To give you a head start, it helps to know more about the basics of how a Surfly session works. First of all, the session is loaded within an iframe that rests as an invisible layer on top of the website you started a session from. So when implementing our Javascript API, it helps to figure out whether you have to place this code inside a session, or apply it to the original page. In the following chapters you will learn more about this when you read more about Surfly.session and Surfly.currentSession. Note that both create a [SurflySession object](../javascriptApi/surflyObjectApi.md). Surfly.session is used on the original page to create a session object and for instance start the session. Surfly.currentSession is used when you want the code to apply to the session that is already loaded within the iframe. You might want to implement this for example, when you want to hide the "Get Help"-button when you're inside a co-browsing session.
 

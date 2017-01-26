@@ -1,10 +1,10 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# The SurflySession Object
+# The Surfly Object
 
-<a name="currentSession"></a>
+<a name="current-session"></a>
 > SurflySession Surfly.currentSession
 
-If called from inside a session, this returns a [SurflySession](surflysession_api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
+If called from inside a session, this returns a [SurflySession](surflysession-api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
 
 ##### Example
 ```javascript
@@ -21,7 +21,7 @@ if (Surfly.currentSession) {
 ```
 <hr />
 
-<a name="agentAvailable"></a>
+<a name="agent-available"></a>
 > boolean Surfly.agentAvailable
 
 contains `true` if there is at least one company agent online
@@ -40,7 +40,7 @@ else {
 ```
 <hr />
 
-<a name="testConnection"></a>
+<a name="test-connection"></a>
 > Surfly.testConnection( callback )
 
 `Surfly.init()` succeeds only if the user's browser supports all features required by Surfly (WebSockets, for example). However, cobrowsing may still not work if there is a blocking firewall between the user and the Surfly server. In this case `SurflySession.startLeader()` and `SurflySession.startFollower()` will raise errors. This function allows to check connection without starting an actual cobrowsing session.

@@ -1,4 +1,4 @@
-# Customizing Session Behaviour
+# Session Events
 
 SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method. Callback functions should accept two arguments:
     - `SurflySession` instance that triggered the event
@@ -19,21 +19,21 @@ function startCobrowsing () {
 
 #### Available events
 
-<a name="sessionCreated"></a>
+<a name="session-created"></a>
 > session_created
 
 triggered when a session is created (usually after `SurflySession.create()` call).
 
 <hr />
 
-<a name="sessionStarted"></a>
+<a name="session-started"></a>
 > session_started
 
 triggered when a session window has been loaded (usually after a call to `SurflySession.startLeader()`). Has no additional parameters.
 
 <hr />
 
-<a name="viewerJoined"></a>
+<a name="viewer-joined"></a>
 > viewer_joined
 
 triggered when a follower joins the session. Parameters:
@@ -44,7 +44,7 @@ triggered when a follower joins the session. Parameters:
 
 <hr />
 
-<a name="viewerLeft"></a>
+<a name="viewer-left"></a>
 > viewer_left
 
 triggered when a follower leaves the session. Parameters:
@@ -55,7 +55,7 @@ triggered when a follower leaves the session. Parameters:
 
 <hr />
 
-<a name="sessionEnded"></a>
+<a name="session-ended"></a>
 > session_ended
 
 triggered when the session has been properly finished (normally by `SurflySession.end()` call)
@@ -72,7 +72,7 @@ triggered when the message is received. Parameters:
 
 <hr />
 
-<a name="user_activity"></a>
+<a name="user-activity"></a>
 > user_activity
 
 triggered when master clicks, moves mouse, or presses any key. Triggered once per second if activity is present.
@@ -111,7 +111,7 @@ triggered when control over the session has been transferred. Parameters:
 
 <hr />
 
-<a name="agentStatus"></a>
+<a name="agent-status"></a>
 > agent_status
 
 triggered when a support agent availability changes:

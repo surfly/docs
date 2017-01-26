@@ -21,11 +21,11 @@ The introduction explains what a Surfly co-browsing session is, and how it works
 
 To test out a basic implementation of Surfly, you can follow this guide to quickly get you started.
 
-##### [Javascript API integration guide](./theSurflyTutorial.md)
+##### [Javascript API integration guide](./the-surfly-tutorial.md)
 
 Follow our step by step guide as we use our JavaScript API to integrate Surfly into our example application.
 
-##### [JavaScript API reference](./javascriptApi.md)
+##### [JavaScript API reference](./javascript-api.md)
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript API reference.
 
@@ -33,7 +33,7 @@ For a deeper integration of Surfly, and a list of the functions available, pleas
 
 Our REST documentation includes several code examples illustrating how it can be used.
 
-##### [Surfly options](./widgetOptions.md)
+##### [Surfly options](./widget-options.md)
 
 Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly admin account. If the options panel and the code snippet have conflicting settings, the settings in the code snippet have priority.
 
