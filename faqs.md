@@ -9,7 +9,7 @@ This FAQ is divided into several sections:
   - [Technology](<#technology>)
   - [Security](<#security>)
   - [Pricing](<#pricing>)
-  - [Initial setup](<#initial_setup>)
+  - [Initial setup](<#initialSetup>)
 
 
 ## Functionality{#functionality}
@@ -105,28 +105,18 @@ A few things differentiate us from screensharing:
 <p>Surfly’s license is user based, this means that while any seat can create an unlimited number of sessions each seat is to be used by a single user. Sharing a single seat over multiple users is not allowed.</p>
 
 
-##Initial Setup{#initial_setup}
+##Initial Setup{#initialSetup}
 
 **Where can I find the code snippet?**
 <p>The javascript snippet can be found when you login to your Surfly account. Click on the "settings" link on the menu bar to the left of the screen, and then select "Integration". You may have to click on "generate API keys", before the javascript snippet is shown. You will also have to add your websites domain name (e.g example.com) to the "specify domain names" section just below the code snippet, then click on "setup widget".</p>
 
 
 **Do I have to put the code snippet on every page?**
-<p>Unless you want to use session continuation, you only need to put the code snippet on the pages you wish to start a session from. If you would like to use [session continuation](introduction/integration_options.md/#session_continuation), the code snippet should be on every page you want to transfer cookies from.</p>
+<p>Unless you want to use session continuation, you only need to put the code snippet on the pages you wish to start a session from. If you would like to use [session continuation](introduction/integrationOptions.md/#sessionContinuation), the code snippet should be on every page you want to transfer cookies from.</p>
 
 
 **How do I take a call?**
 <p>Login to your Surfly account and navigate to the "Queue panel". Click on the "take call" button next to the session request. You will enter a Surfly session with the user who initiated the request.</p>
-
-
-**How can I customise Surfly's widget?**
-
-
-You can either specify your preferences directly in the code snippet (see the [widget options](widget_options/reference.md) for more details), or from the 'options' panel in your Surfly account. 
-
-![options panel](images/options-panel.jpg)
-
-Changes to the widget code have priority over changes to the code snippet. 
 
 
 

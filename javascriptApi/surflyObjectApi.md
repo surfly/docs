@@ -1,10 +1,8 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# Surfly object API
+# The SurflySession Object
 
 <a name="currentSession"></a>
 > SurflySession Surfly.currentSession
-
-_(read only)_
 
 If called from inside a session, this returns a [SurflySession](surflysession_api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
 
@@ -35,7 +33,8 @@ contains `true` if there is at least one company agent online
 var but = document.getElementById('my-custom-button');
 if (!Surfly.agentAvailable) {
   but.style.display = 'none';
-} else {
+}
+else {
   but.style.display = 'block';
 }
 ```

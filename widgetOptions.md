@@ -1,9 +1,9 @@
 <a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
-<a name="widget-options"></a>
+<a name="widgetOptions"></a>
 # Surfly options
 
 
-Here, you can find the reference tables for each of the Surfly session options. You can choose the aspects of Surfly's functionality you want to integrate into your website and personalise your co-browsing sessions. These parameters can be set in the options panel or used in the Javascript or REST API.
+Here, you can find the reference tables for each of the Surfly session options. You can choose the aspects of Surfly's functionality you want to integrate into your website and personalize your co-browsing sessions. These parameters can be set in the options panel or used in the Javascript or REST API.
 
 
 {% em color="#ffffe0" %}Please note:
@@ -15,8 +15,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 
 <h3 class="table_class">Control Panel Options</h3>
 
-<a name="chatbox-options"></a>
-##### Chat box options{#chatbox-options}
+<a name="chatboxOptions"></a>
+##### Chat box options{#chatboxOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | chat_box_color | #eb777f | Color of UI (chatbox) elements inside the session |
@@ -28,8 +28,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
 | allow_control_switching | true | Allow user to give control to another participant |
 
-<a name="drawing-options"></a>
-#####Drawing options{#drawing_options}
+<a name="drawingOptions"></a>
+#####Drawing options{#drawingOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | drawing_color | "default" | "Magic marker" color |
@@ -37,15 +37,15 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | drawing_width | 15 | "Magic marker" width |
 | drawing_timeout | 3| "Magic marker" timeout |
 
-<a name="video-options"></a>
-##### Video{#video-options}
+<a name="videoOptions"></a>
+##### Video{#videoOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | videochat | true | Is videochat allowed? |
 | low_quality_video | false | Video quality is limited to 320x240@15 |
 
-<a name="filesharing-options"></a>
-##### File sharing{#filesharing-options}
+<a name="filesharingOptions"></a>
+##### File sharing{#filesharingOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | filesharing | true | Allow file sharing |
@@ -59,7 +59,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | enable_sounds | true | Enable sound notifications |
 
 <a name="button_table"></a>
-##### Button appearance{#button_table}
+##### Button appearance{#buttonTable}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | hidden | false | Do not show the button |
@@ -75,8 +75,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 
 <h3 class="table_class">Session configuration</h3>
 
-<a name="screen_options"></a>
-##### Screen options/viewport{#screen_options}
+<a name="screenOptions"></a>
+##### Screen options/viewport{#screenOptions}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | max_height | 0  | Restrict max height of the viewport |
@@ -92,7 +92,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | blacklist | "[]" | (enterprise only) Restrict access to the specific resources.|
 | whitelist | "[]" | (enterprise only) Allow access only to the specific resources. |
 
-More information on [restrictions](./widget_options/widget_options.md/#restrictions)
+More information on [restrictions](./widgetOptions/widgetOptions.md/#restrictions)
 
 <h3 class="table_class">Session Interaction</h3>
 
@@ -116,7 +116,7 @@ More information on [restrictions](./widget_options/widget_options.md/#restricti
 |  cookie_transfer_proxying | true | |
 |  cookie_transfer_urls | | | |
 
-More information on [session continuation](./widget_options/widget_options.md/#session_continuation)
+More information on [session continuation](./widgetOptions/widgetOptions.md/#sessionContinuation)
 
 ##### Session end
 |  Option | Default | Description |

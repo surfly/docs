@@ -5,30 +5,37 @@
 
 ### Welcome to Surfly
 
-[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others. The person who initiates the Surfly session is the leader, and the people who join this session are the followers. The follower's screen will be synchronized with the leader's, who is in control, and can navigate during the session. At any moment, control can be switched between the leader and the follower. During the session, you may choose to communicate via video or text chat, or by using the drawing tool provided. 
+[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others. The person who initiates the Surfly session is the leader, and the people who join this session are the followers. The follower's screen will be synchronized with the leader's, who is in control, and can navigate during the session. At any moment, control can be switched between the leader and the follower. During the session, you may choose to communicate via video or text chat, or by using the drawing tool provided.
 
-Complete customisation of the co-browsing session is possible, and Surfly can even sit as a transparent layer within your website.  This documentation gives a comprehensive overview of Surfly's functionality, and the ways in which you can adapt Surfly to suit your needs. 
+Complete customization of the co-browsing session is possible, and Surfly can even sit as a transparent layer within your website.  This documentation gives a comprehensive overview of Surfly's functionality, and the ways in which you can adapt Surfly to suit your needs.
 
 ### Documentation
 
-The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it into your own application. The documentation is divided into several parts:                     
+The documentation aims to give you a good understanding of the co-browsing functionality Surfly has on offer, and the ways in which you can integrate it into your own application. The documentation is divided into several parts:
 
 ##### [Introduction](./introduction.md)
 
 The introduction explains what a Surfly co-browsing session is, and how it works. We outline the main features that Surfly offers, and the ways in which it can be adapted to suit your needs.
 
-##### [Integration guide](./the_surfly_tutorial.md)
+##### [Let's get started](./integration.md)
 
-If you would like to learn more about Surfly, follow our step by step guide as we integrate Surfly into our example application. 
+To test out a basic implementation of Surfly, you can follow this guide to quickly get you started.
 
-##### [Surfly options](./widget_options.md)
+##### [Javascript API integration guide](./theSurflyTutorial.md)
 
-Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly account. If the options panel and the code snippet have conflicting settings, the setting in the code snippet has priority.
+Follow our step by step guide as we use our JavaScript API to integrate Surfly into our example application.
 
-##### [Javascript API](./javascript_api.md) and [the REST API](https://www.surfly.com/cobrowsing-api/)
+##### [JavaScript API reference](./javascriptApi.md)
 
-For a deeper integration of Surfly, and a list of the functions available, please see the Javascript and REST API. The [REST API](https://www.surfly.com/cobrowsing-api/) documentation includes several code examples illustrating how it can be used.
+For a deeper integration of Surfly, and a list of the functions available, please see the Javascript API reference.
 
+##### [REST API](http://docs.surfly.apiary.io/)
+
+Our REST documentation includes several code examples illustrating how it can be used.
+
+##### [Surfly options](./widgetOptions.md)
+
+Here you can find a list of the different changes you can make to either the code snippet, or the options panel in your Surfly admin account. If the options panel and the code snippet have conflicting settings, the settings in the code snippet have priority.
 
 ##### [FAQ](./faqs.md)
 

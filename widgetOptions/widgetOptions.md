@@ -1,8 +1,8 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 
-# Setting advanced Widget options
+# Options details
 
-Here, you can find more detailed examples of the options that require specific syntax. 
+Here, you can find more detailed examples of the widget options that require specific syntax.
 
 <a name="restrictions"></a>
 #### Blacklist and Whitelist format{#restrictions}
@@ -84,8 +84,8 @@ be used to, for example, add an "Authorization" header to allow to user to be lo
 in on your own backend or a custom header which can be used as an identifier. We
 will send these headers with each request made during the session.
 
-<a name="session_continuation"></a>
-## Session Continuation{#session_continuation}
+<a name="sessionContinuation"></a>
+## Session Continuation{#sessionContinuation}
 
 The high performance of Surfly can be attributed to our proxy approach. If a user wants to continue the web-session as-is, it is necessary to transfer all information to our proxy.
 
@@ -102,7 +102,7 @@ There are several ways to set up session continuation.
 {% em color="#ffffe0" %}Please note: When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.  {% endem %}
 
 
-<a name="full_session"></a>
+<a name="fullSession"></a>
 #### Full session continuation
 
 This approach allows the transfer of all session data, including cookies with a `httpOnly`
@@ -159,7 +159,7 @@ After setting up the continuation point, add the following widget options:
   cookie_transfer_proxying: true,
   cookie_transfer_urls: ["https://example.com/surfly_cookie_transfer/"]
 ```
-<a name="soft_session"></a>
+<a name="softSession"></a>
 #### Soft session continuation
 
 It is also possible to integrate session continuation without changing load

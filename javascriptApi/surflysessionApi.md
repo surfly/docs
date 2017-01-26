@@ -1,5 +1,5 @@
 [![logo](../../images/logosmall.png)](https://www.surfly.com/)
-# SurflySession API
+# Detecting a Surfly Session
 
 
 <a name="startLeader"></a>
@@ -85,7 +85,7 @@ log message to the Audit log (available in Surfly Dashboard after session ends).
 <hr />
 
 <a name="sendMessage"></a>
-> SurflySession.sendMessage( message, targetOrigin ) 
+> SurflySession.sendMessage( message, targetOrigin )
 
 This function is useful when you need to establish a communication channel between your JS code on the original page, and its proxified version inside the session.
 

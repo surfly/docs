@@ -3,9 +3,9 @@
 .table_class {
     color: #e54747;
     }
-    
+
 .book-summary ul.summary a.custom-link {
-    visibility: hidden;
+    display: node;
     }
-    
-    
+
+
