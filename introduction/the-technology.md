@@ -13,14 +13,14 @@ Unlike co-browsing, screen-sharing does not limit itself to the web browser. Wit
 
 Also, screen-sharing solutions are pixel-based, which means that the controller constantly takes snapshots of the screen and then sends these to the other side in compressed form. The drawback of this approach is that screen updates are slow and of low quality.
 
-What most screen-sharing and co-browsing solutions, other than Surfly have in common, is that both rely on external software that needs to be installed by both users. This makes it unsuitable for most web situations as people are often unwilling to install extra software that circumvents the browser's security measures.
+What most screen-sharing and co-browsing solutions, other than Surfly, have in common, is that both rely on external software that needs to be installed by both users. This makes it unsuitable for most web situations as people are often unwilling to install extra software that circumvents the browser's security measures.
 
 <a name="js-co-browsing"></a>
 ##### Javascript Solutions{#js-co-browsing}
 
 With Javascript based solutions, a widget is created in which the Javascript of the original page is being loaded. This process requires a lot of bandwith since requests from the user in control continuously need to be sent to the website, then to the co-browsing solution, then back to the controlling user as well as the followers.
 
-There are also many limitations to this approach. One major issue is that the iframes on the original page come from an external Javascript source. This means that, because of the cross domain policies, these iframes can't be controlled by the Javascript that the co-browsing solution sends over to the users. Second, audio and video are usually not synchronized. Furthermore, it is unsafe to handle logged-in sessions, as they are usually only possible if login credentials are sent to the followers; otherwise the followers do not have access to session-specific data.
+There are also many limitations to this approach. One major issue is that the iframes loaded from another domain have a different Javascript scope. This means that, because of the cross domain policies, these iframes can't be controlled by the Javascript that the co-browsing solution sends over to the users. Second, audio and video are usually not synchronized. Furthermore, it is unsafe to handle logged-in sessions, as they are usually only possible if login credentials are sent to the followers; otherwise the followers do not have access to session-specific data.
 
 <a name="surfly-co-browsing"></a>
 ##### Co-browsing with Surfly{#surfly-co-browsing}
