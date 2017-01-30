@@ -1,7 +1,7 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # The Surfly Object
 
-<a name="is-under-session"></a>
+<a name="is-inside-session"></a>
 > Boolean Surfly.isInsideSession
 
 Returns `true` if the current page is loaded within a Surfly session. This makes it possible to change the page behaviour while cobrowsing. Usually used together with [currentSession](#current-session)
