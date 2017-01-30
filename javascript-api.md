@@ -50,12 +50,13 @@ var settings = {
   only_embedded_sessions: true
 };
 Surfly.init(settings, function(initResult) {
-  if (initResult.success && !Surfly.isInsideSession) {
+  if (initResult.success) {
     console.log('All good for happy cobrowsing!');
     // it is now safe to use API
-    Surfly.button();
-  }
-  else {
+    if (!Surfly.isInsideSession) {
+      Surfly.button();
+    }
+  } else {
     console.log('Your browser lacks features required by Surfly');
   }
 });
