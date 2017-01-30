@@ -9,21 +9,21 @@ You can view the code in the [repository](https://github.com/MathildeJ/integrati
    - [Initial website](./tutorial/chapter1.md/#website)
    - [Adding a Surfly button](./tutorial/chapter1.md/#integrate)
    - [Set Surfly options](./tutorial/chapter1.md/#widget)
-   - [Create your own button](./tutorial/chapter1.md/#startButton)
+   - [Create your own button](./tutorial/chapter1.md/#start-button)
    - [Build your own landing page](./tutorial/chapter1.md/#landing)
    - [Field masking](./tutorial/chapter1.md/#session)
    - [End of session popup](./tutorial/chapter1.md/#popup)
    - [Integrate an already existing chat solution](./tutorial/chapter1.md/#chat)
 
 
- - [Advanced Integration](/tutorial/advancedIntegration.md)
-   - [Enabling session continuation](./tutorial/advancedIntegration.md/#receipt)
-   - [Configuring the blacklist](./tutorial/advancedIntegration.md/#blacklist)
-   - [Queue metadata](./tutorial/advancedIntegration.md/#metadata)
-   - [Change appearance based on who has control](./tutorial/advancedOptions.md/#controlAppearance)
-   - [Customize Surfly's look and feel](./tutorial/advancedIntegration.md/#removeUi)
-     - [Create your own exit button](./tutorial/advancedIntegration.md/#exitButton)
-     - [Session ID approach](./tutorial/advancedIntegration.md/#smallButton)
+ - [Advanced Integration](/tutorial/advanced-integration.md)
+   - [Enabling session continuation](./tutorial/advanced-integration.md/#receipt)
+   - [Configuring the blacklist](./tutorial/advanced-integration.md/#blacklist)
+   - [Queue metadata](./tutorial/advanced-integration.md/#metadata)
+   - [Change appearance based on who has control](./tutorial/advanced-options.md/#control-appearance)
+   - [Customize Surfly's look and feel](./tutorial/advanced-integration.md/#remove-ui)
+     - [Create your own exit button](./tutorial/advanced-integration.md/#exit-button)
+     - [Session ID approach](./tutorial/advanced-integration.md/#small-button)
 
 
 <br>
