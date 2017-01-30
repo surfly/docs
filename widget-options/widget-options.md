@@ -183,6 +183,24 @@ Make sure that you set the following options in your widget:
 If you need more help with this, please contact us at support@surfly.com. We can
 consult you on the implementation, or build the integration for you.
 
+<a name="manual-cookie-scopes"></a>
+#### Manual cookie transfer configuration
+
+Default session continuation functionality works in most cases. However, if your application is using some special cookie scopes (for example, it sets cookies for specific path or subdomain), you might need to provide this information to Surfly.
+
+This is possible with `cookie_transfer_scopes` setting. If specified, it should contain a list of JSON objects, each of them describing a single cookie using `name`, `path`, and `domain` properties:
+
+```javascript
+  cookie_transfer_scopes: [
+    {name: 'shoppingcart', path: '/cart', domain: 'example.com'},
+    {name: 'sessionid', path: '/', domain: '.example.com'}
+  ]
+```
+
+The example above describes two cookies: `shoppingcart`, which is available on all pages under `example.com/cart`, and `sessionid`, which is set for all subdomains of `example.com`.
+
+Both full and soft session continuation take `cookie_transfer_scopes` value into account. If `cookie_transfer_scopes` is set and not empty, only specified cookies will be transferred, which makes it possible to transfer only the session data you care about (normally you only need the session identifier).
+
 <a name="metadata"></a>
 ## Queue Behaviour Customization{#metadata}
 

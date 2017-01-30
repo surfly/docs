@@ -26,6 +26,13 @@ triggered when a session is created (usually after `SurflySession.create()` call
 
 <hr />
 
+<a name="session-queued"></a>
+> session_queued
+
+triggered when the session has been placed in the waiting queue, and the PIN code is generated
+
+<hr />
+
 <a name="session-started"></a>
 > session_started
 
