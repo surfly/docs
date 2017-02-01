@@ -1,6 +1,19 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # The Surfly Object
 
+<a name="is-under-session"></a>
+> Boolean Surfly.isUnderSession
+
+Returns `true` if the current page is loaded within a Surfly session. This makes it possible to change the page behaviour while cobrowsing. Usually used together with [currentSession](#current-session)
+
+##### Example
+```javascript
+if (Surfly.isUnderSession) {
+  console.log('This page is being co-browsed');
+}
+```
+<hr />
+
 <a name="current-session"></a>
 > SurflySession Surfly.currentSession
 
@@ -8,7 +21,7 @@ If called from inside a session, this returns a [SurflySession](surflysession-ap
 
 ##### Example
 ```javascript
-if (Surfly.currentSession) {
+if (Surfly.isUnderSession) {
   Surfly.currentSession.on('message', function (session, event) {
     if (event.origin === window.location.origin) {
       console.log('outer window says:', event.data);
@@ -79,7 +92,7 @@ Note that you will need to call `.create()` or `.startLeader()` / `.startFollowe
 ```javascript
 Surfly.init({widget_key: '**your key here**'}, function(init) {
   if (init.success) {
-    if(!Surfly.currentSession){
+    if(!Surfly.isUnderSession){
       Surfly.session({docked_only: true}).startLeader();
     }
   }
