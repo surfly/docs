@@ -50,7 +50,7 @@ We provide a convenient `Surfly.button()` function for rendering a nice default 
 <script>
   var myBtn = document.getElementById('my-custom-button');
 
-  if (!Surfly.currentSession) {
+  if (!Surfly.isUnderSession) {
     // outside the cobrowsing session, button click will start a session
     mtBtn.style.display = "block";
     myBtn.addEventListener('click', function() {
@@ -149,7 +149,7 @@ Surfly.button({
 While the Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need the Surfly widget to be loaded on both pages. The `targetOrigin` and `srcOrigin` parameters allow you to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
 
 ```javascript
-if (!Surfly.currentSession) {
+if (!Surfly.isUnderSession) {
   // open a cobrowsing session and set the message handler
 
   Surfly.session()
