@@ -1,3 +1,5 @@
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
+
 # Session Events
 
 SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method, or with a global `Surfly.on()` method. The latter will affect all sessions.

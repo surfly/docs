@@ -1,4 +1,5 @@
-[![logo](../../images/logosmall.png)](https://www.surfly.com/)
+<a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
+
 
 # Surfly Sessions
 
@@ -69,7 +70,7 @@ returns the session settings by which the session was created
 
 > <a name="on">SurflySession SurflySession.on( eventName, callback )</a>
 
-set an event handler. Inside the `callback` function, `this` will be set to the current `SurflySession` instance. See [Events](session_events.md) section for more details.
+set an event handler. Inside the `callback` function, `this` will be set to the current `SurflySession` instance. See [Events](javascript-api/session_events.md) section for more details.
 
 Returns a reference to the current `SurflySession`, so chained calls are possible:
 ```javascript
@@ -88,7 +89,7 @@ log message to the Audit log (available in Surfly Dashboard after session ends).
 
 This function is useful when you need to establish a communication channel between your JS code on the original page, and its proxified version inside the session.
 
-It is available on both sides, and works in symmetric way: it will trigger a `message` event on the other side of the channel (see [Session Events](session_events.md) section).
+It is available on both sides, and works in symmetric way: it will trigger a `message` event on the other side of the channel (see [Session Events](javascript-api/session_events.md) section).
 
 `message` argument must be a plain JSON-serializable object.
 `targetOrigin`should be set to the [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) of the expected recipient. If set to `"*"`, message will be delivered regardless of the recipient's origin.
