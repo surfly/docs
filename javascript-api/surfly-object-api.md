@@ -15,7 +15,7 @@ if (Surfly.isInsideSession) {
 
 > <a name="current-session">SurflySession Surfly.currentSession</a>
 
-If called from inside a session, this returns a [SurflySession](javascript-api/surfly-session-api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
+If called from inside a session, this returns a [SurflySession](surfly-session-api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
 
 _Note: the same can be achieved by using ```Surfly.activeSessions[0]```_
 
