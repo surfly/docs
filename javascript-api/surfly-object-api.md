@@ -1,8 +1,7 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 # The Surfly Object
 
-<a name="is-under-session"></a>
-> Boolean Surfly.isInsideSession
+> <a name="is-under-session">Boolean Surfly.isInsideSession</a>
 
 Returns `true` if the current page is loaded within a Surfly session. This makes it possible to change the page behaviour while cobrowsing. Usually used together with [currentSession](#current-session)
 
@@ -14,8 +13,7 @@ if (Surfly.isInsideSession) {
 ```
 <hr />
 
-<a name="current-session"></a>
-> SurflySession Surfly.currentSession
+> <a name="current-session">SurflySession Surfly.currentSession</a>
 
 If called from inside a session, this returns a [SurflySession](surflysession-api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
 
@@ -34,8 +32,7 @@ if (Surfly.isInsideSession) {
 ```
 <hr />
 
-<a name="agent-available"></a>
-> boolean Surfly.agentAvailable
+> <a name="agent-available">boolean Surfly.agentAvailable</a>
 
 contains `true` if there is at least one company agent online
 
@@ -53,8 +50,7 @@ else {
 ```
 <hr />
 
-<a name="test-connection"></a>
-> Surfly.testConnection( callback )
+> <a name="test-connection">Surfly.testConnection( callback )</a>
 
 `Surfly.init()` succeeds only if the user's browser supports all features required by Surfly (WebSockets, for example). However, cobrowsing may still not work if there is a blocking firewall between the user and the Surfly server. In this case `SurflySession.startLeader()` and `SurflySession.startFollower()` will raise errors. This function allows to check connection without starting an actual cobrowsing session.
 
@@ -77,8 +73,7 @@ Surfly.testConnection(function(result) {
 
 <hr />
 
-<a name="session"></a>
-> SurflySession Surfly.session( [ sessionSettings ], [ sessionUrl ] )
+> <a name="session">SurflySession Surfly.session( [ sessionSettings ], [ sessionUrl ] )</a>
 
 Creates a session object with provided settings. Some properties of the returned SurflySession may not be initialized. You can bind callbacks using `.on()` method to hook on specific points of session lifetime.
 Note that you will need to call `.create()` or `.startLeader()` / `.startFollower()` methods to actually create a session and open a cobrowsing window respectively.
@@ -101,8 +96,7 @@ Surfly.init({widget_key: '**your key here**'}, function(init) {
 
 <hr />
 
-<a name="button"></a>
-> Surfly.button( [ settingsObject ] )
+> <a name="button">Surfly.button( [ settingsObject ] )</a>
 
 _(not available inside a Surfly session)_
 
