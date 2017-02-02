@@ -57,7 +57,7 @@ triggered when a follower joins the session. Parameters:
 
 - `count` updated number of users in the session
 - `clientIndex` index of the user. Can be used in subsequent `SurflySession.giveControl()` calls
-- `userData` data provided in `userData` argument of [`SurflySession.start*()`](javascript-api/surflysession_objects.md) call
+- `userData` data provided in `userData` argument of [`SurflySession.start*()`](surfly-session-objects.md) call
 
 <hr />
 
@@ -68,7 +68,7 @@ triggered when a follower leaves the session. Parameters:
 
 - `count` updated number of users in the session
 - `clientIndex` index of the user
-- `userData` data provided in `userData` argument of [`SurflySession.start*()`](javascript-api/surflysession_objects.md) call
+- `userData` data provided in `userData` argument of [`SurflySession.start*()`](surfly-session-objects.md) call
 
 <hr />
 
