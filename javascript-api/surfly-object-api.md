@@ -15,7 +15,7 @@ if (Surfly.isInsideSession) {
 
 > <a name="current-session">SurflySession Surfly.currentSession</a>
 
-If called from inside a session, this returns a [SurflySession](javascript-api/surflysession-api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
+If called from inside a session, this returns a [SurflySession](javascript-api/surfly-session-api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
 
 _Note: the same can be achieved by using ```Surfly.activeSessions[0]```_
 
@@ -36,7 +36,7 @@ if (Surfly.isInsideSession) {
 
 > <a name="list-sessions">Array Surfly.listSessions()</a>
 
-Returns a list of [SurflySession](javascript-api/surflysession-api.md) objects that were created with JS API, or restored after the page reload. Note that by the time the [init callback](javascript-api.md) is called, this list can already contain some sessions restored after a page reload.
+Returns a list of [SurflySession](javascript-api/surfly-session-api.md) objects that were created with JS API, or restored after the page reload. Note that by the time the [init callback](javascript-api.md) is called, this list can already contain some sessions restored after a page reload.
 
 Inside a session, the return array will contain only one object, representing the currently open session (see [Surfly.currentSession](#current-session)).
 
@@ -57,7 +57,7 @@ If `eventName` is a session event, the handler will affect _all_ sessions, inclu
 
 `callback` must be a function. Depending on the type of event, it will be provided with relevant data.
 
-See [Events](session_events.md) section for more details.
+See [Events](javascript-api/session_events.md) section for more details.
 
 Returns a reference to the `Surfly` object, so chained calls are possible:
 
@@ -148,7 +148,7 @@ Adds a Surfly button to the current page. When a user clicks the Surfly Button, 
 
 Inside a session, `Surfly.button()` calls will be silently ignored.
 
-The Surfly button is just a shortcut for a quick integration, and doesn't allow for much customization. For more fine-grained integration, use [SurflySession API](javascript-api/surfly_sessions.md).
+The Surfly button is just a shortcut for a quick integration, and doesn't allow for much customization. For more fine-grained integration, use [SurflySession API](javascript-api/surfly-session-api.md).
 
 #### Example
 ```javascript
