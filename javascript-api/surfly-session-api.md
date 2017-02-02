@@ -69,7 +69,7 @@ returns the session settings by which the session was created
 
 > <a name="on">SurflySession SurflySession.on( eventName, callback )</a>
 
-set an event handler. Inside the `callback` function, `this` will be set to the current `SurflySession` instance. See [Session Events](session_events.md) section for more details.
+set an event handler. Inside the `callback` function, `this` will be set to the current `SurflySession` instance. See [Events](session_events.md) section for more details.
 
 Returns a reference to the current `SurflySession`, so chained calls are possible:
 ```javascript

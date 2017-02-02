@@ -1,19 +1,27 @@
 # Session Events
 
-SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method. Callback functions should accept two arguments:
+SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method, or with a global `Surfly.on()` method. The latter will affect all sessions.
+
+Callback functions should accept two arguments:
     - `SurflySession` instance that triggered the event
     -  JSON object with event attributes
 
 ```javascript
+// this will be triggered for all sessions, including the restored ones
+Surfly.on('session_ended', function(session) {
+  console.log(session, 'has ended');
+});
+
 function startCobrowsing () {
   Surfly.session({docked_only: true})
-  .on('session_started', function(session) {
+    // these handlers will only be called for this particular session
+    .on('session_started', function(session) {
       console.log(session, 'is fully initiated');
-  })
-  .on('viewer_joined', function(session, event) {
+    })
+    .on('viewer_joined', function(session, event) {
       console.log('there are', event.count, 'users in total');
-  })
-  .startLeader();
+    })
+    .startLeader();
 }
 ```
 

@@ -34,7 +34,7 @@ if (Surfly.isInsideSession) {
 ```
 <hr />
 
-> <a name="current-session">Array SurflySession Surfly.listSessions()</a>
+> <a name="list-sessions">Array Surfly.listSessions()</a>
 
 Returns a list of [SurflySession](surflysession-api.md) objects that were created with JS API, or restored after the page reload. Note that by the time the [init callback](javascript-api.md) is called, this list can already contain some sessions restored after a page reload.
 
@@ -44,6 +44,31 @@ Inside a session, the return array will contain only one object, representing th
 ```javascript
 Surfly.listSessions().forEach(function(session) {
   console.log('found a session:', session.followerLink);
+});
+```
+
+<hr />
+
+> <a name="on">Surfly Surfly.on( eventName, callback )</a>
+
+Sets a global event handler.
+
+If `eventName` is a session event, the handler will affect _all_ sessions, including the currently created ones.
+
+`callback` must be a function. Depending on the type of event, it will be provided with relevant data.
+
+See [Events](session_events.md) section for more details.
+
+Returns a reference to the `Surfly` object, so chained calls are possible:
+
+```javascript
+Surfly.on(/*...*/).on(/*...*/);
+```
+
+##### Example
+```javascript
+Surfly.on('session_ended', function(session, eventData) {
+  console.log('Session', session.followerLink, 'has just ended');
 });
 ```
 
