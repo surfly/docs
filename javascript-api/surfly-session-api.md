@@ -5,7 +5,7 @@
 
 The Javascript API provides a set of functions allowing you to start and control the behaviour of your Surfly sessions.
 
-Once a session has been initialized, you'll be able to use several events in order to check the session status and, if necessary, make modifications depending on this status. More information on how to handle events can be found on the [session events](session-events.md) page.
+Once a session has been initialized, you'll be able to use several events in order to check the session status and, if necessary, make modifications depending on this status. More information on how to handle events can be found on the [session events](javascript-api/session-events.md) page.
 
 # SurflySession Object
 
@@ -89,7 +89,7 @@ log message to the Audit log (available in Surfly Dashboard after session ends).
 
 This function is useful when you need to establish a communication channel between your JS code on the original page, and its proxified version inside the session.
 
-It is available on both sides, and works in symmetric way: it will trigger a `message` event on the other side of the channel (see [Session Events](javascript-api/session_events.md) section).
+It is available on both sides, and works in symmetric way: it will trigger a `message` event on the other side of the channel (see [Events](javascript-api/session_events.md) section).
 
 `message` argument must be a plain JSON-serializable object.
 `targetOrigin`should be set to the [origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) of the expected recipient. If set to `"*"`, message will be delivered regardless of the recipient's origin.
