@@ -50,7 +50,7 @@ We provide a convenient `Surfly.button()` function for rendering a nice default 
 <script>
   var myBtn = document.getElementById('my-custom-button');
 
-  if (!Surfly.isUnderSession) {
+  if (!Surfly.isInsideSession) {
     // outside the cobrowsing session, button click will start a session
     mtBtn.style.display = "block";
     myBtn.addEventListener('click', function() {
