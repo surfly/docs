@@ -120,7 +120,7 @@ session.drawingSettings({mode: 'permanent', color: '#ff0000'});
 
 <hr />
 
-> <a name="started">boolean SurflySession.started</a>
+> <a name="started">Boolean SurflySession.started</a>
 
 _(not available inside a session)_
 

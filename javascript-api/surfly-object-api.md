@@ -32,6 +32,27 @@ if (Surfly.isInsideSession) {
 ```
 <hr />
 
+> <a name="current-session">SurflySession Surfly.currentSession</a>
+
+If called from inside a session, this returns a [SurflySession](surflysession-api.md) object referring to a session we are currently in. Otherwise, it returns null. It allows you to detect whether the current page is loaded under Surfly, and also use the `SurflySession` API for communication with the outer window.
+
+##### Example
+```javascript
+if (Surfly.isInsideSession) {
+  Surfly.currentSession.on('message', function (session, event) {
+    if (event.origin === window.location.origin) {
+      console.log('outer window says:', event.data);
+    } else {
+      console.log("outer window has a different origin");
+    }
+  });
+}
+
+```
+<hr />
+
+
+
 > <a name="agent-available">boolean Surfly.agentAvailable</a>
 
 contains `true` if there is at least one company agent online
