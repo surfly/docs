@@ -1,8 +1,37 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 
+Surfly JS API dispatches a number of events that you can listen to and attach custom handler functions using [Surfly.on()](surfly-object-api.md#on) and [SurflySession.on()](surfly-session-api.md#on). Callback functions are provided with arguments, depending on the event type.
+
+# Global Events
+
+Global events can be registered with [Surfly.on()](surfly-object-api.md#on) method. 
+Global event handlers will be provided with 2 arguments:
+    - a reference to the global Surfly object
+    - JSON object with event attributes
+
+```javascript
+// this will be triggered for all sessions, including the restored ones
+Surfly.on('agent_status', function(api, event) {
+  if (event.available) {
+    console.log('There is an available support agent');
+  } else {
+    console.log('There is no support agents available at the moment');
+  }
+});
+
+```
+
+<a name="agent-status"></a>
+> agent_status
+
+triggered when a support agent availability changes. Parameters:
+
+- `available` is set to `true` if a support agent has just become available, and `false` if all agents have become unavailable.
+
+
 # Session Events
 
-SurflySession dispatches a number of events which you can use to track the session status. You can set handlers with the `SurflySession.on()` method, or with a global `Surfly.on()` method. The latter will affect all sessions.
+Session event handlers can be set with the [SurflySession.on()](surfly-session-api.md#on) method, or with the global [Surfly.on()](surfly-object-api.md#on) method. The latter will affect _all existing and future sessions_.
 
 Callback functions should accept two arguments:
     - `SurflySession` instance that triggered the event
@@ -125,11 +154,3 @@ triggered when control over the session has been transferred. Parameters:
 - `to` index of the client that now has the control. Always 0 for the leader, 1 or more for a viewer
 - `userData` user data of the user who received the control
 - `gained` set to true if control was given to the current user
-
-<hr />
-
-<a name="agent-status"></a>
-> agent_status
-
-triggered when a support agent availability changes:
-- `available` is set to true if a support agent has just become available, and false if all agents have become unavailable.
