@@ -6,6 +6,7 @@
   * [Customization Options](introduction/integration-options.md)
 * [Let's get started](integration.md)
   * [A Basic Surfly session](basic-integration/a-surfly-session.md)
+  * [Surfly integration with Tag Manager](basic-integration/surfly-integration-with-tag-manager.md)
 * [JavaScript API Integration guide](the-surfly-tutorial.md)
   * [Basic Integration](tutorial/chapter1.md)
   * [Advanced Integration](tutorial/advanced-integration.md)
@@ -20,3 +21,4 @@
 * [Surfly Options](widget-options.md)
   * [Options details](widget-options/widget-options.md)
 * [FAQ](faqs.md)
+
