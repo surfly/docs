@@ -1,9 +1,7 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 #Surfly integration with Tag Manager
 
-Tag management systems are mostly used to inject Javascript into websites for marketing purposes. But with most tag managers it is possible to inject any type of html into your website, and not only scripts. You can add text, buttons, etc. and even implement Surfly through a tag management system.
-
-In this chapter we'll show you how to add a basic Surfly implementation to your website using Google Tag Manager.
+In this chapter we'll show you how to add Surfly to your website using Google Tag Manager.
 
 ####The Features
 
