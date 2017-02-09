@@ -9,12 +9,17 @@ Within this example we make use of the [session-id approach](../tutorial/advance
 
 - The user is already chatting with an agent, and is directed to the "Get Help"-button to start a Surfly co-browsing session
 
-![get help](../images/get-help-button.png)
+<div align="center">
+  <img src="../images/get-help-button.png">
+</div>
+
 
 - After the user clicks the "Get-Help"-button, a Surfly session is initiated, and the button now shows the session-id (which is by default a four-number code)
 - The user can now provide the session-id to the agent. The agent then uses the session-id to identify the correct session from the queue in his/her admin panel
 
-![chat box](../images/olark-chat-box.png)
+<div align="center">
+  <img src="../images/olark-chat-box.png">
+</div>
 
 - The agent joins the session, and the session now becomes visible to both users
 
@@ -105,11 +110,10 @@ The tag is structured as follows:
     if (init.success) {
       if (Surfly.isInsideSession) {
         // Inside the session, display the btn-end-session
-        document.getElementById('btn-end-session').style.display="block";
-      }
-      // Outside the session, display the btn-start-session
-      else {
-        document.getElementById("btn-start-session").style.display="block";
+        document.getElementById('btn-end-session').style.display = "block";
+      } else {
+        // Outside the session, display the btn-start-session
+        document.getElementById("btn-start-session").style.display = "block";
 
         // Add your chat box snippet code (for this example we have used Olark)
         // REPLACE THIS PART WITH YOUR OWN CHAT BOX SNIPPET
@@ -165,7 +169,7 @@ The tag is structured as follows:
 </script>
 
 ```
-{% em color="#ffffe0" %} Google Tag Manager tends to add `<style =“display: none; visibility: hidden;”>` to the code you inject. Make sure you remove this attribute within the tag (as shown in the example above), otherwise the divs you've added will not appear. {% endem %}
+{% em color="#ffffe0" %} Google Tag Manager tends to add `<style = “display: none; visibility: hidden;”>` to the code you inject. Make sure you remove this attribute within the tag (as shown in the example above), otherwise the divs you've added will not appear. {% endem %}
 
 If you choose to use this code snippet on your website, there are a couple of things you need to take into account:
 
