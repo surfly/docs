@@ -12,7 +12,7 @@ Within this example we make use of the [session-id approach](../tutorial/advance
 ![get help](../images/get-help-button.png)
 
 - After the user clicks the "Get-Help"-button, a Surfly session is initiated, and the button now shows the session-id (which is by default a four-number code)
-- The user can now pass the session-id to the agent. The agent then uses the session-id to identify the correct session from the queue in his/her admin panel
+- The user can now provide the session-id to the agent. The agent then uses the session-id to identify the correct session from the queue in his/her admin panel
 
 ![chat box](../images/olark-chat-box.png)
 
@@ -20,32 +20,32 @@ Within this example we make use of the [session-id approach](../tutorial/advance
 
 ####How it works
 
-With Google Tag Manager you are able to inject HTML into your website. As long as you put it in between the correct tags, you can add divs, css, javascript, etc., to your website's page(s). The tag you inject through GTM can even contain more than one script, and even scripts of a different nature.
+With Google Tag Manager (GTM) you are able to inject HTML into your website. As long as you put it in between the correct tags, you can add divs, css, javascript, etc., to your website's page(s). The tag you inject through GTM can even contain more than one script, and even scripts of a different nature.
 
 In short, you add a tag to your website as follows:
 
 - Register at https://www.google.nl/tagmanager/
-- Log in, and create an account for your website
-- Add an account-name and a container (which is the url) and set the destination
-- You get two code snippets, follow the instructions on how to add these to your website
+- Log in and create an account for your website
+- Add an account-name and a container (which is the url), and set the destination
+- You receive two code snippets, follow the instructions on how to add these to your website
 - You can create a new tag on the “workspace” console, or click on “tags” >> “new”
 - Add a name
-- Click on “tag configuration ” select "custom tag", then add the code snippet. You can add anything as long as it’s in HTML
+- Click on “tag configuration ” select "custom tag", then add the code snippet. You can add any code snippet as long as it’s in HTML
 - Enable document.write
-- Add a trigger. Here you can select the pages on which you want the tag to be implemented
-- When you’re ready to review, click the carret-down next to “publish” to create a new version
+- Add a trigger. You can select the pages where you want the tag to be implemented
+- When you’re ready to review, click the caret-down next to “publish” to create a new version
 - Go to “versions” >> “actions” >> “review” to test the tag's functionality on your website
-- If everything is working properlyl, go to “versions” >> “actions” >> “publish” to make your tag go live
+- If everything is working properly, go to “versions” >> “actions” >> “publish” to make your tag go live
 
-{% em color="#ffffe0" %} For more info on Google Tag Manager, please visit the website https://www.google.com/analytics/tag-manager {% endem %}
+{% em color="#ffffe0" %} For more info on Google Tag Manager, please visit https://www.google.com/analytics/tag-manager {% endem %}
 
 ####Example tag with existing chat solution
 
-Below, you'll find an example of how a tag, using the session-id approach, would look like. The example also includes the option of adding a third-party chat solution to your website. In this case we've used [Olark](www.olark.com).
+Below you'll find an example of what a tag would look like with the session-id approach. The example also includes the option of adding a third-party chat solution to your website. In this case we've used [Olark](www.olark.com).
 
 The tag is structured as follows:
 
-- First we add a div with an id of "footer". In the div we create two buttons: one to start a Surfly session and one to end it
+- First we add a div with an id of "footer". In the div we create two buttons: one to start a Surfly session and the other to end it
 - Then we add the css by placing it between style tags
 - The last part of the tag is Javascript. First, we've made sure that GTM will show our buttons. Then we've added the Surfly snippet, the Surfly init function, a sessionStart() function, the Olark snippet and a sessionEnd() function.
 
@@ -170,8 +170,8 @@ The tag is structured as follows:
 ```
 {% em color="#ffffe0" %} Google Tag Manager tends to add `<style =“display: none; visibility: hidden;”>` to the code you inject. Make sure you remove this attribute within the tag (as shown in the example above), otherwise the divs you've added will not appear. {% endem %}
 
-If you choose to use this code snippet on your website, there's a couple of things you need to take into account:
+If you choose to use this code snippet on your website, there are a couple of things you need to take into account:
 
 - You might have to adjust the CSS if you want the "Get Help"-button to match your own chatbox styling
-- Read through the code, and make sure you add both your own Surfly widget key as well as your own chatbox code snippet
-- If you're ready for a more advanced integration, have a look at the [surfly options](../widget-options.md), and adjust the options in the above example if needed
+- Read through the code, and make sure you add both your own Surfly widget key, as well as your own chatbox code snippet
+- If you're ready for a more advanced integration, take a look at the [surfly options](../widget-options.md), and adjust the options in the above example if needed
