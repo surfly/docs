@@ -7,7 +7,8 @@
         "sectionx-collapse",
         "hide-published-with",
         "hide-element",
-        "anchorjs"
+        "anchorjs",
+        "scripts"
     ],
     "pluginsConfig": {
         "hide-element": {
@@ -20,6 +21,11 @@
           "placement": "right",
           "visible": "hover",
           "class": "custom-class another-one"
+        },
+        "scripts": {
+            "files": [
+                "js/analytics.js"
+            ]
         }
     }
 }
