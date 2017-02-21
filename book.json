@@ -21,7 +21,7 @@
           "placement": "right",
           "visible": "hover",
           "class": "custom-class another-one"
-        }
+        },
         "scripts": {
             "files": [
                 "./analytics.js"
