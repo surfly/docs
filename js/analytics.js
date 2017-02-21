@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /* eslint-disable */
 
 (function() {
@@ -52,5 +51,3 @@
 analytics.load("heiBMDbisXlpJXGX7EXveLCcF3JU7kZP");
 analytics.page();
 }}();
-
-</script>
