@@ -24,7 +24,7 @@
         },
         "scripts": {
             "files": [
-                "./analytics.js"
+                "/js/analytics.js"
             ]
         }
     }
