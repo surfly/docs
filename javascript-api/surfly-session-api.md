@@ -102,6 +102,12 @@ Provided that current user has control, give it away to the user with specified 
 
 <hr />
 
+> <a name="request-control">SurflySession.requestControl()</a>
+
+Request control from the session leader. This call will be silently ignored if the user is already in control, if she is a leader, or if `agent_can_request_control` options is disabled.
+
+<hr />
+
 > <a name="relocate">SurflySession.relocate( newUrl )</a>
 
 _(not available inside a session)_
