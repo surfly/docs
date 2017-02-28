@@ -65,8 +65,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | hidden | false | Do not show the button |
 | position | 'bottomleft' | Positions the Surfly Support Button. The options are: 'bottomleft', 'bottomright', 'middleright' |
 
-<a name="control-switching"></a>
-##### Control switching
+##### Control switching{#control-switching}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | agent_can_request_control | false | A follower can request control, after which it can be granted by the leader |
