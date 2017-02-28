@@ -100,7 +100,7 @@ It is available on both sides, and works in symmetric way: it will trigger a `me
 
 Switch control to the user with specified `clientIndex`. `clientIndex` is always 0 for the leader and 1 or more for followers.
 
-See also [Control options](widget_options.md#control-options)
+See also [Control options](widget_options.md#control-switching)
 
 <hr />
 
