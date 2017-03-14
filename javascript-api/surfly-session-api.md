@@ -98,7 +98,15 @@ It is available on both sides, and works in symmetric way: it will trigger a `me
 
 > <a name="give-control">SurflySession.giveControl( clientIndex )</a>
 
-Provided that current user has control, give it away to the user with specified `clientIndex`. `clientIndex` is always 0 for the leader and 1 or more for followers
+Switch control to the user with specified `clientIndex`. `clientIndex` is always 0 for the leader and 1 or more for followers.
+
+See also [Control options](../widget-options/widget-options.md#control-switching)
+
+<hr />
+
+> <a name="request-control">SurflySession.requestControl()</a>
+
+Request control from the session leader. This call will be silently ignored if the user is already in control, if she is a leader, or if one of `agent_can_request_control` and `allow_control_switching` options is disabled.
 
 <hr />
 
