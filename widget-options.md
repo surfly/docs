@@ -26,7 +26,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | newurl  | true | Should we show the 'newurl button' in the widget? |
 | store_chat_logs | false | If enabled, chat logs will be available for download in Surfly dashboard |
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
-| allow_control_switching | true | Allow user to give control to another participant |
+| allow_control_switching | true | Enable control switching functionality |
 
 <a name="drawingOptions"></a>
 #####Drawing options{#drawingOptions}
@@ -65,13 +65,12 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | hidden | false | Do not show the button |
 | position | 'bottomleft' | Positions the Surfly Support Button. The options are: 'bottomleft', 'bottomright', 'middleright' |
 
-<a name="agent"></a>
-##### Agent roles{#agent}
+##### Control switching{#control-switching}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| agent_can_request_control | false | The agent can request control, after which it can be granted by the controller |
-| agent_can_take_control | false | The agent can take control without the requirement that the controller needs to grant it |
-| agent_can_end_session | true | Show End Session button on follower's end |
+| agent_can_request_control | false | A follower can request control, after which it can be granted by the leader |
+| agent_can_take_control | false | A follower can switch control without an explicit leader consent |
+| agent_can_end_session | true | Allow terminating a session from the follower's end |
 
 <h3 class="table_class">Session configuration</h3>
 
