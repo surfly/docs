@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
-<a name="widgetOptions"></a>
+<a name="widget-options"></a>
 # Surfly options
 
 
@@ -15,8 +15,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 
 <h3 class="table_class">Control Panel Options</h3>
 
-<a name="chatboxOptions"></a>
-##### Chat box options{#chatboxOptions}
+<a name="chatbox-options"></a>
+##### Chat box options{#chatbox-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | chat_box_color | #eb777f | Color of UI (chatbox) elements inside the session |
@@ -28,8 +28,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | sharing_button | true | Should we show the 'sharing button' in the widget? |
 | allow_control_switching | true | Enable control switching functionality |
 
-<a name="drawingOptions"></a>
-#####Drawing options{#drawingOptions}
+<a name="drawing-options"></a>
+#####Drawing options{#drawing-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | drawing_color | "default" | "Magic marker" color |
@@ -37,15 +37,15 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | drawing_width | 15 | "Magic marker" width |
 | drawing_timeout | 3| "Magic marker" timeout |
 
-<a name="videoOptions"></a>
-##### Video{#videoOptions}
+<a name="video-options"></a>
+##### Video{#video-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | videochat | true | Is videochat allowed? |
 | low_quality_video | false | Video quality is limited to 320x240@15 |
 
-<a name="filesharingOptions"></a>
-##### File sharing{#filesharingOptions}
+<a name="filesharing-options"></a>
+##### File sharing{#filesharing-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | filesharing | true | Allow file sharing |
@@ -58,8 +58,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | start_muted | false | All participants start with muted microphone |
 | enable_sounds | true | Enable sound notifications |
 
-<a name="button_table"></a>
-##### Button appearance{#buttonTable}
+<a name="button-table"></a>
+##### Button appearance{#button-table}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | hidden | false | Do not show the button |
@@ -74,8 +74,8 @@ Changes to the code will take priority over changes to the options panel.{% ende
 
 <h3 class="table_class">Session configuration</h3>
 
-<a name="screenOptions"></a>
-##### Screen options/viewport{#screenOptions}
+<a name="screen-options"></a>
+##### Screen options/viewport{#screen-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | max_height | 0  | Restrict max height of the viewport |
@@ -84,18 +84,18 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | min_width | 0 | Restrict min width of the viewport |
 | set_to_smallest | true | By default we resize the active viewport to the viewport size of the participant with the smallest screen. This can be disabled |
 
-##### Enterprise options
+##### Enterprise options{#enterprise-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | white_label | false | Do not show a Surfly logo (enterprise only) |
 | blacklist | "[]" | (enterprise only) Restrict access to the specific resources.|
 | whitelist | "[]" | (enterprise only) Allow access only to the specific resources. |
 
-More information on [restrictions](./widgetOptions/widgetOptions.md/#restrictions)
+More information on [restrictions](./widget-options/widget-options.md/#restrictions)
 
 <h3 class="table_class">Session Interaction</h3>
 
-##### Session start
+##### Session start{#session-interaction}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | url | _&lt;current page&gt;_ | Initial URL that will be opened inside the session |
@@ -107,7 +107,7 @@ More information on [restrictions](./widgetOptions/widgetOptions.md/#restriction
 | start_docked | false | starts the chat box in docked mode, but can be expanded during the session |
 
 
-##### Cookies
+##### Cookies{#cookie-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | only_embedded_sessions | false | By default, if 3rd-party cookies are disabled, we will start the session in a new browser tab. If this option is set to true, Surfly will not start session when 3rd-party cookies are disabled. |
@@ -115,9 +115,9 @@ More information on [restrictions](./widgetOptions/widgetOptions.md/#restriction
 |  cookie_transfer_proxying | true | |
 |  cookie_transfer_urls | | | |
 
-More information on [session continuation](./widgetOptions/widgetOptions.md/#sessionContinuation)
+More information on [session continuation](./widget-options/widget-options.md/#session-continuation)
 
-##### Session end
+##### Session end{#session-end-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | follower_redirect_url | "" | After the session ends, redirect the follower to a custom URL |

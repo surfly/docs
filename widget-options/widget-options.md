@@ -160,7 +160,7 @@ After setting up the continuation point, add the following widget options:
   cookie_transfer_urls: ["https://example.com/surfly_cookie_transfer/"]
 ```
 <a name="soft-session"></a>
-#### Soft session continuation
+#### Soft session continuation{#soft-session-continuation}
 
 It is also possible to integrate session continuation without changing load
 balancer configuration. All you need to do is to make sure that the Surfly widget
@@ -184,7 +184,7 @@ If you need more help with this, please contact us at support@surfly.com. We can
 consult you on the implementation, or build the integration for you.
 
 <a name="manual-cookie-scopes"></a>
-#### Manual cookie transfer configuration
+#### Manual cookie transfer configuration{#manual-cookie-scopes}
 
 Default session continuation functionality works in most cases. However, if your application is using some special cookie scopes (for example, it sets cookies for specific path or subdomain), you might need to provide this information to Surfly.
 
@@ -233,7 +233,7 @@ Surfly.session().startLeader(null, userData);
 Of these key,value pairs, `name` and `email` will also be provided to the Surfly session so that the session can display the
 name of the user in the chatbox and make sure that the accompanying gravatar matches his email address.
 
-#### Tracking queue status
+#### Tracking queue status{#queue-tracking}
 
 You can also provide a Javascript function in the `QUEUE_CALLBACK` option to trace the status of the queue on the client side.
 We will call this function every time a user is being queue'd, rejoins, or leaves the queue.

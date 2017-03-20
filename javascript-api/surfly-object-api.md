@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# The Surfly Object
+# The Surfly Object{#surfly-object}
 
 > <a name="is-inside-session">Boolean Surfly.isInsideSession</a>
 

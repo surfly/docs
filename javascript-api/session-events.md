@@ -2,7 +2,7 @@
 
 Surfly JS API dispatches a number of events that you can listen to and attach custom handler functions using [Surfly.on()](surfly-object-api.md#on) and [SurflySession.on()](surfly-session-api.md#on). Callback functions are provided with arguments, depending on the event type.
 
-# Global Events
+# Global Events{#global-events}
 
 Global events can be registered with [Surfly.on()](surfly-object-api.md#on) method. 
 Global event handlers will be provided with 2 arguments:
@@ -29,7 +29,7 @@ triggered when a support agent availability changes. Parameters:
 - `available` is set to `true` if a support agent has just become available, and `false` if all agents have become unavailable.
 
 
-# Session Events
+# Session Events{#session-events}
 
 Session event handlers can be set with the [SurflySession.on()](surfly-session-api.md#on) method, or with the global [Surfly.on()](surfly-object-api.md#on) method. The latter will affect _all existing and future sessions_.
 
@@ -56,7 +56,7 @@ function startCobrowsing () {
 }
 ```
 
-#### Available events
+#### Available events{#available-events}
 
 <a name="session-created"></a>
 > session_created

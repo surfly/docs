@@ -2,7 +2,7 @@
 # Javascript API Reference
 
 ## Quickstart
-### 1. Load Surfly widget
+### 1. Load Surfly widget{#load-widget}
 
 To use the Surfly JS API, you will first need to include our snippet on your webpage:
 
@@ -17,7 +17,7 @@ To use the Surfly JS API, you will first need to include our snippet on your web
 
 Once it is there, the `Surfly.init()` function will be immediately available. Note that it is on you to make sure that you don't make any other API calls until `readyCallback` is called.
 
-### 2. Initialize the API
+### 2. Initialize the API{#initialize-api}
 
 > Surfly.init( [ settings ], [ readyCallback ] )
 
@@ -27,7 +27,7 @@ We load the Surfly widget code asynchronously, so that it doesn't slow down your
 
 {% em color="#ffffe0" %}Please note: You should initialize the API in the `<head>` tag of your HTML file. Please refer to our [examples](./javascript-api/examples.md) to see how the API should be initialized. {% endem %}
 
-### 3. Implement a callback function
+### 3. Implement a callback function{#implement-callback}
 
 `readyCallback` should be a function accepting one argument with the following structure:
 

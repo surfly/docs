@@ -1,10 +1,10 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
 
-#Advanced Integration
+#Advanced Integration{#advanced-integration}
 
 
 <a name="receipt"></a>
-#### Enabling session continuation
+#### Enabling session continuation{#session-continuation}
 
 If we want to make sure that the transition into a Surfly session is as smooth as possible we can enable [session continuation](../widget-options/widget-options.md/#session-continuation). This will allow the session state to be synchronized so that session data (for example, a user's cart or login status) will be maintained even when the session ends.
 
@@ -41,7 +41,7 @@ Once these options have been set, session continuation is ensured and, for insta
 
 We want to restrict access from certain pages during the session.
 
-In order to restrict access to this specific page (in our case, its path is '/about'), we can add the [blacklist](../widgetOptions/widgetOptions.md/#restrictions) option to our settings list:
+In order to restrict access to this specific page (in our case, its path is '/about'), we can add the [blacklist](../widget-options/widget-options.md/#restrictions) option to our settings list:
 ``` javascript
 blacklist: JSON.stringify([{"pattern":".*/about.*","redirect":"https://example.com/restricted"}])};
 ```

@@ -5,7 +5,7 @@
 <a name="about-sessions"></a>
 ##### How the Session Works{#about-sessions}
 
-To give you a head start, it helps to know more about the basics of how a Surfly session works. First of all, the session is loaded within an iframe that rests as an invisible layer on top of the website you started a session from. So when implementing our Javascript API, it helps to figure out whether you have to place this code inside a session, or apply it to the original page. In the following chapters you will learn more about this when you read more about Surfly.session and Surfly.currentSession. Note that both create a [SurflySession object](../javascriptApi/surflyObjectApi.md). Surfly.session is used on the original page to create a session object and for instance start the session. Surfly.currentSession is used when you want the code to apply to the session that is already loaded within the iframe. You might want to implement this for example, when you want to hide the "Get Help"-button when you're inside a co-browsing session.
+To give you a head start, it helps to know more about the basics of how a Surfly session works. First of all, the session is loaded within an iframe that rests as an invisible layer on top of the website you started a session from. So when implementing our Javascript API, it helps to figure out whether you have to place this code inside a session, or apply it to the original page. In the following chapters you will learn more about this when you read more about Surfly.session and Surfly.currentSession. Note that both create a [SurflySession object](../javascript-api/surfly-object-api.md). Surfly.session is used on the original page to create a session object and for instance start the session. Surfly.currentSession is used when you want the code to apply to the session that is already loaded within the iframe. You might want to implement this for example, when you want to hide the "Get Help"-button when you're inside a co-browsing session.
 
 <a name="website"></a>
 #### Cake shop website
@@ -61,9 +61,9 @@ In the image below, you can see that the icons in the chat box are now in our we
 
  ![widget options 2](http://i.imgur.com/b1bZihA.jpg)
 
-The API has an [extensive list of widget options](../widgetOptions.md).
+The API has an [extensive list of widget options](../widget-options.md).
 
-#### Create your own button{#startButton}
+#### Create your own button{#start-button}
 
 We'd like to create our own button to start a [co-browsing session](https://www.surfly.com/) so that we can customize it and control its behaviour more easily.
 
@@ -108,7 +108,7 @@ The flow will be as follows: the user clicks on the support button and is shown 
 * To be able to use the landing page, we have to remove the red banner blocking the session by setting the ```block_until_agent_joins``` option to ```false``` in the settings options.
 * Also, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 * Finally, we want to display the unique identifier (or pin) on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
-To do this, we use the [SurflySession API](../javascript-api/surflysessionApi.md) to get the pin.
+To do this, we use the [SurflySession API](../javascript-api/surflysession-api.md) to get the pin.
 
 ``` javascript
 <button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
@@ -163,7 +163,7 @@ We now have our own personalised landing page to greet our customers:
 
 When a client places an order during a session, we don't want the agent to be able to see their payment details and we would therefore like to mask some form data from the agent.
 
-To enable [field masking](../introduction/integration_options.md/#field_masking) (the follower will not see the leader's input), add the ```surfly_private``` attribute to fields containing sensitive information:
+To enable [field masking](../introduction/integration-options.md/#field-masking) (the follower will not see the leader's input), add the ```surfly_private``` attribute to fields containing sensitive information:
 ``` html
 <span>Card Number</span>
 <input type="text" size="20" data-stripe="number" surfly_private>

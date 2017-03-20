@@ -1,5 +1,5 @@
 <a href="https://www.surfly.com/">![logo](../images/logosmall.png)</a>
-# Examples
+# Examples{#examples}
 Here you can find some examples for common integration scenarios.
 
 All the code snippets below assume that Surfly widget script is loaded, and the API is already initialized with the `Surfly.init()` function. For example:
@@ -23,7 +23,7 @@ All the code snippets below assume that Surfly widget script is loaded, and the 
 </head>
 ```
 
-### Zero configuration
+### Zero configuration{#zero-config}
 If you just want to add a Surfly button on your webpage, you need nothing more than
 ```javascript
 Surfly.button();
@@ -34,14 +34,14 @@ You can also start a session right away, without a button:
 Surfly.session().startLeader();
 ```
 
-### Session to another page (not implemented)
+### Session to another page (not implemented){#set-start-url}
 By default, all newly created sessions will point to the current page, to provide the most transparent experience. This behavior can be overridden with `url` option:
 ```javascript
 Surfly.session({url: 'https://example.com'}).startLeader();
 ```
 The code above will open a cobrowsing frame to `https://example.com`.
 
-### Custom button
+### Custom button{#custom-button}
 We provide a convenient `Surfly.button()` function for rendering a nice default button. But it really doesn't do much, and it is very easy to make a custom button:
 
 ```javascript
@@ -70,7 +70,7 @@ We provide a convenient `Surfly.button()` function for rendering a nice default 
 </script>
 ```
 
-### Custom session window
+### Custom session window{#custom-session-window}
 If you need full control over the session window (e.g. if you want to build a custom UI on top of cobrowsing frame), you can use the `iframeSelector` argument of `SurflySession.startLeader()` / `SurflySession.startFollower()` functions to pass your own window container:
 ```html
 <iframe class="my-custom-cobrowsing-window"></iframe>
@@ -79,7 +79,7 @@ If you need full control over the session window (e.g. if you want to build a cu
 </script>
 ```
 
-### Custom queue management
+### Custom queue management{#custom-queue-management}
 Surfly comes with a basic Support queue functionality in the web dashboard. However, you could easily make your own implementation based on session events.
 
 ```javascript
@@ -105,7 +105,7 @@ Surfly.session({hide_until_agent_joins: true})
 .startLeader();
 ```
 
-### Joining a session from an existing link
+### Joining a session from an existing link{#join-from-link}
 
 It is possible to create a session beforehand (with `.SurflySession.create()` or [the REST API](http://docs.surfly.apiary.io/), and open a session later using the JS API. Note that you must open a leader link within 30 seconds after its creation, or it will expire.
 
@@ -131,7 +131,7 @@ On the follower side:
 ```
 
 
-### Seamless social cobrowsing
+### Seamless social cobrowsing{#seamless}
 Let's say we have a web shop, and we want to add a functionality of "shopping with a friend". In this case we probably want to enable session continuation and remove restrictions from followers:
 
 ```javascript
@@ -145,7 +145,7 @@ Surfly.button({
 });
 ```
 
-### Communication with the cobrowsing window
+### Communication with the cobrowsing window{#window-communication}
 While the Surfly session is active, it is possible to exchange messages between the original page and the page inside the session. You will need the Surfly widget to be loaded on both pages. The `targetOrigin` and `srcOrigin` parameters allow you to authenticate the other party, and protect the messages from being read or faked by unauthorized scripts:
 
 ```javascript
@@ -173,7 +173,7 @@ else {
 }
 ```
 
-### Custom styles
+### Custom styles{#custom-styles}
 For many visual customizations, overriding default CSS styles is enough:
 ```html
 <style>
@@ -194,12 +194,12 @@ For many visual customizations, overriding default CSS styles is enough:
 </script>
 ```
 
-### Service code button
+### Session-id button{#session-id-button}
 
-Should you choose the "service code" flow, you can use the `hide_until_agent_joins` setting to delay a session window from opening.
+Should you choose the session-id flow, you can use the `hide_until_agent_joins` setting to delay a session window from opening.
 
 ```javascript
-<button id="mybutton">Get service code</button>
+<button id="mybutton">Get session ID</button>
 <script>
   var myBtn = document.getElementById('mybutton');
   myBtn.addEventListener('click', function() {
