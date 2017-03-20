@@ -83,12 +83,12 @@ As can be seen below, the agents can directly see this information from the 'Que
 
 ![Queue panel](http://i.imgur.com/OLyMKD5.png)
 
-<a name="controlAppearance"></a>
-#### Change appearance based on who is in control{#controlAppearance}
+<a name="control-appearance"></a>
+#### Change appearance based on who is in control{#control-appearance}
 
 You can change the way the website behaves depending on who is in control. This is especially useful with regards to payment forms when you only want to allow the client to confirm the order.
 
-To do this, you can use the ```.on()``` function of the [SurflySession API](../javascript-api/surflysession_api.md#on) to set an event handler. More specifically, we catch the ```control``` event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the ```to``` parameter of the event), and set the elements we wish to enable/disable.
+To do this, you can use the ```.on()``` function of the [SurflySession API](../javascript-api/surflysession-api.md#on) to set an event handler. More specifically, we catch the ```control``` event which is fired every time the control is switched within a Surfly session. Then, we detect who is in control (by checking the ```to``` parameter of the event), and set the elements we wish to enable/disable.
 
 In our example below, we disable the 'Order' button when the agent is in control, only allowing the leader to confirm payment:
 
@@ -137,7 +137,7 @@ Add this option to your list of settings:
 ui_off: true // make Surfly invisible
 ```
 
-<a name="exitButton"></a>
+<a name="exit-button"></a>
 #### Create your own exit button{#exit-button}
 
 We already have our own start button and landing page, but now that we have removed the UI, we can't exit a session or use the chat. It's up to us to choose which functionality we want to add to our website and customize the way it will look.
@@ -171,7 +171,7 @@ Make sure that the page you are adding the button to contains the snippet code.
 ![exit button](http://i.imgur.com/BhlkW24.png)
 
 {% em color="#ffffe0" %}Please note:
-Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealthMode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
+Considering how our website is built, there's a unique 'get help' button which means that our customers can only start a session from the home page (by clicking a button which redirects them to the landing page). However, [stealth mode](../introduction/integration.md/#stealth-mode) is activated by default on all the pages containing the Surfly widget and allows to start a session instantly by pressing CTRL + ENTER. Stealth mode can also be disabled, if you prefer.  {% endem %}
 
 <a name="small-button"></a>
 #### Session ID approach{#small-button}
@@ -185,7 +185,7 @@ When the cake icon is clicked, the user will be added to the queue, and the sess
 * First, we create a button that will start a session when clicked
 * We then initialize the session
 * In order to keep all the options we previously set in the landing page, we need to pass those settings to the Surfly.session() function.
-* Finally, we use the [SurflySession API](../javascriptApi/surflysessionApi.md) to retrieve the pin and display it in place of the cake icon:
+* Finally, we use the [SurflySession API](../javascript-api/surflysession-api.md) to retrieve the pin and display it in place of the cake icon:
 
 ``` javascript
 <button id="start-button" onclick="sessionStart()"><img id="id-cover" src="**our_cake_image**"></button>

@@ -36,7 +36,7 @@ if (Surfly.isInsideSession) {
 
 > <a name="list-sessions">Array Surfly.listSessions()</a>
 
-Returns a list of [SurflySession](surfly-session-api.md) objects that were created with JS API, or restored after the page reload. Note that by the time the [init callback](javascript-api.md) is called, this list can already contain some sessions restored after a page reload.
+Returns a list of [SurflySession](surfly-session-api.md) objects that were created with JS API, or restored after the page reload. Note that by the time the [init callback](../javascript-api.md) is called, this list can already contain some sessions restored after a page reload.
 
 Inside a session, the return array will contain only one object, representing the currently open session (see [Surfly.currentSession](#current-session)).
 

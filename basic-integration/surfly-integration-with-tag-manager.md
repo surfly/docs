@@ -46,7 +46,7 @@ In short, you add a tag to your website as follows:
 
 ####Example tag with existing chat solution
 
-Below you'll find an example of what a tag would look like with the session-id approach. The example also includes the option of adding a third-party chat solution to your website. In this case we've used [Olark](www.olark.com).
+Below you'll find an example of what a tag would look like with the session-id approach. The example also includes the option of adding a third-party chat solution to your website. In this case we've used Olark.
 
 The tag is structured as follows:
 

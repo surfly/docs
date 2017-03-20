@@ -108,7 +108,7 @@ The flow will be as follows: the user clicks on the support button and is shown 
 * To be able to use the landing page, we have to remove the red banner blocking the session by setting the ```block_until_agent_joins``` option to ```false``` in the settings options.
 * Also, we would like the user to be redirected to the home page when an agent joins them. To do this, we can use the Javascript API to redirect the session to another url when the first viewer joins by using the .on() function to catch this event:
 * Finally, we want to display the unique identifier (or pin) on the landing page when a session starts. This is so that the customer is aware that they're in the queue and, in some cases, so that they can communicate the ID to an agent that they were already in contact with (over the phone for example). The agent will then be able to find the customer on the queue page, and join their session.
-To do this, we use the [SurflySession API](../javascript-api/surflysession-api.md) to get the pin.
+To do this, we use the [SurflySession API](../javascript-api/surfly-session-api.md) to get the pin.
 
 ``` javascript
 <button class="my-custom-button" id="get_help_button" onclick="landing()"></button>
