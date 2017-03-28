@@ -72,6 +72,11 @@ Changes to the code will take priority over changes to the options panel.{% ende
 | agent_can_take_control | false | A follower can switch control without an explicit leader consent |
 | agent_can_end_session | true | Allow terminating a session from the follower's end |
 
+##### Developer console{#developer-console}
+| Option | Default | Description |
+| ---------------| ------------|------------|
+|verbose_console | true | When set to false, non-important console messages will be silenced |
+
 <h3 class="table_class">Session configuration</h3>
 
 <a name="screen-options"></a>
