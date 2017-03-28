@@ -103,13 +103,14 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 ##### Session start{#session-interaction}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| url | _&lt;current page&gt;_ | Initial URL that will be opened inside the session |
+| url | _current page_ | Initial URL that will be opened inside the session. Only available in REST API at the moment |
 | autohide_button | true | Hide the Surfly button when no agent is available |
 | stealth_mode | true | When enabled, users can use CTRL + ENTER to start a Surfly session |
 | format_session_id | true | Change the session id to something easy to communicate over the phone (eg, 123-123-123) |
 | splash | true | Do we need to show the splash screen on session start? |
 | block_until_agent_joins | true | If using the Surfly button, block the screen until a follower joins |
 | start_docked | false | starts the chat box in docked mode, but can be expanded during the session |
+| auto_restore | true | (JS API only) automatically restores a session after a page reload |
 
 
 ##### Cookies{#cookie-options}
