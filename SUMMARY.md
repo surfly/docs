@@ -19,5 +19,5 @@
 * [REST API](http://docs.surfly.apiary.io/)
 * [Surfly Options](widget-options.md)
   * [Options details](widget-options/widget-options.md)
-* [FAQ](faqs.md)
+* [FAQ](http://help.surfly.com/)
 
