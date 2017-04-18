@@ -1,8 +1,4 @@
-```
-<a href="https://www.surfly.com/">![logo](images/logosmall.png)</a>
-```
-
-
+&lt;a href="https://www.surfly.com/"&gt;!\[logo\]\(images/logosmall.png\)&lt;/a&gt;
 
 
 
