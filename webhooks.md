@@ -1,4 +1,4 @@
-# [![](/images/logosmall.png)](https://www.surfly.com)
+[![](/images/logosmall.png)](https://www.surfly.com)
 
 # Webhooks
 
