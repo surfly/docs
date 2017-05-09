@@ -24,19 +24,49 @@ If we detect that an event cannot be delivered \(for example, if the webhook URL
 
 Currently you can subscribe to the following events:
 
-* `session.queued` 
-  triggered when a session is placed in the queue
-  ```json
-  {
-      "session_id": <string>,
-      "leader_link": <string>,
-      "viewer_link": <string>,
-      "pin": <string>,
-      "tags": <list of strings>,
-      "meta": <string>,
-      "start_time": <string timestamp>
-  }
-  ```
+##### session.queued
+
+triggered when a session is placed in the queue
+
+```js
+{
+    "session_id": "<string>",
+    "leader_link": "<url>",
+    "viewer_link": "<url>",
+    "pin": "4-digit string",
+    "tags": [/* list of strings */],
+    "meta": "<string>",
+    "start_time": "<string timestamp>"
+}
+```
+
+##### session.started
+
+triggered when a session is created \(via API call or from the Surfly website\)
+
+```js
+{
+    "session_id": "<string>",
+    "leader_link": "<string>",
+    "viewer_link": "<string>",
+    "tags": [/* list of strings */],
+    "start_time": "<string timestamp"
+}
+```
+
+##### session.ended
+
+triggered when a session is ended
+
+```javascript
+{
+    "session_id": "<string>",
+    "pin": "4-digit string",
+    "start_time": "<string timestamp>",
+    "end_time": "<string timestamp>",
+    "duration": <number of seconds>
+}
+```
 
 
 
