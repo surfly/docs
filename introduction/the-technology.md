@@ -5,7 +5,7 @@
 This chapter is dedicated to explaining how Surfly works compared to other solutions, as well as creating a better understanding of our co-browsing software. This will make it easier to implement our API and understand the code.
 
 <a name="co-browsing-screen-sharing"></a>
-##### Co-browsing vs. Screen-sharing{#co-browsing-screen-sharing}
+#### Co-browsing vs. Screen-sharing{#co-browsing-screen-sharing}
 
 There are countless co-browsing and screen-sharing solutions on offer. Sometimes it is not immediately clear what the differences are between them. First of all, let's filter down to the distinction between co-browsing and screen-sharing.
 
@@ -16,7 +16,7 @@ Also, screen-sharing solutions are pixel-based, which means that the controller 
 What most screen-sharing and co-browsing solutions, other than Surfly, have in common, is that both rely on external software that needs to be installed by both users. This makes it unsuitable for most web situations as people are often unwilling to install extra software that circumvents the browser's security measures.
 
 <a name="js-co-browsing"></a>
-##### Javascript Solutions{#js-co-browsing}
+#### Javascript solutions{#js-co-browsing}
 
 With Javascript based solutions, a widget is created in which the Javascript of the original page is being loaded. This process requires a lot of bandwith since requests from the user in control continuously need to be sent to the website, then to the co-browsing solution, then back to the controlling user as well as the followers.
 
@@ -44,7 +44,7 @@ This approach enables us to overcome cross-domain policies and have all elements
 * At Surfly we make sure that what the controller sees on their screen will be matched by all followers. This includes scroll position and the state of responsive websites.
 
 <a name="how-to-start"></a>
-##### How the Session Works{#how-to-start}
+#### How the session works{#how-to-start}
 
 Now it's time to start implementing Surfly. This can be done in three ways:
 
@@ -61,3 +61,23 @@ You could also integrate Surfly into your already implemented helpdesk software 
 Surfly could also be used for educational purposes, as a lot of learning platforms use our API to create an online class room. Or maybe you would like to add Surfly as a social tool to your website to allow your users to shop together.
 
 Surfly can be integrated in many ways, together with other software solutions. Our API is completely rebrandable according to your wishes, and it can even be made into a fully transparent layer that lays on top of your website. But most importantly, for us, safety comes first, so all Surfly sessions are HTTPS secured. Also, we even offer the option of installing the servers for you on premise.
+
+<a name="on premise requirements"></a>
+#### On-premise hardware requirements{#on-premise-requirements}
+
+The maximum number of concurrent sessions will depend on the provided hardware and the type of usage.
+
+##### Required production (virtual) hardware
+
+- Quad Core CPU 2.5Ghz (can also be virtualized through VMWare or AWS fe)
+- 8GB of RAM or higher15GB of HD space100 Mbps Ethernet
+
+##### System requirements 
+- Linux x86_64, x86 (Debian 8)
+- Hardware platform x86-64
+- A public IPv4 address
+
+##### Setup requirements 
+- Surfly will need a remote root account for maintenance, monitoring and upgrades
+- A TLD DNS domain reserved for co-browsing (can be supplied by Surfly)
+- A wildcard SSL certificate accompanying the domain name (can be supplied by Surfly)
