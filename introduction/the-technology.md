@@ -70,7 +70,7 @@ Surfly can be integrated in many ways, together with other software solutions. O
 - Since we make use of websockets, some virus software or proxy solutions can interfere with the Surfly technology. Make sure to create an exception for *.surfly.com
 - Access port 443 of the installed server (regular HTTPS port)
 - For videochat, Surfly makes use of WebRTC, and more specifically TokBox' solution. For more info on the TokBox requirements: https://tokbox.com/developer/requirements/
-- No bandwith requirements, accept for TokBox:
+- No bandwith requirements for using Surfly. With regard to TokBox bandwith:
     - Video: 300 kbps per stream (recommended lowest level)
     - Audio: 50 kbps per stream (recommended lowest level)
 
