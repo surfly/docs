@@ -2,54 +2,6 @@
 
 #Advanced Integration{#advanced-integration}
 
-
-<a name="receipt"></a>
-#### Enabling session continuation{#session-continuation}
-
-If we want to make sure that the transition into a Surfly session is as smooth as possible we can enable [session continuation](../widget-options/widget-options.md/#session-continuation). This will allow the session state to be synchronized so that session data (for example, a user's cart or login status) will be maintained even when the session ends.
-
-There are two types of session continuations:
- - [full session continuation](../widget-options/widget-options.md/#full-session): allows the transfer of all cookies, including http-only cookies
- - [soft session continuation](../widget-options/widget-options.md#soft-session): excludes http only cookies
-
-In our example, we will use soft session continuation. We need to add the snippet code to all the pages we wish to transfer cookies from. We also have to set two cookie options to ensure soft session continuation (including on the landing page):
-
-``` javascript
-<script>
-  (function(s,u,r,f,l,y){s[f]=s[f]||{init:function(){s[f].q=arguments}};
-  l=u.createElement(r);y=u.getElementsByTagName(r)[0];l.async=1;
-  l.src='https://surfly.com/surfly.js';y.parentNode.insertBefore(l,y);})
-  (window,document,'script','Surfly');
-
-  var settings={
-    widget_key:'**your widget key here**',
-    cookie_transfer_enabled: true,
-    cookie_transfer_proxying: false
-  }
-
-  Surfly.init(settings, function(init) {
-  });
-
-</script>
-```
-Once these options have been set, session continuation is ensured and, for instance, it is possible to use cookies to store information about an order placed from within a Surfly session.
-
-![receipt](http://i.imgur.com/TAjpIOt.jpg)
-
-<a name="blacklist"></a>
-#### Configuring the blacklist{#blacklist}
-
-We want to restrict access from certain pages during the session.
-
-In order to restrict access to this specific page (in our case, its path is '/about'), we can add the [blacklist](../widget-options/widget-options.md/#restrictions) option to our settings list:
-``` javascript
-blacklist: JSON.stringify([{"pattern":".*/about.*","redirect":"https://example.com/restricted"}])};
-```
-As can be seen above, we chose to redirect the user to our custom restricted page which informs them that this page is restricted:
-
-![restricted](http://i.imgur.com/FyDZtqK.jpg)
-
-
 <a name="metadata"></a>
 #### Queue metadata{#metadata}
 
