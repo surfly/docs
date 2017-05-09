@@ -19,9 +19,11 @@ Once it is there, the `Surfly.init()` function will be immediately available. No
 
 ### 2. Initialize the API{#initialize-api}
 
-> Surfly.init( [ settings ], [ readyCallback ] )
+> Surfly.init( settings, [ readyCallback ] )
 
 This function **must** be called (just once per page) before any other API call is made. This initializes the environment for Surfly, settings based on `settings` object, tests required browser features, and passes the result to the `readyCallback` function.
+
+_**Note: `settings` object must contain at least your `widget_key`**_
 
 We load the Surfly widget code asynchronously, so that it doesn't slow down your page load. This also means that the Surfly API is _**not initialized immediately after the snippet code is executed**_. That's why it is important that you always start by calling `Surfly.init()`, and don't make any other API calls before `readyCallback` is called.
 
