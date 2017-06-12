@@ -94,6 +94,18 @@ When a user is being queue'd, you may want to pass some information to the agent
 
 ![queue metadata](https://raw.github.com/surfly/tutorial/master/screens/queue_metadata.png)
 
+<a name="manage-agents"></a>
+#### Managing your agents{#manage-agents}
+
+From your admin dashboard you can also add or remove agents from your account and assign roles to them. 
+
+![](/assets/agents-panel2.png)
+
+There are three types of roles: admin, manager and agent. 
+- An admin will have access to all configuration settings
+- A manager can only add and remove agents from the backend
+- An agent can respond to incoming requests but not change settings or add / remove agents.
+
 <a name="popupurl"></a>
 #### Exiting the session display or redirect to another page{#popupurl}
 
