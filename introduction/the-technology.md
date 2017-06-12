@@ -62,8 +62,8 @@ Surfly could also be used for educational purposes, as a lot of learning platfor
 
 Surfly can be integrated in many ways, together with other software solutions. Our API is completely rebrandable according to your wishes, and it can even be made into a fully transparent layer that lays on top of your website. But most importantly, for us, safety comes first, so all Surfly sessions are HTTPS secured. Also, we even offer the option of installing the servers for you on premise.
 
-<a name="requirements"></a>
-#### Surfly hardware requirements{#requirements}
+<a name="on premise requirements"></a>
+#### On-premise hardware requirements{#on-premise-requirements}
 
 The maximum number of concurrent sessions will depend on the provided hardware and the type of usage.
 
