@@ -62,7 +62,19 @@ Surfly could also be used for educational purposes, as a lot of learning platfor
 
 Surfly can be integrated in many ways, together with other software solutions. Our API is completely rebrandable according to your wishes, and it can even be made into a fully transparent layer that lays on top of your website. But most importantly, for us, safety comes first, so all Surfly sessions are HTTPS secured. Also, we even offer the option of installing the servers for you on premise.
 
-<a name="on premise requirements"></a>
+<a name="basic-requirements"></a>
+#### Basic requirements{#basic-requirements}
+
+- Surfly works with all modern browsers, such as: Chrome, Firefox, Internet Explorer 11 (Edge), Safari and Opera
+- Set the server up to allow connections to *.surfly.com
+- Since we make use of websockets, some virus software or proxy solutions can interfere with the Surfly technology. Make sure to create an exception for *.surfly.com
+- Access port 443 of the installed server (regular HTTPS port)
+- For videochat, Surfly makes use of WebRTC, and more specifically TokBox' solution. For more info on the TokBox requirements: https://tokbox.com/developer/requirements/
+- No bandwith requirements, accept for TokBox:
+    - Video: 300 kbps per stream (recommended lowest level)
+    - Audio: 50 kbps per stream (recommended lowest level)
+
+<a name="on-premise-requirements"></a>
 #### On-premise hardware requirements{#on-premise-requirements}
 
 The maximum number of concurrent sessions will depend on the provided hardware and the type of usage.

@@ -13,6 +13,7 @@ The main points covered in this section are:
  - [Drawing mode](<#drawing-mode>)
  - [Control switching](<#customize-control-switching>)
  - [Adding metadata to the queue](<#metadata>)
+ - [Managing your agents](<#manage-agents>)
  - [Ending the session display or redirect to another page](<#popupurl>)
 
 <a name="invite-user"></a>
