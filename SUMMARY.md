@@ -10,6 +10,7 @@
 * [JavaScript API Integration guide](the-surfly-tutorial.md)
   * [Basic Integration](tutorial/chapter1.md)
   * [Advanced Integration](tutorial/advanced-integration.md)
+* [Session Continuation](session-continuation.md)
 * [Javascript API Reference](javascript-api.md)
   * [Top-level API](javascript-api/surfly-object-api.md)
   * [Sessions](javascript-api/surfly-session-api.md)
