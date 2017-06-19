@@ -17,14 +17,12 @@ You can view the code in the [repository](https://github.com/MathildeJ/integrati
 
 
  - [Advanced Integration](/tutorial/advanced-integration.md)
-   - [Enabling session continuation](./tutorial/advanced-integration.md/#receipt)
    - [Configuring the blacklist](./tutorial/advanced-integration.md/#blacklist)
    - [Queue metadata](./tutorial/advanced-integration.md/#metadata)
    - [Change appearance based on who has control](./tutorial/advanced-integration.md/#control-appearance)
    - [Customize Surfly's look and feel](./tutorial/advanced-integration.md/#remove-ui)
      - [Create your own exit button](./tutorial/advanced-integration.md/#exit-button)
      - [Session ID approach](./tutorial/advanced-integration.md/#small-button)
-
 
 <br>
 {% em color="#ffffe0" %}Please note:

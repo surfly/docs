@@ -121,7 +121,7 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 |  cookie_transfer_proxying | true | |
 |  cookie_transfer_urls | | | |
 
-More information on [session continuation](./widget-options/widget-options.md/#session-continuation)
+More information on [session continuation](./session-continuation.md)
 
 ##### Session end{#session-end-options}
 |  Option | Default | Description |

@@ -7,8 +7,6 @@ The high performance of Surfly can be attributed to our [proxy approach](https:/
 
 By default, Surfly does this for you. If your website makes use of http-only cookies though, it is necessary to setup a _continuation point_. 
 
-Session continuation is currently supported only for sessions started with the Surfly widget. Please note: When integrating Surfly into your website, it is important to know that top level domains do not transfer third party cookies to the iframe, so instead you may choose to open a session in a new tab, or to use a CNAME.
-
 <a name="continuation-point-setup"></a>
 ###Continuation point setup{#continuation-point-setup}
 
@@ -17,7 +15,7 @@ You start the continuation point setup on the admin panel. Here, you go to "sett
 ![](/assets/continuationpointdash2.png)
 
 Next, there are two options:
-    - Set up the continuation point within your load balancer (server level)
+    - Set up the continuation point within your server (server level)
     - Or integrate it within your website's code by adding a reverse proxy (application level)
     
 <a name="server-continuation-point"></a>    

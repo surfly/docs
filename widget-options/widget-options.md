@@ -23,7 +23,7 @@ Surfly.session().end(redirect_url);
 ```
 
 `endSession` function will trigger the following events:
- - session continuation
+ - [session continuation](../session-continuation.md)
  - end of the session
  - leader is redirected to the page specified in `redirect_url`
 

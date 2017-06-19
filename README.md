@@ -25,6 +25,10 @@ To test out a basic implementation of Surfly, you can follow this guide to quick
 
 Follow our step by step guide as we use our JavaScript API to integrate Surfly into our example application.
 
+##### [Session Continuation](./session-continuation.md)
+
+Learn how to transfer cookies to- and from a Surfly session.
+
 ##### [JavaScript API reference](./javascript-api.md)
 
 For a deeper integration of Surfly, and a list of the functions available, please see the Javascript API reference.
