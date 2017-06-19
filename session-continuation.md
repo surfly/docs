@@ -15,8 +15,8 @@ You start the continuation point setup on the admin panel. Here, you go to "sett
 ![](/assets/continuationpointdash2.png)
 
 Next, there are two options:
-    - Set up the continuation point within your server (server level)
-    - Or integrate it within your website's code by adding a reverse proxy (application level)
+ - Set up the continuation point within your server (server level)
+ - Or integrate it within your website's code by adding a reverse proxy (application level)
     
 <a name="server-continuation-point"></a>    
 ####Server level continuation point{#server-continuation-point}
