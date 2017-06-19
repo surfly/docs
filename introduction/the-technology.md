@@ -43,6 +43,20 @@ This approach enables us to overcome cross-domain policies and have all elements
 * We do not share the state between the two different browsers, but we only send over the visual changes of one to the other. This makes our approach much more secure and robust.
 * At Surfly we make sure that what the controller sees on their screen will be matched by all followers. This includes scroll position and the state of responsive websites.
 
+
+
+<a name="comparison"></a>
+##### In comparison: {#comparison}
+| | JS Based Co-Browsing | Surfly | Pixel Based Co-Browsing | ScreenSharing |
+|---|---|---|---|---|
+| High Quality | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> |
+| No setup required | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> |
+| Works with iFrames | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> |
+| No Installation or Extension Required | <img src="/assets/checkmark3.png" text-align="center">| <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> |
+| Can be Integrated in Existing WebApp | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> |
+| Works with legacy web technology (activex, flash) | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> |
+| Can share your desktop | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/x icon.png" text-align="center"> | <img src="/assets/checkmark3.png" text-align="center"> |
+
 <a name="how-to-start"></a>
 #### How the session works{#how-to-start}
 
