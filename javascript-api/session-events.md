@@ -161,3 +161,12 @@ triggered when control over the session has been transferred. Parameters:
 - `to` index of the client that now has the control. Always 0 for the leader, 1 or more for a viewer
 - `userData` user data of the user who received the control
 - `gained` set to true if control was given to the current user
+
+<hr />
+
+<a name="file-download"></a>
+> file_download
+
+triggered when a file download occurs inside the session. Note that this event is only fired when the user is controlling the session. This JS event is fired regardless of the `share_downloads` session option. Parameters:
+- `url` direct link to the downloaded file. File will be available until the end of the session.
+- `filename` name of the downloaded file

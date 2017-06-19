@@ -116,6 +116,12 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 | url | _current page_ | Initial URL that will be opened inside the session. Only available in REST API at the moment |
 
 
+##### File downloads{#downloads}
+|  Option | Default | Description |
+| ---------------| ------------|------------|
+| share_downloads | true | Allow users to share downloaded files. If this option is disabled, you can still use the `file_download` event in JS API |
+
+
 ##### Cookies{#cookie-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
