@@ -31,9 +31,9 @@ Add these lines in your config file:
 
 ``` javascript
 location /surfly_cookie_transfer/ {
-proxy_pass https://surfly.com;
-proxy_set_header X-Continuation-Origin https://example.com;
-proxy_set_header X-Widget-Key 24d1414c71a94cbf9f205ed4fc4999b5;
+    proxy_pass https://surfly.com;
+    proxy_set_header X-Continuation-Origin https://example.com;
+    proxy_set_header X-Widget-Key 24d1414c71a94cbf9f205ed4fc4999b5;
 }
 ```
 <a name="haproxy"></a>
@@ -41,15 +41,15 @@ proxy_set_header X-Widget-Key 24d1414c71a94cbf9f205ed4fc4999b5;
 
 ``` javascript
 frontend example-com-https
-acl surfly_session_continuation hdr(host) -i example.com path_beg /surfly_cookie_transfer/
-use_backend surfly_continuation_point_https if surfly_session_continuation
-...your custom configuration here...
+  acl surfly_session_continuation hdr(host) -i example.com path_beg /surfly_cookie_transfer/
+  use_backend surfly_continuation_point_https if surfly_session_continuation
+  ...your custom configuration here...
 
 backend surfly_continuation_point_https
-http-request set-header X-Continuation-Origin https://example.com
-http-request set-header X-Widget-Key 24d1414c71a94cbf9f205ed4fc4999b5
-http-request set-header Host surfly.com
-server surfly surfly.com:443 ssl
+   https://example.com
+   http-request set-header X-Widget-Key 24d1414c71a94cbf9f205ed4fc4999b5
+   http-request set-header Host surfly.com
+   server surfly surfly.com:443 ssl
 ```
 <a name="apache"></a>
 #####Apache{#apache}
@@ -59,9 +59,9 @@ Make sure you have **mod_ssl**, **mod_proxy**, **mod_proxy_http**, and **mod_hea
 SSLProxyEngine On
 
 <Location "/surfly_cookie_transfer/">
-RequestHeader set X-Continuation-Origin "https://example.com"
-RequestHeader set X-Widget-Key "24d1414c71a94cbf9f205ed4fc4999b5"
-ProxyPass "https://surfly.com/surfly_cookie_transfer/"
+   RequestHeader set X-Continuation-Origin "https://example.com"
+   RequestHeader set X-Widget-Key "24d1414c71a94cbf9f205ed4fc4999b5"
+   ProxyPass "https://surfly.com/surfly_cookie_transfer/"
 </Location>
 ```
 
@@ -79,8 +79,8 @@ This is possible with the `cookie_transfer_scopes` setting. If specified, it sho
 
 ```javascript
 cookie_transfer_scopes: [
-{name: 'shoppingcart', path: '/cart', domain: 'example.com'},
-{name: 'sessionid', path: '/', domain: '.example.com'}
+   {name: 'shoppingcart', path: '/cart', domain: 'example.com'},
+   {name: 'sessionid', path: '/', domain: '.example.com'}
 ]
 ```
 
