@@ -95,11 +95,11 @@ The maximum number of concurrent sessions will depend on the provided hardware a
 
 ##### Required production (virtual) hardware
 
-- Quad Core CPU 2.5Ghz (can also be virtualized through VMWare or AWS fe)
-- 8GB of RAM or higher15GB of HD space100 Mbps Ethernet
+- Quad Core CPU (can also be virtualized through VMWare or AWS)
+- 8GB of RAM or higher 40GB of HD space 100 Mbps Ethernet
 
 ##### System requirements 
-- Linux x86_64, x86 (Debian 8)
+- Linux Debian 8
 - Hardware platform x86-64
 - A public IPv4 address
 

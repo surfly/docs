@@ -13,10 +13,6 @@ By default, Surfly does this for you. If your website makes use of http-only coo
 You start the continuation point setup on the admin panel. Here, you go to "settings" >> "options" and make sure the boxes for "Cookie transfer enabled" and "Cookie transfer proxying" are checked. Also, add the URLs you wish to transfer cookies from (in list format):
 
 ![](/assets/continuationpointdash2.png)
-
-Next, there are two options:
- - Set up the continuation point within your server (server level)
- - Or integrate it within your website's code by adding a reverse proxy (application level)
     
 <a name="server-continuation-point"></a>    
 ####Server level continuation point{#server-continuation-point}
@@ -89,7 +85,7 @@ The example above describes two cookies: `shoppingcart`, which is available on a
 <a name="test-page"></a>
 ###Testing the continuation point{#test-page}
 
-Once you've set up the continuation point, you can check the session continuation status by typing in your domain, and adding /surfly-cookie-transfer/ to the end:
+Once you've set up the continuation point, you can check the session continuation status by typing in your domain, and adding /surfly_cookie_transfer/ to the end:
 
 ![](/assets/Schermafbeelding 2017-06-14 om 16.16.28.png)<a href="https://www.surfly.com/">
 
