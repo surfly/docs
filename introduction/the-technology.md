@@ -43,6 +43,20 @@ This approach enables us to overcome cross-domain policies and have all elements
 * We do not share the state between the two different browsers, but we only send over the visual changes of one to the other. This makes our approach much more secure and robust.
 * At Surfly we make sure that what the controller sees on their screen will be matched by all followers. This includes scroll position and the state of responsive websites.
 
+
+
+<a name="comparison"></a>
+##### In comparison: {#comparison}
+|   | Javascript Based Co-Browsing  | Proxy Based Co-Browsing  | Pixel Based Co-Browsing  | ScreenSharing  |
+|---|---|---|---|---|
+| High Quality | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  |
+| No setup required  | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/x icon.png)  |
+| Works with iFrames | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  |
+| No Installation or Extension Required  | ![](/assets/checkmark3.png)| ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  |![](/assets/x icon.png)   |
+| Can be Integrated in Existing WebApp | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  |
+| Works with legacy web technology (activex, flash)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  |
+| Can share your desktop  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  |
+
 <a name="how-to-start"></a>
 #### How the session works{#how-to-start}
 
