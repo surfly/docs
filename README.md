@@ -5,7 +5,7 @@
 
 ### Welcome to Surfly
 
-[Surfly's co-browsing technology](https://www.surfly.com/) enables you to share your browser with others. The person who initiates the Surfly session is the leader, and the people who join this session are the followers. The follower's screen will be synchronized with the leader's, who is in control, and can navigate during the session. At any moment, control can be switched between the leader and the follower. During the session, you may choose to communicate via video or text chat, or by using the drawing tool provided.
+[Surfly](https://www.surfly.com/)'s co-browsing technology enables you to share your browser with others. The person who initiates the Surfly session is the leader, and the people who join this session are the followers. The follower's screen will be synchronized with the leader's, who is in control, and can navigate during the session. At any moment, control can be switched between the leader and the follower. During the session, you may choose to communicate via video or text chat, or by using the drawing tool provided.
 
 Complete customization of the co-browsing session is possible, and Surfly can even sit as a transparent layer within your website.  This documentation gives a comprehensive overview of Surfly's functionality, and the ways in which you can adapt Surfly to suit your needs.
 

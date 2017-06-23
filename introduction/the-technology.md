@@ -47,15 +47,15 @@ This approach enables us to overcome cross-domain policies and have all elements
 
 <a name="comparison"></a>
 ##### In comparison: {#comparison}
-|   | Javascript Based Co-Browsing  | Proxy Based Co-Browsing  | Pixel Based Co-Browsing  | ScreenSharing  |
+|   | JS Based Co-Browsing  |  Surfly  | Pixel Based Co-Browsing  | ScreenSharing  |
 |---|---|---|---|---|
-| High Quality | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  |
-| No setup required  | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/x icon.png)  |
-| Works with iFrames | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  |
-| No Installation or Extension Required  | ![](/assets/checkmark3.png)| ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  |![](/assets/x icon.png)   |
-| Can be Integrated in Existing WebApp | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  |
-| Works with legacy web technology (activex, flash)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  | ![](/assets/checkmark3.png)  |
-| Can share your desktop  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  | ![](/assets/x icon.png)  | ![](/assets/checkmark3.png)  |
+| High Quality | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/x icon.png" align="center">  |
+| No setup required  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/x icon.png" align="center">  |
+| Works with iFrames | <img src="/assets/x icon.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  |
+| No Installation or Extension Required  | <img src="/assets/checkmark3.png" align="center">| <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/x icon.png" align="center"> |
+| Can be Integrated in Existing WebApp | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/x icon.png" align="center">  |
+| Works with legacy web technology (activex, flash)  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  |
+| Can share your desktop  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/x icon.png" align="center">  | <img src="/assets/checkmark3.png" align="center">  |
 
 <a name="how-to-start"></a>
 #### How the session works{#how-to-start}
