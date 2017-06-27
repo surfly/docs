@@ -79,6 +79,13 @@ triggered when a session window has been loaded (usually after a call to `Surfly
 
 <hr />
 
+<a name="session-loaded"></a>
+> session_loaded
+
+triggered when the DOM inside the session has been fully loaded. Has no additional parameters.
+
+<hr />
+
 <a name="viewer-joined"></a>
 > viewer_joined
 
