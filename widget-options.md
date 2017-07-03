@@ -63,6 +63,7 @@ Changes to the code will take priority over changes to the options panel.{% ende
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | hidden | false | Do not show the button |
+| language | 'en' | Language of the interface |
 | position | 'bottomleft' | Positions the Surfly Support Button. The options are: 'bottomleft', 'bottomright', 'middleright' |
 
 ##### Control switching{#control-switching}
@@ -103,14 +104,16 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 ##### Session start{#session-interaction}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| url | _current page_ | Initial URL that will be opened inside the session. Only available in REST API at the moment |
-| autohide_button | true | Hide the Surfly button when no agent is available |
-| stealth_mode | true | When enabled, users can use CTRL + ENTER to start a Surfly session |
-| format_session_id | true | Change the session id to something easy to communicate over the phone (eg, 123-123-123) |
-| splash | true | Do we need to show the splash screen on session start? |
-| block_until_agent_joins | true | If using the Surfly button, block the screen until a follower joins |
-| start_docked | false | starts the chat box in docked mode, but can be expanded during the session |
 | auto_restore | true | (JS API only) automatically restores a session after a page reload |
+| autohide_button | true | Hide the Surfly button when no agent is available |
+| block_until_agent_joins | true | If using the Surfly button, block the screen until a follower joins |
+| format_session_id | true | Change the session id to something easy to communicate over the phone (eg, 123-123-123) |
+| language | 'en' | Language of the interface |
+| show_loading_screen| true | Show the loading screen when starting a session |
+| splash | true | Do we need to show the splash screen on session start? |
+| start_docked | false | starts the chat box in docked mode, but can be expanded during the session |
+| stealth_mode | true | When enabled, users can use CTRL + ENTER to start a Surfly session |
+| url | _current page_ | Initial URL that will be opened inside the session. Only available in REST API at the moment |
 
 
 ##### Cookies{#cookie-options}
