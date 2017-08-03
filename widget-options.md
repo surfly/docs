@@ -42,7 +42,6 @@ Changes to the code will take priority over changes to the options panel.{% ende
 |  Option | Default | Description |
 | ---------------| ------------|------------|
 | videochat | true | Is videochat allowed? |
-| low_quality_video | false | Video quality is limited to 320x240@15 |
 
 <a name="filesharing-options"></a>
 ##### File sharing{#filesharing-options}
