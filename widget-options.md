@@ -106,6 +106,7 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 | auto_restore | true | (JS API only) automatically restores a session after a page reload |
 | autohide_button | true | Hide the Surfly button when no agent is available |
 | block_until_agent_joins | true | If using the Surfly button, block the screen until a follower joins |
+| enable_canvas_compression | true | Enable canvas compression. Disable it if you are experiencing black elements on the page |
 | format_session_id | true | Change the session id to something easy to communicate over the phone (eg, 123-123-123) |
 | language | 'en' | Language of the interface |
 | show_loading_screen| true | Show the loading screen when starting a session |
