@@ -114,6 +114,7 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 | start_docked | false | starts the chat box in docked mode, but can be expanded during the session |
 | stealth_mode | true | When enabled, users can use CTRL + ENTER to start a Surfly session |
 | url | _current page_ | Initial URL that will be opened inside the session. Only available in REST API at the moment |
+| url_mangling | false | Enable url mangling. Enable it if you want to hide original url from users |
 
 
 ##### File downloads{#downloads}
