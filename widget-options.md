@@ -122,6 +122,12 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 | share_downloads | true | Allow users to share downloaded files. If this option is disabled, you can still use the `file_download` event in JS API |
 
 
+##### Native selects{#native-selects}
+|  Option | Default | Description |
+| ---------------| ------------|------------|
+| native_selects | true | Use native html select elements. If this option is disabled, html select elements are replaced with more complex composite ones which work in the same way but can be controlled by another user |
+
+
 ##### Cookies{#cookie-options}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
