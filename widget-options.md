@@ -125,7 +125,7 @@ More information on [restrictions](./widget-options/widget-options.md/#restricti
 ##### Native selects{#native-selects}
 |  Option | Default | Description |
 | ---------------| ------------|------------|
-| native_selects | true | Use native html select elements. If this option is disabled, html select elements are replaced with more complex composite ones which works in the same way but can be controlled by another user |
+| native_selects | true | Use native html select elements. If this option is disabled, html select elements are replaced with more complex composite ones which work in the same way but can be controlled by another user |
 
 
 ##### Cookies{#cookie-options}
